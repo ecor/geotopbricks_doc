@@ -12,11 +12,11 @@ f <- 2.7
 width <- 841*f
 height <- 1189*f
 
-postr::render(filez_rmd)
+#postr::render(filez_rmd)
 
-#file_png <- paste0(filez,".png")
-#file_url <- paste0(filez,".html")
-#file_pdf <- paste0(filez,".jpg")
+file_png <- paste0(filez,".png")
+file_url <- paste0(filez,".html")
+file_pdf <- paste0(filez,".jpg")
 
-#webshot::webshot(url=file_url,file=file_png,vwidth = width,vheight = height)
+webshot::webshot(url=file_url,file=file_png,vwidth = width,vheight = height)
 
