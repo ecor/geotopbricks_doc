@@ -317,9 +317,51 @@ head(meteo[12:14,c("RelHum","AirT","Swglobal")])
 
 ## Plotting 
 
-```{r,echo=TRUE,return=TRUE}
+```{r,echo=FALSE,return=TRUE}
 library(ggplot2)
+library(reshape2)
+library(lubridate)
+meteo_df <- as.data.frame(meteo)
+nvars <- c("Iprec","WindSp","WindDir","RelHum","AirT","Swglobal")
+meteo_df$time <- as.POSIXct(index(meteo))
+cols <- c("time","Iprec","WindSp","WindDir","RelHum","AirT","Swglobal")
+offset <- array(0,length(cols))
+names(offset) <- cols
+multp <- array(1,length(cols))
+names(multp) <- cols
 
+offset["AirT"] <- 0
+multp["Swglobal"] <- 50
+multp["Iprec"] <- 0.1
+when <- as.Date("2010-05-10")+days(0:10)
+iwhen <- as.Date(meteo_df$time) %in% when
+
+cols_ <- c("AirT","Iprec")
+
+meteo_df <- meteo_df[iwhen,c("time",cols_)]
+itref <- "Iprec"
+itnoref <- cols_[cols_!=itref][1]
+
+for (it in cols_) {
+  meteo_df[,it] <- (meteo_df[,it]-offset[it]) / multp[it]
+  meteo_df[,it] <- meteo_df[,it]*multp[itref]+offset[itref]
+}
+
+a <- multp[itnoref]/multp[itref]
+b <- offset[itnoref]-a*offset[itref]
+
+meteo_dfm <- melt(meteo_df,id="time")
+gp <- ggplot(meteo_dfm, aes(x = time, y = value)) + 
+   geom_area(aes(color = variable, fill = variable, alpha=variable), 
+             position = position_dodge(0.8)) +
+   scale_color_manual(values = c("red", "blue")) +
+   scale_fill_manual(values = c("red", "blue"))+
+   scale_alpha_manual(values= c(0.1,0.5))+theme_bw()+
+  scale_y_continuous(
+    "Precipitation", 
+    sec.axis = sec_axis(~ . * a+b, name = "AirT")
+  )
+gp
 ```
 
 ## Getting output simulation data
@@ -361,14 +403,41 @@ class(SWC_B2)
 ```
 
 ```{r,echo=TRUE}
-SWC_B2 <- cbind(time=index(SWC_B2),as.data.frame(SWC_B2))
+SWC_B2 <- cbind(time=as.POSIXct(index(SWC_B2)),as.data.frame(SWC_B2))
+SWC_P2 <- cbind(time=as.POSIXct(index(SWC_P2)),as.data.frame(SWC_P2))
 class(SWC_B2)
 names(SWC_B2)
 ###knitr::kable(head(SWC_B2))
 ```
 
+## Output Visualization 
 
+```{r,echo=FALSE,eval=TRUE}
+## http://www.sthda.com/english/wiki/ggplot2-line-types-how-to-change-line-types-of-a-graph-in-r-software
+SWC_B2a <- SWC_B2[as.Date(SWC_B2$time) %in% when,]
+SWC_P2a <- SWC_P2[as.Date(SWC_P2$time) %in% when,]
+depths <- sprintf("z%04d",c(3,9,18,45))
+SWC_B2a$site <- "B2"
+SWC_P2a$site <- "P2"
+SWC_B2m <- melt(SWC_B2a,id=c("time","site"))
+SWC_P2m <- melt(SWC_P2a,id=c("time","site"))
 
+SWC <- rbind(SWC_B2m,SWC_P2m)
+SWC <- SWC[SWC$variable %in% depths,]
+
+gswc <- ggplot(SWC, aes(x = time, y = value)) + 
+   geom_line(aes(color = variable, fill = variable, linetype=site), 
+             position = position_dodge(0.8))+theme_bw() #+
+#   scale_color_manual(values = c("red", "blue")) +
+#   scale_fill_manual(values = c("red", "blue"))+
+#   scale_alpha_manual(values= c(0.1,0.5))+theme_bw()+
+#  scale_y_continuous(
+#    "Precipitation", 
+#    sec.axis = sec_axis(~ . * a+b, name = "AirT")
+# )
+gswc
+
+```
 ## Stuff
 
 Hydrological models are solvers of the differantial equations of water flows and water thermodymanics in the Earth associated to heat transfers between Earth and the low atmosphere. They are a simplification of a real-world system
