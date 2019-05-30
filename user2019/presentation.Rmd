@@ -412,7 +412,7 @@ names(SWC_B2)
 
 ## Output Visualization 
 
-```{r,echo=FALSE,eval=TRUE}
+```{r,echo=FALSE,eval=TRUE,return=FALSE,warning=FALSE}
 ## http://www.sthda.com/english/wiki/ggplot2-line-types-how-to-change-line-types-of-a-graph-in-r-software
 SWC_B2a <- SWC_B2[as.Date(SWC_B2$time) %in% when,]
 SWC_P2a <- SWC_P2[as.Date(SWC_P2$time) %in% when,]
@@ -428,17 +428,88 @@ SWC <- SWC[SWC$variable %in% depths,]
 gswc <- ggplot(SWC, aes(x = time, y = value)) + 
    geom_line(aes(color = variable, fill = variable, linetype=site), 
              position = position_dodge(0.8))+theme_bw() #+
-#   scale_color_manual(values = c("red", "blue")) +
-#   scale_fill_manual(values = c("red", "blue"))+
-#   scale_alpha_manual(values= c(0.1,0.5))+theme_bw()+
-#  scale_y_continuous(
-#    "Precipitation", 
-#    sec.axis = sec_axis(~ . * a+b, name = "AirT")
-# )
-gswc
+
+show(gswc)
 
 ```
-## Stuff
+
+## Analysis (soil Mooisture Distribution)
+
+Soil Water Content Distributio at a 18 cm depth
+```{r,echo=FALSE,warning=FALSE,eval=TRUE}
+## Box Plot
+time <- SWC_B2$time
+SWC_B2_18cm <- SWC_B2[,"z0018"]
+SWC_P2_18cm <- SWC_P2[,"z0018"]
+## Daily Aggregation
+SWC_B2_18cm_aggr <- tapply(X=SWC_B2_18cm,INDEX=as.Date(SWC_B2$time), FUN=median)
+
+SWC_P2_18cm_aggr <- tapply(X=SWC_P2_18cm,INDEX=as.Date(SWC_P2$time), FUN=median)
+
+cond <- all(names(SWC_B2_18cm_aggr)==names(SWC_P2_18cm_aggr))
+if (!cond) stop("Mismacth dates between B2 and P2")
+months <- as.character(as.Date(names(SWC_B2_18cm_aggr)),format="%m-%Y")
+df <- data.frame(month=months,P2=as.vector(SWC_P2_18cm_aggr),B2=as.vector(SWC_B2_18cm_aggr))
+dfp <- df[df$month %in% c("08-2010","08-2011","08-2012","08-2013","08-2014"),]
+dfpm <- melt(dfp,id="month")
+SWC_Boxplot <- ggplot(dfpm, aes(x=as.factor(month), y=value))+geom_boxplot()
+SWC_Boxplot <- SWC_Boxplot+ggtitle("Box Plot: Daily Soil Water Content")+ylab("SWC")+xlab("")+theme_bw()+facet_grid(. ~ variable)
+show(SWC_Boxplot)
+```   
+
+
+## And Precipitation: 
+
+?
+
+
+## 3D Spatially Distributed Distribution (Vinschgau - Upper Adige River Basin - Alps - I/CH/A)
+
+```{r,echo=TRUE,eval=TRUE,return=FALSE,warning=FALSE}
+
+wpath_3D <- 'resources/simulation/Vinschgau_test_3D_002'
+basin <- get.geotop.inpts.keyword.value("LandCoverMapFile",
+              wpath=wpath_3D,raster=TRUE)
+basin
+```
+
+##  3D Spatially Distributed Distribution (Input Geospatial Map)
+
+```{r,echo=FALSE,eval=TRUE,return=FALSE,warning=FALSE,fig.height=5}
+URL = 'https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png'
+ATTRIBUTION = 'Map data: &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, <a href="http://viewfinderpanoramas.org">SRTM</a> | Map style: &copy; <a href="https://opentopomap.org">OpenTopoMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)'
+library(leaflet)
+
+basin <- get.geotop.inpts.keyword.value("DemFile",wpath=wpath_3D,raster=TRUE)
+color <- colorNumeric("BrBG",domain=basin[],na.color="transparent",reverse = TRUE) ## http://colorbrewer2.org
+opacity <- 0.8
+
+meteoloc <- data.frame(x=get.geotop.inpts.keyword.value("MeteoStationCoordinateX",wpath=wpath_3D,numeric=TRUE))
+meteoloc$y <- get.geotop.inpts.keyword.value("MeteoStationCoordinateY",wpath=wpath_3D,numeric=TRUE)
+coordinates(meteoloc) <- ~ x+y 
+projection(meteoloc) <- projection(basin)
+meteoloc <- spTransform(meteoloc,CRSobj="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs")
+meteoloc <- as.data.frame(meteoloc)
+#leaf_psi <- leaf1 %>% addRasterImage(theta,color=color,opacity=opacity) %>% 
+#addLegend(position="bottomright",pal=color,values=theta[],opacity=opacity,title="Psi") %>% #addMarkers(lng=points$lon,lat=points$lat,label=points$name)
+
+#leaf_psi
+leaf <- leaflet() %>% addTiles(urlTemplate=URL,attribution=ATTRIBUTION) 
+leaf %>% addRasterImage(basin,opacity=opacity,col=color) %>% addLegend(position="bottomright",pal=color,values=basin[],opacity=opacity,title="Elevation [m]") %>% 
+addCircleMarkers(lng=meteoloc$x,lat=meteoloc$y,label="Meteo",opacity=opacity,radius=2,color="red") %>% 
+  addScaleBar()
+
+
+
+```
+
+## LOREM IPSUM 
+<!-- ```{r,echo=FALSE,eval=TRUE} -->
+<!-- show(prec_Boxplot) -->
+<!-- ``` -->
+<!-- </center> -->
+The results show than B2 is able to hold more water than P2. This depends on soil and land properties. Compared with input precipiation results,soil water behaviour for the different months is related to precipitation amount (depth and number of rainy days). Interestingly, in August 2014 soil water content is higher than in August 2012,  in which precipitaion is higher. However, in August 2014 the daily precipitation distribution is the least wide with the lowest variability (interquantile range) and two extreme events. (Precipiation time series in B2 and P2 are equal due to their short distance!)
+
 
 Hydrological models are solvers of the differantial equations of water flows and water thermodymanics in the Earth associated to heat transfers between Earth and the low atmosphere. They are a simplification of a real-world system
 useful to understand, predict, manage water resources. 
@@ -449,7 +520,7 @@ useful to understand, predict, manage water resources.
 <!-- \hspace*{-1cm}\includegraphics[width=1\paperwidth]{IMAGE} -->
 
 
-## Computation
+## Conclusion
 
 LOREM IPSUM:
 

@@ -477,11 +477,24 @@ environment:
 
 \begin{frame}[fragile]{Plotting}
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\KeywordTok{library}\NormalTok{(ggplot2)}
-\end{Highlighting}
-\end{Shaded}
+\begin{verbatim}
+## 
+## Attaching package: 'lubridate'
+\end{verbatim}
+
+\begin{verbatim}
+## The following object is masked from 'package:igraph':
+## 
+##     %--%
+\end{verbatim}
+
+\begin{verbatim}
+## The following object is masked from 'package:base':
+## 
+##     date
+\end{verbatim}
+
+\includegraphics{presentation_files/figure-beamer/unnamed-chunk-5-1.pdf}
 
 \end{frame}
 
@@ -539,7 +552,8 @@ The same for P2:
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{SWC_B2 <-}\StringTok{ }\KeywordTok{cbind}\NormalTok{(}\DataTypeTok{time=}\KeywordTok{index}\NormalTok{(SWC_B2),}\KeywordTok{as.data.frame}\NormalTok{(SWC_B2))}
+\NormalTok{SWC_B2 <-}\StringTok{ }\KeywordTok{cbind}\NormalTok{(}\DataTypeTok{time=}\KeywordTok{as.POSIXct}\NormalTok{(}\KeywordTok{index}\NormalTok{(SWC_B2)),}\KeywordTok{as.data.frame}\NormalTok{(SWC_B2))}
+\NormalTok{SWC_P2 <-}\StringTok{ }\KeywordTok{cbind}\NormalTok{(}\DataTypeTok{time=}\KeywordTok{as.POSIXct}\NormalTok{(}\KeywordTok{index}\NormalTok{(SWC_P2)),}\KeywordTok{as.data.frame}\NormalTok{(SWC_P2))}
 \KeywordTok{class}\NormalTok{(SWC_B2)}
 \end{Highlighting}
 \end{Shaded}
@@ -568,7 +582,68 @@ The same for P2:
 
 \end{frame}
 
-\begin{frame}{Stuff}
+\begin{frame}{Output Visualization}
+
+\includegraphics{presentation_files/figure-beamer/unnamed-chunk-10-1.pdf}
+
+\end{frame}
+
+\begin{frame}{Analysis (soil Mooisture Distribution)}
+
+Soil Water Content Distributio at a 18 cm depth
+\includegraphics{presentation_files/figure-beamer/unnamed-chunk-11-1.pdf}
+
+\end{frame}
+
+\begin{frame}{And Precipitation:}
+
+?
+
+\end{frame}
+
+\begin{frame}[fragile]{3D Spatially Distributed Distribution (Vinschgau
+- Upper Adige River Basin - Alps - I/CH/A)}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{wpath_3D <-}\StringTok{ 'resources/simulation/Vinschgau_test_3D_002'}
+\NormalTok{basin <-}\StringTok{ }\KeywordTok{get.geotop.inpts.keyword.value}\NormalTok{(}\StringTok{"LandCoverMapFile"}\NormalTok{,}
+              \DataTypeTok{wpath=}\NormalTok{wpath_3D,}\DataTypeTok{raster=}\OtherTok{TRUE}\NormalTok{)}
+\NormalTok{basin}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## class       : RasterLayer 
+## dimensions  : 48, 63, 3024  (nrow, ncol, ncell)
+## resolution  : 1000, 1000  (x, y)
+## extent      : 598166, 661166, 5145386, 5193386  (xmin, xmax, ymin, ymax)
+## coord. ref. : +proj=utm +zone=32 +ellps=WGS84 +datum=WGS84 +units=m +no_defs +towgs84=0,0,0 
+## data source : in memory
+## names       : layer 
+## values      : 1, 11  (min, max)
+\end{verbatim}
+
+\end{frame}
+
+\begin{frame}{3D Spatially Distributed Distribution (Input Geospatial
+Map)}
+
+\includegraphics{presentation_files/figure-beamer/unnamed-chunk-13-1.pdf}
+
+\end{frame}
+
+\begin{frame}{LOREM IPSUM}
+
+The results show than B2 is able to hold more water than P2. This
+depends on soil and land properties. Compared with input precipiation
+results,soil water behaviour for the different months is related to
+precipitation amount (depth and number of rainy days). Interestingly, in
+August 2014 soil water content is higher than in August 2012, in which
+precipitaion is higher. However, in August 2014 the daily precipitation
+distribution is the least wide with the lowest variability
+(interquantile range) and two extreme events. (Precipiation time series
+in B2 and P2 are equal due to their short distance!)
 
 Hydrological models are solvers of the differantial equations of water
 flows and water thermodymanics in the Earth associated to heat transfers
@@ -578,7 +653,7 @@ real-world system useful to understand, predict, manage water resources.
 
 \end{frame}
 
-\begin{frame}[fragile]{Computation}
+\begin{frame}[fragile]{Conclusion}
 
 LOREM IPSUM:
 
