@@ -26,7 +26,7 @@ library(geotopbricks)
 
 ## Who are the other authors?
 
-- Hydrologist ,,, BLA 
+- Hydrologist ,,, BLA elisa
 - Author of several packages, including `geotop`,...
 
 
