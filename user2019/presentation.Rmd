@@ -1,13 +1,14 @@
 ---
 title: "geotopbricks"
-subtitle: "An R Package for the Distributed Hydrological Model GEOtop" 
 author: "Emanuele Cordano"
 date: "github/ecor / useR2019"
 output:
+  ioslides_presentation: default
   beamer_presentation:
     includes:
       in_header: tex/header.tex
     keep_tex: yes
+subtitle: An R Package for the Distributed Hydrological Model GEOtop
 ---
 
 ```{r setup, include=FALSE}
@@ -15,7 +16,7 @@ knitr::opts_chunk$set(eval = TRUE)
 library(geotopbricks)
 ```
 
-## Who am I?
+## Who are we?
 
 - Environmental engineer with hydraulic and hydrological background (more deterministic and physicall-based than statics!)
 - Some skills in programming and a R entusiast which I use to work with hydro-climatic data. 
@@ -23,30 +24,32 @@ library(geotopbricks)
 - I'm self-employed and freelancer as www.rendena100.eu .  
 - Author of several R-packages and p
 
+- the other authors?
 
-## Who are the other authors?
-
-- Hydrologist ,,, BLA elisa
+- Hydrologist ,,, BLA elisa, Giaomo
 - Author of several packages, including `geotop`,...
+- inserire immagini degli autori
 
 
 
 ## Hydrology
 
-Scientific study of the movement, distribution, and quality of water on Earth water cycle, water resources and environmental watershed sustainability.
+Scientific study of the movement, distribution, and quality of water on Earth water cycle, water resources and environmental watershed sustainability (REF)
 
 <!-- \hspace*{-1cm}\includegraphics[width=1\paperwidth]{resources/images/geotop_draw.png} -->
-![image](resources/images/geotop_landscape.png){width=50%}
+![manual](resources/images/geotop_landscape.png){width=50%} 
 
-## Soil Water Balance 
+## Hydrolgical models
+-metti slides Tione che spiega cosa sono in modelli
 
 ## GEOtop Hydrological Model
 
-GEOtop is an  integrated hydrological model that simulates:
+GEOtop is an open-source integrated hydrological model that simulates:
 \begin{itemize}
 \item water flow in the soil $\,\to\,$ Richards' eq (sub) + Kinematic eq (sur)
 \item energy exchange with the atmosphere $\,\to\,$ full integration of equation
 \end{itemize}
+Metti alcune referenze + link github
 
 ![](resources/images/geotop_snow.png){width=20%}
 ![](resources/images/geotop_vegetation.png){width=20%}
@@ -54,11 +57,12 @@ GEOtop is an  integrated hydrological model that simulates:
 
 
 
-## Hydrological Model
+## Hydrological Model Structure
 
 
 - Input: meteo data, elevations, soil parameters
 - Output: snow cover, soil temperature, soil moisture
+- Semplifica il grafico con solo input e output e processi principali
 
 ![](resources/images/geotop_revised.png){width=90%}
 ## GEOtop model}%{Optional Subtitle
@@ -90,24 +94,23 @@ Core components of GEOtop software packages are:
 
 <!-- % mettere,se ci sta, anche il grafico con i papers pubblicati “20 years of dev …” -->
 
-## GEOtop external extensions 
+## Motivations
 
-__Lorem ipsum__ dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+- complex  outputs data difficult to manage
+- need of user friendly tools to posprocess outptuts and extract information
+- When outputs are in R then you can use all his data analyisis power
+- we need an interface, and we use R !
 
-
-
-## GEOtop 
-
-placeholder
-
-## GEOtop configuration File (geotop.inpts)
-
-placeholder
 
 
 ## GEOtop configuration File (geotop.inpts)
 
 A GEOtop simulation is organized in a set of files within a directory.
+
+- A smart keywords system for defining all configuration parameters:
+  - Pro: very flexible I/O configrations
+  - Contra: difficult to manage without a proper interface
+
 This directory contains: 
 
 -**input files** (meteorological forcings,
@@ -126,16 +129,19 @@ MeteoFile               =   "meteoB2_irr"
 PointOutputFile         =   "tabs/point" 
 ```
 
-## Simulation of soil water budget in an alpine site
 
 
-GOtop is applied to estimate soil water content in two soil columns below  two hydro-meteorological stations (B2 and P2) located in Val Mazia/Match, Malles Venosta/Mals Vinschgau, in South Tyrol, Italy (LOng Term Reasearch Ecological Area, [http://lter.eurac.edu/en]).
-  
- ![image](resources/images/mazia_2.png){width=40%} 
-<!--CHANGE THE FIGUE !!! -->
+## Approach: GEOtopbriks
+Geotopbricks a GEOtop R interface:
+
+It provides
+- parsing of the configuration files
+- customo R function to import ouptuput time series as zoo objects
+- maps time series are imported as multitemporal raster objects
+- vedi poster
 
 
-## Geotopbricks Graph
+Graph
 <!-- # ```{r,fig.height=8, fig.width=6,echo=FALSE,results="hide",collapse=TRUE,warning=FALSE,message=FALSE} -->
 
 ```{r,echo=FALSE,results="hide",collapse=TRUE,warning=FALSE,message=FALSE}
@@ -280,6 +286,13 @@ legend("topleft",legend=paste(vcodes,vnames,sep=" : "),ncol=3,cex=0.6)
 
 ```
 
+## Simulation of soil water budget in an alpine site
+
+
+GOtop is applied to estimate soil water content in two soil columns below  two hydro-meteorological stations (B2 and P2) located in Val Mazia/Match, Malles Venosta/Mals Vinschgau, in South Tyrol, Italy (LOng Term Reasearch Ecological Area, [http://lter.eurac.edu/en]).
+  
+ ![image](resources/images/mazia_2.png){width=40%} 
+<!--CHANGE THE FIGUE !!! -->
 
 
 ## Simulation of soil water budget in an alpine site
@@ -519,16 +532,29 @@ useful to understand, predict, manage water resources.
 <!-- ## {.plain} -->
 <!-- \hspace*{-1cm}\includegraphics[width=1\paperwidth]{IMAGE} -->
 
+## Dicussion
+- open science
+- reproducibuly of modelling simulations
+- fair priciple
 
-## Conclusion
 
-LOREM IPSUM:
+## Conclusion and forward
+
+
+- open source hydrolgical models need powerful processing interface
+
+- tool for popsptocesing GEOtop
 
 - getting your data in the right shape (e.g. `tidyverse`, `recipes`)
 
--  getting your data in the right shape (e.g. `tidyverse`, `recipes`)
+- potential for extension for ohter models
 
-- lorem ipsum
+- for oprational aplications / engineering productivity
+
+- enlarge communtiy
+
+
+vedi abstract
 
 
 
@@ -554,6 +580,8 @@ www.geotop.org
 <!-- $\leftarrow$ See book  -->
 <!-- \end{block} -->
 <!-- \end{minipage} -->
+
+- link CRAN e github repository
 
 Thank you for your attention! / Merci pour votre attention!  
 
