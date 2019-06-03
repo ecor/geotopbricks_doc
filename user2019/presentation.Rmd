@@ -49,11 +49,17 @@ Scientific study of the movement, distribution, and quality of water on Earth wa
 
   \endcol
 \begincol{.48\textwidth}
-
- ![](resources/images/versante1.png){width=50%}\
+\begincols
+  \begincol{.48\textwidth}
+ ![](resources/images/versante1.png){width=100%}\
  
- ![](resources/images/versante2.png){width=50%}\
-
+ 
+ ![](resources/images/integrated_models.jpg){width=100%}\
+\endcol
+\begincol{.48\textwidth}
+![](resources/images/water_balance.png){width=100%}\
+    \endcol
+    \endcols
   \endcol
 \endcols
 
