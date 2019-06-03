@@ -502,7 +502,8 @@ More deetails on the [__eRum2018__ poster](https://github.com/ecor/geotopbricks_
 
 ```{r,echo=TRUE,eval=TRUE,return=FALSE,warning=FALSE}
 
-wpath_3D <- 'resources/simulation/Vinschgau_test_3D_002'
+###wpath_3D <- 'resources/simulation/Vinschgau_test_3D_002'
+wpath_3D <- 'resources/simulation/Mazia'
 basin <- get.geotop.inpts.keyword.value("LandCoverMapFile",
               wpath=wpath_3D,raster=TRUE)
 basin
@@ -515,7 +516,8 @@ URL = 'https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png'
 ATTRIBUTION = 'Map data: &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, <a href="http://viewfinderpanoramas.org">SRTM</a> | Map style: &copy; <a href="https://opentopomap.org">OpenTopoMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)'
 library(leaflet)
 
-basin <- get.geotop.inpts.keyword.value("DemFile",wpath=wpath_3D,raster=TRUE)
+elevation <- get.geotop.inpts.keyword.value("DemFile",wpath=wpath_3D,raster=TRUE)
+basin <- basin*0+elevation
 color <- colorNumeric("BrBG",domain=basin[],na.color="transparent",reverse = TRUE) ## http://colorbrewer2.org
 opacity <- 0.8
 
@@ -538,11 +540,27 @@ addCircleMarkers(lng=meteoloc$x,lat=meteoloc$y,label="Meteo",opacity=opacity,rad
 
 ```
 
+
+
 ## LOREM IPSUM 
+```{r eval=TRUE,echo=FALSE}
+keyword <- 'SoilLiqContentTensorFile'
+s <- get.geotop.inpts.keyword.value(keyword,wpath=wpath_3D)
+start <-  get.geotop.inpts.keyword.value("InitDateDDMMYYYYhhmm",date=TRUE,wpath=wpath_3D,tz=tz) 
+end <- get.geotop.inpts.keyword.value("EndDateDDMMYYYYhhmm",date=TRUE,wpath=wpath_3D,tz=tz) 
+
+b <- brickFromOutputSoil3DTensor(x=keyword,when=end,wpath=wpath_3D,tz=tz)
+
+help("brickFromOutputSoil3DTensor") ## for more details
+
+```
+
 <!-- ```{r,echo=FALSE,eval=TRUE} -->
 <!-- show(prec_Boxplot) -->
 <!-- ``` -->
 <!-- </center> -->
+## 3D Simulation Analytics 
+
 The results show than B2 is able to hold more water than P2. This depends on soil and land properties. Compared with input precipiation results,soil water behaviour for the different months is related to precipitation amount (depth and number of rainy days). Interestingly, in August 2014 soil water content is higher than in August 2012,  in which precipitaion is higher. However, in August 2014 the daily precipitation distribution is the least wide with the lowest variability (interquantile range) and two extreme events. (Precipiation time series in B2 and P2 are equal due to their short distance!)
 
 
