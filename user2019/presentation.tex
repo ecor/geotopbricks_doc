@@ -211,6 +211,12 @@
 
 \newcommand{\la}[1]{\boldsymbol{#1}}
 
+
+\def\begincols{\begin{columns}}
+\def\begincol{\begin{column}}
+\def\endcol{\end{column}}
+\def\endcols{\end{columns}}
+
 \title{geotopbricks}
 \subtitle{An R Package for the Distributed Hydrological Model GEOtop}
 \author{Emanuele Cordano}
@@ -219,7 +225,7 @@
 \begin{document}
 \frame{\titlepage}
 
-\begin{frame}{Who am I?}
+\begin{frame}[fragile]{Who are we?}
 
 \begin{itemize}
 \tightlist
@@ -235,18 +241,14 @@
   I'm self-employed and freelancer as www.rendena100.eu .\\
 \item
   Author of several R-packages and p
-\end{itemize}
-
-\end{frame}
-
-\begin{frame}[fragile]{Who are the other authors?}
-
-\begin{itemize}
-\tightlist
 \item
-  Hydrologist ,,, BLA
+  the other authors?
+\item
+  Hydrologist ,,, BLA elisa, Giaomo
 \item
   Author of several packages, including \texttt{geotop},\ldots{}
+\item
+  inserire immagini degli autori
 \end{itemize}
 
 \end{frame}
@@ -255,36 +257,51 @@
 
 Scientific study of the movement, distribution, and quality of water on
 Earth water cycle, water resources and environmental watershed
-sustainability.
+sustainability (REF)
 
 \begin{figure}
 \centering
 \includegraphics[width=0.50000\textwidth]{resources/images/geotop_landscape.png}
-\caption{image}
+\caption{}
 \end{figure}
 
 \end{frame}
 
-\begin{frame}{Soil Water Balance}
+\begin{frame}{Hydrolgical models}
+
+\begincols
+ \begincol{.48\textwidth}
+
+\includegraphics[width=1.00000\textwidth]{resources/images/valdifumo.jpg}~
+
+\endcol
+\begincol{.48\textwidth}
+
+\includegraphics[width=0.50000\textwidth]{resources/images/versante1.png}\\
+\includegraphics[width=0.50000\textwidth]{resources/images/versante2.png}\\
+\endcol
+\endcols
 
 \end{frame}
 
 \begin{frame}{GEOtop Hydrological Model}
 
-GEOtop is an integrated hydrological model that simulates:
+GEOtop is an open-source integrated hydrological model that simulates:
 
 \begin{itemize}
 \item water flow in the soil $\,\to\,$ Richards' eq (sub) + Kinematic eq (sur)
 \item energy exchange with the atmosphere $\,\to\,$ full integration of equation
 \end{itemize}
 
-\includegraphics[width=0.20000\textwidth]{resources/images/geotop_snow.png}
-\includegraphics[width=0.20000\textwidth]{resources/images/geotop_vegetation.png}
-\includegraphics[width=0.20000\textwidth]{resources/images/geotop_infiltration.png}
+Metti alcune referenze + link github
+
+\includegraphics[width=0.20000\textwidth]{resources/images/geotop_snow.png}\\
+\includegraphics[width=0.20000\textwidth]{resources/images/geotop_vegetation.png}\\
+\includegraphics[width=0.20000\textwidth]{resources/images/geotop_infiltration.png}\\
 
 \end{frame}
 
-\begin{frame}{Hydrological Model}
+\begin{frame}{Hydrological Model Structure}
 
 \begin{itemize}
 \tightlist
@@ -292,10 +309,16 @@ GEOtop is an integrated hydrological model that simulates:
   Input: meteo data, elevations, soil parameters
 \item
   Output: snow cover, soil temperature, soil moisture
+\item
+  \textbf{Semplifica il grafico con solo input e output e processi
+  principali}
 \end{itemize}
 
-\includegraphics[width=0.90000\textwidth]{resources/images/geotop_revised.png}
-\#\# GEOtop model\}\%\{Optional Subtitle
+\includegraphics[width=0.90000\textwidth]{resources/images/geotop_revised.png}\\
+
+\end{frame}
+
+\begin{frame}{GEOtop model Optional Subtitle}
 
 Water and energy budgets can be activated :
 
@@ -312,11 +335,8 @@ Two setup configurations : - \textbf{1D}: only vertical fluxes
 column) - \textbf{3D}: vertical and lateral fluxes \(\,\to\,\) balances
 at basin scale
 
-\begin{figure}
-\centering
-\includegraphics[width=0.90000\textwidth]{resources/images/geotop_ET_SWC.png}
-\caption{}
-\end{figure}
+\includegraphics[width=0.90000\textwidth]{resources/images/geotop_ET_SWC.png}\\
+\#\# GEOtop model Optional Subtitle
 
 Core components of GEOtop software packages are:
 
@@ -334,69 +354,96 @@ Core components of GEOtop software packages are:
   *\url{http://geotopmodel.github.io/geotop/*}
 \end{itemize}
 
-\includegraphics[width=0.90000\textwidth]{resources/images/geotop_paper_2017.png}
+\includegraphics[width=0.90000\textwidth]{resources/images/geotop_paper_2017.png}\\
 
 \end{frame}
 
-\begin{frame}{GEOtop external extensions}
+\begin{frame}{Motivations}
 
-\textbf{Lorem ipsum} dolor sit amet, consectetur adipiscing elit, sed do
-eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-mollit anim id est laborum
+\begin{itemize}
+\tightlist
+\item
+  complexity in input/output/configuration files and data difficult to
+  manage
+\end{itemize}
 
-\end{frame}
-
-\begin{frame}{GEOtop}
-
-placeholder
-
-\end{frame}
-
-\begin{frame}{GEOtop configuration File (geotop.inpts)}
-
-placeholder
+\includegraphics[width=0.90000\textwidth]{resources/images/Capture_IO_GEOtopJPG.JPG}\\
+- need of user friendly environment for to GEOtop data tidying and data
+analytics (e.g. \emph{R}) - potential interactions between hydrology
+(GEOtop) and other knowledge domains (\emph{discipines}).
 
 \end{frame}
 
 \begin{frame}[fragile]{GEOtop configuration File (geotop.inpts)}
 
-A GEOtop simulation is organized in a set of files within a directory.
-This directory contains:
+A GEOtop simulation is organized in a set of files within a directory
+containing a \textbf{configuration file} ,called \emph{geotop.inpts}
+filled with a keywords system addressing to:
 
--\textbf{input files} (meteorological forcings, topography, land-use,
-soil-type maps, initial conditions); \textbf{target information} (which
-results are requested) ; - \textbf{observations}. Allthese information
-are written in a file called \texttt{geotop.inpts}, which is a list of
-\textbf{keyword-value} pairs:
+\begincols
+ \begincol{.30\textwidth}
+
+\begin{itemize}
+\tightlist
+\item
+  simulation options (e.g.~simulation period)
+\item
+  \textbf{input files} (e.g.~meterological time series)
+\item
+  \textbf{output files}
+\end{itemize}
+
+\endcol
+ \begincol{.65\textwidth}
 
 \begin{verbatim}
-InitDateDDMMYYYYhhmm    =   09/04/2014 18:00  
-EndDateDDMMYYYYhhmm     =   01/01/2016 00:00 
+InitDateDDMMYYYYhhmm=09/04/2014 18:00  
+EndDateDDMMYYYYhhmm =01/01/2016 00:00 
 [...] 
-MeteoFile               =   "meteoB2_irr" 
-PointOutputFile         =   "tabs/point" 
+MeteoFile           ="meteoB2_irr" 
+PointOutputFile     ="tabs/point" 
 \end{verbatim}
 
-\end{frame}
-
-\begin{frame}{Simulation of soil water budget in an alpine site}
-
-GOtop is applied to estimate soil water content in two soil columns
-below two hydro-meteorological stations (B2 and P2) located in Val
-Mazia/Match, Malles Venosta/Mals Vinschgau, in South Tyrol, Italy (LOng
-Term Reasearch Ecological Area, {[}\url{http://lter.eurac.edu/en}{]}).
-
-\includegraphics[width=0.40000\textwidth]{resources/images/mazia_2.png}
+\endcol
+\endcols
 
 \end{frame}
 
-\begin{frame}{Geotopbricks Graph}
+\begin{frame}[fragile]{\textbf{geotopbricks}}
 
-\includegraphics{presentation_files/figure-beamer/unnamed-chunk-1-1.pdf}
+The aim of \textbf{geotopbricks} , starting in 2013, is to bring all the
+data of a GEOtop simulaton into the powerful statistical \textbf{R}
+environment by using the \texttt{keyword-value} syntax of
+\emph{geotop.inpts}. \textbf{geotopbricks} does the following actions:
+
+\begin{itemize}
+\tightlist
+\item
+  to parse \emph{geotop.inpts} configuration files;
+\item
+  to derive from \emph{geotop.inpts}'s keywords the source files of I/O
+  data;
+\item
+  to import time series (e.g.~precipitation, temperature, soil water
+  content, snow) as \emph{zoo} or \emph{data.frame} objects;
+\item
+  to import spatially and spatio-temporal gridded objects as
+  \emph{RasterLayer-class} or \emph{RasterBrick-class} objects
+  (\textbf{raster} package)
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{\textbf{geotopcks} Application 1: Simulation of soil water
+budget in an alpine site}
+
+Here is an example on how to extract soil water content (SWC) at a 18cm
+depth in two sites P2 and B2, located in Val Mazia/Match, Malles
+Venosta/Mals Vinschgau, in South Tyrol, Italy (LOng Term Reasearch
+Ecological Area, {[}\url{http://lter.eurac.edu/en}{]}). The goal of the
+code lines below is to represent the distribution of soil water content
+in August per different years (e.g.~from 2010 to 2014)\\
+\includegraphics[width=0.40000\textwidth]{resources/images/mazia_2.png}\\
 
 \end{frame}
 
@@ -441,64 +488,43 @@ keyword \textbf{MeteoFile} :
 
 \end{frame}
 
-\begin{frame}[fragile]{Verifying that import of simulation input data
-has succeed}
+\begin{frame}[fragile]{Getting simulation input data (verify)}
 
 Meteorological time series once imported are available in the R
 environment:
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\KeywordTok{head}\NormalTok{(meteo[}\DecValTok{12}\OperatorTok{:}\DecValTok{14}\NormalTok{,}\KeywordTok{c}\NormalTok{(}\StringTok{"Iprec"}\NormalTok{,}\StringTok{"WindSp"}\NormalTok{,}\StringTok{"WindDir"}\NormalTok{)])}
+\KeywordTok{head}\NormalTok{(meteo[}\DecValTok{12}\OperatorTok{:}\DecValTok{14}\NormalTok{,}\KeywordTok{c}\NormalTok{(}\StringTok{"Iprec"}\NormalTok{,}\StringTok{"AirT"}\NormalTok{,}\StringTok{"Swglobal"}\NormalTok{)])}
 \end{Highlighting}
 \end{Shaded}
 
 \begin{verbatim}
-##                     Iprec WindSp WindDir
-## 2009-10-02 11:00:00     0   3.63  339.75
-## 2009-10-02 12:00:00     0   2.75  328.48
-## 2009-10-02 13:00:00     0   2.74  311.28
+##                     Iprec  AirT Swglobal
+## 2009-10-02 11:00:00     0 12.38   396.02
+## 2009-10-02 12:00:00     0 13.12   500.07
+## 2009-10-02 13:00:00     0 13.96   564.02
 \end{verbatim}
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\KeywordTok{head}\NormalTok{(meteo[}\DecValTok{12}\OperatorTok{:}\DecValTok{14}\NormalTok{,}\KeywordTok{c}\NormalTok{(}\StringTok{"RelHum"}\NormalTok{,}\StringTok{"AirT"}\NormalTok{,}\StringTok{"Swglobal"}\NormalTok{)])}
+\KeywordTok{head}\NormalTok{(meteo[}\DecValTok{12}\OperatorTok{:}\DecValTok{14}\NormalTok{,}\KeywordTok{c}\NormalTok{(}\StringTok{"RelHum"}\NormalTok{,}\StringTok{"WindSp"}\NormalTok{,}\StringTok{"WindDir"}\NormalTok{)])}
 \end{Highlighting}
 \end{Shaded}
 
-\begin{verbatim}
-##                     RelHum  AirT Swglobal
-## 2009-10-02 11:00:00  31.45 12.38   396.02
-## 2009-10-02 12:00:00  30.50 13.12   500.07
-## 2009-10-02 13:00:00  30.20 13.96   564.02
-\end{verbatim}
+\end{frame}
+
+\begin{frame}{Plots of weather variables in B2}
+
+\begin{figure}
+\centering
+\includegraphics{presentation_files/figure-beamer/unnamed-chunk-6-1.pdf}
+\caption{FALSE}
+\end{figure}
 
 \end{frame}
 
-\begin{frame}[fragile]{Plotting}
-
-\begin{verbatim}
-## 
-## Attaching package: 'lubridate'
-\end{verbatim}
-
-\begin{verbatim}
-## The following object is masked from 'package:igraph':
-## 
-##     %--%
-\end{verbatim}
-
-\begin{verbatim}
-## The following object is masked from 'package:base':
-## 
-##     date
-\end{verbatim}
-
-\includegraphics{presentation_files/figure-beamer/unnamed-chunk-5-1.pdf}
-
-\end{frame}
-
-\begin{frame}[fragile]{Getting output simulation data}
+\begin{frame}[fragile]{Getting output simulation data at B2}
 
 Soil Water Content Profile:
 
@@ -519,7 +545,7 @@ Soil Water Content Profile:
 
 \end{frame}
 
-\begin{frame}[fragile]{P2}
+\begin{frame}[fragile]{Getting output simulation data at P2}
 
 The same for P2:
 
@@ -538,66 +564,24 @@ The same for P2:
 
 \end{frame}
 
-\begin{frame}[fragile]{Data Reformatting}
+\begin{frame}{Soil Water Content at P2 and B2}
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\KeywordTok{class}\NormalTok{(SWC_B2)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-## [1] "zoo"
-\end{verbatim}
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{SWC_B2 <-}\StringTok{ }\KeywordTok{cbind}\NormalTok{(}\DataTypeTok{time=}\KeywordTok{as.POSIXct}\NormalTok{(}\KeywordTok{index}\NormalTok{(SWC_B2)),}\KeywordTok{as.data.frame}\NormalTok{(SWC_B2))}
-\NormalTok{SWC_P2 <-}\StringTok{ }\KeywordTok{cbind}\NormalTok{(}\DataTypeTok{time=}\KeywordTok{as.POSIXct}\NormalTok{(}\KeywordTok{index}\NormalTok{(SWC_P2)),}\KeywordTok{as.data.frame}\NormalTok{(SWC_P2))}
-\KeywordTok{class}\NormalTok{(SWC_B2)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-## [1] "data.frame"
-\end{verbatim}
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\KeywordTok{names}\NormalTok{(SWC_B2)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-##  [1] "time"  "z0001" "z0002" "z0003" "z0004" "z0006" "z0009" "z0013"
-##  [9] "z0018" "z0023" "z0028" "z0035" "z0045" "z0055" "z0065" "z0078"
-## [17] "z0093"
-\end{verbatim}
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\NormalTok{###knitr::kable(head(SWC_B2))}
-\end{Highlighting}
-\end{Shaded}
-
-\end{frame}
-
-\begin{frame}{Output Visualization}
-
-\includegraphics{presentation_files/figure-beamer/unnamed-chunk-10-1.pdf}
-
-\end{frame}
-
-\begin{frame}{Analysis (soil Mooisture Distribution)}
-
-Soil Water Content Distributio at a 18 cm depth
+\begin{figure}
+\centering
 \includegraphics{presentation_files/figure-beamer/unnamed-chunk-11-1.pdf}
+\caption{FALSE}
+\end{figure}
 
 \end{frame}
 
-\begin{frame}{And Precipitation:}
+\begin{frame}{Output data Analytics (soil Mooisture Distribution)}
 
-?
+Distribution of daily aggregated soil water contant at a 18 cm depth:
+\includegraphics{presentation_files/figure-beamer/unnamed-chunk-12-1.pdf}
+
+More deetails on the
+\href{https://github.com/ecor/geotopbricks_doc/blob/master/erum2018_poster/erum2018_poster_cordano_et_al.png}{\textbf{eRum2018}
+poster}.
 
 \end{frame}
 
@@ -629,7 +613,11 @@ Soil Water Content Distributio at a 18 cm depth
 \begin{frame}{3D Spatially Distributed Distribution (Input Geospatial
 Map)}
 
-\includegraphics{presentation_files/figure-beamer/unnamed-chunk-13-1.pdf}
+\begin{figure}
+\centering
+\includegraphics{presentation_files/figure-beamer/unnamed-chunk-14-1.pdf}
+\caption{FALSE}
+\end{figure}
 
 \end{frame}
 
@@ -653,26 +641,51 @@ real-world system useful to understand, predict, manage water resources.
 
 \end{frame}
 
-\begin{frame}[fragile]{Conclusion}
+\begin{frame}{Dicussion}
 
-LOREM IPSUM:
+\begin{itemize}
+\tightlist
+\item
+  open science
+\item
+  reproducibuly of modelling simulations
+\item
+  fair priciple
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}[fragile]{Conclusion and forward}
 
 \begin{itemize}
 \item
-  getting your data in the right shape (e.g. \texttt{tidyverse},
-  \texttt{recipes})
+  open source hydrolgical models need powerful processing interface
+\item
+  tool for popsptocesing GEOtop
 \item
   getting your data in the right shape (e.g. \texttt{tidyverse},
   \texttt{recipes})
 \item
-  lorem ipsum
+  potential for extension for ohter models
+\item
+  for oprational aplications / engineering productivity
+\item
+  enlarge communtiy
 \end{itemize}
+
+vedi abstract
 
 \end{frame}
 
 \begin{frame}{Interested?}
 
 www.geotop.org
+
+\begin{itemize}
+\tightlist
+\item
+  link CRAN e github repository
+\end{itemize}
 
 Thank you for your attention! / Merci pour votre attention!
 

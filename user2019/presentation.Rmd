@@ -3,16 +3,21 @@ title: "geotopbricks"
 author: "Emanuele Cordano"
 date: "github/ecor / useR2019"
 output:
-  ioslides_presentation: default
   beamer_presentation:
     includes:
       in_header: tex/header.tex
     keep_tex: yes
+  slidy_presentation: default
+  fig_caption: false
 subtitle: An R Package for the Distributed Hydrological Model GEOtop
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(eval = TRUE)
+knitr::opts_chunk$set(fig.cap = FALSE)
+knitr::opts_knit$set(fig.cap = FALSE)
+knitr::opts_template$set(fig.cap = FALSE)
+knitr::opts_knit$set(unnamed.chunk.label = "fig")
 library(geotopbricks)
 ```
 
@@ -23,24 +28,41 @@ library(geotopbricks)
 - Find me as @ecor on GitHub 
 - I'm self-employed and freelancer as www.rendena100.eu .  
 - Author of several R-packages and p
-
 - the other authors?
-
 - Hydrologist ,,, BLA elisa, Giaomo
 - Author of several packages, including `geotop`,...
 - inserire immagini degli autori
-
-
 
 ## Hydrology
 
 Scientific study of the movement, distribution, and quality of water on Earth water cycle, water resources and environmental watershed sustainability (REF)
 
 <!-- \hspace*{-1cm}\includegraphics[width=1\paperwidth]{resources/images/geotop_draw.png} -->
-![manual](resources/images/geotop_landscape.png){width=50%} 
+![](resources/images/geotop_landscape.png){width=50%} 
 
 ## Hydrolgical models
--metti slides Tione che spiega cosa sono in modelli
+
+\begincols
+  \begincol{.48\textwidth}
+
+  ![](resources/images/valdifumo.jpg){width=100%}\ 
+
+  \endcol
+\begincol{.48\textwidth}
+
+ ![](resources/images/versante1.png){width=50%}\
+ 
+ ![](resources/images/versante2.png){width=50%}\
+
+  \endcol
+\endcols
+
+
+
+
+
+
+
 
 ## GEOtop Hydrological Model
 
@@ -51,9 +73,9 @@ GEOtop is an open-source integrated hydrological model that simulates:
 \end{itemize}
 Metti alcune referenze + link github
 
-![](resources/images/geotop_snow.png){width=20%}
-![](resources/images/geotop_vegetation.png){width=20%}
-![](resources/images/geotop_infiltration.png){width=20%}
+![](resources/images/geotop_snow.png){width=20%}\
+![](resources/images/geotop_vegetation.png){width=20%}\
+![](resources/images/geotop_infiltration.png){width=20%}\
 
 
 
@@ -62,10 +84,12 @@ Metti alcune referenze + link github
 
 - Input: meteo data, elevations, soil parameters
 - Output: snow cover, soil temperature, soil moisture
-- Semplifica il grafico con solo input e output e processi principali
+- __Semplifica il grafico con solo input e output e processi principali__
 
-![](resources/images/geotop_revised.png){width=90%}
-## GEOtop model}%{Optional Subtitle
+![](resources/images/geotop_revised.png){width=90%}\
+
+
+## GEOtop model Optional Subtitle
 
 Water and energy budgets can be activated :
 
@@ -76,8 +100,9 @@ Two setup configurations :
 - __1D__: only vertical fluxes $\,\to\,$ mass and energy balance at local scale (only in one soil column)
 - __3D__: vertical and lateral fluxes $\,\to\,$ balances at basin scale
 
-![](resources/images/geotop_ET_SWC.png){width=90%}
+![](resources/images/geotop_ET_SWC.png){width=90%}\
 
+## GEOtop model Optional Subtitle
 
 Core components of GEOtop software packages are: 
 
@@ -86,7 +111,7 @@ Core components of GEOtop software packages are:
 - scientifically tested and published;
 - documented on GitHub repository: *http://geotopmodel.github.io/geotop/*
 
-![](resources/images/geotop_paper_2017.png){width=90%}
+![](resources/images/geotop_paper_2017.png){width=90%}\
 <!-- \begin{center} -->
 <!-- Scientific quality of the project but still missing \\ -->
 <!-- a \textbf{modern software engineering approach!} -->
@@ -96,55 +121,51 @@ Core components of GEOtop software packages are:
 
 ## Motivations
 
-- complex  outputs data difficult to manage
-- need of user friendly tools to posprocess outptuts and extract information
-- When outputs are in R then you can use all his data analyisis power
-- we need an interface, and we use R !
+- complexity in input/output/configuration files and data difficult to manage
+
+![](resources/images/Capture_IO_GEOtopJPG.JPG){width=90%}\
+- need of user friendly environment for to GEOtop data tidying and data analytics (e.g. _R_)
+- potential interactions between hydrology (GEOtop) and other knowledge domains (_discipines_).
 
 
 
 ## GEOtop configuration File (geotop.inpts)
 
-A GEOtop simulation is organized in a set of files within a directory.
+A GEOtop simulation is organized in a set of files within a directory containing a **configuration file** ,called _geotop.inpts_ filled with a keywords system addressing to:
 
-- A smart keywords system for defining all configuration parameters:
-  - Pro: very flexible I/O configrations
-  - Contra: difficult to manage without a proper interface
+\begincols
+  \begincol{.30\textwidth}
+  
+- simulation options (e.g. simulation period)
+- **input files** (e.g. meterological time series)
+- **output files** 
 
-This directory contains: 
-
--**input files** (meteorological forcings,
-topography, land-use, soil-type maps, initial conditions); **target
-information** (which results are requested) ; 
-- **observations**. 
-Allthese information are written in a file called `geotop.inpts`, which is
-a list of **keyword-value** pairs:
-
-
+  \endcol
+   \begincol{.65\textwidth}
 ```
-InitDateDDMMYYYYhhmm    =   09/04/2014 18:00  
-EndDateDDMMYYYYhhmm     =   01/01/2016 00:00 
+InitDateDDMMYYYYhhmm=09/04/2014 18:00  
+EndDateDDMMYYYYhhmm =01/01/2016 00:00 
 [...] 
-MeteoFile               =   "meteoB2_irr" 
-PointOutputFile         =   "tabs/point" 
+MeteoFile           ="meteoB2_irr" 
+PointOutputFile     ="tabs/point" 
 ```
+\endcol
+\endcols
 
 
+## __geotopbricks__
 
-## Approach: GEOtopbriks
-Geotopbricks a GEOtop R interface:
+The aim of **geotopbricks** , starting in 2013, is to bring all the data of a GEOtop simulaton into the powerful statistical
+**R** environment by using the `keyword-value` syntax of *geotop.inpts*. **geotopbricks** does the following actions:
 
-It provides
-- parsing of the configuration files
-- customo R function to import ouptuput time series as zoo objects
-- maps time series are imported as multitemporal raster objects
-- vedi poster
+- to parse _geotop.inpts_ configuration files;
+- to derive from _geotop.inpts_'s keywords the source files of I/O data;
+- to import time series (e.g. precipitation, temperature, soil water content, snow) as _zoo_ or _data.frame_ objects;
+- to import spatially and spatio-temporal gridded objects as _RasterLayer-class_ or _RasterBrick-class_ objects (**raster** package) 
 
-
-Graph
 <!-- # ```{r,fig.height=8, fig.width=6,echo=FALSE,results="hide",collapse=TRUE,warning=FALSE,message=FALSE} -->
 
-```{r,echo=FALSE,results="hide",collapse=TRUE,warning=FALSE,message=FALSE}
+```{r,echo=FALSE,results="hide",collapse=TRUE,warning=FALSE,message=FALSE,eval=FALSE}
 #!/usr/bin/env Rscript
 # file appendSmetData.R
 #
@@ -286,12 +307,12 @@ legend("topleft",legend=paste(vcodes,vnames,sep=" : "),ncol=3,cex=0.6)
 
 ```
 
-## Simulation of soil water budget in an alpine site
+## __geotopcks__ Application 1: Simulation of soil water budget in an alpine site
 
-
-GOtop is applied to estimate soil water content in two soil columns below  two hydro-meteorological stations (B2 and P2) located in Val Mazia/Match, Malles Venosta/Mals Vinschgau, in South Tyrol, Italy (LOng Term Reasearch Ecological Area, [http://lter.eurac.edu/en]).
-  
- ![image](resources/images/mazia_2.png){width=40%} 
+Here is an example on how to extract soil water content (SWC) at a 18cm depth in two sites P2 and B2, located in Val Mazia/Match, Malles Venosta/Mals Vinschgau, in South Tyrol, Italy (LOng Term Reasearch Ecological Area, [http://lter.eurac.edu/en]).
+The goal of the code lines below is to represent the distribution of soil water content in August per different years (e.g. from 2010 to 2014)  
+ ![image](resources/images/mazia_2.png){width=40%}\
+ 
 <!--CHANGE THE FIGUE !!! -->
 
 
@@ -320,17 +341,20 @@ meteo <- get.geotop.inpts.keyword.value(
 class(meteo)
 ```
 
-## Verifying that import of simulation input data has succeed 
+## Getting simulation input data (verify)
 
 Meteorological time series once imported are available in the R environment:
 ```{r,echo=TRUE,return=TRUE}
-head(meteo[12:14,c("Iprec","WindSp","WindDir")])
-head(meteo[12:14,c("RelHum","AirT","Swglobal")])
+head(meteo[12:14,c("Iprec","AirT","Swglobal")])
+```
+```{r,echo=TRUE,eval=FALSE}
+head(meteo[12:14,c("RelHum","WindSp","WindDir")])
 ```
 
-## Plotting 
 
-```{r,echo=FALSE,return=TRUE}
+## Plots of weather variables in B2 
+
+```{r,echo=FALSE,return=TRUE,warning=FALSE,results="hide",message=FALSE,fig.height=5}
 library(ggplot2)
 library(reshape2)
 library(lubridate)
@@ -377,7 +401,7 @@ gp <- ggplot(meteo_dfm, aes(x = time, y = value)) +
 gp
 ```
 
-## Getting output simulation data
+## Getting output simulation data at B2
 
 Soil Water Content Profile: 
 ```{r,echo=TRUE,return=FALSE}
@@ -393,7 +417,7 @@ SWC_B2  <- get.geotop.inpts.keyword.value(
 help(get.geotop.inpts.keyword.value) ## for more details!
 ```
 
-## P2 
+## Getting output simulation data at P2
 
 The same for P2:
 ```{r,echo=TRUE,return=FALSE}
@@ -409,13 +433,13 @@ SWC_P2  <- get.geotop.inpts.keyword.value(
 
 ```
 
-## Data Reformatting
 
-```{r,echo=TRUE}
+
+```{r,echo=FALSE,eval=TRUE,return=FALSE,warning=FALSE,results='hide'}
 class(SWC_B2)
 ```
 
-```{r,echo=TRUE}
+```{r,echo=FALSE,eval=TRUE,return=FALSE,warning=FALSE,results='hide'}
 SWC_B2 <- cbind(time=as.POSIXct(index(SWC_B2)),as.data.frame(SWC_B2))
 SWC_P2 <- cbind(time=as.POSIXct(index(SWC_P2)),as.data.frame(SWC_P2))
 class(SWC_B2)
@@ -423,7 +447,7 @@ names(SWC_B2)
 ###knitr::kable(head(SWC_B2))
 ```
 
-## Output Visualization 
+## Soil Water Content at P2 and B2 
 
 ```{r,echo=FALSE,eval=TRUE,return=FALSE,warning=FALSE}
 ## http://www.sthda.com/english/wiki/ggplot2-line-types-how-to-change-line-types-of-a-graph-in-r-software
@@ -446,10 +470,10 @@ show(gswc)
 
 ```
 
-## Analysis (soil Mooisture Distribution)
+## Output data Analytics (soil Mooisture Distribution)
 
-Soil Water Content Distributio at a 18 cm depth
-```{r,echo=FALSE,warning=FALSE,eval=TRUE}
+Distribution of daily aggregated soil water contant  at a 18 cm depth:
+```{r,echo=FALSE,warning=FALSE,eval=TRUE,fig.height=4}
 ## Box Plot
 time <- SWC_B2$time
 SWC_B2_18cm <- SWC_B2[,"z0018"]
@@ -470,10 +494,8 @@ SWC_Boxplot <- SWC_Boxplot+ggtitle("Box Plot: Daily Soil Water Content")+ylab("S
 show(SWC_Boxplot)
 ```   
 
+More deetails on the [__eRum2018__ poster](https://github.com/ecor/geotopbricks_doc/blob/master/erum2018_poster/erum2018_poster_cordano_et_al.png). 
 
-## And Precipitation: 
-
-?
 
 
 ## 3D Spatially Distributed Distribution (Vinschgau - Upper Adige River Basin - Alps - I/CH/A)
