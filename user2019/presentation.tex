@@ -292,57 +292,82 @@ sustainability (REF)
 
 \begin{frame}{GEOtop Hydrological Model}
 
-GEOtop is an open-source integrated hydrological model that simulates:
+GEOtop is an open-source integrated hydrological model, available though
+Github, see
+\href{geotopmodel.github.io/geotop/}{http://geotopmodel.github.io/geotop/}
+or \href{https://www.geotop.org}{www.geotop.org}, and it simulates:
+\begincols
+
+\begincol{.22\textwidth}
+\includegraphics[width=1.00000\textwidth]{resources/images/geotop_snow.png}\\
+\includegraphics[width=1.00000\textwidth]{resources/images/geotop_vegetation.png}\\
+\includegraphics[width=1.00000\textwidth]{resources/images/geotop_infiltration.png}\\
+\endcol
+
+\begincol{.77\textwidth}
 
 \begin{itemize}
-\item water flow in the soil $\,\to\,$ Richards' eq (sub) + Kinematic eq (sur)
-\item energy exchange with the atmosphere $\,\to\,$ full integration of equation
+\item
+  soil water flow in the soil (\emph{Richards' equation,De Saint-Venant
+  Equation)} : \emph{\emph{unkowns: soil liquid water content,soil water
+  pressure head}};
+\item
+  heat flow in the soil \(\,\to\,\) \emph{(heat equation and frozen soil
+  thermodynamics) } : \emph{\emph{unkowns: soil l temperature,soil ice
+  (soild water) content (in case of frozen soil)}};
+\item
+  energy exchange with the atmosphere \(\,\to\,\) boundary conditions of
+  the equations above : \_*unknowns : evapotranspiration, latent heat
+  fluxes, radiation, snow depth and density
 \end{itemize}
 
-Metti alcune referenze + link github
-
-\includegraphics[width=0.20000\textwidth]{resources/images/geotop_snow.png}\\
-\includegraphics[width=0.20000\textwidth]{resources/images/geotop_vegetation.png}\\
-\includegraphics[width=0.20000\textwidth]{resources/images/geotop_infiltration.png}\\
+\endcol
+\endcols
 
 \end{frame}
 
-\begin{frame}{Hydrological Model Structure}
+\begin{frame}{GEOtop Hydrological Model Structure}
+
+\begincols
+
+\begincol{.69\textwidth}
+\includegraphics[width=1.00000\textwidth]{resources/images/geotop_revised.png}\\
+\endcol
+
+\begincol{.30\textwidth}
 
 \begin{itemize}
-\tightlist
 \item
-  Input: meteo data, elevations, soil parameters
+  \textbf{Input}: meteo data, elevations, soil parameters,\ldots{}
 \item
-  Output: snow cover, soil temperature, soil moisture
-\item
-  \textbf{Semplifica il grafico con solo input e output e processi
-  principali}
+  \textbf{Output}: snow cover, soil temperature, soil moisture,\ldots{}
 \end{itemize}
 
-\includegraphics[width=0.90000\textwidth]{resources/images/geotop_revised.png}\\
+\endcol
+\endcols
 
 \end{frame}
 
-\begin{frame}{GEOtop model Optional Subtitle}
+\begin{frame}{GEOtop Hydrological Model Options}
 
-Water and energy budgets can be activated :
+Water and/or energy budgets can be activated (both or only one) by users
+in function of the specic use case. GEOtop has two setup configurations
+:
 
 \begin{itemize}
-\tightlist
 \item
-  one or the other \(\,\to\,\) simplification
+  \textbf{1D}: only vertical fluxes \(\,\to\,\) mass and energy balance
+  at local scale (only in one soil column)
 \item
-  both them together \(\,\to\,\) realistic
+  \textbf{3D}: vertical and lateral fluxes \(\,\to\,\) balances at basin
+  scale
 \end{itemize}
 
-Two setup configurations : - \textbf{1D}: only vertical fluxes
-\(\,\to\,\) mass and energy balance at local scale (only in one soil
-column) - \textbf{3D}: vertical and lateral fluxes \(\,\to\,\) balances
-at basin scale
+\includegraphics[width=0.80000\textwidth]{resources/images/geotop_ET_SWC.png}\\
 
-\includegraphics[width=0.90000\textwidth]{resources/images/geotop_ET_SWC.png}\\
-\#\# GEOtop model Optional Subtitle
+\end{frame}
+
+\begin{frame}{GEOtop Hydrological Model Software Package / Source Code}
 
 Core components of GEOtop software packages are:
 
@@ -364,19 +389,19 @@ Core components of GEOtop software packages are:
 
 \end{frame}
 
-\begin{frame}{Motivations}
+\begin{frame}{geotopbrick R package: Why?}
 
 \begin{itemize}
 \tightlist
 \item
-  complexity in input/output/configuration files and data difficult to
-  manage
+  complexity in input/output/configuration files (\emph{``frontend''})
+  and data difficult to handle
 \end{itemize}
 
 \includegraphics[width=0.90000\textwidth]{resources/images/Capture_IO_GEOtopJPG.JPG}\\
 - need of user friendly environment for to GEOtop data tidying and data
 analytics (e.g. \emph{R}) - potential interactions between hydrology
-(GEOtop) and other knowledge domains (\emph{discipines}).
+(\textbf{GEOtop}) and other knowledge domains (\emph{discipines}).
 
 \end{frame}
 
@@ -415,7 +440,7 @@ PointOutputFile     ="tabs/point"
 
 \end{frame}
 
-\begin{frame}[fragile]{\textbf{geotopbricks}}
+\begin{frame}[fragile]{\textbf{geotopbricks} Technical details}
 
 The aim of \textbf{geotopbricks} , starting in 2013, is to bring all the
 data of a GEOtop simulaton into the powerful statistical \textbf{R}
@@ -440,8 +465,8 @@ environment by using the \texttt{keyword-value} syntax of
 
 \end{frame}
 
-\begin{frame}{\textbf{geotopcks} Application 1: Simulation of soil water
-budget in an alpine site}
+\begin{frame}{\textbf{geotopbriccks} Application 1: Simulation of soil
+water budget in an alpine site}
 
 Here is an example on how to extract soil water content (SWC) at a 18cm
 depth in two sites P2 and B2, located in Val Mazia/Match, Malles
@@ -597,7 +622,7 @@ poster}.
 \begin{Shaded}
 \begin{Highlighting}[]
 \NormalTok{###wpath_3D <- 'resources/simulation/Vinschgau_test_3D_002'}
-\NormalTok{wpath_3D <-}\StringTok{ 'resources/simulation/Mazia'}
+\NormalTok{wpath_3D <-}\StringTok{ 'resources/simulation/Vinschgau'}
 \NormalTok{basin <-}\StringTok{ }\KeywordTok{get.geotop.inpts.keyword.value}\NormalTok{(}\StringTok{"LandCoverMapFile"}\NormalTok{,}
               \DataTypeTok{wpath=}\NormalTok{wpath_3D,}\DataTypeTok{raster=}\OtherTok{TRUE}\NormalTok{)}
 \NormalTok{basin}
@@ -617,7 +642,7 @@ poster}.
 
 \end{frame}
 
-\begin{frame}{3D Spatially Distributed Distribution (Input Geospatial
+\begin{frame}{3D Spatially Distributed Simulation (Input Geospatial
 Map)}
 
 \begin{figure}
@@ -628,27 +653,31 @@ Map)}
 
 \end{frame}
 
-\begin{frame}[fragile]{LOREM IPSUM}
+\begin{frame}[fragile]{3D Spatially Distributed Simulation (Output
+Geospatial Map): Soil Water Content}
 
-\begin{verbatim}
-## Warning (get.geotop.inpts.keyword.value): keyword SoilLayerThicknesses without value:
-\end{verbatim}
+\begin{figure}
+\centering
+\includegraphics{presentation_files/figure-beamer/unnamed-chunk-15-1.pdf}
+\caption{FALSE}
+\end{figure}
 
-\begin{verbatim}
-## [1] "Maps to import: 1 from 2010-10-16 16:00:00 to 2010-10-16 16:00:00"
-\end{verbatim}
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{help}\NormalTok{(}\StringTok{"brickFromOutputSoil3DTensor"}\NormalTok{) ## for more details}
+\end{Highlighting}
+\end{Shaded}
 
-\begin{verbatim}
-## Important bug solved from 1.3.7.3, previous versions (<= 1.3.7.2) could return slightly different results!
-\end{verbatim}
+\end{frame}
 
-\begin{verbatim}
-## Importing 2010-10-16 16:00:00
-\end{verbatim}
+\begin{frame}{3D Spatially Distributed Simulation (Output Geospatial
+Map): Surface Water Discharga at the Outlet}
 
-\begin{verbatim}
-## As  2010-10-16 16:00:00
-\end{verbatim}
+\begin{figure}
+\centering
+\includegraphics{presentation_files/figure-beamer/unnamed-chunk-18-1.pdf}
+\caption{FALSE}
+\end{figure}
 
 \end{frame}
 

@@ -72,43 +72,60 @@ Scientific study of the movement, distribution, and quality of water on Earth wa
 
 ## GEOtop Hydrological Model
 
-GEOtop is an open-source integrated hydrological model that simulates:
-\begin{itemize}
-\item water flow in the soil $\,\to\,$ Richards' eq (sub) + Kinematic eq (sur)
-\item energy exchange with the atmosphere $\,\to\,$ full integration of equation
-\end{itemize}
-Metti alcune referenze + link github
+GEOtop is an open-source integrated hydrological model, available though Github,  see [http://geotopmodel.github.io/geotop/](geotopmodel.github.io/geotop/) or [www.geotop.org](https://www.geotop.org), and it simulates:
+\begincols
 
-![](resources/images/geotop_snow.png){width=20%}\
-![](resources/images/geotop_vegetation.png){width=20%}\
-![](resources/images/geotop_infiltration.png){width=20%}\
+\begincol{.22\textwidth}
+![](resources/images/geotop_snow.png){width=100%}\
+![](resources/images/geotop_vegetation.png){width=100%}\
+![](resources/images/geotop_infiltration.png){width=100%}\
+\endcol
 
+\begincol{.77\textwidth}
 
+- soil water flow in the soil (*Richards' equation,De Saint-Venant Equation)* : _*unkowns: soil liquid water content,soil water pressure head*_; 
 
-## Hydrological Model Structure
+- heat flow in the soil $\,\to\,$ *(heat equation and frozen soil thermodynamics) * : _*unkowns: soil l temperature,soil ice (soild water) content (in case of frozen soil)*_; 
 
+- energy exchange with the atmosphere $\,\to\,$  boundary conditions of the equations above : _*unknowns : evapotranspiration, latent heat fluxes, radiation, snow depth and density 
 
-- Input: meteo data, elevations, soil parameters
-- Output: snow cover, soil temperature, soil moisture
-- __Semplifica il grafico con solo input e output e processi principali__
-
-![](resources/images/geotop_revised.png){width=90%}\
+\endcol
+\endcols
 
 
-## GEOtop model Optional Subtitle
+## GEOtop Hydrological Model Structure
 
-Water and energy budgets can be activated :
+\begincols
 
-- one or the other $\,\to\,$ simplification
-- both them together $\,\to\,$ realistic
+\begincol{.69\textwidth}
+![](resources/images/geotop_revised.png){width=100%}\
+\endcol
 
-Two setup configurations :
+\begincol{.30\textwidth}
+
+- **Input**: meteo data, elevations, soil parameters,...
+
+- **Output**: snow cover, soil temperature, soil moisture,...
+
+\endcol
+\endcols
+
+<!-- SISTEMARE FIGURA -->
+
+
+
+## GEOtop Hydrological Model Options
+
+Water and/or energy budgets can be activated (both or only one) by users in function of the specic use case.  GEOtop has two setup configurations :
+
 - __1D__: only vertical fluxes $\,\to\,$ mass and energy balance at local scale (only in one soil column)
+
 - __3D__: vertical and lateral fluxes $\,\to\,$ balances at basin scale
 
-![](resources/images/geotop_ET_SWC.png){width=90%}\
+![](resources/images/geotop_ET_SWC.png){width=80%}\
 
-## GEOtop model Optional Subtitle
+
+## GEOtop Hydrological Model Software Package / Source Code
 
 Core components of GEOtop software packages are: 
 
@@ -125,13 +142,14 @@ Core components of GEOtop software packages are:
 
 <!-- % mettere,se ci sta, anche il grafico con i papers pubblicati “20 years of dev …” -->
 
-## Motivations
+## geotopbrick R package: Why? 
 
-- complexity in input/output/configuration files and data difficult to manage
+- complexity in input/output/configuration files (_"frontend"_) and data difficult to handle
 
 ![](resources/images/Capture_IO_GEOtopJPG.JPG){width=90%}\
+
 - need of user friendly environment for to GEOtop data tidying and data analytics (e.g. _R_)
-- potential interactions between hydrology (GEOtop) and other knowledge domains (_discipines_).
+- potential interactions between hydrology (__GEOtop__) and other knowledge domains (_discipines_).
 
 
 
@@ -159,7 +177,7 @@ PointOutputFile     ="tabs/point"
 \endcols
 
 
-## __geotopbricks__
+## __geotopbricks__ Technical details
 
 The aim of **geotopbricks** , starting in 2013, is to bring all the data of a GEOtop simulaton into the powerful statistical
 **R** environment by using the `keyword-value` syntax of *geotop.inpts*. **geotopbricks** does the following actions:
@@ -313,7 +331,7 @@ legend("topleft",legend=paste(vcodes,vnames,sep=" : "),ncol=3,cex=0.6)
 
 ```
 
-## __geotopcks__ Application 1: Simulation of soil water budget in an alpine site
+## __geotopbriccks__ Application 1: Simulation of soil water budget in an alpine site
 
 Here is an example on how to extract soil water content (SWC) at a 18cm depth in two sites P2 and B2, located in Val Mazia/Match, Malles Venosta/Mals Vinschgau, in South Tyrol, Italy (LOng Term Reasearch Ecological Area, [http://lter.eurac.edu/en]).
 The goal of the code lines below is to represent the distribution of soil water content in August per different years (e.g. from 2010 to 2014)  
@@ -509,13 +527,13 @@ More deetails on the [__eRum2018__ poster](https://github.com/ecor/geotopbricks_
 ```{r,echo=TRUE,eval=TRUE,return=FALSE,warning=FALSE}
 
 ###wpath_3D <- 'resources/simulation/Vinschgau_test_3D_002'
-wpath_3D <- 'resources/simulation/Mazia'
+wpath_3D <- 'resources/simulation/Vinschgau'
 basin <- get.geotop.inpts.keyword.value("LandCoverMapFile",
               wpath=wpath_3D,raster=TRUE)
 basin
 ```
 
-##  3D Spatially Distributed Distribution (Input Geospatial Map)
+##  3D Spatially Distributed Simulation (Input Geospatial Map)
 
 ```{r,echo=FALSE,eval=TRUE,return=FALSE,warning=FALSE,fig.height=5}
 URL = 'https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png'
@@ -548,18 +566,117 @@ addCircleMarkers(lng=meteoloc$x,lat=meteoloc$y,label="Meteo",opacity=opacity,rad
 
 
 
-## LOREM IPSUM 
-```{r eval=TRUE,echo=FALSE}
+## 3D Spatially Distributed Simulation (Output Geospatial Map): Soil Water Content
+
+```{r eval=TRUE,echo=FALSE,message=FALSE,warning=FALSE,results='hide',fig.height=5}
+library(RColorBrewer)
 keyword <- 'SoilLiqContentTensorFile'
 s <- get.geotop.inpts.keyword.value(keyword,wpath=wpath_3D)
 start <-  get.geotop.inpts.keyword.value("InitDateDDMMYYYYhhmm",date=TRUE,wpath=wpath_3D,tz=tz) 
 end <- get.geotop.inpts.keyword.value("EndDateDDMMYYYYhhmm",date=TRUE,wpath=wpath_3D,tz=tz) 
 
 b <- brickFromOutputSoil3DTensor(x=keyword,when=end,wpath=wpath_3D,tz=tz)
+##plot(b,col=heat.colors(10))
+color_b <- colorRampPalette((brewer.pal(20,"PuBu")))
+rasterVis::levelplot(b,margin=FALSE,col.regions=color_b,xlab=NULL,ylab=NULL,scales=list(draw=FALSE))
+```
+
+```{r eval=FALSE,echo=TRUE}
 
 help("brickFromOutputSoil3DTensor") ## for more details
 
 ```
+
+## 3D Spatially Distributed Simulation (Output Geospatial Map): Surface Water Discharga at the Outlet 
+
+```{r eval=TRUE,echo=FALSE,message=FALSE,warning=FALSE,results='hide',fig.height=5}
+
+dis <- get.geotop.inpts.keyword.value("DischargeFile",wpath=wpath_3D,data.frame=TRUE,formatter="",date_field="DATE.day.month.year.hour.min.",tz=tz)
+bas <- get.geotop.inpts.keyword.value("BasinOutputFile",wpath=wpath_3D,data.frame=TRUE,formatter="",date_field="Date12.DDMMYYYYhhmm.",tz=tz)
+##dygraphs::dygraph(dis$Qtot.m3.s.)
+
+dis_df <- as.data.frame(dis)
+dis_df$time <- as.POSIXct(index(dis))
+bas_df <- as.data.frame(bas)
+bas_df$time <- as.POSIXct(index(bas))
+ndis <- c("time","Qtot.m3.s.")
+nbas <- c("time","Pnet.mm.","Evap_surface.mm.","Transpiration_canopy.mm.")
+dis_df  <- dis_df[,ndis]
+bas_df  <- bas_df[,nbas]
+cond <- all(dis_df$time==bas_df$time)
+if (!cond) stop("Mismacth dates between bas_df and dis_df")
+bas_df <- bas_df[,nbas[nbas!="time"]]
+basin_results_df0 <- cbind(dis_df,bas_df)
+
+
+
+```
+
+
+
+```{r,echo=FALSE,return=TRUE,warning=FALSE,results="hide",message=FALSE,fig.height=5}
+library(ggplot2)
+library(reshape2)
+library(lubridate)
+basin_results_df <- basin_results_df0
+
+cols <- names(basin_results_df)
+offset <- array(0,length(cols))
+names(offset) <- cols
+multp <- array(1,length(cols))
+names(multp) <- cols
+
+
+### area basin
+area <- length(which(!is.na(basin)[]))*xres(basin)*yres(basin)
+dt <- as.numeric(diff(basin_results_df$time)[1],unit="secs")
+
+#offset["AirT"] <- 0
+multp["Pnet.mm."] <- -(area/(dt*1000)/10)^(-1)
+multp["Evap_surface.mm."] <- (area/(dt*1000)/10)^(-1)
+multp["Transpiration_canopy.mm."] <- (area/(dt*1000)/10)^(-1)
+offset["Pnet.mm."] <- ost <- 4.5
+multp["Qtot.m3.s."] <- 1
+
+#multp["Iprec"] <- 0.1
+when <- as.Date("2010-11-01")+days(0:365)
+iwhen <- as.Date(basin_results_df$time) %in% when
+
+cols_ <- cols[cols!="time"] ###("AirT","Iprec")
+
+basin_results_df <- basin_results_df[iwhen,c("time",cols_)]
+itref <- "Pnet.mm."
+itref <- "Qtot.m3.s."
+itnoref <- "Pnet.mm."###cols_[cols_!=itref][1]
+
+##cols_ <- c(itref,itnoref)
+for (it in cols_) {
+  basin_results_df[,it] <- (basin_results_df[,it]-offset[it]) / multp[it]
+  basin_results_df[,it] <- basin_results_df[,it]*multp[itref]+offset[itref]
+}
+
+a <- multp[itnoref]/multp[itref]
+b <- offset[itnoref]-a*offset[itref]
+breaks <- seq(from=0,to=offset[itnoref],length.out=6)
+labels <- offset[itnoref]-breaks
+basin_results_dfm <- melt(basin_results_df,id="time")
+basin_results_dfm <- basin_results_dfm[as.character(basin_results_dfm$variable) %in% cols_,]
+gp <- ggplot(basin_results_dfm, aes(x = time, y = value)) 
+gp <- gp+ geom_line(aes(color = variable), 
+             position = position_dodge(0.8)) +
+   scale_color_manual(values = c("red", "blue","green","yellow")) +
+ #  scale_fill_manual(values = c("red", "blue"))+
+ ##  scale_linetype_manual(values= c(1,0.5,0.5))+
+  theme_bw()+
+  scale_y_continuous(
+    "Discharge [m3/s]", 
+    sec.axis = sec_axis(~ . * a+b, name = "Precipitation [mm]",breaks=breaks,labels=labels)
+  )
+gp
+```
+
+
+
 
 <!-- ```{r,echo=FALSE,eval=TRUE} -->
 <!-- show(prec_Boxplot) -->
