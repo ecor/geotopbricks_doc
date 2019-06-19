@@ -23,19 +23,16 @@ library(geotopbricks)
 
 ## Who are we?
 
-- Environmental engineer with hydraulic and hydrological background (more deterministic and physicall-based than statics!)
-- Some skills in programming and a R entusiast which I use to work with hydro-climatic data. 
-- Find me as @ecor on GitHub 
-- I'm self-employed and freelancer as www.rendena100.eu .  
-- Author of several R-packages and p
-- the other authors?
-- Hydrologist ,,, BLA elisa, Giaomo
-- Author of several packages, including `geotop`,...
-- inserire immagini degli autori
+- Environmental engineers with hydraulic and hydrological background (more deterministic and physicall-based than statics!)
+- Find us as @ecor (speaker) or @EURAC-Ecohydro (co-authors)  on GitHub. 
+- Some of us are resercher, other are self-employed and freelancers as www.rendena100.eu .  
+- Some of us are author of several R-packages and R enthusiast. 
+- Some of us are developers of GEOtop hydrologic models with skils in hydrology and environmental scinces but aloso in C/C++, parallell programming, HPC, etc
+
 
 ## Hydrology
 
-Scientific study of the movement, distribution, and quality of water on Earth water cycle, water resources and environmental watershed sustainability (REF)
+Scientific study of the movement, distribution, and quality of water on Earth water cycle, water resources and environmental watershed sustainability [_Wikipedia_]
 
 <!-- \hspace*{-1cm}\includegraphics[width=1\paperwidth]{resources/images/geotop_draw.png} -->
 ![](resources/images/geotop_landscape.png){width=50%} 
@@ -684,7 +681,7 @@ for (it in cols_) {
 
 
 breaks <- seq(from=0,to=offset[itnoref],length.out=6)
-labels <- offset[itnoref]-breaks
+labels <- sprintf("%f / %f",-breaks,offset[itnoref]-breaks)
 basin_results_dfm <- melt(basin_results_df,id="time")
 basin_results_dfm <- basin_results_dfm[as.character(basin_results_dfm$variable) %in% cols_,]
 gp <- ggplot(basin_results_dfm, aes(x = time, y = value)) 
@@ -696,7 +693,7 @@ gp <- gp+ geom_line(aes(color = variable),
   theme_bw()+
   scale_y_continuous(
     "Discharge [m3/s]", 
-    sec.axis = sec_axis(~ . * (a)+b, name = "Precipitation [mm]") ##,breaks=breaks,labels=breaks) ##labels)
+    sec.axis = sec_axis(~ . * (a)+b, name = "Precipitation  - Evapotranspiration [mm/day]",breaks=breaks,labels=labels)
   )
 gp
 
@@ -729,34 +726,26 @@ gp
 
 - Graphical Representation using R , useful for hydrologigists and Reaserchers; 
 - Open science : results accessible to a variegate community of professional, scientific or amateur people, not all hydrologigists are R users but not all R users are hydrologists! 
-- reproducibuly of modelling simulations
-- fair priciple
+- Reproducible Analysis and Transparecy : results can be automatically documented in reports or presentations. 
+- Though **geotopbricks** user can intercact between R and GEOtop using R enviroment and GEOtop keywords system indepently from the GEOtop simulation structure.   
+
+## Conclusions and Way Forward
 
 
-## Conclusion and forward
+- Open Source (and not only) Hydrolgical Models needs powerful and FAIR interfaces to process I/O data;
+
+- An R package working directly with GEOtop keywords facilitate the development of customized tools for specific GEOtop applications; 
+
+- Collaborations beetween hydrologists / modellers and R users are encoraged. 
 
 
-- open source hydrolgical models need powerful processing interface
+<center>![image](resources/images/FAIR_data_principles.jpg){width=50%,}\<\center>
 
-- tool for popsptocesing GEOtop
-
-- getting your data in the right shape (e.g. `tidyverse`, `recipes`)
-
-- potential for extension for ohter models
-
-- for oprational aplications / engineering productivity
-
-- enlarge communtiy
+## Finally 
 
 
-vedi abstract
+If intertested?   See and follow us on (www.geotop.org) or (https://cran.r-project.org/package=geotopbricks)
 
-
-
-
-## Interested?
-
-www.geotop.org
 
 Thank you for your attention! / Merci pour votre attention!  
 
