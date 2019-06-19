@@ -400,6 +400,7 @@ iwhen <- as.Date(meteo_df$time) %in% when
 cols_ <- c("AirT","Iprec")
 
 meteo_df <- meteo_df[iwhen,c("time",cols_)]
+meteo_df0 <- meteo_df
 itref <- "Iprec"
 itnoref <- cols_[cols_!=itref][1]
 
@@ -607,7 +608,25 @@ cond <- all(dis_df$time==bas_df$time)
 if (!cond) stop("Mismacth dates between bas_df and dis_df")
 bas_df <- bas_df[,nbas[nbas!="time"]]
 basin_results_df0 <- cbind(dis_df,bas_df)
+dt0 <- as.numeric(diff(basin_results_df0$time)[1],unit="secs")
+#### NON-dplyr DAILY AGGRAGATION
+basin_results_df1 <- NULL
+cols_ <- names(basin_results_df0)
+cols_ <- cols_[cols_!="time"]
+dates <- as.Date(basin_results_df0$time)
+for (it in cols_) {
+   
+  val <- tapply(X=basin_results_df0[,it],INDEX=dates,FUN=mean,na.rm=TRUE)
+  if (it==cols_[1]) {
+    basin_results_df1 <- data.frame(time=as.Date(names(val)),stringsAsFactors = FALSE )
+  }
+  if (it!="Qtot.m3.s.")  val <- val/dt0*24*3600
+  basin_results_df1[,it] <- val 
+  
+  
+}
 
+##library(dplyr)
 
 
 ```
@@ -618,8 +637,8 @@ basin_results_df0 <- cbind(dis_df,bas_df)
 library(ggplot2)
 library(reshape2)
 library(lubridate)
-basin_results_df <- basin_results_df0
-
+basin_results_df <- basin_results_df1
+basin_results_df["Pnet.mm."] <- -basin_results_df["Pnet.mm."]
 cols <- names(basin_results_df)
 offset <- array(0,length(cols))
 names(offset) <- cols
@@ -631,23 +650,31 @@ names(multp) <- cols
 area <- length(which(!is.na(basin)[]))*xres(basin)*yres(basin)
 dt <- as.numeric(diff(basin_results_df$time)[1],unit="secs")
 
-#offset["AirT"] <- 0
-multp["Pnet.mm."] <- -(area/(dt*1000)/10)^(-1)
-multp["Evap_surface.mm."] <- (area/(dt*1000)/10)^(-1)
-multp["Transpiration_canopy.mm."] <- (area/(dt*1000)/10)^(-1)
-offset["Pnet.mm."] <- ost <- 4.5
-multp["Qtot.m3.s."] <- 1
+#offset["AirT] <- 0
+vmult <- 20
+carea <- (area/(dt*1000)/vmult)^(-1)
+multp["Pnet.mm."] <- carea
+multp["Evap_surface.mm."] <- carea
+multp["Transpiration_canopy.mm."] <- carea
 
-#multp["Iprec"] <- 0.1
+itref <- "Qtot.m3.s."
+itnoref <- "Pnet.mm."
+multp[itref] <- 2
+a <- multp[itnoref]/multp[itref]
+offset[itnoref] <- -ceiling(max(abs(basin_results_df[,itref])))*a
+
+b <- offset[itnoref]-a*offset[itref]
+ 
+
+
 when <- as.Date("2010-11-01")+days(0:365)
 iwhen <- as.Date(basin_results_df$time) %in% when
 
 cols_ <- cols[cols!="time"] ###("AirT","Iprec")
 
 basin_results_df <- basin_results_df[iwhen,c("time",cols_)]
-itref <- "Pnet.mm."
-itref <- "Qtot.m3.s."
-itnoref <- "Pnet.mm."###cols_[cols_!=itref][1]
+##itref <- "Pnet.mm."
+###cols_[cols_!=itref][1]
 
 ##cols_ <- c(itref,itnoref)
 for (it in cols_) {
@@ -655,8 +682,7 @@ for (it in cols_) {
   basin_results_df[,it] <- basin_results_df[,it]*multp[itref]+offset[itref]
 }
 
-a <- multp[itnoref]/multp[itref]
-b <- offset[itnoref]-a*offset[itref]
+
 breaks <- seq(from=0,to=offset[itnoref],length.out=6)
 labels <- offset[itnoref]-breaks
 basin_results_dfm <- melt(basin_results_df,id="time")
@@ -670,9 +696,13 @@ gp <- gp+ geom_line(aes(color = variable),
   theme_bw()+
   scale_y_continuous(
     "Discharge [m3/s]", 
-    sec.axis = sec_axis(~ . * a+b, name = "Precipitation [mm]",breaks=breaks,labels=labels)
+    sec.axis = sec_axis(~ . * (a)+b, name = "Precipitation [mm]") ##,breaks=breaks,labels=breaks) ##labels)
   )
 gp
+
+###BUGS: 
+##https://stackoverflow.com/questions/55105952/sec-axis-in-ggplot2-doesnt-show-up-where-expected
+
 ```
 
 
@@ -682,21 +712,23 @@ gp
 <!-- show(prec_Boxplot) -->
 <!-- ``` -->
 <!-- </center> -->
-## 3D Simulation Analytics 
+<!-- ## 3D Simulation Analytics  -->
 
-The results show than B2 is able to hold more water than P2. This depends on soil and land properties. Compared with input precipiation results,soil water behaviour for the different months is related to precipitation amount (depth and number of rainy days). Interestingly, in August 2014 soil water content is higher than in August 2012,  in which precipitaion is higher. However, in August 2014 the daily precipitation distribution is the least wide with the lowest variability (interquantile range) and two extreme events. (Precipiation time series in B2 and P2 are equal due to their short distance!)
+<!-- The results show than B2 is able to hold more water than P2. This depends on soil and land properties. Compared with input precipiation results,soil water behaviour for the different months is related to precipitation amount (depth and number of rainy days). Interestingly, in August 2014 soil water content is higher than in August 2012,  in which precipitaion is higher. However, in August 2014 the daily precipitation distribution is the least wide with the lowest variability (interquantile range) and two extreme events. (Precipiation time series in B2 and P2 are equal due to their short distance!) -->
 
 
-Hydrological models are solvers of the differantial equations of water flows and water thermodymanics in the Earth associated to heat transfers between Earth and the low atmosphere. They are a simplification of a real-world system
-useful to understand, predict, manage water resources. 
-”integrated”
+<!-- Hydrological models are solvers of the differantial equations of water flows and water thermodymanics in the Earth associated to heat transfers between Earth and the low atmosphere. They are a simplification of a real-world system -->
+<!-- useful to understand, predict, manage water resources.  -->
+<!-- ”integrated” -->
 
 
 <!-- ## {.plain} -->
 <!-- \hspace*{-1cm}\includegraphics[width=1\paperwidth]{IMAGE} -->
 
 ## Dicussion
-- open science
+
+- Graphical Representation using R , useful for hydrologigists and Reaserchers; 
+- Open science : results accessible to a variegate community of professional, scientific or amateur people, not all hydrologigists are R users but not all R users are hydrologists! 
 - reproducibuly of modelling simulations
 - fair priciple
 
@@ -725,31 +757,11 @@ vedi abstract
 ## Interested?
 
 www.geotop.org
-<!-- \begin{minipage}[c]{0.5\textwidth} -->
-<!-- \includegraphics[width=0.9\textwidth]{img/SDCR.jpg}  -->
-<!-- \end{minipage} -->
-<!-- \begin{minipage}[c]{0.5\textwidth} -->
-<!-- \begin{block}{SDCR} -->
-<!-- M. van der Loo and E. de Jonge (2018) -->
-<!-- \emph{Statistical Data Cleaning with applications in R} -->
-<!-- Wiley, Inc. -->
-<!-- \end{block} -->
-<!-- \begin{block}{validatetools} -->
-<!-- \begin{itemize} -->
-<!-- \item Available on \href{https://CRAN.R-project.org/package=validatetools}{\underline{CRAN}} -->
-<!-- \end{itemize} -->
-<!-- \end{block} -->
-<!-- \begin{block}{More theory?} -->
-<!-- $\leftarrow$ See book  -->
-<!-- \end{block} -->
-<!-- \end{minipage} -->
-
-- link CRAN e github repository
 
 Thank you for your attention! / Merci pour votre attention!  
 
 
-## Addendum
+<!-- ## Addendum -->
 
-LOREM IPSUM
+<!-- LOREM IPSUM -->
 
