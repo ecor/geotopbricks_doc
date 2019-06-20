@@ -124,29 +124,35 @@ Water and/or energy budgets can be activated (both or only one) by users in func
 
 ## GEOtop Hydrological Model Software Package / Source Code
 
+\begincols
+
+\begincol{.48\textwidth}
 Core components of GEOtop software packages are: 
 
 - written in C/C++
 - released in 2014 (version 2.0) as free open-source project, a re-engineering process is going to finish (version 3.0); 
 - scientifically tested and published;
-- documented on GitHub repository: *http://geotopmodel.github.io/geotop/*
+- documented on GitHub repository: *http://geotopmodel.github.io/geotop/* and indexed in Zenodo : *https://zenodo.org/record/2560151#.XQtNZJxS8eM*
+
+\endcol
+
+\begincol{.48\textwidth}
 
 ![](resources/images/geotop_paper_2017.png){width=90%}\
-<!-- \begin{center} -->
-<!-- Scientific quality of the project but still missing \\ -->
-<!-- a \textbf{modern software engineering approach!} -->
-<!-- \end{center} -->
 
-<!-- % mettere,se ci sta, anche il grafico con i papers pubblicati “20 years of dev …” -->
+\endcol
+
+\endcols
+
 
 ## geotopbrick R package: Why? 
 
 - complexity in input/output/configuration files (_"frontend"_) and data difficult to handle
-
+- need of user friendly environment for to GEOtop data tidying and data analytics (e.g. _R_)
 ![](resources/images/Capture_IO_GEOtopJPG.JPG){width=90%}\
 
-- need of user friendly environment for to GEOtop data tidying and data analytics (e.g. _R_)
-- potential interactions between hydrology (__GEOtop__) and other knowledge domains (_discipines_).
+
+<!-- - potential interactions between hydrology (__GEOtop__) and other knowledge domains (_discipines_). -->
 
 
 
