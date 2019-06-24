@@ -28,7 +28,7 @@
 \newif\ifbibliography
 \hypersetup{
             pdftitle={geotopbricks},
-            pdfauthor={Emanuele Cordano},
+            pdfauthor={Emanuele Cordano, Giacomo Bertoldi, Elisa Bortoli},
             pdfborder={0 0 0},
             breaklinks=true}
 \urlstyle{same}  % don't use monospace font for urls
@@ -160,12 +160,17 @@
 \put(0,50){\usebeamerfont{title}{\textcolor{corpdarkblue}{\inserttitle}\par}}
 
 \put(0,20){
-\small Emanuele Cordano, Rendena100
+\small Emanuele Cordano (Rendena100) 
 }
 \put(0,0){
-\texttt{\small @ecor} | \texttt{\small github.com/ecor}
+\texttt{\small github.com/ecor}
 }
-
+\put(0,-20){
+\small Giacomo Bertoldi , Elisa Bortoli (EURAC Ecohydro)
+}
+\put(0,-40){
+\texttt{\small github.com/Ecohydro}
+}
 
 \put(150,-100){
 \includegraphics[height=3cm]{resources/logo/logo_useR2019.png}
@@ -219,7 +224,7 @@
 
 \title{geotopbricks}
 \subtitle{An R Package for the Distributed Hydrological Model GEOtop}
-\author{Emanuele Cordano}
+\author{Emanuele Cordano, Giacomo Bertoldi, Elisa Bortoli}
 \date{github/ecor / useR2019}
 
 \begin{document}
@@ -227,23 +232,37 @@
 
 \begin{frame}{Who are we?}
 
+\begincols
+
+\begincol{0.2\textwidth}
+
+\includegraphics[width=0.90000\textwidth]{resources/images/emanuele.jpg}~
+
+\includegraphics[width=0.90000\textwidth]{resources/images/giacomo.jpg}\\
+\includegraphics[width=0.90000\textwidth]{resources/images/elisa.jpg}\\
+\endcol
+
+\begincol{0.7\textwidth}
+
 \begin{itemize}
 \tightlist
 \item
   Environmental engineers with hydraulic and hydrological background
   (more deterministic and physicall-based than statics!)
 \item
-  Find us as @ecor (speaker) or @EURAC-Ecohydro (co-authors) on GitHub.
-\item
-  Some of us are resercher, other are self-employed and freelancers as
+  Some of us are resercher, other are self-employed and freelancers -
   www.rendena100.eu .\\
 \item
   Some of us are author of several R-packages and R enthusiast.
 \item
-  Some of us are developers of GEOtop hydrologic models with skils in
-  hydrology and environmental scinces but aloso in C/C++, parallell
-  programming, HPC, etc
+  Some of us are developers of GEOtop hydrologic models with skills in
+  hydrology and environmental science and also in C/C++, parallell
+  programming, High Perfomance Computing, etc
 \end{itemize}
+
+\endcol
+
+\endcols
 
 \end{frame}
 
@@ -287,9 +306,7 @@ sustainability {[}\emph{Wikipedia}{]}
 \begin{frame}{GEOtop Hydrological Model}
 
 GEOtop is an open-source integrated hydrological model, available though
-Github, see
-\href{geotopmodel.github.io/geotop/}{http://geotopmodel.github.io/geotop/}
-or \href{https://www.geotop.org}{www.geotop.org}, and it simulates:
+Github, \href{https://www.geotop.org}{www.geotop.org}, simulating:
 \begincols
 
 \begincol{.22\textwidth}
@@ -303,16 +320,13 @@ or \href{https://www.geotop.org}{www.geotop.org}, and it simulates:
 \begin{itemize}
 \item
   soil water flow in the soil (\emph{Richards' equation,De Saint-Venant
-  Equation)} : \emph{\emph{unkowns: soil liquid water content,soil water
-  pressure head}};
+  Equation)};
 \item
   heat flow in the soil \(\,\to\,\) \emph{(heat equation and frozen soil
-  thermodynamics) } : \emph{\emph{unkowns: soil l temperature,soil ice
-  (soild water) content (in case of frozen soil)}};
+  thermodynamics) };
 \item
   energy exchange with the atmosphere \(\,\to\,\) boundary conditions of
-  the equations above : \_*unknowns : evapotranspiration, latent heat
-  fluxes, radiation, snow depth and density
+  the equations above.
 \end{itemize}
 
 \endcol
@@ -363,10 +377,7 @@ in function of the specic use case. GEOtop has two setup configurations
 
 \begin{frame}{GEOtop Hydrological Model Software Package / Source Code}
 
-\begincols
-
-\begincol{.48\textwidth} Core components of GEOtop software packages
-are:
+Core components of GEOtop software packages are:
 
 \begin{itemize}
 \tightlist
@@ -377,20 +388,12 @@ are:
   re-engineering process is going to finish (version 3.0);
 \item
   scientifically tested and published;
-\item
-  documented on GitHub repository:
-  \emph{\url{http://geotopmodel.github.io/geotop/*} and indexed in
-  Zenodo : }\url{https://zenodo.org/record/2560151\#.XQtNZJxS8eM*}
 \end{itemize}
 
-\endcol
-
-\begincol{.48\textwidth}
+Source code and documentation are available on GitHub repository:
+{[}\url{http://geotopmodel.github.io/geotop/}{]}.
 
 \includegraphics[width=0.90000\textwidth]{resources/images/geotop_paper_2017.png}\\
-\endcol
-
-\endcols
 
 \end{frame}
 
@@ -472,13 +475,22 @@ environment by using the \texttt{keyword-value} syntax of
 \begin{frame}{\textbf{geotopbriccks} Application 1: Simulation of soil
 water budget in an alpine site}
 
-Here is an example on how to extract soil water content (SWC) at a 18cm
-depth in two sites P2 and B2, located in Val Mazia/Match, Malles
-Venosta/Mals Vinschgau, in South Tyrol, Italy (LOng Term Reasearch
-Ecological Area, {[}\url{http://lter.eurac.edu/en}{]}). The goal of the
-code lines below is to represent the distribution of soil water content
-in August per different years (e.g.~from 2010 to 2014)\\
-\includegraphics[width=0.40000\textwidth]{resources/images/mazia_2.png}\\
+Soil water content (SWC) in two sites P2 and B2, located in Val
+Mazia/Match, Malles Venosta/Mals Vinschgau, in South Tyrol, Italy
+{[}\url{http://lter.eurac.edu/en}{]}. \begincols
+
+\begincol{0.30\textwidth}
+\includegraphics[width=1.00000\textwidth]{resources/images/B2_P2.png}\\
+\includegraphics[width=1.00000\textwidth]{resources/images/mazia_2.png}\\
+\endcol
+\begincol{0.30\textwidth}
+\includegraphics[width=1.00000\textwidth]{resources/images/water_balance}\\
+\endcol
+\begincol{0.40\textwidth}
+
+\includegraphics[width=1.00000\textwidth]{resources/images/B2_new.png}\\
+\endcol
+ \endcols
 
 \end{frame}
 
@@ -551,11 +563,7 @@ environment:
 
 \begin{frame}{Plots of weather variables in B2}
 
-\begin{figure}
-\centering
 \includegraphics{presentation_files/figure-beamer/unnamed-chunk-6-1.pdf}
-\caption{FALSE}
-\end{figure}
 
 \end{frame}
 
@@ -730,7 +738,8 @@ Map): Surface Water Discharga at the Outlet}
 If intertested? See and follow us on (www.geotop.org) or
 (\url{https://cran.r-project.org/package=geotopbricks})
 
-Thank you for your attention! / Merci pour votre attention!
+Thank you for your attention! / Merci pour votre attention!\\
+Find us as @ecor (speaker) or @EURAC-Ecohydro (co-authors) on GitHub.
 
 \end{frame}
 
