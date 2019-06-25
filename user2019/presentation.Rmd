@@ -455,7 +455,8 @@ gp <- ggplot(meteo_dfm, aes(x = time, y = value)) +
   scale_y_continuous(
     "Precipitation Intensity [mm/hr]", 
     sec.axis = sec_axis(~ . * a+b, name = "Air Temperature [C deg]")
-  )+ggtitle("Air Temperature / Precipiation Intensity vs Time at B2")
+  )+ggtitle("Air Temperature / Precipiation Intensity vs Time at B2")+
+  theme(text = element_text(size=15))+xlab("Time")
 gp
 ```
 
@@ -507,7 +508,7 @@ names(SWC_B2)
 
 ## Soil Water Content at P2 and B2 
 
-```{r,echo=FALSE,eval=TRUE,return=FALSE,warning=FALSE}
+```{r,echo=FALSE,return=TRUE,warning=FALSE,results="hide",message=FALSE,fig.height=5,fig.cap=""}
 ## http://www.sthda.com/english/wiki/ggplot2-line-types-how-to-change-line-types-of-a-graph-in-r-software
 SWC_B2a <- SWC_B2[as.Date(SWC_B2$time) %in% when,]
 SWC_P2a <- SWC_P2[as.Date(SWC_P2$time) %in% when,]
@@ -522,7 +523,7 @@ SWC <- SWC[SWC$variable %in% depths,]
 
 gswc <- ggplot(SWC, aes(x = time, y = value)) + 
    geom_line(aes(color = variable, fill = variable, linetype=site), 
-             position = position_dodge(0.8))+theme_bw() #+
+             position = position_dodge(0.8))+theme_bw() +  theme(text = element_text(size=15))+xlab("Time") 
 
 show(gswc)
 
@@ -548,7 +549,7 @@ df <- data.frame(month=months,P2=as.vector(SWC_P2_18cm_aggr),B2=as.vector(SWC_B2
 dfp <- df[df$month %in% c("08-2010","08-2011","08-2012","08-2013","08-2014"),]
 dfpm <- melt(dfp,id="month")
 SWC_Boxplot <- ggplot(dfpm, aes(x=as.factor(month), y=value))+geom_boxplot()
-SWC_Boxplot <- SWC_Boxplot+ggtitle("Box Plot: Daily Soil Water Content")+ylab("SWC")+xlab("")+theme_bw()+facet_grid(. ~ variable)
+SWC_Boxplot <- SWC_Boxplot+ggtitle("Box Plot: Daily Soil Water Content")+ylab("SWC")+xlab("")+theme_bw()+facet_grid(. ~ variable)+theme(text = element_text(size=15))+xlab("Time")
 show(SWC_Boxplot)
 ```   
 
