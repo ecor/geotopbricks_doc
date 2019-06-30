@@ -28,10 +28,10 @@ library(geotopbricks)
 \begincol{0.2\textwidth} 
 
 
-![](resources/images/emanuele.jpg){width=90%}\ 
+![](resources/images/emanuele.jpg){width=100%}\ 
 
-![](resources/images/giacomo.jpg){width=90%}\
-![](resources/images/elisa.jpg){width=90%}\
+![](resources/images/giacomo.jpg){width=80%}\
+![](resources/images/elisa.jpg){width=80%}\
 \endcol
 
 \begincol{0.7\textwidth}
@@ -49,8 +49,8 @@ library(geotopbricks)
 
 Scientific study of the movement, distribution, and quality of water on Earth water cycle, water resources and environmental watershed sustainability [_Wikipedia_]
 
-<!-- \hspace*{-1cm}\includegraphics[width=1\paperwidth]{resources/images/geotop_draw.png} -->
-![](resources/images/geotop_landscape.png){width=50%} 
+![](resources/images/geotop_landscape.png){width=75%}\
+
 
 ## Hydrolgical models
 
@@ -75,9 +75,10 @@ Scientific study of the movement, distribution, and quality of water on Earth wa
   \endcol
 \endcols
 
-
-
-
+Soil water mass balance equation:
+$$\frac{\partial \theta}{\partial t} =   \nabla  \cdot \left[ K \left(\nabla (\psi+z_f) \right) \right] + S$$
+Soil Heat (energy) balance equation:
+$$C_s \frac{\partial T_s}{\partial t} =  \nabla  \cdot \left[ K_t  ( \nabla T_s  ) \right] + \lambda S$$
 
 
 
@@ -198,152 +199,8 @@ The aim of **geotopbricks** , starting in 2013, is to bring all the data of a GE
 - to import time series (e.g. precipitation, temperature, soil water content, snow) as _zoo_ or _data.frame_ objects;
 - to import spatially and spatio-temporal gridded objects as _RasterLayer-class_ or _RasterBrick-class_ objects (**raster** package) 
 
-<!-- # ```{r,fig.height=8, fig.width=6,echo=FALSE,results="hide",collapse=TRUE,warning=FALSE,message=FALSE} -->
-
-```{r,echo=FALSE,results="hide",collapse=TRUE,warning=FALSE,message=FALSE,eval=FALSE}
-#!/usr/bin/env Rscript
-# file appendSmetData.R
-#
-# This script creates a graph of the package function and thair main external depencies
-#
-# author: Emanuele Cordano on 09-09-2015
-
-#This program is free software: you can redistribute it and/or modify
-#it under the terms of the GNU General Public License as published by
-#the Free Software Foundation, either version 3 of the License, or
-#(at your option) any later version.
-#
-#This program is distributed in the hope that it will be useful,
-#but WITHOUT ANY WARRANTY; without even the implied warranty of
-#MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#GNU General Public License for more details.
-#
-#You should have received a copy of the GNU General Public License
-#along with this program.  If not, see <http://www.gnu.org/licenses/>.
-
-###############################################################################
-##rm(list=ls())
-library(igraph)
-set.seed(123)
-list_envs <- list(environment(rasterFromOutput2DMap),
-                  environment(writeLines),
-                  environment(read.table),environment(terrain))
-names(list_envs) <- c("geotopbricks","base","utils","raster")
-color <- c("green","blue","orange","yellow") ###,"white","brown")
-names(color) <- names(list_envs)
-
-list_names <- lapply(X=list_envs,FUN=function(x){ls(env=x)})
-list_df <- list()
-
-for (it in names(list_envs)) {
-	
-		list_df[[it]]	<- data.frame(funx=list_names[[it]],env=it,color=color[it],stringsAsFactors=FALSE)
-	
-	
-}
-df <- do.call(what=rbind,args=list_df)
-
-##### SEMPLIFICATE DF
-
-onlyfun <- list(hydroGOF=c("gof"),hydroPSO=c("hydroPSO","lhoat"),geotopbricks=c("declared.geotop.inpts.keywords","rasterFromOutput2DMap","brickFromOutputSoil3DTensor","get.geotop.inpts.keyword.value"),
-		base=c("writeLines","readLines"),utils=c("read.table"),raster=c("brick","raster","stack")) ### read.table was removed
-
-for (it in names(onlyfun)) {
-	
-	cond  <- ((df$env==it) & (df$funx %in% onlyfun[[it]])) | (df$env!=it)
-	df    <- df[cond,]
-	
-	
-}		
-
-
-fun_names <- df$funx
-		
-
-names(fun_names) <- fun_names
-
-########################################
-########################################
-########################################
-########################################
-########################################
-lfunx <- lapply(X=fun_names,FUN=function(x,nx) {
-			o <- try(get(x),silent=TRUE)
-			
-			if (class(o)=="try-error") {
-				
-				o <- NA ### "It looks like a method!"
-				return(o)
-				
-			}
-			o <- formals(o)
-		
-			o <- lapply(X=o,FUN=as.character)
-			
-			o <- unlist(o)
-			
-			
-			o <- o[o %in% nx]
-			
-			src <-  as.character(body(x))
-			src <-  unlist(str_split(src, boundary("word")))
-			nx <-  src[src %in% nx]
-		
-			o <- c(o,nx)
-			o <- unique(o)
-			
-			
-			
-			
-			return(o)
-		
-		},nx=fun_names)
-
-
-for (it in names(lfunx)) {
-	
-	temp <- lfunx[[it]]
-	ii <- which(temp!=it)
-	temp <- temp[ii]
-	nl <- length(temp)
-	lfunx[[it]] <- array(c(rep(it,nl),temp),c(nl,2))
-	
-}
-#####edges
-edges <- do.call(rbind,lfunx)
-vertices <- unique(edges)
-#####
-env_base <- "base;utils"
-df$env[df$env=="base"]  <- env_base
-df$env[df$env=="utils"] <- env_base
-df$color[df$env==env_base] <- "white"
-#####
-color_ <- df$color
-env_   <- df$env
-names(color_) <- df$funx
-names(env_) <- df$funx
-######
-gg <- graph_from_edgelist(edges)
-vnames <- V(gg)$name
-V(gg)$color <- color_[vnames]
-vcodes <- sprintf("%02d",1:length(vnames))
-names(vcodes) <- vnames
-V(gg)$name <- vcodes
-main <- "geotopOptim2  Internal Functions"
-plot(gg,main=main)
-legend("bottomleft",legend=unique(env_),fill=unique(color_),ncol=2)
-legend("topleft",legend=paste(vcodes,vnames,sep=" : "),ncol=3,cex=0.6)
-#pp <- png::readPNG('resources/images/geotopoptim_v2.png')
-#xleft <- 1
-#xright <- xleft+ncol(pp)-1
-#ybottom = 0
-#ytop= ybottom+nrow(pp)-1
-#rasterImage(pp, xleft=xleft, ybottom=ybottom,xright=xright,ytop=ytop, angle = 0, interpolate = FALSE)
-
-```
-
-## __geotopbriccks__ Application 1: Simulation of soil water budget in an alpine site
-Soil water content (SWC) in two sites P2 and B2, located in Val Mazia/Match, Malles Venosta/Mals Vinschgau, in South Tyrol, Italy [http://lter.eurac.edu/en].
+## 1D Simulation of soil water budget in an alpine site:  two points
+Soil water content (SWC) in two points P2 and B2 located in Val Mazia/Match, Malles Venosta/Mals Vinschgau, South Tyrol, Italy [http://lter.eurac.edu/en].
 \begincols
 
 \begincol{0.30\textwidth}
@@ -373,7 +230,7 @@ library(geotopbricks)
 
 ## SET GEOTOP WORKING DIRECTORY
 wpath_B2 <- "resources/simulation/Matsch_B2_Ref_007" 
-##writeLines(list.files(wpath_B2))
+
 ```
 
 ## Getting simulation input data
@@ -460,7 +317,7 @@ gp <- ggplot(meteo_dfm, aes(x = time, y = value)) +
 gp
 ```
 
-## Getting output simulation data at B2
+## Getting results of the  simulation at B2
 
 Soil Water Content Profile: 
 ```{r,echo=TRUE,return=FALSE}
@@ -476,7 +333,7 @@ SWC_B2  <- get.geotop.inpts.keyword.value(
 help(get.geotop.inpts.keyword.value) ## for more details!
 ```
 
-## Getting output simulation data at P2
+## Getting results of the  simulation at B2
 
 The same for P2:
 ```{r,echo=TRUE,return=FALSE}
@@ -512,7 +369,17 @@ names(SWC_B2)
 ## http://www.sthda.com/english/wiki/ggplot2-line-types-how-to-change-line-types-of-a-graph-in-r-software
 SWC_B2a <- SWC_B2[as.Date(SWC_B2$time) %in% when,]
 SWC_P2a <- SWC_P2[as.Date(SWC_P2$time) %in% when,]
-depths <- sprintf("z%04d",c(3,9,18,45))
+zdepths <- c(3,9,18,45)
+depths <- names(zdepths) <- sprintf("z%04d",zdepths)
+hudepths <- sprintf("depth %02d cm",zdepths)
+fills <- c("#d7191c","#fdae61","#a6d96a","#1a964")
+names(fills) <- hudepths
+###
+
+
+
+###
+names(hudepths) <- depths
 SWC_B2a$site <- "B2"
 SWC_P2a$site <- "P2"
 SWC_B2m <- melt(SWC_B2a,id=c("time","site"))
@@ -520,19 +387,68 @@ SWC_P2m <- melt(SWC_P2a,id=c("time","site"))
 
 SWC <- rbind(SWC_B2m,SWC_P2m)
 SWC <- SWC[SWC$variable %in% depths,]
-
+##stop("HERE")
+##SWC$variable <- hudepths[as.character(SWC$variable)]
 gswc <- ggplot(SWC, aes(x = time, y = value)) + 
    geom_line(aes(color = variable, fill = variable, linetype=site), 
-             position = position_dodge(0.8))+theme_bw() +  theme(text = element_text(size=15))+xlab("Time") 
+             position = position_dodge(0.8))+theme_bw() +  theme(text = element_text(size=15))+xlab("Time")+ylab("Soil Water Content") 
+ gswc <- gswc+scale_color_manual(values=rainbow(length(depths)),labels=hudepths[depths])
 
 show(gswc)
 
 ```
 
-## Output data Analytics (soil Mooisture Distribution)
+## Soil Water Pressure Head at P2 and B2 
+
+```{r,echo=FALSE,return=TRUE,warning=FALSE,results="hide",message=FALSE,fig.height=5,fig.cap=""}
+##tz <- "Etc/GMT-1"
+psi_B2  <- get.geotop.inpts.keyword.value(
+  "SoilLiqWaterPressProfileFile",
+  wpath = wpath_B2,
+  data.frame = TRUE,
+  date_field = "Date12.DDMMYYYYhhmm.",
+  tz = tz,
+  zlayer.formatter = "z%04d"
+)
+
+##wpath_P2 <- "resources/simulation/Matsch_P2_Ref_007" 
+psi_P2  <- get.geotop.inpts.keyword.value(
+  "SoilLiqWaterPressProfileFile",
+  wpath = wpath_P2,
+  data.frame = TRUE,
+  date_field = "Date12.DDMMYYYYhhmm.",
+  tz = "Etc/GMT-1",
+  zlayer.formatter = "z%04d")
+  
+
+psi_B2 <- cbind(time=as.POSIXct(index(psi_B2)),as.data.frame(psi_B2))
+psi_P2 <- cbind(time=as.POSIXct(index(psi_P2)),as.data.frame(psi_P2))
+
+psi_B2a <- psi_B2[as.Date(psi_B2$time) %in% when,]
+psi_P2a <- psi_P2[as.Date(psi_P2$time) %in% when,]
+
+
+psi_B2a$site <- "B2"
+psi_P2a$site <- "P2"
+psi_B2m <- melt(psi_B2a,id=c("time","site"))
+psi_P2m <- melt(psi_P2a,id=c("time","site"))
+
+psi <- rbind(psi_B2m,psi_P2m)
+psi <- psi[psi$variable %in% depths,]
+
+gpsi <- ggplot(psi, aes(x = time, y = value)) + 
+   geom_line(aes(color = variable, fill = variable, linetype=site), 
+             position = position_dodge(0.8))+theme_bw() +  theme(text = element_text(size=15))+xlab("Time")+ylab("Soil Water Pressure Head [mm]") 
+ gpsi <- gpsi+scale_color_manual(values=rainbow(length(depths)),labels=hudepths[depths])
+
+show(gpsi)
+
+```
+
+## Example of an Output Data Analytics (Soil Moisture Distribution)
 
 Distribution of daily aggregated soil water contant  at a 18 cm depth:
-```{r,echo=FALSE,warning=FALSE,eval=TRUE,fig.height=4}
+```{r,echo=FALSE,return=TRUE,warning=FALSE,results="hide",message=FALSE,fig.height=4,fig.cap=""}
 ## Box Plot
 time <- SWC_B2$time
 SWC_B2_18cm <- SWC_B2[,"z0018"]
@@ -557,7 +473,7 @@ More deetails on the [__eRum2018__ poster](https://github.com/ecor/geotopbricks_
 
 
 
-## 3D Spatially Distributed Distribution (Vinschgau - Upper Adige River Basin - Alps - I/CH/A)
+## 3D Spatially Distributed Distribution: Val Venosta/Vinschgau - Upper Adige River Basin - Alps - I/CH/A
 
 ```{r,echo=TRUE,eval=TRUE,return=FALSE,warning=FALSE}
 
@@ -568,9 +484,9 @@ basin <- get.geotop.inpts.keyword.value("LandCoverMapFile",
 basin
 ```
 
-##  3D Spatially Distributed Simulation (Input Geospatial Map)
+##  Input GeoSpatial Map: Elevation and Weather Station
 
-```{r,echo=FALSE,eval=TRUE,return=FALSE,warning=FALSE,fig.height=5}
+```{r,echo=FALSE,return=TRUE,warning=FALSE,results="hide",message=FALSE,fig.height=5,fig.cap=""}
 URL = 'https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png'
 ATTRIBUTION = 'Map data: &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, <a href="http://viewfinderpanoramas.org">SRTM</a> | Map style: &copy; <a href="https://opentopomap.org">OpenTopoMap</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)'
 library(leaflet)
@@ -603,7 +519,7 @@ addCircleMarkers(lng=meteoloc$x,lat=meteoloc$y,label="Meteo",opacity=opacity,rad
 
 ## 3D Spatially Distributed Simulation (Output Geospatial Map): Soil Water Content
 
-```{r eval=TRUE,echo=FALSE,message=FALSE,warning=FALSE,results='hide',fig.height=5}
+```{r,echo=FALSE,return=TRUE,warning=FALSE,results="hide",message=FALSE,fig.height=5,fig.cap=""}
 library(RColorBrewer)
 keyword <- 'SoilLiqContentTensorFile'
 s <- get.geotop.inpts.keyword.value(keyword,wpath=wpath_3D)
@@ -622,9 +538,9 @@ help("brickFromOutputSoil3DTensor") ## for more details
 
 ```
 
-## 3D Spatially Distributed Simulation (Output Geospatial Map): Surface Water Discharga at the Outlet 
+## 3D Spatially Distributed Simulation (Output Geospatial Map): Surface Water Discharge at the Outlet 
 
-```{r eval=TRUE,echo=FALSE,message=FALSE,warning=FALSE,results='hide',fig.height=5}
+```{r,echo=FALSE,return=TRUE,warning=FALSE,results="hide",message=FALSE,fig.height=5,fig.cap=""}
 
 dis <- get.geotop.inpts.keyword.value("DischargeFile",wpath=wpath_3D,data.frame=TRUE,formatter="",date_field="DATE.day.month.year.hour.min.",tz=tz)
 bas <- get.geotop.inpts.keyword.value("BasinOutputFile",wpath=wpath_3D,data.frame=TRUE,formatter="",date_field="Date12.DDMMYYYYhhmm.",tz=tz)
@@ -660,7 +576,7 @@ for (it in cols_) {
   
 }
 
-##library(dplyr)
+
 
 
 ```
@@ -696,7 +612,7 @@ itnoref <- "Pnet.mm."
 multp[itref] <- 2
 a <- multp[itnoref]/multp[itref]
 offset[itnoref] <- -ceiling(max(abs(basin_results_df[,itref])))*a
-
+offset[itnoref] <- -100 ## manual correction for a human readable scale
 b <- offset[itnoref]-a*offset[itref]
  
 
@@ -718,18 +634,30 @@ for (it in cols_) {
 
 
 breaks <- seq(from=0,to=offset[itnoref],length.out=6)
-labels <- sprintf("%f / %f",-breaks,offset[itnoref]-breaks)
+breaks <- as.integer(breaks)
+labels <- sprintf("%d / %d",-breaks,-offset[itnoref]+breaks)
+fill_ <- c("red", "blue","brown","green")
+names(fill_) <- cols_
+##
+labels_ <- c("Discharge","Precipitation","Evaporation","Transpiration")
+names(labels_) <- cols_
+
+###
+
+
+###
+
 basin_results_dfm <- melt(basin_results_df,id="time")
 basin_results_dfm <- basin_results_dfm[as.character(basin_results_dfm$variable) %in% cols_,]
 gp <- ggplot(basin_results_dfm, aes(x = time, y = value)) 
 gp <- gp+ geom_line(aes(color = variable), 
              position = position_dodge(0.8)) +
-   scale_color_manual(values = c("red", "blue","green","yellow")) +
+   scale_color_manual(values = fill_[cols_],labels=labels_[cols_]) +
  #  scale_fill_manual(values = c("red", "blue"))+
  ##  scale_linetype_manual(values= c(1,0.5,0.5))+
   theme_bw()+
   scale_y_continuous(
-    "Discharge [m3/s]", 
+    "Discharge [m^3/s]", 
     sec.axis = sec_axis(~ . * (a)+b, name = "Precipitation  - Evapotranspiration [mm/day]",breaks=breaks,labels=labels)
   )
 gp
@@ -740,30 +668,11 @@ gp
 ```
 
 
-
-
-<!-- ```{r,echo=FALSE,eval=TRUE} -->
-<!-- show(prec_Boxplot) -->
-<!-- ``` -->
-<!-- </center> -->
-<!-- ## 3D Simulation Analytics  -->
-
-<!-- The results show than B2 is able to hold more water than P2. This depends on soil and land properties. Compared with input precipiation results,soil water behaviour for the different months is related to precipitation amount (depth and number of rainy days). Interestingly, in August 2014 soil water content is higher than in August 2012,  in which precipitaion is higher. However, in August 2014 the daily precipitation distribution is the least wide with the lowest variability (interquantile range) and two extreme events. (Precipiation time series in B2 and P2 are equal due to their short distance!) -->
-
-
-<!-- Hydrological models are solvers of the differantial equations of water flows and water thermodymanics in the Earth associated to heat transfers between Earth and the low atmosphere. They are a simplification of a real-world system -->
-<!-- useful to understand, predict, manage water resources.  -->
-<!-- ”integrated” -->
-
-
-<!-- ## {.plain} -->
-<!-- \hspace*{-1cm}\includegraphics[width=1\paperwidth]{IMAGE} -->
-
 ## Dicussion
 
 - Graphical Representation using R , useful for hydrologigists and Reaserchers; 
 - Open science : results accessible to a variegate community of professional, scientific or amateur people, not all hydrologigists are R users but not all R users are hydrologists! 
-- Reproducible Analysis and Transparecy : results can be automatically documented in reports or presentations. 
+- Reproducible Analysis and Transparency : results can be automatically documented in reports or presentations. 
 - Though **geotopbricks** user can intercact between R and GEOtop using R enviroment and GEOtop keywords system indepently from the GEOtop simulation structure.   
 
 ## Conclusions and Way Forward

@@ -236,10 +236,10 @@
 
 \begincol{0.2\textwidth}
 
-\includegraphics[width=0.90000\textwidth]{resources/images/emanuele.jpg}~
+\includegraphics[width=1.00000\textwidth]{resources/images/emanuele.jpg}~
 
-\includegraphics[width=0.90000\textwidth]{resources/images/giacomo.jpg}\\
-\includegraphics[width=0.90000\textwidth]{resources/images/elisa.jpg}\\
+\includegraphics[width=0.80000\textwidth]{resources/images/giacomo.jpg}\\
+\includegraphics[width=0.80000\textwidth]{resources/images/elisa.jpg}\\
 \endcol
 
 \begincol{0.7\textwidth}
@@ -272,11 +272,7 @@ Scientific study of the movement, distribution, and quality of water on
 Earth water cycle, water resources and environmental watershed
 sustainability {[}\emph{Wikipedia}{]}
 
-\begin{figure}
-\centering
-\includegraphics[width=0.50000\textwidth]{resources/images/geotop_landscape.png}
-\caption{}
-\end{figure}
+\includegraphics[width=0.75000\textwidth]{resources/images/geotop_landscape.png}\\
 
 \end{frame}
 
@@ -300,6 +296,11 @@ sustainability {[}\emph{Wikipedia}{]}
  \endcols
  \endcol
 \endcols
+
+Soil water mass balance equation:
+\[\frac{\partial \theta}{\partial t} =   \nabla  \cdot \left[ K \left(\nabla (\psi+z_f) \right) \right] + S\]
+Soil Heat (energy) balance equation:
+\[C_s \frac{\partial T_s}{\partial t} =  \nabla  \cdot \left[ K_t  ( \nabla T_s  ) \right] + \lambda S\]
 
 \end{frame}
 
@@ -472,11 +473,11 @@ environment by using the \texttt{keyword-value} syntax of
 
 \end{frame}
 
-\begin{frame}{\textbf{geotopbriccks} Application 1: Simulation of soil
-water budget in an alpine site}
+\begin{frame}{1D Simulation of soil water budget in an alpine site: two
+points}
 
-Soil water content (SWC) in two sites P2 and B2, located in Val
-Mazia/Match, Malles Venosta/Mals Vinschgau, in South Tyrol, Italy
+Soil water content (SWC) in two points P2 and B2 located in Val
+Mazia/Match, Malles Venosta/Mals Vinschgau, South Tyrol, Italy
 {[}\url{http://lter.eurac.edu/en}{]}. \begincols
 
 \begincol{0.30\textwidth}
@@ -505,7 +506,6 @@ Here is the directory containing files of B2 point simulation:
 
 \NormalTok{## SET GEOTOP WORKING DIRECTORY}
 \NormalTok{wpath_B2 <-}\StringTok{ "resources/simulation/Matsch_B2_Ref_007"} 
-\NormalTok{##writeLines(list.files(wpath_B2))}
 \end{Highlighting}
 \end{Shaded}
 
@@ -563,11 +563,11 @@ environment:
 
 \begin{frame}{Plots of weather variables in B2}
 
-\includegraphics{presentation_files/figure-beamer/unnamed-chunk-6-1.pdf}
+\includegraphics{presentation_files/figure-beamer/unnamed-chunk-5-1.pdf}
 
 \end{frame}
 
-\begin{frame}[fragile]{Getting output simulation data at B2}
+\begin{frame}[fragile]{Getting results of the simulation at B2}
 
 Soil Water Content Profile:
 
@@ -588,7 +588,7 @@ Soil Water Content Profile:
 
 \end{frame}
 
-\begin{frame}[fragile]{Getting output simulation data at P2}
+\begin{frame}[fragile]{Getting results of the simulation at B2}
 
 The same for P2:
 
@@ -609,11 +609,18 @@ The same for P2:
 
 \begin{frame}{Soil Water Content at P2 and B2}
 
+\includegraphics{presentation_files/figure-beamer/unnamed-chunk-10-1.pdf}
+
+\end{frame}
+
+\begin{frame}{Soil Water Pressure Head at P2 and B2}
+
 \includegraphics{presentation_files/figure-beamer/unnamed-chunk-11-1.pdf}
 
 \end{frame}
 
-\begin{frame}{Output data Analytics (soil Mooisture Distribution)}
+\begin{frame}{Example of an Output Data Analytics (Soil Moisture
+Distribution)}
 
 Distribution of daily aggregated soil water contant at a 18 cm depth:
 \includegraphics{presentation_files/figure-beamer/unnamed-chunk-12-1.pdf}
@@ -624,8 +631,8 @@ poster}.
 
 \end{frame}
 
-\begin{frame}[fragile]{3D Spatially Distributed Distribution (Vinschgau
-- Upper Adige River Basin - Alps - I/CH/A)}
+\begin{frame}[fragile]{3D Spatially Distributed Distribution: Val
+Venosta/Vinschgau - Upper Adige River Basin - Alps - I/CH/A}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -650,25 +657,16 @@ poster}.
 
 \end{frame}
 
-\begin{frame}{3D Spatially Distributed Simulation (Input Geospatial
-Map)}
+\begin{frame}{Input GeoSpatial Map: Elevation and Weather Station}
 
-\begin{figure}
-\centering
 \includegraphics{presentation_files/figure-beamer/unnamed-chunk-14-1.pdf}
-\caption{FALSE}
-\end{figure}
 
 \end{frame}
 
 \begin{frame}[fragile]{3D Spatially Distributed Simulation (Output
 Geospatial Map): Soil Water Content}
 
-\begin{figure}
-\centering
 \includegraphics{presentation_files/figure-beamer/unnamed-chunk-15-1.pdf}
-\caption{FALSE}
-\end{figure}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -679,7 +677,7 @@ Geospatial Map): Soil Water Content}
 \end{frame}
 
 \begin{frame}{3D Spatially Distributed Simulation (Output Geospatial
-Map): Surface Water Discharga at the Outlet}
+Map): Surface Water Discharge at the Outlet}
 
 \begin{figure}
 \centering
