@@ -1,5 +1,5 @@
 ---
-title: "geotopbricks"
+title: "geotopbricks: An R Package for the Distributed Hydrological Model GEOtop"
 author: "Emanuele Cordano, Giacomo Bertoldi, Elisa Bortoli"
 date: "github/ecor / useR2019"
 output:
@@ -25,13 +25,13 @@ library(geotopbricks)
 
 \begincols
 
-\begincol{0.2\textwidth} 
+\begincol{0.28\textwidth} 
 
 
 ![](resources/images/emanuele.jpg){width=100%}\ 
 
-![](resources/images/giacomo.jpg){width=80%}\
-![](resources/images/elisa.jpg){width=80%}\
+![](resources/images/giacomo.jpg){width=70%}\
+![](resources/images/elisa.jpg){width=70%}\
 \endcol
 
 \begincol{0.7\textwidth}
@@ -48,37 +48,35 @@ library(geotopbricks)
 ## Hydrology
 
 Scientific study of the movement, distribution, and quality of water on Earth water cycle, water resources and environmental watershed sustainability [_Wikipedia_]
-
-![](resources/images/geotop_landscape.png){width=75%}\
-
+\begincols
+\begincol{.48\textwidth}
+![](resources/images/geotop_landscape.png){width=100%}\
+\endcol
+\begincol{.48\textwidth}
+ ![](resources/images/valdifumo.jpg){width=100%}\
+\endcol
+\endcols
 
 ## Hydrolgical models
 
 \begincols
   \begincol{.48\textwidth}
 
-  ![](resources/images/valdifumo.jpg){width=100%}\ 
+  ![](resources/images/geotop_grid.jpg){width=70%}\ 
 
   \endcol
 \begincol{.48\textwidth}
-\begincols
-  \begincol{.48\textwidth}
- ![](resources/images/versante1.png){width=100%}\
- 
- 
- ![](resources/images/integrated_models.jpg){width=100%}\
+![](resources/images/water_balance.png){width=50%}\
 \endcol
-\begincol{.48\textwidth}
-![](resources/images/water_balance.png){width=100%}\
-    \endcol
-    \endcols
-  \endcol
 \endcols
-
 Soil water mass balance equation:
-$$\frac{\partial \theta}{\partial t} =   \nabla  \cdot \left[ K \left(\nabla (\psi+z_f) \right) \right] + S$$
+$$\frac{\partial \theta}{\partial t} =   \nabla  \cdot \left[ K \left(\nabla (\psi+z_f) \right) \right] + S + ...$$
 Soil Heat (energy) balance equation:
-$$C_s \frac{\partial T_s}{\partial t} =  \nabla  \cdot \left[ K_t  ( \nabla T_s  ) \right] + \lambda S$$
+$$C_s \frac{\partial T_s}{\partial t} =  \nabla  \cdot \left[ K_t  ( \nabla T_s  ) \right] + \lambda S + ...$$
+
+
+
+
 
 
 
@@ -232,6 +230,9 @@ library(geotopbricks)
 wpath_B2 <- "resources/simulation/Matsch_B2_Ref_007" 
 
 ```
+![image](resources/images/geotop_folder_B2.png){width=100%}\
+
+
 
 ## Getting simulation input data
 
@@ -476,8 +477,6 @@ More deetails on the [__eRum2018__ poster](https://github.com/ecor/geotopbricks_
 ## 3D Spatially Distributed Distribution: Val Venosta/Vinschgau - Upper Adige River Basin - Alps - I/CH/A
 
 ```{r,echo=TRUE,eval=TRUE,return=FALSE,warning=FALSE}
-
-###wpath_3D <- 'resources/simulation/Vinschgau_test_3D_002'
 wpath_3D <- 'resources/simulation/Vinschgau'
 basin <- get.geotop.inpts.keyword.value("LandCoverMapFile",
               wpath=wpath_3D,raster=TRUE)
@@ -583,7 +582,7 @@ for (it in cols_) {
 
 
 
-```{r,echo=FALSE,return=TRUE,warning=FALSE,results="hide",message=FALSE,fig.height=5}
+```{r,echo=FALSE,return=TRUE,warning=FALSE,results="hide",message=FALSE,fig.height=5,fig.cap=""}
 library(ggplot2)
 library(reshape2)
 library(lubridate)
@@ -653,13 +652,11 @@ gp <- ggplot(basin_results_dfm, aes(x = time, y = value))
 gp <- gp+ geom_line(aes(color = variable), 
              position = position_dodge(0.8)) +
    scale_color_manual(values = fill_[cols_],labels=labels_[cols_]) +
- #  scale_fill_manual(values = c("red", "blue"))+
- ##  scale_linetype_manual(values= c(1,0.5,0.5))+
   theme_bw()+
   scale_y_continuous(
     "Discharge [m^3/s]", 
     sec.axis = sec_axis(~ . * (a)+b, name = "Precipitation  - Evapotranspiration [mm/day]",breaks=breaks,labels=labels)
-  )
+  )+theme(text = element_text(size=15))+xlab("Time")
 gp
 
 ###BUGS: 
@@ -678,25 +675,27 @@ gp
 ## Conclusions and Way Forward
 
 
-- Open Source (and not only) Hydrolgical Models needs powerful and FAIR interfaces to process I/O data;
+- Open Source (and not only) Hydrolgical Model needs powerful and FAIR interfaces to process I/O data;
 
 - An R package working directly with GEOtop keywords facilitate the development of customized tools for specific GEOtop applications; 
 
-- Collaborations beetween hydrologists / modellers and R users are encoraged. 
+- Collaborations beetween hydrologists / modelers and R users are encouraged. 
 
 
 <center>![image](resources/images/FAIR_data_principles.jpg){width=50%,}\<\center>
 
 ## Finally 
 
+Aknowledgements to 
 
-If intertested?   See and follow us on (www.geotop.org) or (https://cran.r-project.org/package=geotopbricks)
+- all __GEOtop__ developers and users' group, in particular _Matteo Dall'Amico, Stefano Cozzini, Alberto Sartori, Stefano Endrizzi, Samuel Senoner, Riccardo Rigon_, who provided images about GEOtop and hydrologic models for this presentation
+- the community of __R__ whose packages allow to analize and visualise GEOtop data. 
+
+
+
+ If intertested?   See and follow us on (www.geotop.org) or (https://cran.r-project.org/package=geotopbricks)  
 
 
 Thank you for your attention! / Merci pour votre attention!  
-Find us as @ecor (speaker) or @EURAC-Ecohydro (co-authors)  on GitHub. 
-
-<!-- ## Addendum -->
-
-<!-- LOREM IPSUM -->
+Find us as  **@ecor**  (presenter) or **@EURAC-Ecohydro** (co-authors)  on *GitHub*. 
 

@@ -27,7 +27,7 @@
 }{}
 \newif\ifbibliography
 \hypersetup{
-            pdftitle={geotopbricks},
+            pdftitle={geotopbricks: An R Package for the Distributed Hydrological Model GEOtop},
             pdfauthor={Emanuele Cordano, Giacomo Bertoldi, Elisa Bortoli},
             pdfborder={0 0 0},
             breaklinks=true}
@@ -222,7 +222,7 @@
 \def\endcol{\end{column}}
 \def\endcols{\end{columns}}
 
-\title{geotopbricks}
+\title{geotopbricks: An R Package for the Distributed Hydrological Model GEOtop}
 \subtitle{An R Package for the Distributed Hydrological Model GEOtop}
 \author{Emanuele Cordano, Giacomo Bertoldi, Elisa Bortoli}
 \date{github/ecor / useR2019}
@@ -234,12 +234,12 @@
 
 \begincols
 
-\begincol{0.2\textwidth}
+\begincol{0.28\textwidth}
 
 \includegraphics[width=1.00000\textwidth]{resources/images/emanuele.jpg}~
 
-\includegraphics[width=0.80000\textwidth]{resources/images/giacomo.jpg}\\
-\includegraphics[width=0.80000\textwidth]{resources/images/elisa.jpg}\\
+\includegraphics[width=0.70000\textwidth]{resources/images/giacomo.jpg}\\
+\includegraphics[width=0.70000\textwidth]{resources/images/elisa.jpg}\\
 \endcol
 
 \begincol{0.7\textwidth}
@@ -270,9 +270,14 @@
 
 Scientific study of the movement, distribution, and quality of water on
 Earth water cycle, water resources and environmental watershed
-sustainability {[}\emph{Wikipedia}{]}
-
-\includegraphics[width=0.75000\textwidth]{resources/images/geotop_landscape.png}\\
+sustainability {[}\emph{Wikipedia}{]} \begincols
+\begincol{.48\textwidth}
+\includegraphics[width=1.00000\textwidth]{resources/images/geotop_landscape.png}\\
+\endcol
+\begincol{.48\textwidth}
+\includegraphics[width=1.00000\textwidth]{resources/images/valdifumo.jpg}\\
+\endcol
+\endcols
 
 \end{frame}
 
@@ -281,26 +286,17 @@ sustainability {[}\emph{Wikipedia}{]}
 \begincols
  \begincol{.48\textwidth}
 
-\includegraphics[width=1.00000\textwidth]{resources/images/valdifumo.jpg}~
+\includegraphics[width=0.70000\textwidth]{resources/images/geotop_grid.jpg}~
 
-\endcol
-\begincol{.48\textwidth} \begincols
- \begincol{.48\textwidth}
-\includegraphics[width=1.00000\textwidth]{resources/images/versante1.png}\\
-
-\includegraphics[width=1.00000\textwidth]{resources/images/integrated_models.jpg}\\
 \endcol
 \begincol{.48\textwidth}
-\includegraphics[width=1.00000\textwidth]{resources/images/water_balance.png}\\
+\includegraphics[width=0.50000\textwidth]{resources/images/water_balance.png}\\
 \endcol
- \endcols
- \endcol
 \endcols
-
 Soil water mass balance equation:
-\[\frac{\partial \theta}{\partial t} =   \nabla  \cdot \left[ K \left(\nabla (\psi+z_f) \right) \right] + S\]
+\[\frac{\partial \theta}{\partial t} =   \nabla  \cdot \left[ K \left(\nabla (\psi+z_f) \right) \right] + S + ...\]
 Soil Heat (energy) balance equation:
-\[C_s \frac{\partial T_s}{\partial t} =  \nabla  \cdot \left[ K_t  ( \nabla T_s  ) \right] + \lambda S\]
+\[C_s \frac{\partial T_s}{\partial t} =  \nabla  \cdot \left[ K_t  ( \nabla T_s  ) \right] + \lambda S + ...\]
 
 \end{frame}
 
@@ -509,6 +505,8 @@ Here is the directory containing files of B2 point simulation:
 \end{Highlighting}
 \end{Shaded}
 
+\includegraphics[width=1.00000\textwidth]{resources/images/geotop_folder_B2.png}\\
+
 \end{frame}
 
 \begin{frame}[fragile]{Getting simulation input data}
@@ -636,7 +634,6 @@ Venosta/Vinschgau - Upper Adige River Basin - Alps - I/CH/A}
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{###wpath_3D <- 'resources/simulation/Vinschgau_test_3D_002'}
 \NormalTok{wpath_3D <-}\StringTok{ 'resources/simulation/Vinschgau'}
 \NormalTok{basin <-}\StringTok{ }\KeywordTok{get.geotop.inpts.keyword.value}\NormalTok{(}\StringTok{"LandCoverMapFile"}\NormalTok{,}
               \DataTypeTok{wpath=}\NormalTok{wpath_3D,}\DataTypeTok{raster=}\OtherTok{TRUE}\NormalTok{)}
@@ -679,11 +676,7 @@ Geospatial Map): Soil Water Content}
 \begin{frame}{3D Spatially Distributed Simulation (Output Geospatial
 Map): Surface Water Discharge at the Outlet}
 
-\begin{figure}
-\centering
 \includegraphics{presentation_files/figure-beamer/unnamed-chunk-18-1.pdf}
-\caption{FALSE}
-\end{figure}
 
 \end{frame}
 
@@ -699,7 +692,7 @@ Map): Surface Water Discharge at the Outlet}
   professional, scientific or amateur people, not all hydrologigists are
   R users but not all R users are hydrologists!
 \item
-  Reproducible Analysis and Transparecy : results can be automatically
+  Reproducible Analysis and Transparency : results can be automatically
   documented in reports or presentations.
 \item
   Though \textbf{geotopbricks} user can intercact between R and GEOtop
@@ -713,14 +706,14 @@ Map): Surface Water Discharge at the Outlet}
 
 \begin{itemize}
 \item
-  Open Source (and not only) Hydrolgical Models needs powerful and FAIR
+  Open Source (and not only) Hydrolgical Model needs powerful and FAIR
   interfaces to process I/O data;
 \item
   An R package working directly with GEOtop keywords facilitate the
   development of customized tools for specific GEOtop applications;
 \item
-  Collaborations beetween hydrologists / modellers and R users are
-  encoraged.
+  Collaborations beetween hydrologists / modelers and R users are
+  encouraged.
 \end{itemize}
 
 \includegraphics{resources/images/FAIR_data_principles.jpg}\textless{}\center\textgreater{}
@@ -729,11 +722,26 @@ Map): Surface Water Discharge at the Outlet}
 
 \begin{frame}{Finally}
 
+Aknowledgements to
+
+\begin{itemize}
+\tightlist
+\item
+  all \textbf{GEOtop} developers and users' group, in particular
+  \emph{Matteo Dall'Amico, Stefano Cozzini, Alberto Sartori, Stefano
+  Endrizzi, Samuel Senoner, Riccardo Rigon}, who provided images about
+  GEOtop and hydrologic models for this presentation
+\item
+  the community of \textbf{R} whose packages allow to analize and
+  visualise GEOtop data.
+\end{itemize}
+
 If intertested? See and follow us on (www.geotop.org) or
 (\url{https://cran.r-project.org/package=geotopbricks})
 
 Thank you for your attention! / Merci pour votre attention!\\
-Find us as @ecor (speaker) or @EURAC-Ecohydro (co-authors) on GitHub.
+Find us as \textbf{@ecor} (presenter) or \textbf{@EURAC-Ecohydro}
+(co-authors) on \emph{GitHub}.
 
 \end{frame}
 
