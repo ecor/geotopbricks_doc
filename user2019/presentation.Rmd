@@ -47,7 +47,7 @@ library(geotopbricks)
 
 ## Hydrology
 
-Scientific study of the movement, distribution, and quality of water on Earth water cycle, water resources and environmental watershed sustainability [_Wikipedia_]
+Scientific study of the movement, distribution, and quality of water on Earth water cycle, including water resources and environmental watershed sustainability [_Wikipedia_]
 \begincols
 \begincol{.48\textwidth}
 ![](resources/images/geotop_landscape.png){width=100%}\
@@ -668,7 +668,7 @@ gp
 ## Dicussion
 
 - Graphical Representation using R , useful for hydrologigists and Reaserchers; 
-- Open science : results accessible to a variegate community of professional, scientific or amateur people, not all hydrologigists are R users but not all R users are hydrologists! 
+- Open science : results accessible to a variegate community of professional, scientific or amateur people, _*not all hydrologigists are R users but not all R users are hydrologists! *_
 - Reproducible Analysis and Transparency : results can be automatically documented in reports or presentations. 
 - Though **geotopbricks** user can intercact between R and GEOtop using R enviroment and GEOtop keywords system indepently from the GEOtop simulation structure.   
 
