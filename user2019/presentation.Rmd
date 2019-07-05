@@ -159,8 +159,6 @@ Source code and documentation are available on GitHub repository: [http://geotop
 ![](resources/images/Capture_IO_GEOtopJPG.JPG){width=90%}\
 
 
-<!-- - potential interactions between hydrology (__GEOtop__) and other knowledge domains (_discipines_). -->
-
 
 
 ## GEOtop configuration File (geotop.inpts)
@@ -174,8 +172,10 @@ A GEOtop simulation is organized in a set of files within a directory containing
 - **input files** (e.g. meterological time series)
 - **output files** 
 
-  \endcol
-   \begincol{.65\textwidth}
+
+\endcol
+\begincol{.65\textwidth}
+
 ```
 InitDateDDMMYYYYhhmm=09/04/2014 18:00  
 EndDateDDMMYYYYhhmm =01/01/2016 00:00 
