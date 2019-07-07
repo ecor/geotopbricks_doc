@@ -27,7 +27,7 @@
 }{}
 \newif\ifbibliography
 \hypersetup{
-            pdftitle={geotopbricks: An R Package for the Distributed Hydrological Model GEOtop},
+            pdftitle={geotopbricks},
             pdfauthor={Emanuele Cordano, Giacomo Bertoldi, Elisa Bortoli},
             pdfborder={0 0 0},
             breaklinks=true}
@@ -157,22 +157,25 @@
 
 \setbeamertemplate{title page}{
 \begin{picture}(0,0)
-\put(0,50){\usebeamerfont{title}{\textcolor{corpdarkblue}{\inserttitle}\par}}
-
-\put(0,20){
+\put(0,70){\usebeamerfont{title}{\textcolor{corpdarkblue}{\inserttitle}\par}}
+\put(0,55){\usebeamerfont{subtitle}{\textcolor{corpdarkblue}{\insertsubtitle}\par}}
+\put(0,30){
 \small Emanuele Cordano (Rendena100) 
 }
-\put(0,0){
+\put(0,10){
 \texttt{\small github.com/ecor}
 }
-\put(0,-20){
+\put(0,-10){
 \small Giacomo Bertoldi , Elisa Bortoli (EURAC Ecohydro)
 }
-\put(0,-40){
+\put(0,-30){
 \texttt{\small github.com/Ecohydro}
 }
 
 \put(150,-100){
+\includegraphics[height=3cm]{resources/logo/logo_geotop.jpeg}
+}
+\put(250,-100){
 \includegraphics[height=3cm]{resources/logo/logo_useR2019.png}
 }
 \end{picture}
@@ -222,7 +225,7 @@
 \def\endcol{\end{column}}
 \def\endcols{\end{columns}}
 
-\title{geotopbricks: An R Package for the Distributed Hydrological Model GEOtop}
+\title{geotopbricks}
 \subtitle{An R Package for the Distributed Hydrological Model GEOtop}
 \author{Emanuele Cordano, Giacomo Bertoldi, Elisa Bortoli}
 \date{github/ecor / useR2019}
@@ -286,7 +289,7 @@ sustainability {[}\emph{Wikipedia}{]} \begincols
 \begincols
  \begincol{.48\textwidth}
 
-\includegraphics[width=0.70000\textwidth]{resources/images/geotop_grid.jpg}~
+\includegraphics[width=0.70000\textwidth]{resources/images/geotop_grid_mod.jpg}~
 
 \endcol
 \begincol{.48\textwidth}
@@ -301,59 +304,6 @@ Soil Heat (energy) balance equation:
 \end{frame}
 
 \begin{frame}{GEOtop Hydrological Model}
-
-GEOtop is an open-source integrated hydrological model, available though
-Github, \href{https://www.geotop.org}{www.geotop.org}, simulating:
-\begincols
-
-\begincol{.22\textwidth}
-\includegraphics[width=1.00000\textwidth]{resources/images/geotop_snow.png}\\
-\includegraphics[width=1.00000\textwidth]{resources/images/geotop_vegetation.png}\\
-\includegraphics[width=1.00000\textwidth]{resources/images/geotop_infiltration.png}\\
-\endcol
-
-\begincol{.77\textwidth}
-
-\begin{itemize}
-\item
-  soil water flow in the soil (\emph{Richards' equation,De Saint-Venant
-  Equation)};
-\item
-  heat flow in the soil \(\,\to\,\) \emph{(heat equation and frozen soil
-  thermodynamics) };
-\item
-  energy exchange with the atmosphere \(\,\to\,\) boundary conditions of
-  the equations above.
-\end{itemize}
-
-\endcol
-\endcols
-
-\end{frame}
-
-\begin{frame}{GEOtop Hydrological Model Structure}
-
-\begincols
-
-\begincol{.69\textwidth}
-\includegraphics[width=1.00000\textwidth]{resources/images/geotop_revised.png}\\
-\endcol
-
-\begincol{.30\textwidth}
-
-\begin{itemize}
-\item
-  \textbf{Input}: meteo data, elevations, soil parameters,\ldots{}
-\item
-  \textbf{Output}: snow cover, soil temperature, soil moisture,\ldots{}
-\end{itemize}
-
-\endcol
-\endcols
-
-\end{frame}
-
-\begin{frame}{GEOtop Hydrological Model Options}
 
 Water and/or energy budgets can be activated (both or only one) by users
 in function of the specic use case. GEOtop has two setup configurations
@@ -394,7 +344,29 @@ Source code and documentation are available on GitHub repository:
 
 \end{frame}
 
-\begin{frame}{geotopbrick R package: Why?}
+\begin{frame}{GEOtop Hydrological Model Structure}
+
+\begincols
+
+\begincol{.69\textwidth}
+\includegraphics[width=1.00000\textwidth]{resources/images/geotop_revised.png}\\
+\endcol
+
+\begincol{.30\textwidth}
+
+\begin{itemize}
+\item
+  \textbf{Input}: meteo data, elevations, soil parameters,\ldots{}
+\item
+  \textbf{Output}: snow cover, soil temperature, soil moisture,\ldots{}
+\end{itemize}
+
+\endcol
+\endcols
+
+\end{frame}
+
+\begin{frame}{geotopbricks R package: Why?}
 
 \begin{itemize}
 \tightlist
@@ -500,7 +472,7 @@ Here is the directory containing files of B2 point simulation:
 \begin{Highlighting}[]
 \KeywordTok{library}\NormalTok{(geotopbricks) }
 
-\NormalTok{## SET GEOTOP WORKING DIRECTORY}
+\NormalTok{## SET GEOTOP SIMULATION DIRECTORY}
 \NormalTok{wpath_B2 <-}\StringTok{ "resources/simulation/Matsch_B2_Ref_007"} 
 \end{Highlighting}
 \end{Shaded}
@@ -559,7 +531,7 @@ environment:
 
 \end{frame}
 
-\begin{frame}{Plots of weather variables in B2}
+\begin{frame}{Plots of weather variables at B2}
 
 \includegraphics{presentation_files/figure-beamer/unnamed-chunk-5-1.pdf}
 
@@ -586,7 +558,7 @@ Soil Water Content Profile:
 
 \end{frame}
 
-\begin{frame}[fragile]{Getting results of the simulation at B2}
+\begin{frame}[fragile]{Getting results of the simulation at P2}
 
 The same for P2:
 
@@ -608,24 +580,6 @@ The same for P2:
 \begin{frame}{Soil Water Content at P2 and B2}
 
 \includegraphics{presentation_files/figure-beamer/unnamed-chunk-10-1.pdf}
-
-\end{frame}
-
-\begin{frame}{Soil Water Pressure Head at P2 and B2}
-
-\includegraphics{presentation_files/figure-beamer/unnamed-chunk-11-1.pdf}
-
-\end{frame}
-
-\begin{frame}{Example of an Output Data Analytics (Soil Moisture
-Distribution)}
-
-Distribution of daily aggregated soil water contant at a 18 cm depth:
-\includegraphics{presentation_files/figure-beamer/unnamed-chunk-12-1.pdf}
-
-More deetails on the
-\href{https://github.com/ecor/geotopbricks_doc/blob/master/erum2018_poster/erum2018_poster_cordano_et_al.png}{\textbf{eRum2018}
-poster}.
 
 \end{frame}
 
@@ -656,14 +610,14 @@ Venosta/Vinschgau - Upper Adige River Basin - Alps - I/CH/A}
 
 \begin{frame}{Input GeoSpatial Map: Elevation and Weather Station}
 
-\includegraphics{presentation_files/figure-beamer/unnamed-chunk-14-1.pdf}
+\includegraphics{presentation_files/figure-beamer/unnamed-chunk-12-1.pdf}
 
 \end{frame}
 
 \begin{frame}[fragile]{3D Spatially Distributed Simulation (Output
 Geospatial Map): Soil Water Content}
 
-\includegraphics{presentation_files/figure-beamer/unnamed-chunk-15-1.pdf}
+\includegraphics{presentation_files/figure-beamer/unnamed-chunk-13-1.pdf}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -676,7 +630,7 @@ Geospatial Map): Soil Water Content}
 \begin{frame}{3D Spatially Distributed Simulation (Output Geospatial
 Map): Surface Water Discharge at the Outlet}
 
-\includegraphics{presentation_files/figure-beamer/unnamed-chunk-18-1.pdf}
+\includegraphics{presentation_files/figure-beamer/unnamed-chunk-16-1.pdf}
 
 \end{frame}
 
@@ -696,7 +650,7 @@ Map): Surface Water Discharge at the Outlet}
   documented in reports or presentations.
 \item
   Though \textbf{geotopbricks} user can intercact between R and GEOtop
-  using R enviroment and GEOtop keywords system indepently from the
+  using R enviroment and GEOtop keywords system, without using the
   GEOtop simulation structure.
 \end{itemize}
 
@@ -742,6 +696,28 @@ If intertested? See and follow us on (www.geotop.org) or
 Thank you for your attention! / Merci pour votre attention!\\
 Find us as \textbf{@ecor} (presenter) or \textbf{@EURAC-Ecohydro}
 (co-authors) on \emph{GitHub}.
+
+\end{frame}
+
+\begin{frame}{Addendum}
+
+\end{frame}
+
+\begin{frame}{Soil Water Pressure Head at P2 and B2}
+
+\includegraphics{presentation_files/figure-beamer/unnamed-chunk-17-1.pdf}
+
+\end{frame}
+
+\begin{frame}{Example of an Output Data Analytics (Soil Moisture
+Distribution)}
+
+Distribution of daily aggregated soil water contant at a 18 cm depth:
+\includegraphics{presentation_files/figure-beamer/unnamed-chunk-18-1.pdf}
+
+More details on the
+\href{https://github.com/ecor/geotopbricks_doc/blob/master/erum2018_poster/erum2018_poster_cordano_et_al.png}{\textbf{eRum2018}
+poster}.
 
 \end{frame}
 

@@ -1,5 +1,5 @@
 ---
-title: "geotopbricks"
+title: "geotopbricks: An R Package for the Distributed Hydrological Model GEOtop"
 author: "Emanuele Cordano, Giacomo Bertoldi, Elisa Bortoli"
 date: "github/ecor / useR2019"
 output:
@@ -62,7 +62,7 @@ Scientific study of the movement, distribution, and quality of water on Earth wa
 \begincols
   \begincol{.48\textwidth}
 
-  ![](resources/images/geotop_grid_mod.jpg){width=70%}\ 
+  ![](resources/images/geotop_grid.jpg){width=70%}\ 
 
   \endcol
 \begincol{.48\textwidth}
@@ -81,30 +81,51 @@ $$C_s \frac{\partial T_s}{\partial t} =  \nabla  \cdot \left[ K_t  ( \nabla T_s 
 
 
 
-<!-- ## GEOtop Hydrological Model -->
+## GEOtop Hydrological Model
 
-<!-- GEOtop is an open-source integrated hydrological model, available though Github, [www.geotop.org](https://www.geotop.org), simulating: -->
-<!-- \begincols -->
+GEOtop is an open-source integrated hydrological model, available though Github, [www.geotop.org](https://www.geotop.org), simulating:
+\begincols
 
-<!-- \begincol{.22\textwidth} -->
-<!-- ![](resources/images/geotop_snow.png){width=100%}\ -->
-<!-- ![](resources/images/geotop_vegetation.png){width=100%}\ -->
-<!-- ![](resources/images/geotop_infiltration.png){width=100%}\ -->
-<!-- \endcol -->
+\begincol{.22\textwidth}
+![](resources/images/geotop_snow.png){width=100%}\
+![](resources/images/geotop_vegetation.png){width=100%}\
+![](resources/images/geotop_infiltration.png){width=100%}\
+\endcol
 
-<!-- \begincol{.77\textwidth} -->
+\begincol{.77\textwidth}
 
-<!-- - soil water flow in the soil (*Richards' equation,De Saint-Venant Equation)*;  -->
+- soil water flow in the soil (*Richards' equation,De Saint-Venant Equation)*; 
 
-<!-- - heat flow in the soil $\,\to\,$ *(heat equation and frozen soil thermodynamics) *; -->
+- heat flow in the soil $\,\to\,$ *(heat equation and frozen soil thermodynamics) *;
 
-<!-- - energy exchange with the atmosphere $\,\to\,$  boundary conditions of the equations above. -->
+- energy exchange with the atmosphere $\,\to\,$  boundary conditions of the equations above.
 
-<!-- \endcol -->
-<!-- \endcols -->
+\endcol
+\endcols
 
 
-## GEOtop Hydrological Model 
+## GEOtop Hydrological Model Structure
+
+\begincols
+
+\begincol{.69\textwidth}
+![](resources/images/geotop_revised.png){width=100%}\
+\endcol
+
+\begincol{.30\textwidth}
+
+- **Input**: meteo data, elevations, soil parameters,...
+
+- **Output**: snow cover, soil temperature, soil moisture,...
+
+\endcol
+\endcols
+
+<!-- SISTEMARE FIGURA -->
+
+
+
+## GEOtop Hydrological Model Options
 
 Water and/or energy budgets can be activated (both or only one) by users in function of the specic use case.  GEOtop has two setup configurations :
 
@@ -130,30 +151,8 @@ Source code and documentation are available on GitHub repository: [http://geotop
 
 
 
-## GEOtop Hydrological Model Structure
 
-\begincols
-
-\begincol{.69\textwidth}
-![](resources/images/geotop_revised.png){width=100%}\
-\endcol
-
-\begincol{.30\textwidth}
-
-- **Input**: meteo data, elevations, soil parameters,...
-
-- **Output**: snow cover, soil temperature, soil moisture,...
-
-\endcol
-\endcols
-
-<!-- SISTEMARE FIGURA -->
-
-
-
-
-
-## geotopbricks R package: Why? 
+## geotopbrick R package: Why? 
 
 - complexity in input/output/configuration files (_"frontend"_) and data difficult to handle
 - need of user friendly environment for to GEOtop data tidying and data analytics (e.g. _R_)
@@ -227,7 +226,7 @@ Here is the directory containing files of B2 point simulation:
 ```{r,echo=TRUE,return=FALSE}
 library(geotopbricks) 
 
-## SET GEOTOP SIMULATION DIRECTORY
+## SET GEOTOP WORKING DIRECTORY
 wpath_B2 <- "resources/simulation/Matsch_B2_Ref_007" 
 
 ```
@@ -260,7 +259,7 @@ head(meteo[12:14,c("RelHum","WindSp","WindDir")])
 ```
 
 
-## Plots of weather variables at B2 
+## Plots of weather variables in B2 
 
 ```{r,echo=FALSE,return=TRUE,warning=FALSE,results="hide",message=FALSE,fig.height=5,fig.cap=""}
 library(ggplot2)
@@ -335,7 +334,7 @@ SWC_B2  <- get.geotop.inpts.keyword.value(
 help(get.geotop.inpts.keyword.value) ## for more details!
 ```
 
-## Getting results of the  simulation at P2
+## Getting results of the  simulation at B2
 
 The same for P2:
 ```{r,echo=TRUE,return=FALSE}
@@ -377,7 +376,7 @@ hudepths <- sprintf("depth %02d cm",zdepths)
 fills <- c("#d7191c","#fdae61","#a6d96a","#1a964")
 names(fills) <- hudepths
 ###
-when_b2 <- when
+
 
 
 ###
@@ -399,6 +398,80 @@ gswc <- ggplot(SWC, aes(x = time, y = value)) +
 show(gswc)
 
 ```
+
+## Soil Water Pressure Head at P2 and B2 
+
+```{r,echo=FALSE,return=TRUE,warning=FALSE,results="hide",message=FALSE,fig.height=5,fig.cap=""}
+##tz <- "Etc/GMT-1"
+psi_B2  <- get.geotop.inpts.keyword.value(
+  "SoilLiqWaterPressProfileFile",
+  wpath = wpath_B2,
+  data.frame = TRUE,
+  date_field = "Date12.DDMMYYYYhhmm.",
+  tz = tz,
+  zlayer.formatter = "z%04d"
+)
+
+##wpath_P2 <- "resources/simulation/Matsch_P2_Ref_007" 
+psi_P2  <- get.geotop.inpts.keyword.value(
+  "SoilLiqWaterPressProfileFile",
+  wpath = wpath_P2,
+  data.frame = TRUE,
+  date_field = "Date12.DDMMYYYYhhmm.",
+  tz = "Etc/GMT-1",
+  zlayer.formatter = "z%04d")
+  
+
+psi_B2 <- cbind(time=as.POSIXct(index(psi_B2)),as.data.frame(psi_B2))
+psi_P2 <- cbind(time=as.POSIXct(index(psi_P2)),as.data.frame(psi_P2))
+
+psi_B2a <- psi_B2[as.Date(psi_B2$time) %in% when,]
+psi_P2a <- psi_P2[as.Date(psi_P2$time) %in% when,]
+
+
+psi_B2a$site <- "B2"
+psi_P2a$site <- "P2"
+psi_B2m <- melt(psi_B2a,id=c("time","site"))
+psi_P2m <- melt(psi_P2a,id=c("time","site"))
+
+psi <- rbind(psi_B2m,psi_P2m)
+psi <- psi[psi$variable %in% depths,]
+
+gpsi <- ggplot(psi, aes(x = time, y = value)) + 
+   geom_line(aes(color = variable, fill = variable, linetype=site), 
+             position = position_dodge(0.8))+theme_bw() +  theme(text = element_text(size=15))+xlab("Time")+ylab("Soil Water Pressure Head [mm]") 
+ gpsi <- gpsi+scale_color_manual(values=rainbow(length(depths)),labels=hudepths[depths])
+
+show(gpsi)
+
+```
+
+## Example of an Output Data Analytics (Soil Moisture Distribution)
+
+Distribution of daily aggregated soil water contant  at a 18 cm depth:
+```{r,echo=FALSE,return=TRUE,warning=FALSE,results="hide",message=FALSE,fig.height=4,fig.cap=""}
+## Box Plot
+time <- SWC_B2$time
+SWC_B2_18cm <- SWC_B2[,"z0018"]
+SWC_P2_18cm <- SWC_P2[,"z0018"]
+## Daily Aggregation
+SWC_B2_18cm_aggr <- tapply(X=SWC_B2_18cm,INDEX=as.Date(SWC_B2$time), FUN=median)
+
+SWC_P2_18cm_aggr <- tapply(X=SWC_P2_18cm,INDEX=as.Date(SWC_P2$time), FUN=median)
+
+cond <- all(names(SWC_B2_18cm_aggr)==names(SWC_P2_18cm_aggr))
+if (!cond) stop("Mismacth dates between B2 and P2")
+months <- as.character(as.Date(names(SWC_B2_18cm_aggr)),format="%m-%Y")
+df <- data.frame(month=months,P2=as.vector(SWC_P2_18cm_aggr),B2=as.vector(SWC_B2_18cm_aggr))
+dfp <- df[df$month %in% c("08-2010","08-2011","08-2012","08-2013","08-2014"),]
+dfpm <- melt(dfp,id="month")
+SWC_Boxplot <- ggplot(dfpm, aes(x=as.factor(month), y=value))+geom_boxplot()
+SWC_Boxplot <- SWC_Boxplot+ggtitle("Box Plot: Daily Soil Water Content")+ylab("SWC")+xlab("")+theme_bw()+facet_grid(. ~ variable)+theme(text = element_text(size=15))+xlab("Time")
+show(SWC_Boxplot)
+```   
+
+More deetails on the [__eRum2018__ poster](https://github.com/ecor/geotopbricks_doc/blob/master/erum2018_poster/erum2018_poster_cordano_et_al.png). 
+
 
 
 ## 3D Spatially Distributed Distribution: Val Venosta/Vinschgau - Upper Adige River Basin - Alps - I/CH/A
@@ -597,7 +670,7 @@ gp
 - Graphical Representation using R , useful for hydrologigists and Reaserchers; 
 - Open science : results accessible to a variegate community of professional, scientific or amateur people, _*not all hydrologigists are R users but not all R users are hydrologists! *_
 - Reproducible Analysis and Transparency : results can be automatically documented in reports or presentations. 
-- Though **geotopbricks** user can intercact between R and GEOtop using R enviroment and GEOtop keywords system, without using the GEOtop simulation structure.   
+- Though **geotopbricks** user can intercact between R and GEOtop using R enviroment and GEOtop keywords system indepently from the GEOtop simulation structure.   
 
 ## Conclusions and Way Forward
 
@@ -625,83 +698,4 @@ Aknowledgements to
 
 Thank you for your attention! / Merci pour votre attention!  
 Find us as  **@ecor**  (presenter) or **@EURAC-Ecohydro** (co-authors)  on *GitHub*. 
-
-## Addendum 
-
-## Soil Water Pressure Head at P2 and B2 
-
-```{r,echo=FALSE,return=TRUE,warning=FALSE,results="hide",message=FALSE,fig.height=5,fig.cap=""}
-##tz <- "Etc/GMT-1"
-when <- when_b2
-psi_B2  <- get.geotop.inpts.keyword.value(
-  "SoilLiqWaterPressProfileFile",
-  wpath = wpath_B2,
-  data.frame = TRUE,
-  date_field = "Date12.DDMMYYYYhhmm.",
-  tz = tz,
-  zlayer.formatter = "z%04d"
-)
-
-##wpath_P2 <- "resources/simulation/Matsch_P2_Ref_007" 
-psi_P2  <- get.geotop.inpts.keyword.value(
-  "SoilLiqWaterPressProfileFile",
-  wpath = wpath_P2,
-  data.frame = TRUE,
-  date_field = "Date12.DDMMYYYYhhmm.",
-  tz = "Etc/GMT-1",
-  zlayer.formatter = "z%04d")
-  
-
-psi_B2 <- cbind(time=as.POSIXct(index(psi_B2)),as.data.frame(psi_B2))
-psi_P2 <- cbind(time=as.POSIXct(index(psi_P2)),as.data.frame(psi_P2))
-
-psi_B2a <- psi_B2[as.Date(psi_B2$time) %in% when_b2,]
-psi_P2a <- psi_P2[as.Date(psi_P2$time) %in% when_b2,]
-
-
-psi_B2a$site <- "B2"
-psi_P2a$site <- "P2"
-psi_B2m <- melt(psi_B2a,id=c("time","site"))
-psi_P2m <- melt(psi_P2a,id=c("time","site"))
-
-psi <- rbind(psi_B2m,psi_P2m)
-psi <- psi[psi$variable %in% depths,]
-
-gpsi <- ggplot(psi, aes(x = time, y = value)) + 
-   geom_line(aes(color = variable, fill = variable, linetype=site), 
-             position = position_dodge(0.8))+theme_bw() +  theme(text = element_text(size=15))+xlab("Time")+ylab("Soil Water Pressure Head [mm]") 
- gpsi <- gpsi+scale_color_manual(values=rainbow(length(depths)),labels=hudepths[depths])
-
-show(gpsi)
-
-```
-
-## Example of an Output Data Analytics (Soil Moisture Distribution)
-
-Distribution of daily aggregated soil water contant  at a 18 cm depth:
-```{r,echo=FALSE,return=TRUE,warning=FALSE,results="hide",message=FALSE,fig.height=4,fig.cap=""}
-## Box Plot
-time <- SWC_B2$time
-SWC_B2_18cm <- SWC_B2[,"z0018"]
-SWC_P2_18cm <- SWC_P2[,"z0018"]
-## Daily Aggregation
-SWC_B2_18cm_aggr <- tapply(X=SWC_B2_18cm,INDEX=as.Date(SWC_B2$time), FUN=median)
-
-SWC_P2_18cm_aggr <- tapply(X=SWC_P2_18cm,INDEX=as.Date(SWC_P2$time), FUN=median)
-
-cond <- all(names(SWC_B2_18cm_aggr)==names(SWC_P2_18cm_aggr))
-if (!cond) stop("Mismacth dates between B2 and P2")
-months <- as.character(as.Date(names(SWC_B2_18cm_aggr)),format="%m-%Y")
-df <- data.frame(month=months,P2=as.vector(SWC_P2_18cm_aggr),B2=as.vector(SWC_B2_18cm_aggr))
-dfp <- df[df$month %in% c("08-2010","08-2011","08-2012","08-2013","08-2014"),]
-dfpm <- melt(dfp,id="month")
-SWC_Boxplot <- ggplot(dfpm, aes(x=as.factor(month), y=value))+geom_boxplot()
-SWC_Boxplot <- SWC_Boxplot+ggtitle("Box Plot: Daily Soil Water Content")+ylab("SWC")+xlab("")+theme_bw()+facet_grid(. ~ variable)+theme(text = element_text(size=15))+xlab("Time")
-show(SWC_Boxplot)
-```   
-
-More details on the [__eRum2018__ poster](https://github.com/ecor/geotopbricks_doc/blob/master/erum2018_poster/erum2018_poster_cordano_et_al.png). 
-
-
-
 
