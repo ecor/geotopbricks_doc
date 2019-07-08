@@ -36,9 +36,9 @@ library(geotopbricks)
 
 \begincol{0.7\textwidth}
 
-- Environmental engineers with hydraulic and hydrological background (more deterministic and physicall-based than statics!)
-- Some of us are resercher, other are self-employed and freelancers - www.rendena100.eu .  
-- Some of us are author of several R-packages and R enthusiast. 
+- Environmental engineers with hydrological background (more deterministic and physicall-based than statics!)
+- Some of us are reserchers, other are self-employed and freelancers - www.rendena100.eu .  
+- Some of us are authors of several R-packages and R enthusiast. 
 - Some of us are developers of GEOtop hydrologic models with skills in hydrology and environmental science and also in C/C++, parallell programming, High Perfomance Computing, etc
 
 \endcol
@@ -47,7 +47,7 @@ library(geotopbricks)
 
 ## Hydrology
 
-Scientific study of the movement, distribution, and quality of water on Earth water cycle, including water resources and environmental watershed sustainability [_Wikipedia_]
+Scientific study of the movement, distribution, and quality of water on Earth and other planets, including the water cycle, water resources and environmental watershed sustainability.[_Wikipedia_]
 \begincols
 \begincol{.48\textwidth}
 ![](resources/images/geotop_landscape.png){width=100%}\
@@ -59,14 +59,19 @@ Scientific study of the movement, distribution, and quality of water on Earth wa
 
 ## Hydrolgical models
 
+
 \begincols
-  \begincol{.48\textwidth}
+  \begincol{.58\textwidth}
 
   ![](resources/images/geotop_grid_mod.jpg){width=70%}\ 
-
-  \endcol
-\begincol{.48\textwidth}
 ![](resources/images/water_balance.png){width=50%}\
+  \endcol
+\begincol{.02\textwidth}
+\endcol
+\begincol{.36\textwidth}
+
+Models that calculates water river discharge, soil water content,evapotranspiration, etc.  (*output*) in function of weather time series and soil/land/geomorphological characterization (*input*).
+
 \endcol
 \endcols
 Soil water mass balance equation:
@@ -75,44 +80,15 @@ Soil Heat (energy) balance equation:
 $$C_s \frac{\partial T_s}{\partial t} =  \nabla  \cdot \left[ K_t  ( \nabla T_s  ) \right] + \lambda S + ...$$
 
 
-
-
-
-
-
-
-<!-- ## GEOtop Hydrological Model -->
-
-<!-- GEOtop is an open-source integrated hydrological model, available though Github, [www.geotop.org](https://www.geotop.org), simulating: -->
-<!-- \begincols -->
-
-<!-- \begincol{.22\textwidth} -->
-<!-- ![](resources/images/geotop_snow.png){width=100%}\ -->
-<!-- ![](resources/images/geotop_vegetation.png){width=100%}\ -->
-<!-- ![](resources/images/geotop_infiltration.png){width=100%}\ -->
-<!-- \endcol -->
-
-<!-- \begincol{.77\textwidth} -->
-
-<!-- - soil water flow in the soil (*Richards' equation,De Saint-Venant Equation)*;  -->
-
-<!-- - heat flow in the soil $\,\to\,$ *(heat equation and frozen soil thermodynamics) *; -->
-
-<!-- - energy exchange with the atmosphere $\,\to\,$  boundary conditions of the equations above. -->
-
-<!-- \endcol -->
-<!-- \endcols -->
-
-
 ## GEOtop Hydrological Model 
 
-Water and/or energy budgets can be activated (both or only one) by users in function of the specic use case.  GEOtop has two setup configurations :
+GEOtop hyodrological model solves water mass balance and energy balance equations coupled with the exchanges between terrain and lower atmoshere with the following two setup configurations:
 
 - __1D__: only vertical fluxes $\,\to\,$ mass and energy balance at local scale (only in one soil column)
 
 - __3D__: vertical and lateral fluxes $\,\to\,$ balances at basin scale
 
-![](resources/images/geotop_ET_SWC.png){width=80%}\
+![](resources/images/geotop_ET_SWC.png){width=60%}\
 
 
 ## GEOtop Hydrological Model Software Package / Source Code
@@ -130,28 +106,6 @@ Source code and documentation are available on GitHub repository: [http://geotop
 
 
 
-## GEOtop Hydrological Model Structure
-
-\begincols
-
-\begincol{.69\textwidth}
-![](resources/images/geotop_revised.png){width=100%}\
-\endcol
-
-\begincol{.30\textwidth}
-
-- **Input**: meteo data, elevations, soil parameters,...
-
-- **Output**: snow cover, soil temperature, soil moisture,...
-
-\endcol
-\endcols
-
-<!-- SISTEMARE FIGURA -->
-
-
-
-
 
 ## geotopbricks R package: Why? 
 
@@ -164,19 +118,19 @@ Source code and documentation are available on GitHub repository: [http://geotop
 
 
 
-## GEOtop configuration File (geotop.inpts)
+## GEOtop simulation configuration file (geotop.inpts)
 
-A GEOtop simulation is organized in a set of files within a directory containing a **configuration file** ,called _geotop.inpts_ filled with a keywords system addressing to:
+A GEOtop simulation is organized in a set of files within a directory containing a **configuration file** ,called _geotop.inpts_ filled with a keywords system addressing to simulation options (e.g. simulation period), **input files** (e.g. meteorological time series, soil and geomorphology of the basin), **output files** (spatio-temporal maps of the results).
 
-\begincols
-  \begincol{.30\textwidth}
-  
-- simulation options (e.g. simulation period)
-- **input files** (e.g. meterological time series)
-- **output files** 
+<!-- \begincols -->
+<!--   \begincol{.30\textwidth} -->
 
-  \endcol
-   \begincol{.65\textwidth}
+<!-- - simulation options (e.g. simulation period) -->
+<!-- - **input files** (e.g. meterological time series) -->
+<!-- - **output files**  -->
+
+<!--   \endcol -->
+<!--    \begincol{.65\textwidth} -->
 ```
 InitDateDDMMYYYYhhmm=09/04/2014 18:00  
 EndDateDDMMYYYYhhmm =01/01/2016 00:00 
@@ -184,11 +138,13 @@ EndDateDDMMYYYYhhmm =01/01/2016 00:00
 MeteoFile           ="meteoB2_irr" 
 PointOutputFile     ="tabs/point" 
 ```
-\endcol
-\endcols
+<!-- \endcol -->
+<!-- \endcols -->
 
 
-## __geotopbricks__ Technical details
+
+
+## geotopbricks R package: what it does 
 
 The aim of **geotopbricks** , starting in 2013, is to bring all the data of a GEOtop simulaton into the powerful statistical
 **R** environment by using the `keyword-value` syntax of *geotop.inpts*. **geotopbricks** does the following actions:
@@ -199,7 +155,7 @@ The aim of **geotopbricks** , starting in 2013, is to bring all the data of a GE
 - to import spatially and spatio-temporal gridded objects as _RasterLayer-class_ or _RasterBrick-class_ objects (**raster** package) 
 
 ## 1D Simulation of soil water budget in an alpine site:  two points
-Soil water content (SWC) in two points P2 and B2 located in Val Mazia/Match, Malles Venosta/Mals Vinschgau, South Tyrol, Italy [http://lter.eurac.edu/en].
+Soil water content (SWC) in two points **P2** and **B2** located in Val Mazia/Match, Malles Venosta/Mals Vinschgau, South Tyrol, Italy [http://lter.eurac.edu/en].
 \begincols
 
 \begincol{0.30\textwidth}
@@ -237,7 +193,7 @@ wpath_B2 <- "resources/simulation/Matsch_B2_Ref_007"
 
 ## Getting simulation input data
 
-Meteorological variable time series are imported and saved as 'meteo' variable (class 'zoo'). This variable is retrieved through the GEOtop keyword  __MeteoFile__ : 
+Meteorological variable time series are imported and saved as *meteo* variable (class *zoo*). This variable is retrieved through the GEOtop keyword  __MeteoFile__ : 
 
 ```{r,echo=TRUE,return=TRUE}
 tz <- "Etc/GMT-1"
@@ -451,18 +407,18 @@ keyword <- 'SoilLiqContentTensorFile'
 s <- get.geotop.inpts.keyword.value(keyword,wpath=wpath_3D)
 start <-  get.geotop.inpts.keyword.value("InitDateDDMMYYYYhhmm",date=TRUE,wpath=wpath_3D,tz=tz) 
 end <- get.geotop.inpts.keyword.value("EndDateDDMMYYYYhhmm",date=TRUE,wpath=wpath_3D,tz=tz) 
-
-b <- brickFromOutputSoil3DTensor(x=keyword,when=end,wpath=wpath_3D,tz=tz)
+whenx <- end-years(1)-months(2)
+b <- brickFromOutputSoil3DTensor(x=keyword,when=whenx,wpath=wpath_3D,tz=tz)
 ##plot(b,col=heat.colors(10))
 color_b <- colorRampPalette((brewer.pal(20,"PuBu")))
 rasterVis::levelplot(b,margin=FALSE,col.regions=color_b,xlab=NULL,ylab=NULL,scales=list(draw=FALSE))
 ```
 
-```{r eval=FALSE,echo=TRUE}
-
-help("brickFromOutputSoil3DTensor") ## for more details
-
 ```
+brickFromOutputSoil3DTensor("SoilLiqContentTensorFile", 
+wpath=wpath_3D,when="2011-08-16 12:00:00 +01")
+```
+
 
 ## 3D Spatially Distributed Simulation (Output Geospatial Map): Surface Water Discharge at the Outlet 
 
@@ -592,24 +548,24 @@ gp
 ```
 
 
-## Dicussion
+## Discussion
 
-- Graphical Representation using R , useful for hydrologigists and Reaserchers; 
-- Open science : results accessible to a variegate community of professional, scientific or amateur people, _*not all hydrologigists are R users but not all R users are hydrologists! *_
-- Reproducible Analysis and Transparency : results can be automatically documented in reports or presentations. 
-- Though **geotopbricks** user can intercact between R and GEOtop using R enviroment and GEOtop keywords system, without using the GEOtop simulation structure.   
+
+- **geotopbricks** allows graphical Representation using R of GEOtop results , useful for hydrologigists and Reaserchers;
+
+- Though **geotopbricks** user can interact between R and GEOtop using R enviroment and GEOtop keywords system, without using the GEOtop simulation structure.   
+
+- Processing of a GEOtop simulation is always reproducible for any other simulation; results can be automatically documented in reports or presentations. 
+
 
 ## Conclusions and Way Forward
 
+- **geotopbricks** is an interface of GEOtop in R speaking the language of GEOtop;
 
-- Open Source (and not only) Hydrolgical Model needs powerful and FAIR interfaces to process I/O data;
+- Open Source (and not only) Hydrolgical Model needs powerful interfaces to process I/O in a FAIR way;
 
-- An R package working directly with GEOtop keywords facilitate the development of customized tools for specific GEOtop applications; 
+- R code based on **geotopbricks** can help the implantetion of further package or apps: analityics, model calibration, visualization.
 
-- Collaborations beetween hydrologists / modelers and R users are encouraged. 
-
-
-<center>![image](resources/images/FAIR_data_principles.jpg){width=50%,}\<\center>
 
 ## Finally 
 
@@ -626,7 +582,34 @@ Aknowledgements to
 Thank you for your attention! / Merci pour votre attention!  
 Find us as  **@ecor**  (presenter) or **@EURAC-Ecohydro** (co-authors)  on *GitHub*. 
 
+
+
 ## Addendum 
+
+## GEOtop Hydrological Model Flowchart
+
+\begincols
+
+\begincol{.69\textwidth}
+![](resources/images/geotop_revised.png){width=100%}\
+\endcol
+
+\begincol{.30\textwidth}
+
+- **Input**: meteo data, elevations, soil parameters,...
+
+- **Output**: snow cover, soil temperature, soil moisture,...
+
+\endcol
+\endcols
+
+
+
+
+
+
+
+
 
 ## Soil Water Pressure Head at P2 and B2 
 

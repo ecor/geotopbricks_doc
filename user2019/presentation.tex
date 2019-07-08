@@ -250,13 +250,13 @@
 \begin{itemize}
 \tightlist
 \item
-  Environmental engineers with hydraulic and hydrological background
-  (more deterministic and physicall-based than statics!)
+  Environmental engineers with hydrological background (more
+  deterministic and physicall-based than statics!)
 \item
-  Some of us are resercher, other are self-employed and freelancers -
+  Some of us are reserchers, other are self-employed and freelancers -
   www.rendena100.eu .\\
 \item
-  Some of us are author of several R-packages and R enthusiast.
+  Some of us are authors of several R-packages and R enthusiast.
 \item
   Some of us are developers of GEOtop hydrologic models with skills in
   hydrology and environmental science and also in C/C++, parallell
@@ -272,8 +272,8 @@
 \begin{frame}{Hydrology}
 
 Scientific study of the movement, distribution, and quality of water on
-Earth water cycle, including water resources and environmental watershed
-sustainability {[}\emph{Wikipedia}{]} \begincols
+Earth and other planets, including the water cycle, water resources and
+environmental watershed sustainability.{[}\emph{Wikipedia}{]} \begincols
 \begincol{.48\textwidth}
 \includegraphics[width=1.00000\textwidth]{resources/images/geotop_landscape.png}\\
 \endcol
@@ -287,13 +287,19 @@ sustainability {[}\emph{Wikipedia}{]} \begincols
 \begin{frame}{Hydrolgical models}
 
 \begincols
- \begincol{.48\textwidth}
+ \begincol{.58\textwidth}
 
 \includegraphics[width=0.70000\textwidth]{resources/images/geotop_grid_mod.jpg}~
-
-\endcol
-\begincol{.48\textwidth}
 \includegraphics[width=0.50000\textwidth]{resources/images/water_balance.png}\\
+\endcol
+\begincol{.02\textwidth} \endcol
+\begincol{.36\textwidth}
+
+Models that calculates water river discharge, soil water
+content,evapotranspiration, etc. (\emph{output}) in function of weather
+time series and soil/land/geomorphological characterization
+(\emph{input}).
+
 \endcol
 \endcols
 Soil water mass balance equation:
@@ -305,9 +311,9 @@ Soil Heat (energy) balance equation:
 
 \begin{frame}{GEOtop Hydrological Model}
 
-Water and/or energy budgets can be activated (both or only one) by users
-in function of the specic use case. GEOtop has two setup configurations
-:
+GEOtop hyodrological model solves water mass balance and energy balance
+equations coupled with the exchanges between terrain and lower atmoshere
+with the following two setup configurations:
 
 \begin{itemize}
 \item
@@ -318,7 +324,7 @@ in function of the specic use case. GEOtop has two setup configurations
   scale
 \end{itemize}
 
-\includegraphics[width=0.80000\textwidth]{resources/images/geotop_ET_SWC.png}\\
+\includegraphics[width=0.60000\textwidth]{resources/images/geotop_ET_SWC.png}\\
 
 \end{frame}
 
@@ -344,28 +350,6 @@ Source code and documentation are available on GitHub repository:
 
 \end{frame}
 
-\begin{frame}{GEOtop Hydrological Model Structure}
-
-\begincols
-
-\begincol{.69\textwidth}
-\includegraphics[width=1.00000\textwidth]{resources/images/geotop_revised.png}\\
-\endcol
-
-\begincol{.30\textwidth}
-
-\begin{itemize}
-\item
-  \textbf{Input}: meteo data, elevations, soil parameters,\ldots{}
-\item
-  \textbf{Output}: snow cover, soil temperature, soil moisture,\ldots{}
-\end{itemize}
-
-\endcol
-\endcols
-
-\end{frame}
-
 \begin{frame}{geotopbricks R package: Why?}
 
 \begin{itemize}
@@ -381,27 +365,15 @@ Source code and documentation are available on GitHub repository:
 
 \end{frame}
 
-\begin{frame}[fragile]{GEOtop configuration File (geotop.inpts)}
+\begin{frame}[fragile]{GEOtop simulation configuration file
+(geotop.inpts)}
 
 A GEOtop simulation is organized in a set of files within a directory
 containing a \textbf{configuration file} ,called \emph{geotop.inpts}
-filled with a keywords system addressing to:
-
-\begincols
- \begincol{.30\textwidth}
-
-\begin{itemize}
-\tightlist
-\item
-  simulation options (e.g.~simulation period)
-\item
-  \textbf{input files} (e.g.~meterological time series)
-\item
-  \textbf{output files}
-\end{itemize}
-
-\endcol
- \begincol{.65\textwidth}
+filled with a keywords system addressing to simulation options
+(e.g.~simulation period), \textbf{input files} (e.g.~meteorological time
+series, soil and geomorphology of the basin), \textbf{output files}
+(spatio-temporal maps of the results).
 
 \begin{verbatim}
 InitDateDDMMYYYYhhmm=09/04/2014 18:00  
@@ -411,12 +383,9 @@ MeteoFile           ="meteoB2_irr"
 PointOutputFile     ="tabs/point" 
 \end{verbatim}
 
-\endcol
-\endcols
-
 \end{frame}
 
-\begin{frame}[fragile]{\textbf{geotopbricks} Technical details}
+\begin{frame}[fragile]{geotopbricks R package: what it does}
 
 The aim of \textbf{geotopbricks} , starting in 2013, is to bring all the
 data of a GEOtop simulaton into the powerful statistical \textbf{R}
@@ -444,9 +413,9 @@ environment by using the \texttt{keyword-value} syntax of
 \begin{frame}{1D Simulation of soil water budget in an alpine site: two
 points}
 
-Soil water content (SWC) in two points P2 and B2 located in Val
-Mazia/Match, Malles Venosta/Mals Vinschgau, South Tyrol, Italy
-{[}\url{http://lter.eurac.edu/en}{]}. \begincols
+Soil water content (SWC) in two points \textbf{P2} and \textbf{B2}
+located in Val Mazia/Match, Malles Venosta/Mals Vinschgau, South Tyrol,
+Italy {[}\url{http://lter.eurac.edu/en}{]}. \begincols
 
 \begincol{0.30\textwidth}
 \includegraphics[width=1.00000\textwidth]{resources/images/B2_P2.png}\\
@@ -483,9 +452,9 @@ Here is the directory containing files of B2 point simulation:
 
 \begin{frame}[fragile]{Getting simulation input data}
 
-Meteorological variable time series are imported and saved as `meteo'
-variable (class `zoo'). This variable is retrieved through the GEOtop
-keyword \textbf{MeteoFile} :
+Meteorological variable time series are imported and saved as
+\emph{meteo} variable (class \emph{zoo}). This variable is retrieved
+through the GEOtop keyword \textbf{MeteoFile} :
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -619,39 +588,34 @@ Geospatial Map): Soil Water Content}
 
 \includegraphics{presentation_files/figure-beamer/unnamed-chunk-13-1.pdf}
 
-\begin{Shaded}
-\begin{Highlighting}[]
-\KeywordTok{help}\NormalTok{(}\StringTok{"brickFromOutputSoil3DTensor"}\NormalTok{) ## for more details}
-\end{Highlighting}
-\end{Shaded}
+\begin{verbatim}
+brickFromOutputSoil3DTensor("SoilLiqContentTensorFile", 
+wpath=wpath_3D,when="2011-08-16 12:00:00 +01")
+\end{verbatim}
 
 \end{frame}
 
 \begin{frame}{3D Spatially Distributed Simulation (Output Geospatial
 Map): Surface Water Discharge at the Outlet}
 
-\includegraphics{presentation_files/figure-beamer/unnamed-chunk-16-1.pdf}
+\includegraphics{presentation_files/figure-beamer/unnamed-chunk-15-1.pdf}
 
 \end{frame}
 
-\begin{frame}{Dicussion}
+\begin{frame}{Discussion}
 
 \begin{itemize}
-\tightlist
 \item
-  Graphical Representation using R , useful for hydrologigists and
-  Reaserchers;
+  \textbf{geotopbricks} allows graphical Representation using R of
+  GEOtop results , useful for hydrologigists and Reaserchers;
 \item
-  Open science : results accessible to a variegate community of
-  professional, scientific or amateur people, \emph{\emph{not all
-  hydrologigists are R users but not all R users are hydrologists! }}
-\item
-  Reproducible Analysis and Transparency : results can be automatically
-  documented in reports or presentations.
-\item
-  Though \textbf{geotopbricks} user can intercact between R and GEOtop
+  Though \textbf{geotopbricks} user can interact between R and GEOtop
   using R enviroment and GEOtop keywords system, without using the
   GEOtop simulation structure.
+\item
+  Processing of a GEOtop simulation is always reproducible for any other
+  simulation; results can be automatically documented in reports or
+  presentations.
 \end{itemize}
 
 \end{frame}
@@ -660,17 +624,15 @@ Map): Surface Water Discharge at the Outlet}
 
 \begin{itemize}
 \item
-  Open Source (and not only) Hydrolgical Model needs powerful and FAIR
-  interfaces to process I/O data;
+  \textbf{geotopbricks} is an interface of GEOtop in R speaking the
+  language of GEOtop;
 \item
-  An R package working directly with GEOtop keywords facilitate the
-  development of customized tools for specific GEOtop applications;
+  Open Source (and not only) Hydrolgical Model needs powerful interfaces
+  to process I/O in a FAIR way;
 \item
-  Collaborations beetween hydrologists / modelers and R users are
-  encouraged.
+  R code based on \textbf{geotopbricks} can help the implantetion of
+  further package or apps: analityics, model calibration, visualization.
 \end{itemize}
-
-\includegraphics{resources/images/FAIR_data_principles.jpg}\textless{}\center\textgreater{}
 
 \end{frame}
 
@@ -703,9 +665,31 @@ Find us as \textbf{@ecor} (presenter) or \textbf{@EURAC-Ecohydro}
 
 \end{frame}
 
+\begin{frame}{GEOtop Hydrological Model Flowchart}
+
+\begincols
+
+\begincol{.69\textwidth}
+\includegraphics[width=1.00000\textwidth]{resources/images/geotop_revised.png}\\
+\endcol
+
+\begincol{.30\textwidth}
+
+\begin{itemize}
+\item
+  \textbf{Input}: meteo data, elevations, soil parameters,\ldots{}
+\item
+  \textbf{Output}: snow cover, soil temperature, soil moisture,\ldots{}
+\end{itemize}
+
+\endcol
+\endcols
+
+\end{frame}
+
 \begin{frame}{Soil Water Pressure Head at P2 and B2}
 
-\includegraphics{presentation_files/figure-beamer/unnamed-chunk-17-1.pdf}
+\includegraphics{presentation_files/figure-beamer/unnamed-chunk-16-1.pdf}
 
 \end{frame}
 
@@ -713,7 +697,7 @@ Find us as \textbf{@ecor} (presenter) or \textbf{@EURAC-Ecohydro}
 Distribution)}
 
 Distribution of daily aggregated soil water contant at a 18 cm depth:
-\includegraphics{presentation_files/figure-beamer/unnamed-chunk-18-1.pdf}
+\includegraphics{presentation_files/figure-beamer/unnamed-chunk-17-1.pdf}
 
 More details on the
 \href{https://github.com/ecor/geotopbricks_doc/blob/master/erum2018_poster/erum2018_poster_cordano_et_al.png}{\textbf{eRum2018}
