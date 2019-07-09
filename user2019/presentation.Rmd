@@ -559,9 +559,9 @@ gp
 
 - **geotopbricks** is an interface of GEOtop in R speaking the language of GEOtop;
 
-- R code based on **geotopbricks** can help the implantetion of further package or apps: analityics, model calibration, visualization.
+- R code based on **geotopbricks** can help the implementation of further package or apps: analityics, model calibration, visualization.
 
-- Open Source (and not only) Hydrolgical Model needs powerful interfaces to process I/O in a FAIR way;
+- Open Source (and not only) Hydrological Model needs powerful interfaces to process I/O in a FAIR way;
 
 ![image](resources/images/FAIR_data_principles.jpg){width=75%}\
 
