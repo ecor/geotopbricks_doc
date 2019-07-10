@@ -62,7 +62,7 @@ Scientific study of the movement, distribution, and quality of water, including 
 \begincols
   \begincol{.58\textwidth}
 
-  ![](resources/images/geotop_grid_mod.jpg){width=70%}\ 
+  ![](resources/images/geotop_grid_mod2.jpg){width=70%}\ 
 ![](resources/images/water_balance.png){width=50%}\
   \endcol
 \begincol{.02\textwidth}
