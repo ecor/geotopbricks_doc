@@ -1,0 +1,24 @@
+Model: GEOtop
+Compiler: c++ (gcc 5.4.0 "c++ (Ubuntu 5.4.0-6ubuntu1~16.04.9) 5.4.0 20160609")
+Processor: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz
+Author:  Elisa Bortoli (elisa.bortoli3@gmail.com)
+Date: 28-06-2018
+
+Name: Borden05m
+
+Description: Coarse spatial scale simulatio for the Mazia Catchment LTER (South Tyrol, Italy) http://lter.eurac.edu/en 
+
+Provided by Giacomo Bertoldi: giacomo.bertoldi@eurac.edu
+
+Input:
+Dem with patial resolution 1000 m, area about 70 km2.
+37 different meteo stations
+11 different land cover types
+
+Time:
+InitDateDDMMYYYYhhmm = 16/10/2010 12:00
+EndDateDDMMYYYYhhmm =  16/10/2010 16:00
+
+Output:
+- tabs (13 differen output points): every 1 hour (DischargeFile PointOutputFile SnowTempProfileFile SnowLiqContentProfileFile SnowIceContentProfileFile SnowDepthLayersFile SnowCoveredAreaFile BasinOutputFile SoilTempProfileFile SoilLiqContentProfileFile SoilIceContentProfileFile )
+- maps: every 1 hour (SoilAveragedTempTensorFile SurfaceTempMapFile SoilLiqContentTensorFile  SoilTotWaterPressTensorFile  LandSurfaceWaterDepthMapFile  WaterTableDepthMapFile  SWEMapFile  SnowDepthMapFile  NetShortwaveRadiationMapFile  InShortwaveRadiationMapFile NetLongwaveRadiationMapFile  InLongwaveRadiationMapFile NetRadiationMapFile SurfaceHeatFluxMapFile  SurfaceSensibleHeatFluxMapFile  SurfaceLatentHeatFluxMapFile  EvapotranspirationFromSoilMapFile  PrecipitationMapFile NetPrecipitationFile AirTempMapFile")
