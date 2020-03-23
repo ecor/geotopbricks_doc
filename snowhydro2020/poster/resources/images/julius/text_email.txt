@@ -1,0 +1,27 @@
+Ciao Emanuele,
+
+Good Skype earlier--glad we could touch base to get everything straightened out. Here are some answers for the questions:
+
+1) I copy here the institutes of all authors, according to what we're submitting to Oikos: 
+ Julius G. Bright Ross,1,2 Wibke Peters,3 Federico Ossi,4 Paul Moorcroft,1 Emanuele Cordano,5,6 Emanuele Eccel,6 Filippo Bianchini,4,7 Maurizio Ramanzin,8 and Francesca Cagnacci1,4*
+1.     Department of Organismic and Evolutionary Biology, Harvard University, Cambridge, MA, USA
+2.     Wildlife Conservation Research Unit, Department of Zoology, University of Oxford, Oxford, United Kingdom
+3.     Department of Biodiversity, Conservation and Wildlife Management, Bavarian State Institute of Forestry, Freising, Germany
+4.     Biodiversity and Molecular Ecology Department, Research and Innovation Centre, Fondazione Edmund Mach, San Michele all’Adige, Italy
+5.     Rendena100 sole proprietorship, Tione di Trento, Italy
+6.     Department of Sustainable Agro-ecosystems and Bioresources, Research and Innovation Centre, Fondazione Edmund Mach, San Michele all’Adige, Italy
+7.     University of Rome ‘La Sapienza’, Dept. of Biology and Biotechnology ‘Charles Darwin’, Roma, Italy
+8.     Department of Agronomy, Food, Natural Resources, Animals and Environment, University of Padova, Padova, Italy
+
+2) I've attached the logos for Harvard and WildCRU (my unit within Oxford). I'd imagine we'd also want FEM up there.
+
+3) As we discussed, not much has happened on the validation since Fede's 2015 paper, so you're all up todate for that.
+
+4) I've attached two figures. One is the subtraction maps of probability-of-use change from 1999-2002 to 2012-2015. We used your GEOtop output with maps of canopy cover and feeding station distribution to predict habitat selection patterns in those two study periods, then subtracted like-months (Dec-Dec, Feb-Feb, Apr-Apr) for given years to show the effects of changing a) feeding station distributions and b) snow patterns. As you can see, GEOtop let us make statements like "in snowier years (e.g. 2014), habitat selection became more narrowly constrained around feeding stations than in less snowy years (e.g. 2015) or in the past".
+The second figure is just the prediction space for our model, built using GEOtop data. It's a little less didactic, but I figured I'd send it as well.
+And here is the best piece of text from our abstract for the poster: " As supplemental feeding availability increased across the study area from the historical to the contemporary period of study, roe deer exhibited higher selection for areas in close proximity to supplemental feeding sites, regardless of snow depth. We also found that the reduction in December and April snowfall observed across decades led to a reduction of inter-annual variability in relative probability of use for these months in the contemporary period relative to the historical one."
+
+Hope this is all helpful, let me know if you need anything else!
+
+Best,
+Julius

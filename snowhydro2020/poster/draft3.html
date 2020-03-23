@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="generator" content="pandoc" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<!--
+Font-awesome icons ie github or twitter
+-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/brands.css" integrity="sha384-n9+6/aSqa9lBidZMRCQHTHKJscPq6NW4pCQBiMmHdUCvPN8ZOg2zJJTkC7WIezWv" crossorigin="anonymous">
+
+<!--
+Google fonts api stuff
+-->
+
+
+
+<title>Modelling spatio-temporal dynamics of snow depth and large herbivore’s winter habitat selection</title>
+
+<script src="draft3_files/jquery-1.11.3/jquery.min.js"></script>
+<script src="draft3_files/elevate-section-attrs-2.0/elevate-section-attrs.js"></script>
+
+
+
+
+<style>
+@page {
+size: 38in 46in;
+margin: 0;
+padding: 0;
+}
+body {
+margin: 0;
+font-size: 45px;
+width: 38in;
+height: 46in;
+padding: 0;
+text-align: justify;
+font-family: Palatino;
+}
+.poster_wrap {
+width: 38in;
+height: 46in;
+padding: 0cm;
+}
+.title_container {
+width: calc(100% - 1mm - 1mm);
+height: calc(15% - 1mm - 1mm);
+overflow: hidden;
+background-color: #edf8b1;
+border: 1mm solid #016c59;
+}
+.logo_left {
+float: left;
+width: 10%;
+height: 100%;
+background-color: #edf8b1;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.logo_right {
+float: right;
+width: 10%;
+height: 100%;
+background-color: #edf8b1;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.poster_title {
+text-align: center;
+position: relative;
+float: left;
+width: 80%;
+height: 100%;
+color: #016c59;
+top: 50%;
+transform: translateY(-50%);
+-webkit-transform: translateY(-50%);
+}
+#title {
+font-family: Palatino;
+}
+/* unvisited link */
+a:link {
+color: #33a02c;
+text-decoration: none;
+}
+.mybreak {
+  break-before: column;
+}
+/* visited link */
+a:visited {
+color: #33a02c;
+text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+color: #33a02c;
+text-decoration: none;
+}
+
+/* selected link */
+a:active {
+color: #33a02c;
+text-decoration: none;
+}
+.poster_body {
+-webkit-column-count: 3; /* Chrome, Safari, Opera */
+-moz-column-count: 3; /* Firefox */
+column-count: 3;
+-webkit-column-fill: auto;
+-moz-column-fill: auto;
+column-fill: auto;
+-webkit-column-rule-width: 1mm;
+-moz-column-rule-width: 1mm;
+column-rule-width: 1mm;
+-webkit-column-rule-style: dashed;
+-moz-column-rule-style: dashed;
+column-rule-style: dashed;
+-webkit-column-rule-color: #016c59;
+-moz-column-rule-color: #016c59;
+column-rule-color: #016c59;
+column-gap: 1em;
+padding-left: 0.5em;
+padding-right: 0.5em;
+height: 100%;
+color: #000000
+background-color: white;
+}
+.poster_title h1 {
+font-size: 75pt;
+margin: 0;
+border: 0;
+font-weight: normal;
+}
+.poster_body_wrap{
+width: 38in;
+height: calc(100% - 17%);
+padding-top: calc(46in * 0.01);
+padding-bottom: calc(46in * 0.01);
+background-color: white;
+}
+.poster_title h3 {
+color: black;
+font-size: 50pt;
+margin: 0;
+border: 0;
+font-weight: normal;
+}
+.poster_title h3 > sup {
+  font-size: 35pt;
+  margin-left: 0.02em;
+}
+.poster_title h5 {
+color: #2c7fb8;
+font-size: 35pt;
+margin: 0;
+border: 0;
+font-weight: normal;
+}
+img {
+margin-top: 0;
+margin-bottom: 0;
+}
+.section {
+  padding: 0.2em;
+}
+.poster_body h1 {
+text-align: center;
+color: #016c59;
+font-size: 65pt;
+border: 2mm solid #edf8b1;
+background-color: #edf8b1;
+border-radius: 4mm 0mm;
+margin-top: 2mm;
+margin-bottom: 2mm;
+font-weight: normal;
+}
+.poster_body h2 {
+color: #000000;
+font-size: 40pt;
+padding-left: 4mm;
+font-weight: normal;
+}
+.span {
+width: 200%;
+}
+/* center align leaflet map,
+from https://stackoverflow.com/questions/52112119/center-leaflet-in-a-rmarkdown-document */
+.html-widget {
+margin: auto;
+position: sticky;
+margin-top: 2cm;
+margin-bottom: 2cm;
+}
+.leaflet.html-widget.html-widget-static-bound.leaflet-container.leaflet-touch.leaflet-fade-anim.leaflet-grab.leaflet-touch-drag.leaflet-touch-zoom {
+position: sticky;
+width: 100%;
+}
+div.sourceCode {
+font-size: 20pt;
+width: 85%;
+margin-left: auto;
+margin-right: auto;
+padding: 1em;
+border: 1mm solid;
+border-color: #008080;
+border-radius: 1em;
+}
+pre.sourceCode.r {
+width: 100%;
+/* align-items: center; */
+margin: auto;
+}
+code.sourceCode.r{
+background-color: transparent;
+color: #000000
+}
+.caption {
+font-size: 20pt;
+}
+.table caption {
+font-size: 20pt;
+padding-bottom: 3mm;
+
+}
+code {
+font-size: 1em;
+font-family: monospace;
+background-color: black24;
+color: #edf8b1;
+padding: 1.2mm;
+border-radius: 2mm;
+}
+.poster_title code {
+font-size: 1em;
+}
+table {
+font-size: 40px;
+margin: auto;
+border-top: 3px solid #666;
+border-bottom: 3px solid #666;
+}
+table thead th {
+border-bottom: 3px solid #ddd;
+}
+td {
+padding: 8px;
+}
+th {
+padding: 15px;
+}
+caption {
+margin-bottom: 10px;
+}
+.poster_body p {
+margin-right: 4mm;
+margin-left: 4mm;
+margin-top: 6mm;
+margin-bottom: 10mm;
+color: #000000
+}
+.poster_body ol {
+margin-right: 4mm;
+margin-left: 4mm;
+}
+#ul {
+margin-right: 4mm;
+margin-left: 4mm;
+}
+.references p {
+font-size: 20pt;
+}
+.orcid img {
+  width: 1em;
+}
+</style>
+</head>
+<body>
+
+
+<div class="poster_wrap">
+<div class="title_container">
+<!-- Left Logo  -->
+<div class="logo_left">
+<img src= 'resources/logo/logo_geotop_rendena100.jpg' style="width: 80%">
+</div>
+<!-- Poster Title -->
+<div class= "poster_title">
+<h1 id="title">Modelling spatio-temporal dynamics of snow depth and large herbivore’s winter habitat selection</h1>
+<h3 id="author">Emanuele Cordano<sup>1</sup>, Emanuele Eccel<sup>2</sup>, Federico Ossi<sup>2</sup>, Julius Bright Ross<sup>3,4</sup>, Wibke Peters<sup>5</sup>, Francesca Cagnacci<sup>2,3</sup></h3>
+<h5 id="affiliation"><sup>1</sup> Rendena100 Sole Propriertoship (<a href="https://www.rendena100.eu">www.rendena100.eu</a>), Tione di Trento,TN, Italy; <sup>2</sup> Research and Innovation Centre, Fondazione Edmund Mach, San Michele all’Adige,TN, Italy; <sup>3</sup> Department of Organismic and Evolutionary Biology, Harvard University, Cambridge, MA, USA; <sup>4</sup> Wildlife Conservation Research Unit, Department of Zoology, University of Oxford, Oxford, United Kingdom; <sup>5</sup> Department of Biodiversity, Conservation and Wildlife Management, Bavarian State Institute of Forestry, Freising, Germany</h5>
+</div>
+<!-- Right Logo  -->
+<div class="logo_right">
+<img src=resources/logo/logo_harvard_fem_all.jpg style="width: 80%">
+</div>
+</div>
+
+<div class='poster_body_wrap'>
+<div class='poster_body'>
+<div id="foreword" class="section level1">
+<h1>Foreword</h1>
+<p>Winter snowy conditions and the wildlife management strategies play a
+critical role in governing the spatial distribution of ungulates in temperate ecosystems.
+Snow depth severely restricts roe deer distribution due to the limitations resulting from
+their small body mass (18-49 kg: <span class="citation">Lister and Sumner (<a href="#ref-Lister1998" role="doc-biblioref">1998</a>)</span>) and short legs (50-60 cm: <span class="citation">Holand and Linnell (<a href="#ref-Holand1998" role="doc-biblioref">1998</a>)</span>). Large roe deers living in snowy areas, employ a partial migration strategy, with all
+individuals overwintering in ranges characterized by less extreme snow conditions. Consequently, snow occurrence constitutes a proxy for animal location and movements. Due to the recently observed strong variability of climate and snow conditions in alpine areas, <strong>a high-resolution topography-accounting spatio-temporal modelling of snow cover is required. </strong>
+<img src="resources/images/rendena_roe_deer_meteo_v2.jpg" style="width:100.0%" /></p>
+</div>
+<div id="hydrological-modelling" class="section level1">
+<h1>Hydrological modelling</h1>
+<p>GEOtop 2.0 Hydrological Model (<span class="citation">Endrizzi et al. (<a href="#ref-Endrizzi2014" role="doc-biblioref">2014</a>)</span>, <a href="http://www.geotop.org">www.geotop.org</a>) is a physically-based <em>spatially distributed</em> model solving water and energy balance differential equation, <strong>producing snow depth area maps from meteorological data by taking into account snow melting process</strong>.</p>
+<p><img src="resources/images/geotop_revised.png" style="width:100.0%" /></p>
+<p>Input weather forcings (25-year long):</p>
+<ul>
+<li><p>Observed time series in the weather stations (<a href="https://www.meteotrentino.it">wwww.meteotrentino.it</a>) (1 scenario);</p></li>
+<li><p>Downscaled data by regional climate model projections (<span class="citation">Rockel, Will, and Hense (<a href="#ref-Rockel2008" role="doc-biblioref">2008</a>)</span>, <em>courtesy of Emanuel Eccel and CMCC</em>) (IPCC scenarios RCP4.5 and RCP 8.5) (2 scenarios).</p></li>
+</ul>
+<p>Snow mean depth and snow cover are aggregated from daily to seasonal scale (NDJFMA)(<span class="citation">Cordano (<a href="#ref-geotopbricks" role="doc-biblioref">2019</a>)</span>). RCP4.5 ns RCP8.5 illustrated scenarios are created with weather forcings having patterns similar to both 2013-2014 and 2014-2015 observed seasons, but modified accordingly to the projections.</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Winter</th>
+<th align="left">Mean Depth [mm]</th>
+<th align="left">Duration [days]</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">1990-1991</td>
+<td align="left"><img src="resources/images/map/mean_OBS_1991_winter.png" id="id" class="class" height="295" /></td>
+<td align="left"><img src="resources/images/map/nday_OBS_1991_winter.png" id="id" class="class" height="295" /></td>
+</tr>
+<tr class="even">
+<td align="left">1996-1997</td>
+<td align="left"><img src="resources/images/map/mean_OBS_1997_winter.png" id="id" class="class" height="295" /></td>
+<td align="left"><img src="resources/images/map/nday_OBS_1997_winter.png" id="id" class="class" height="295" /></td>
+</tr>
+<tr class="odd">
+<td align="left">2001-2002</td>
+<td align="left"><img src="resources/images/map/mean_OBS_2002_winter.png" id="id" class="class" height="295" /></td>
+<td align="left"><img src="resources/images/map/nday_OBS_2002_winter.png" id="id" class="class" height="295" /></td>
+</tr>
+<tr class="even">
+<td align="left">2005-2006</td>
+<td align="left"><img src="resources/images/map/mean_OBS_2006_winter.png" id="id" class="class" height="295" /></td>
+<td align="left"><img src="resources/images/map/nday_OBS_2006_winter.png" id="id" class="class" height="295" /></td>
+</tr>
+<tr class="odd">
+<td align="left">2006-2007</td>
+<td align="left"><img src="resources/images/map/mean_OBS_2007_winter.png" id="id" class="class" height="295" /></td>
+<td align="left"><img src="resources/images/map/nday_OBS_2007_winter.png" id="id" class="class" height="295" /></td>
+</tr>
+<tr class="even">
+<td align="left">2013-2014</td>
+<td align="left"><img src="resources/images/map/mean_OBS_2014_winter.png" id="id" class="class" height="295" /></td>
+<td align="left"><img src="resources/images/map/nday_OBS_2014_winter.png" id="id" class="class" height="295" /></td>
+</tr>
+<tr class="odd">
+<td align="left">2014-2015</td>
+<td align="left"><img src="resources/images/map/mean_OBS_2015_winter.png" id="id" class="class" height="295" /></td>
+<td align="left"><img src="resources/images/map/nday_OBS_2015_winter.png" id="id" class="class" height="295" /></td>
+</tr>
+<tr class="even">
+<td align="left">RCP45-2014</td>
+<td align="left"><img src="resources/images/map/mean_RCP45_2014_winter.png" id="id" class="class" height="295" /></td>
+<td align="left"><img src="resources/images/map/nday_RCP45_2014_winter.png" id="id" class="class" height="295" /></td>
+</tr>
+<tr class="odd">
+<td align="left">RCP45-2015</td>
+<td align="left"><img src="resources/images/map/mean_RCP45_2015_winter.png" id="id" class="class" height="295" /></td>
+<td align="left"><img src="resources/images/map/nday_RCP45_2015_winter.png" id="id" class="class" height="295" /></td>
+</tr>
+<tr class="even">
+<td align="left">RCP85-2014</td>
+<td align="left"><img src="resources/images/map/mean_RCP85_2014_winter.png" id="id" class="class" height="295" /></td>
+<td align="left"><img src="resources/images/map/nday_RCP85_2014_winter.png" id="id" class="class" height="295" /></td>
+</tr>
+<tr class="odd">
+<td align="left">RCP85-2015</td>
+<td align="left"><img src="resources/images/map/mean_RCP85_2015_winter.png" id="id" class="class" height="295" /></td>
+<td align="left"><img src="resources/images/map/nday_RCP85_2015_winter.png" id="id" class="class" height="295" /></td>
+</tr>
+</tbody>
+</table>
+<p>Higher variability on snow cover, .i.e <em>snow depth &gt; 5 cm</em>, and depth occurs at medium and low elevations in the decade 2006-2015 (latest year of the analysis) than in the past decade 1996-2005. Future climate projections confirm this behaviour.</p>
+<p><img src="draft3_files/figure-html/snow-altitude-1.png" width="100%" style="display: block; margin: auto;" /></p>
+</div>
+<div id="ecological-modelling" class="section level1">
+<h1>Ecological modelling</h1>
+<p>Roe deer in presence of snow strongly try to select zones with canopy cover and avoided places with high snow depths. Snow modelling results have been coupled with ecological campaign periods (1999-2002: (a); 2012-2015: (b))(see prediction plots of relative probability of use of forested habitats during ,<em>Bright Ross at al, Article in preparation</em>)</p>
+<p><img src="resources/images/roe_deer_snow_3D_plot.jpg" style="width:90.0%" /></p>
+</div>
+<div id="concluding-remarks" class="section level1">
+<h1>Concluding remarks</h1>
+<p>1.Climate and snow variability is a challenge for researching on habitat selection by roe deer (Capreolus capreolus) in an alpine area;</p>
+<p>2.Physically-based modelling allows to estimate snow depth in a gridded spatio-temporal coverage accounting for topographical details from terrestrial weather observations;</p>
+<ol start="3" style="list-style-type: decimal">
+<li>In the study area snow cover and depth variability increases with climate change projections.</li>
+</ol>
+</div>
+<div id="references" class="section level1">
+<h1>References</h1>
+<!-- ```{r generateBibliography,echo=FALSE,eval=TRUE,message=FALSE,warning=FALSE,print=FALSE,results="hide",output=TRUE} -->
+<!-- require("knitcitations") -->
+<!-- cleanbib() -->
+<!-- options("citation_format" = "pandoc") -->
+<!-- read.bibtex(file = "bibliography.bib") -->
+<!-- knitr::write_bib(file = "bibliography.bib") -->
+<!-- ``` -->
+<div id="refs" class="references hanging-indent">
+<div id="ref-geotopbricks">
+<p>Cordano, Emanuele. 2019. <em>Geotopbricks: An R Plug-in for the Distributed Hydrological Model Geotop</em>. <a href="https://CRAN.R-project.org/package=geotopbricks">https://CRAN.R-project.org/package=geotopbricks</a>.</p>
+</div>
+<div id="ref-Endrizzi2014">
+<p>Endrizzi, S., S. Gruber, M. Dall’Amico, and R. Rigon. 2014. “GEOtop 2.0: Simulating the Combined Energy and Water Balance at and Below the Land Surface Accounting for Soil Freezing, Snow Cover and Terrain Effects.” <em>Geoscientific Model Development</em> 7 (6): 2831–57. <a href="https://doi.org/10.5194/gmd-7-2831-2014">https://doi.org/10.5194/gmd-7-2831-2014</a>.</p>
+</div>
+<div id="ref-Holand1998">
+<p>Holand, A. Mysterud, Ø., and J. D. C. Linnell. 1998. “Roe Deer in Northern Environments: Physiology and Behaviour.” Edited by R. Andersen, P. Duncan, and J. D. C. Linnell. Oslo, Norway: Scandinavian University Press.</p>
+</div>
+<div id="ref-Lister1998">
+<p>Lister, P. Grubb, A. M., and S. R. M. Sumner. 1998. “Taxonomy, Morphology and Evolution of European Roe Deer.” Edited by R. Andersen, P. Duncan, and J. D. C. Linnell. Oslo, Norway: Scandinavian University Press.</p>
+</div>
+<div id="ref-Rockel2008">
+<p>Rockel, Burkhard, Andreas Will, and Andreas Hense. 2008. “The Regional Climate Model Cosmo-Clm (Cclm).” <em>Meteorologische Zeitschrift</em> 17 (4): 347–48. <a href="https://doi.org/10.1127/0941-2948/2008/0309">https://doi.org/10.1127/0941-2948/2008/0309</a>.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+
+
+</body>
+</html>

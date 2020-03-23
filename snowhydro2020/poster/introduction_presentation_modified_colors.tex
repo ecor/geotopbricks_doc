@@ -1,0 +1,279 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+  ignorenonframetext,
+]{beamer}
+\usepackage{pgfpages}
+\setbeamertemplate{caption}[numbered]
+\setbeamertemplate{caption label separator}{: }
+\setbeamercolor{caption name}{fg=normal text.fg}
+\beamertemplatenavigationsymbolsempty
+% Prevent slide breaks in the middle of a paragraph
+\widowpenalties 1 10000
+\raggedbottom
+\setbeamertemplate{part page}{
+  \centering
+  \begin{beamercolorbox}[sep=16pt,center]{part title}
+    \usebeamerfont{part title}\insertpart\par
+  \end{beamercolorbox}
+}
+\setbeamertemplate{section page}{
+  \centering
+  \begin{beamercolorbox}[sep=12pt,center]{part title}
+    \usebeamerfont{section title}\insertsection\par
+  \end{beamercolorbox}
+}
+\setbeamertemplate{subsection page}{
+  \centering
+  \begin{beamercolorbox}[sep=8pt,center]{part title}
+    \usebeamerfont{subsection title}\insertsubsection\par
+  \end{beamercolorbox}
+}
+\AtBeginPart{
+  \frame{\partpage}
+}
+\AtBeginSection{
+  \ifbibliography
+  \else
+    \frame{\sectionpage}
+  \fi
+}
+\AtBeginSubsection{
+  \frame{\subsectionpage}
+}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={Modelling snow depth spatio-temporal dynamics:},
+  pdfauthor={Emanuele Cordano, Emanuele Eccel, Federico Ossi, Julius Bright Bross, Wibke Peters, Francesca Cagnacci},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\newif\ifbibliography
+\usepackage{longtable,booktabs}
+\usepackage{caption}
+% Make caption package work with longtable
+\makeatletter
+\def\fnum@table{\tablename~\thetable}
+\makeatother
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+%% EMOS rmarkdown/beamer header
+%% Mark van der Loo (2016)
+\usepackage{listings}
+\usepackage{mdframed}
+\usepackage{tikz}
+
+\usetikzlibrary{arrows, positioning, decorations.pathreplacing} 
+\usepackage{pgfplots}
+\usepackage{color}
+
+
+% CBS corporate light blue
+\definecolor{corplightblue}{HTML}{00a1cd}
+% CBS corporate dark blue
+\definecolor{corpdarkblue}{HTML}{0058b8}
+
+% set title colors
+\setbeamercolor{frametitle}{fg=corpdarkblue}
+\setbeamercolor{title}{fg=corpdarkblue}
+\setbeamercolor{block title}{fg=corpdarkblue}
+
+\setbeamerfont{normal text}{parent=structure}
+% nicer, rounder font for title
+\setbeamerfont{title}{series=\bfseries,parent=structure}
+% frame titles in boldface
+\setbeamerfont{frametitle}{series=\bfseries}
+% block title font
+\setbeamerfont{block title}{parent=structure}
+
+% enumeration
+\setbeamertemplate{itemize item}{\color{corpdarkblue}$\blacktriangleright$}
+\setbeamertemplate{itemize subitem}{\color{corpdarkblue}$-$}
+\setbeamercolor*{enumerate item}{fg=corpdarkblue}
+\setbeamercolor*{enumerate subitem}{fg=corpdarkblue}
+\setbeamercolor*{enumerate subsubitem}{fg=corpdarkblue}
+
+
+\makeatletter
+\newcommand\HUGE{\@setfontsize\Huge{50}{60}}
+\makeatother    
+
+
+% nicer, rounder font for title
+
+\setbeamertemplate{title page}{
+\begin{picture}(0,0)
+\put(0,70){\usebeamerfont{title}{\textcolor{corpdarkblue}{\inserttitle}\par}}
+\put(0,55){\usebeamerfont{subtitle}{\textcolor{corpdarkblue}{\insertsubtitle}\par}}
+\put(0,30){
+\small Emanuele Cordano (Rendena100) 
+}
+\put(0,10){
+\texttt{\small www.rendena100.eu}
+}
+\put(0,-10){
+\small Emanuele Eccel, Federico Ossi, Francesca Cagnacci
+}
+\put(0,-30){
+\texttt{\small www.fmach.it}
+}
+\put(0,-50){
+\small Julius Bright Ross, Wibke Peters 
+}
+% \put(0,-70){
+% \texttt{\small Harvard University, University of Oxford, Bavarian State Institute of Forestry}
+% }
+\put(150,-100){
+\includegraphics[height=2cm]{resources/logo/logo_geotop.jpeg}
+}
+\put(250,-100){
+\includegraphics[height=2cm]{resources/logo/logo_snowhydro-2020.jpg}
+}
+\end{picture}
+
+}
+
+
+
+\setbeamertemplate{frametitle}
+{
+  \begin{beamercolorbox}{frametitle}
+  \vskip2.7ex\insertframetitle
+  \end{beamercolorbox}
+}
+
+
+% remove the space-eating navigation symbols
+\beamertemplatenavigationsymbolsempty
+
+% convenience function to define rgb colors in tikz
+\tikzset{xcolor/.code args={#1=#2}{
+     \definecolor{mytemp}{rgb}{#2}
+     \tikzset{#1=mytemp}
+  }
+}
+
+
+\usebackgroundtemplate{
+   \begin{picture}(0,0)
+    \put(320, -263){%
+      \raisebox{5mm}{\tiny}\includegraphics[height=7mm]{resources/logo/logo_snowhydro-2020.jpg}
+    }
+\put(0,-273){
+\includegraphics[height=7mm]{resources/logo/logo_geotop.jpeg}
+\includegraphics[height=7mm]{resources/logo/Logo_FEM.png}
+\includegraphics[height=7mm]{resources/logo/logo_rendena100_textoutside_small.jpg}
+}
+\end{picture}
+}
+
+
+\newcommand{\la}[1]{\boldsymbol{#1}}
+
+
+\def\begincols{\begin{columns}}
+\def\begincol{\begin{column}}
+\def\endcol{\end{column}}
+\def\endcols{\end{columns}}
+
+\title{Modelling snow depth spatio-temporal dynamics:}
+\subtitle{snow depth and large herbivore's winter habitat}
+\author{Emanuele Cordano, Emanuele Eccel, Federico Ossi, Julius Bright
+Bross, Wibke Peters, Francesca Cagnacci}
+\date{}
+
+\begin{document}
+\frame{\titlepage}
+
+\begin{frame}{Foreword}
+\protect\hypertarget{foreword}{}
+Occurrence of large herbivore depending on feeding station location and
+\textbf{snow cover}:
+
+\includegraphics[width=0.7\textwidth,height=\textheight]{resources/images/rendena_roe_deer_meteo_v2.jpg}\\
+\end{frame}
+
+\begin{frame}{Hydrological Modelling}
+\protect\hypertarget{hydrological-modelling}{}
+GEOtop hydrological model (www.geotop.org):
+
+\includegraphics[width=0.9\textwidth,height=\textheight]{resources/images/geotop_revised.png}\\
+\end{frame}
+
+\begin{frame}{Hydrological Modelling}
+\protect\hypertarget{hydrological-modelling-1}{}
+\begin{longtable}[]{@{}lll@{}}
+\toprule
+Winter & Mean Depth {[}mm{]} & Duration {[}days{]}\tabularnewline
+\midrule
+\endhead
+2013-2014 &
+\includegraphics[width=\textwidth,height=1.04167in]{resources/images/map/mean_OBS_2014_winter.png}
+&
+\includegraphics[width=\textwidth,height=1.04167in]{resources/images/map/nday_OBS_2014_winter.png}\tabularnewline
+2014-2015 &
+\includegraphics[width=\textwidth,height=1.04167in]{resources/images/map/mean_OBS_2015_winter.png}
+&
+\includegraphics[width=\textwidth,height=1.04167in]{resources/images/map/nday_OBS_2015_winter.png}\tabularnewline
+\bottomrule
+\end{longtable}
+\end{frame}
+
+\begin{frame}{Analytics}
+\protect\hypertarget{analytics}{}
+\begin{center}\includegraphics[width=0.9\linewidth]{introduction_presentation_modified_colors_files/figure-beamer/snow-altitude-1} \end{center}
+\end{frame}
+
+\begin{frame}{Analytics (only nday - with no title)}
+\protect\hypertarget{analytics-only-nday---with-no-title}{}
+\begin{center}\includegraphics[width=0.9\linewidth]{introduction_presentation_modified_colors_files/figure-beamer/snow-altitude-2-1} \end{center}
+\end{frame}
+
+\end{document}
