@@ -1,0 +1,1447 @@
+STATEMENT:
+
+GEOtop 1.225-9 'Moab' - 24 Aug 2012
+
+GEOtop 1.225-9 'Moab' is a free software and is distributed under GNU General Public License v. 3.0 <http://www.gnu.org/licenses/>
+WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+
+WORKING DIRECTORY: /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/
+
+TimeStepEnergyAndWater[1] = 3.600000e+03 
+InitDateDDMMYYYYhhmm[1] = 1.012002e+10 
+SimulationHours[1] = 1.000000e+00 (default) 
+EndDateDDMMYYYYhhmm[1] = 1.012005e+10 
+NumSimulationTimes[1] = 1.000000e+00 (default) 
+StandardTimeSimulation[1] = 1.000000e+00 
+DtPlotDischarge[1] = 1.000000e+00 
+DtPlotPoint[1] = 1.000000e+00 
+DtPlotBasin[1] = 2.400000e+01 
+NumLowPassFilterOnDemForAll[1] = 2.000000e+00 
+NumLowPassFilterOnDemForCurv[1] = 2.000000e+01 
+FlagSkyViewFactor[1] = 0.000000e+00 
+FormatOutputMaps[1] = 3.000000e+00 (default) 
+PointSim[1] = 0.000000e+00 (default) 
+RecoverSim[1] = 0.000000e+00 (default) 
+NumLandCoverTypes[1] = 5.000000e+00 
+SoilRoughness[1] = 1.000000e+02 
+ThresSnowSoilRough[1] = 1.000000e+02 
+VegHeight[1] = 2.000000e+02 
+ThresSnowVegUp[1] = 5.000000e+01 
+ThresSnowVegDown[1] = 1.000000e+01 
+LSAI[1] = 2.000000e+00 
+CanopyFraction[1] = 1.000000e+00 
+DecayCoeffCanopy[1] = 2.500000e+00 
+VegSnowBurying[1] = 1.000000e+00 
+RootDepth[1] = 2.000000e+02 
+MinStomatalRes[1] = 6.000000e+01 
+VegReflectVis[1] = 1.000000e-01 
+VegReflNIR[1] = 5.800000e-01 
+VegTransVis[1] = 5.000000e-02 
+VegTransNIR[1] = 2.500000e-01 
+LeafAngles[1] = 0.000000e+00 
+CanDensSurface[1] = 5.000000e-01 
+SoilAlbVisDry[1] = 1.500000e-01 
+SoilAlbNIRDry[1] = 2.500000e-01 
+SoilAlbVisWet[1] = 1.500000e-01 
+SoilAlbNIRWet[1] = 2.500000e-01 
+SoilEmissiv[1] = 9.600000e-01 
+SurFlowResLand[1] = 5.000000e-02 
+RoughElemXUnitArea[1] = 0.000000e+00 (default) 
+RoughElemDiam[1] = 5.000000e+01 (default) 
+SoilRoughness[2] = 1.000000e+02 (default) 
+ThresSnowSoilRough[2] = 1.000000e+02 (default) 
+VegHeight[2] = 0.000000e+00 
+ThresSnowVegUp[2] = 5.000000e+01 (default) 
+ThresSnowVegDown[2] = 1.000000e+01 (default) 
+LSAI[2] = 0.000000e+00 
+CanopyFraction[2] = 0.000000e+00 
+DecayCoeffCanopy[2] = 2.500000e+00 (default) 
+VegSnowBurying[2] = 1.000000e+00 (default) 
+RootDepth[2] = 0.000000e+00 
+MinStomatalRes[2] = 6.000000e+01 (default) 
+VegReflectVis[2] = 1.000000e-01 (default) 
+VegReflNIR[2] = 5.800000e-01 (default) 
+VegTransVis[2] = 5.000000e-02 (default) 
+VegTransNIR[2] = 2.500000e-01 (default) 
+LeafAngles[2] = 0.000000e+00 (default) 
+CanDensSurface[2] = 5.000000e-01 (default) 
+SoilAlbVisDry[2] = 1.500000e-01 (default) 
+SoilAlbNIRDry[2] = 2.500000e-01 (default) 
+SoilAlbVisWet[2] = 1.500000e-01 (default) 
+SoilAlbNIRWet[2] = 2.500000e-01 (default) 
+SoilEmissiv[2] = 9.600000e-01 (default) 
+SurFlowResLand[2] = 5.000000e-02 (default) 
+RoughElemXUnitArea[2] = 0.000000e+00 (default) 
+RoughElemDiam[2] = 5.000000e+01 (default) 
+SoilRoughness[3] = 1.000000e+02 (default) 
+ThresSnowSoilRough[3] = 1.000000e+02 (default) 
+VegHeight[3] = 0.000000e+00 
+ThresSnowVegUp[3] = 5.000000e+01 (default) 
+ThresSnowVegDown[3] = 1.000000e+01 (default) 
+LSAI[3] = 0.000000e+00 
+CanopyFraction[3] = 0.000000e+00 
+DecayCoeffCanopy[3] = 2.500000e+00 (default) 
+VegSnowBurying[3] = 1.000000e+00 (default) 
+RootDepth[3] = 0.000000e+00 
+MinStomatalRes[3] = 6.000000e+01 (default) 
+VegReflectVis[3] = 1.000000e-01 (default) 
+VegReflNIR[3] = 5.800000e-01 (default) 
+VegTransVis[3] = 5.000000e-02 (default) 
+VegTransNIR[3] = 2.500000e-01 (default) 
+LeafAngles[3] = 0.000000e+00 (default) 
+CanDensSurface[3] = 5.000000e-01 (default) 
+SoilAlbVisDry[3] = 1.500000e-01 (default) 
+SoilAlbNIRDry[3] = 2.500000e-01 (default) 
+SoilAlbVisWet[3] = 1.500000e-01 (default) 
+SoilAlbNIRWet[3] = 2.500000e-01 (default) 
+SoilEmissiv[3] = 9.600000e-01 (default) 
+SurFlowResLand[3] = 5.000000e-02 (default) 
+RoughElemXUnitArea[3] = 0.000000e+00 (default) 
+RoughElemDiam[3] = 5.000000e+01 (default) 
+SoilRoughness[4] = 1.000000e+02 (default) 
+ThresSnowSoilRough[4] = 1.000000e+02 (default) 
+VegHeight[4] = 2.000000e+02 
+ThresSnowVegUp[4] = 5.000000e+01 (default) 
+ThresSnowVegDown[4] = 1.000000e+01 (default) 
+LSAI[4] = 4.000000e+00 
+CanopyFraction[4] = 1.000000e+00 
+DecayCoeffCanopy[4] = 2.500000e+00 (default) 
+VegSnowBurying[4] = 1.000000e+00 (default) 
+RootDepth[4] = 5.000000e+02 
+MinStomatalRes[4] = 6.000000e+01 (default) 
+VegReflectVis[4] = 1.000000e-01 (default) 
+VegReflNIR[4] = 5.800000e-01 (default) 
+VegTransVis[4] = 5.000000e-02 (default) 
+VegTransNIR[4] = 2.500000e-01 (default) 
+LeafAngles[4] = 0.000000e+00 (default) 
+CanDensSurface[4] = 5.000000e-01 (default) 
+SoilAlbVisDry[4] = 1.500000e-01 (default) 
+SoilAlbNIRDry[4] = 2.500000e-01 (default) 
+SoilAlbVisWet[4] = 1.500000e-01 (default) 
+SoilAlbNIRWet[4] = 2.500000e-01 (default) 
+SoilEmissiv[4] = 9.600000e-01 (default) 
+SurFlowResLand[4] = 5.000000e-02 (default) 
+RoughElemXUnitArea[4] = 0.000000e+00 (default) 
+RoughElemDiam[4] = 5.000000e+01 (default) 
+SoilRoughness[5] = 1.000000e+02 (default) 
+ThresSnowSoilRough[5] = 1.000000e+02 (default) 
+VegHeight[5] = 5.000000e+01 
+ThresSnowVegUp[5] = 5.000000e+01 (default) 
+ThresSnowVegDown[5] = 1.000000e+01 (default) 
+LSAI[5] = 2.000000e-01 
+CanopyFraction[5] = 1.000000e-01 
+DecayCoeffCanopy[5] = 2.500000e+00 (default) 
+VegSnowBurying[5] = 1.000000e+00 (default) 
+RootDepth[5] = 2.000000e+01 
+MinStomatalRes[5] = 6.000000e+01 (default) 
+VegReflectVis[5] = 1.000000e-01 (default) 
+VegReflNIR[5] = 5.800000e-01 (default) 
+VegTransVis[5] = 5.000000e-02 (default) 
+VegTransNIR[5] = 2.500000e-01 (default) 
+LeafAngles[5] = 0.000000e+00 (default) 
+CanDensSurface[5] = 5.000000e-01 (default) 
+SoilAlbVisDry[5] = 1.500000e-01 (default) 
+SoilAlbNIRDry[5] = 2.500000e-01 (default) 
+SoilAlbVisWet[5] = 1.500000e-01 (default) 
+SoilAlbNIRWet[5] = 2.500000e-01 (default) 
+SoilEmissiv[5] = 9.600000e-01 (default) 
+SurFlowResLand[5] = 5.000000e-02 (default) 
+RoughElemXUnitArea[5] = 0.000000e+00 (default) 
+RoughElemDiam[5] = 5.000000e+01 (default) 
+FrozenSoilHydrCondReduction[1] = 0.000000e+00 
+FreeDrainageAtBottom[1] = 0.000000e+00 (default) 
+FreeDrainageAtLateralBorder[1] = 1.000000e+00 (default) 
+RichardTol[1] = 1.000000e-01 
+RichardMaxIter[1] = 1.000000e+03 
+RichardInitForc[1] = 1.000000e-02 (default) 
+MinLambdaWater[1] = 1.000000e-15 
+MaxTimesMinLambdaWater[1] = 0.000000e+00 (default) 
+ExitMinLambdaWater[1] = 1.000000e+00 
+MinTimeStep[1] = 1.000000e+01 (default) 
+SurFlowResExp[1] = 6.670000e-01 
+ThresWaterDepthLandInf[1] = 5.000000e+00 
+ThresWaterDepthLandSup[1] = 5.000000e+01 
+SurFlowResChannel[1] = 2.000000e+01 
+ThresWaterDepthChannel[1] = 5.000000e+01 
+RatioChannelWidthPixelWidth[1] = 1.000000e-02 
+ChannelDepression[1] = 2.000000e+03 
+MaxCourantSupFlowLand[1] = 1.000000e-01 
+MaxCourantSupFlowChannel[1] = 1.000000e-01 
+MinSupWaterDepthLand[1] = 1.000000e+00 
+MinSupWaterDepthChannel[1] = 1.000000e+00 (default) 
+MinDiffSupWaterDepthLandChannel[1] = 5.000000e+01 
+MinTimeStepSupFlow[1] = 1.000000e+00 
+Latitude[1] = 4.675604e+01 
+Longitude[1] = 1.070311e+01 
+Vmin[1] = 5.000000e-01 (default) 
+RHmin[1] = 1.000000e+01 (default) 
+AlphaSnow[1] = 1.000000e+05 (default) 
+HighestNodeCorrespondsToLayer[1] = 0.000000e+00 (default) 
+HeatEqTol[1] = 1.000000e-04 
+HeatEqMaxIter[1] = 2.000000e+02 
+MinLambdaEnergy[1] = 1.000000e-05 (default) 
+MaxTimesMinLambdaEnergy[1] = 0.000000e+00 (default) 
+ExitMinLambdaEnergy[1] = 0.000000e+00 (default) 
+DEMRotationAngle[1] = 0.000000e+00 (default) 
+CanopyMaxIter[1] = 3.000000e+00 
+BusingerMaxIter[1] = 3.000000e+00 
+TsMaxIter[1] = 3.000000e+00 
+LocMaxIter[1] = 3.000000e+00 
+CanopyStabCorrection[1] = 1.000000e+00 
+Iobsint[1] = 1.000000e+00 (default) 
+Dn[1] = 1.000000e+00 (default) 
+SlopeWeight[1] = 1.000000e+00 
+CurvatureWeight[1] = 1.000000e+02 
+SlopeWeightD[1] = 1.000000e+00 (default) 
+CurvatureWeightD[1] = 1.000000e+02 (default) 
+SlopeWeightI[1] = 1.000000e+00 (default) 
+CurvatureWeightI[1] = 1.000000e+02 (default) 
+ZeroTempAmplitDepth[1] = 1.000000e+20 (default) 
+ZeroTempAmplitTemp[1] = 2.000000e+01 (default) 
+BottomBoundaryHeatFlux[1] = 0.000000e+00 (default) 
+InitSWE[1] = 0.000000e+00 (default) 
+InitSnowDensity[1] = 2.000000e+02 (default) 
+InitSnowTemp[1] = -3.000000e+00 (default) 
+InitSnowAge[1] = 0.000000e+00 (default) 
+ThresTempRain[1] = 3.000000e+00 (default) 
+ThresTempSnow[1] = -1.000000e+00 (default) 
+DewTempOrNormTemp[1] = 0.000000e+00 (default) 
+AlbExtParSnow[1] = 1.000000e+01 (default) 
+FreshSnowReflVis[1] = 9.000000e-01 (default) 
+FreshSnowReflNIR[1] = 6.500000e-01 (default) 
+IrriducibleWatSatSnow[1] = 2.000000e-02 (default) 
+SnowEmissiv[1] = 9.800000e-01 (default) 
+SnowRoughness[1] = 1.000000e-01 (default) 
+SnowCorrFactor[1] = 1.000000e+00 (default) 
+RainCorrFactor[1] = 1.000000e+00 (default) 
+MaxSnowPorosity[1] = 7.000000e-01 (default) 
+DrySnowDefRate[1] = 1.000000e+00 (default) 
+SnowDensityCutoff[1] = 1.000000e+02 (default) 
+WetSnowDefRate[1] = 1.500000e+00 (default) 
+SnowViscosity[1] = 1.000000e+06 (default) 
+FetchUp[1] = 1.000000e+03 (default) 
+FetchDown[1] = 1.000000e+02 (default) 
+BlowingSnowSoftLayerIceContent[1] = 0.000000e+00 (default) 
+TimeStepBlowingSnow[1] = 3.600000e+03 (default) 
+SnowSMIN[1] = 3.000000e+01 (default) 
+SnowSMAX[1] = 8.000000e+01 (default) 
+SnowCURV[1] = -2.000000e+02 (default) 
+MaxWaterEqSnowLayerContent[1] = 1.000000e+01 
+MaxSnowLayersMiddle[1] = 5.000000e+00 
+MaxWaterEqSnowLayerContent[1] = 1.000000e+01 
+MaxSnowLayersMiddle[1] = 5.000000e+00 
+SWEbottom[1] = 2.000000e+01 
+SWEtop[1] = 4.000000e+01 
+Max snow layer number: 11, of which 2 at the bottom, 5 in the middle, and 4 at the top.
+Infinite Snow layer numbers are numbers: 3 4 5 6 7 
+InitGlacierDepth[1] = 0.000000e+00 (default) 
+InitGlacierDensity[1] = 7.000000e+02 
+InitGlacierTemp[1] = -5.000000e+00 
+IrriducibleWatSatGlacier[1] = 2.000000e-02 (default) 
+MaxWaterEqGlacLayerContent[1] = 5.000000e+00 (default) 
+MaxGlacLayersMiddle[1] = 0.000000e+00 (default) 
+GWEbottom[1] = 0.000000e+00 (default) 
+GWEtop[1] = 0.000000e+00 (default) 
+Max glac layer number: 0, of which 0 at the bottom, 0 in the middle, and 0 at the top.
+Infinite Glac layer numbers are numbers: 
+LWinParameterization[1] = 4.000000e+00 
+MoninObukhov[1] = 2.000000e+00 
+Surroundings[1] = 0.000000e+00 (default) 
+WaterBalance[1] = 1.000000e+00 
+EnergyBalance[1] = 1.000000e+00 
+BlowingSnow[1] = 0.000000e+00 (default) 
+MinIceContentForBlowingSnow[1] = 8.000000e+00 (default) 
+PointID[1] = -9.999000e+03 (default) 
+CoordinatePointX[1] = 6.597676e+05 
+CoordinatePointY[1] = 5.124805e+06 
+SavingPoints[1] = 0.000000e+00 (default) 
+OutputSoilMaps[1] = 2.400000e+01 
+OutputSnowMaps[1] = 2.400000e+01 
+OutputGlacierMaps[1] = 2.400000e+01 
+OutputSurfEBALMaps[1] = 2.400000e+01 
+OutputVegetationMaps[1] = 0.000000e+00 (default) 
+OutputMeteoMaps[1] = 2.400000e+01 
+SpecialPlotBegin[1] = 0.000000e+00 (default) 
+SpecialPlotEnd[1] = 0.000000e+00 (default) 
+SoilLayerTypes[1] = 1.000000e+00 (default) 
+InitWaterTableDepth[1] = 5.000000e+03 (default) 
+DefaultSoilTypeLand[1] = 1.000000e+00 (default) 
+DefaultSoilTypeChannel[1] = 1.000000e+00 (default) 
+SoilLayerThicknesses[1] = 1.000000e+02 
+SoilLayerThicknesses[2] = 1.000000e+02 
+SoilLayerThicknesses[3] = 2.000000e+02 
+SoilLayerThicknesses[4] = 5.000000e+02 
+SoilLayerThicknesses[5] = 1.200000e+03 
+SoilLayerThicknesses[6] = 3.000000e+03 
+SoilLayerThicknesses[7] = 5.000000e+03 
+SoilLayerThicknesses[8] = 1.200000e+04 
+SoilLayerThicknesses[9] = 2.500000e+04 
+InitSoilPressure[1] = -9.999000e+03 (default) 
+InitSoilTemp[1] = 5.000000e-01 
+NormalHydrConductivity[1] = 1.000000e-01 
+LateralHydrConductivity[1] = 1.000000e-01 
+ThetaRes[1] = 8.000000e-02 
+WiltingPoint[1] = 1.500000e-01 
+FieldCapacity[1] = 3.000000e-01 
+ThetaSat[1] = 5.000000e-01 
+AlphaVanGenuchten[1] = 1.000000e-02 
+NVanGenuchten[1] = 1.500000e+00 
+VMualem[1] = 5.000000e-01 (default) 
+ThermalConductivitySoilSolids[1] = 2.500000e+00 
+ThermalCapacitySoilSolids[1] = 2.300000e+06 
+SpecificStorativity[1] = 1.000000e-05 
+InitSoilPressure[2] = -9.999000e+03 (default) 
+InitSoilTemp[2] = 5.000000e-01 (default) 
+NormalHydrConductivity[2] = 1.000000e-01 (default) 
+LateralHydrConductivity[2] = 1.000000e-01 (default) 
+ThetaRes[2] = 8.000000e-02 (default) 
+WiltingPoint[2] = 1.500000e-01 (default) 
+FieldCapacity[2] = 3.000000e-01 (default) 
+ThetaSat[2] = 5.000000e-01 (default) 
+AlphaVanGenuchten[2] = 1.000000e-02 (default) 
+NVanGenuchten[2] = 1.500000e+00 (default) 
+VMualem[2] = 5.000000e-01 (default) 
+ThermalConductivitySoilSolids[2] = 2.500000e+00 (default) 
+ThermalCapacitySoilSolids[2] = 2.300000e+06 (default) 
+SpecificStorativity[2] = 1.000000e-05 (default) 
+InitSoilPressure[3] = -9.999000e+03 (default) 
+InitSoilTemp[3] = 5.000000e-01 (default) 
+NormalHydrConductivity[3] = 1.000000e-01 (default) 
+LateralHydrConductivity[3] = 1.000000e-01 (default) 
+ThetaRes[3] = 8.000000e-02 (default) 
+WiltingPoint[3] = 1.500000e-01 (default) 
+FieldCapacity[3] = 3.000000e-01 (default) 
+ThetaSat[3] = 5.000000e-01 (default) 
+AlphaVanGenuchten[3] = 1.000000e-02 (default) 
+NVanGenuchten[3] = 1.500000e+00 (default) 
+VMualem[3] = 5.000000e-01 (default) 
+ThermalConductivitySoilSolids[3] = 2.500000e+00 (default) 
+ThermalCapacitySoilSolids[3] = 2.300000e+06 (default) 
+SpecificStorativity[3] = 1.000000e-05 (default) 
+InitSoilPressure[4] = -9.999000e+03 (default) 
+InitSoilTemp[4] = 5.000000e-01 (default) 
+NormalHydrConductivity[4] = 1.000000e-01 (default) 
+LateralHydrConductivity[4] = 1.000000e-01 (default) 
+ThetaRes[4] = 8.000000e-02 (default) 
+WiltingPoint[4] = 1.500000e-01 (default) 
+FieldCapacity[4] = 3.000000e-01 (default) 
+ThetaSat[4] = 5.000000e-01 (default) 
+AlphaVanGenuchten[4] = 1.000000e-02 (default) 
+NVanGenuchten[4] = 1.500000e+00 (default) 
+VMualem[4] = 5.000000e-01 (default) 
+ThermalConductivitySoilSolids[4] = 2.500000e+00 (default) 
+ThermalCapacitySoilSolids[4] = 2.300000e+06 (default) 
+SpecificStorativity[4] = 1.000000e-05 (default) 
+InitSoilPressure[5] = -9.999000e+03 (default) 
+InitSoilTemp[5] = 5.000000e-01 (default) 
+NormalHydrConductivity[5] = 1.000000e-01 (default) 
+LateralHydrConductivity[5] = 1.000000e-01 (default) 
+ThetaRes[5] = 8.000000e-02 (default) 
+WiltingPoint[5] = 1.500000e-01 (default) 
+FieldCapacity[5] = 3.000000e-01 (default) 
+ThetaSat[5] = 5.000000e-01 (default) 
+AlphaVanGenuchten[5] = 1.000000e-02 (default) 
+NVanGenuchten[5] = 1.500000e+00 (default) 
+VMualem[5] = 5.000000e-01 (default) 
+ThermalConductivitySoilSolids[5] = 2.500000e+00 (default) 
+ThermalCapacitySoilSolids[5] = 2.300000e+06 (default) 
+SpecificStorativity[5] = 1.000000e-05 (default) 
+InitSoilPressure[6] = -9.999000e+03 (default) 
+InitSoilTemp[6] = 5.000000e-01 (default) 
+NormalHydrConductivity[6] = 1.000000e-01 (default) 
+LateralHydrConductivity[6] = 1.000000e-01 (default) 
+ThetaRes[6] = 8.000000e-02 (default) 
+WiltingPoint[6] = 1.500000e-01 (default) 
+FieldCapacity[6] = 3.000000e-01 (default) 
+ThetaSat[6] = 5.000000e-01 (default) 
+AlphaVanGenuchten[6] = 1.000000e-02 (default) 
+NVanGenuchten[6] = 1.500000e+00 (default) 
+VMualem[6] = 5.000000e-01 (default) 
+ThermalConductivitySoilSolids[6] = 2.500000e+00 (default) 
+ThermalCapacitySoilSolids[6] = 2.300000e+06 (default) 
+SpecificStorativity[6] = 1.000000e-05 (default) 
+InitSoilPressure[7] = -9.999000e+03 (default) 
+InitSoilTemp[7] = 5.000000e-01 (default) 
+NormalHydrConductivity[7] = 1.000000e-01 (default) 
+LateralHydrConductivity[7] = 1.000000e-01 (default) 
+ThetaRes[7] = 8.000000e-02 (default) 
+WiltingPoint[7] = 1.500000e-01 (default) 
+FieldCapacity[7] = 3.000000e-01 (default) 
+ThetaSat[7] = 5.000000e-01 (default) 
+AlphaVanGenuchten[7] = 1.000000e-02 (default) 
+NVanGenuchten[7] = 1.500000e+00 (default) 
+VMualem[7] = 5.000000e-01 (default) 
+ThermalConductivitySoilSolids[7] = 2.500000e+00 (default) 
+ThermalCapacitySoilSolids[7] = 2.300000e+06 (default) 
+SpecificStorativity[7] = 1.000000e-05 (default) 
+InitSoilPressure[8] = -9.999000e+03 (default) 
+InitSoilTemp[8] = 5.000000e-01 (default) 
+NormalHydrConductivity[8] = 1.000000e-01 (default) 
+LateralHydrConductivity[8] = 1.000000e-01 (default) 
+ThetaRes[8] = 8.000000e-02 (default) 
+WiltingPoint[8] = 1.500000e-01 (default) 
+FieldCapacity[8] = 3.000000e-01 (default) 
+ThetaSat[8] = 5.000000e-01 (default) 
+AlphaVanGenuchten[8] = 1.000000e-02 (default) 
+NVanGenuchten[8] = 1.500000e+00 (default) 
+VMualem[8] = 5.000000e-01 (default) 
+ThermalConductivitySoilSolids[8] = 2.500000e+00 (default) 
+ThermalCapacitySoilSolids[8] = 2.300000e+06 (default) 
+SpecificStorativity[8] = 1.000000e-05 (default) 
+InitSoilPressure[9] = -9.999000e+03 (default) 
+InitSoilTemp[9] = 5.000000e-01 (default) 
+NormalHydrConductivity[9] = 1.000000e-01 (default) 
+LateralHydrConductivity[9] = 1.000000e-01 (default) 
+ThetaRes[9] = 8.000000e-02 (default) 
+WiltingPoint[9] = 1.500000e-01 (default) 
+FieldCapacity[9] = 3.000000e-01 (default) 
+ThetaSat[9] = 5.000000e-01 (default) 
+AlphaVanGenuchten[9] = 1.000000e-02 (default) 
+NVanGenuchten[9] = 1.500000e+00 (default) 
+VMualem[9] = 5.000000e-01 (default) 
+ThermalConductivitySoilSolids[9] = 2.500000e+00 (default) 
+ThermalCapacitySoilSolids[9] = 2.300000e+06 (default) 
+SpecificStorativity[9] = 1.000000e-05 (default) 
+InitSoilPressureBedrock[1] = -9.999000e+03 (default) 
+InitSoilTempBedrock[1] = -9.999000e+03 (default) 
+NormalHydrConductivityBedrock[1] = -9.999000e+03 (default) 
+LateralHydrConductivityBedrock[1] = -9.999000e+03 (default) 
+ThetaResBedrock[1] = -9.999000e+03 (default) 
+WiltingPointBedrock[1] = -9.999000e+03 (default) 
+FieldCapacityBedrock[1] = -9.999000e+03 (default) 
+ThetaSatBedrock[1] = -9.999000e+03 (default) 
+AlphaVanGenuchtenBedrock[1] = -9.999000e+03 (default) 
+NVanGenuchtenBedrock[1] = -9.999000e+03 (default) 
+VMualemBedrock[1] = -9.999000e+03 (default) 
+ThermalConductivitySoilSolidsBedrock[1] = -9.999000e+03 (default) 
+ThermalCapacitySoilSolidsBedrock[1] = -9.999000e+03 (default) 
+SpecificStorativityBedrock[1] = -9.999000e+03 (default) 
+InitSoilPressureBedrock[2] = -9.999000e+03 (default) 
+InitSoilTempBedrock[2] = -9.999000e+03 (default) 
+NormalHydrConductivityBedrock[2] = -9.999000e+03 (default) 
+LateralHydrConductivityBedrock[2] = -9.999000e+03 (default) 
+ThetaResBedrock[2] = -9.999000e+03 (default) 
+WiltingPointBedrock[2] = -9.999000e+03 (default) 
+FieldCapacityBedrock[2] = -9.999000e+03 (default) 
+ThetaSatBedrock[2] = -9.999000e+03 (default) 
+AlphaVanGenuchtenBedrock[2] = -9.999000e+03 (default) 
+NVanGenuchtenBedrock[2] = -9.999000e+03 (default) 
+VMualemBedrock[2] = -9.999000e+03 (default) 
+ThermalConductivitySoilSolidsBedrock[2] = -9.999000e+03 (default) 
+ThermalCapacitySoilSolidsBedrock[2] = -9.999000e+03 (default) 
+SpecificStorativityBedrock[2] = -9.999000e+03 (default) 
+InitSoilPressureBedrock[3] = -9.999000e+03 (default) 
+InitSoilTempBedrock[3] = -9.999000e+03 (default) 
+NormalHydrConductivityBedrock[3] = -9.999000e+03 (default) 
+LateralHydrConductivityBedrock[3] = -9.999000e+03 (default) 
+ThetaResBedrock[3] = -9.999000e+03 (default) 
+WiltingPointBedrock[3] = -9.999000e+03 (default) 
+FieldCapacityBedrock[3] = -9.999000e+03 (default) 
+ThetaSatBedrock[3] = -9.999000e+03 (default) 
+AlphaVanGenuchtenBedrock[3] = -9.999000e+03 (default) 
+NVanGenuchtenBedrock[3] = -9.999000e+03 (default) 
+VMualemBedrock[3] = -9.999000e+03 (default) 
+ThermalConductivitySoilSolidsBedrock[3] = -9.999000e+03 (default) 
+ThermalCapacitySoilSolidsBedrock[3] = -9.999000e+03 (default) 
+SpecificStorativityBedrock[3] = -9.999000e+03 (default) 
+InitSoilPressureBedrock[4] = -9.999000e+03 (default) 
+InitSoilTempBedrock[4] = -9.999000e+03 (default) 
+NormalHydrConductivityBedrock[4] = -9.999000e+03 (default) 
+LateralHydrConductivityBedrock[4] = -9.999000e+03 (default) 
+ThetaResBedrock[4] = -9.999000e+03 (default) 
+WiltingPointBedrock[4] = -9.999000e+03 (default) 
+FieldCapacityBedrock[4] = -9.999000e+03 (default) 
+ThetaSatBedrock[4] = -9.999000e+03 (default) 
+AlphaVanGenuchtenBedrock[4] = -9.999000e+03 (default) 
+NVanGenuchtenBedrock[4] = -9.999000e+03 (default) 
+VMualemBedrock[4] = -9.999000e+03 (default) 
+ThermalConductivitySoilSolidsBedrock[4] = -9.999000e+03 (default) 
+ThermalCapacitySoilSolidsBedrock[4] = -9.999000e+03 (default) 
+SpecificStorativityBedrock[4] = -9.999000e+03 (default) 
+InitSoilPressureBedrock[5] = -9.999000e+03 (default) 
+InitSoilTempBedrock[5] = -9.999000e+03 (default) 
+NormalHydrConductivityBedrock[5] = -9.999000e+03 (default) 
+LateralHydrConductivityBedrock[5] = -9.999000e+03 (default) 
+ThetaResBedrock[5] = -9.999000e+03 (default) 
+WiltingPointBedrock[5] = -9.999000e+03 (default) 
+FieldCapacityBedrock[5] = -9.999000e+03 (default) 
+ThetaSatBedrock[5] = -9.999000e+03 (default) 
+AlphaVanGenuchtenBedrock[5] = -9.999000e+03 (default) 
+NVanGenuchtenBedrock[5] = -9.999000e+03 (default) 
+VMualemBedrock[5] = -9.999000e+03 (default) 
+ThermalConductivitySoilSolidsBedrock[5] = -9.999000e+03 (default) 
+ThermalCapacitySoilSolidsBedrock[5] = -9.999000e+03 (default) 
+SpecificStorativityBedrock[5] = -9.999000e+03 (default) 
+InitSoilPressureBedrock[6] = -9.999000e+03 (default) 
+InitSoilTempBedrock[6] = -9.999000e+03 (default) 
+NormalHydrConductivityBedrock[6] = -9.999000e+03 (default) 
+LateralHydrConductivityBedrock[6] = -9.999000e+03 (default) 
+ThetaResBedrock[6] = -9.999000e+03 (default) 
+WiltingPointBedrock[6] = -9.999000e+03 (default) 
+FieldCapacityBedrock[6] = -9.999000e+03 (default) 
+ThetaSatBedrock[6] = -9.999000e+03 (default) 
+AlphaVanGenuchtenBedrock[6] = -9.999000e+03 (default) 
+NVanGenuchtenBedrock[6] = -9.999000e+03 (default) 
+VMualemBedrock[6] = -9.999000e+03 (default) 
+ThermalConductivitySoilSolidsBedrock[6] = -9.999000e+03 (default) 
+ThermalCapacitySoilSolidsBedrock[6] = -9.999000e+03 (default) 
+SpecificStorativityBedrock[6] = -9.999000e+03 (default) 
+InitSoilPressureBedrock[7] = -9.999000e+03 (default) 
+InitSoilTempBedrock[7] = -9.999000e+03 (default) 
+NormalHydrConductivityBedrock[7] = -9.999000e+03 (default) 
+LateralHydrConductivityBedrock[7] = -9.999000e+03 (default) 
+ThetaResBedrock[7] = -9.999000e+03 (default) 
+WiltingPointBedrock[7] = -9.999000e+03 (default) 
+FieldCapacityBedrock[7] = -9.999000e+03 (default) 
+ThetaSatBedrock[7] = -9.999000e+03 (default) 
+AlphaVanGenuchtenBedrock[7] = -9.999000e+03 (default) 
+NVanGenuchtenBedrock[7] = -9.999000e+03 (default) 
+VMualemBedrock[7] = -9.999000e+03 (default) 
+ThermalConductivitySoilSolidsBedrock[7] = -9.999000e+03 (default) 
+ThermalCapacitySoilSolidsBedrock[7] = -9.999000e+03 (default) 
+SpecificStorativityBedrock[7] = -9.999000e+03 (default) 
+InitSoilPressureBedrock[8] = -9.999000e+03 (default) 
+InitSoilTempBedrock[8] = -9.999000e+03 (default) 
+NormalHydrConductivityBedrock[8] = -9.999000e+03 (default) 
+LateralHydrConductivityBedrock[8] = -9.999000e+03 (default) 
+ThetaResBedrock[8] = -9.999000e+03 (default) 
+WiltingPointBedrock[8] = -9.999000e+03 (default) 
+FieldCapacityBedrock[8] = -9.999000e+03 (default) 
+ThetaSatBedrock[8] = -9.999000e+03 (default) 
+AlphaVanGenuchtenBedrock[8] = -9.999000e+03 (default) 
+NVanGenuchtenBedrock[8] = -9.999000e+03 (default) 
+VMualemBedrock[8] = -9.999000e+03 (default) 
+ThermalConductivitySoilSolidsBedrock[8] = -9.999000e+03 (default) 
+ThermalCapacitySoilSolidsBedrock[8] = -9.999000e+03 (default) 
+SpecificStorativityBedrock[8] = -9.999000e+03 (default) 
+InitSoilPressureBedrock[9] = -9.999000e+03 (default) 
+InitSoilTempBedrock[9] = -9.999000e+03 (default) 
+NormalHydrConductivityBedrock[9] = -9.999000e+03 (default) 
+LateralHydrConductivityBedrock[9] = -9.999000e+03 (default) 
+ThetaResBedrock[9] = -9.999000e+03 (default) 
+WiltingPointBedrock[9] = -9.999000e+03 (default) 
+FieldCapacityBedrock[9] = -9.999000e+03 (default) 
+ThetaSatBedrock[9] = -9.999000e+03 (default) 
+AlphaVanGenuchtenBedrock[9] = -9.999000e+03 (default) 
+NVanGenuchtenBedrock[9] = -9.999000e+03 (default) 
+VMualemBedrock[9] = -9.999000e+03 (default) 
+ThermalConductivitySoilSolidsBedrock[9] = -9.999000e+03 (default) 
+ThermalCapacitySoilSolidsBedrock[9] = -9.999000e+03 (default) 
+SpecificStorativityBedrock[9] = -9.999000e+03 (default) 
+MeteoStationsID[1] = -9.999000e+03 (default) 
+NumberOfMeteoStations[1] = 2.000000e+01 
+MeteoStationCoordinateX[1] = 6.508489e+05 
+MeteoStationCoordinateY[1] = 5.083241e+06 
+MeteoStationLatitude[1] = 4.588620e+01 
+MeteoStationLongitude[1] = 1.094417e+01 
+MeteoStationElevation[1] = 9.570000e+02 
+MeteoStationSkyViewFactor[1] = 1.000000e+00 (default) 
+MeteoStationStandardTime[1] = 1.000000e+00 (default) 
+MeteoStationCoordinateX[2] = 6.674188e+05 
+MeteoStationCoordinateY[2] = 5.117976e+06 
+MeteoStationLatitude[2] = 4.619476e+01 
+MeteoStationLongitude[2] = 1.116978e+01 
+MeteoStationElevation[2] = 6.960000e+02 
+MeteoStationSkyViewFactor[2] = 1.000000e+00 (default) 
+MeteoStationStandardTime[2] = 1.000000e+00 (default) 
+MeteoStationCoordinateX[3] = 6.445122e+05 
+MeteoStationCoordinateY[3] = 5.097349e+06 
+MeteoStationLatitude[3] = 4.601446e+01 
+MeteoStationLongitude[3] = 1.086680e+01 
+MeteoStationElevation[3] = 4.920000e+02 
+MeteoStationSkyViewFactor[3] = 1.000000e+00 (default) 
+MeteoStationStandardTime[3] = 1.000000e+00 (default) 
+MeteoStationCoordinateX[4] = 6.739255e+05 
+MeteoStationCoordinateY[4] = 5.110493e+06 
+MeteoStationLatitude[4] = 4.612584e+01 
+MeteoStationLongitude[4] = 1.125129e+01 
+MeteoStationElevation[4] = 9.830000e+02 
+MeteoStationSkyViewFactor[4] = 1.000000e+00 (default) 
+MeteoStationStandardTime[4] = 1.000000e+00 (default) 
+MeteoStationCoordinateX[5] = 6.584361e+05 
+MeteoStationCoordinateY[5] = 5.125738e+06 
+MeteoStationLatitude[5] = 4.626673e+01 
+MeteoStationLongitude[5] = 1.105605e+01 
+MeteoStationElevation[5] = 3.240000e+02 
+MeteoStationSkyViewFactor[5] = 1.000000e+00 (default) 
+MeteoStationStandardTime[5] = 1.000000e+00 (default) 
+MeteoStationCoordinateX[6] = 6.567318e+05 
+MeteoStationCoordinateY[6] = 5.082504e+06 
+MeteoStationLatitude[6] = 4.587825e+01 
+MeteoStationLongitude[6] = 1.101970e+01 
+MeteoStationElevation[6] = 1.700000e+02 
+MeteoStationSkyViewFactor[6] = 1.000000e+00 (default) 
+MeteoStationStandardTime[6] = 1.000000e+00 (default) 
+MeteoStationCoordinateX[7] = 6.636285e+05 
+MeteoStationCoordinateY[7] = 5.116620e+06 
+MeteoStationLatitude[7] = 4.618350e+01 
+MeteoStationLongitude[7] = 1.112022e+01 
+MeteoStationElevation[7] = 2.030000e+02 
+MeteoStationSkyViewFactor[7] = 1.000000e+00 (default) 
+MeteoStationStandardTime[7] = 1.000000e+00 (default) 
+MeteoStationCoordinateX[8] = 6.914930e+05 
+MeteoStationCoordinateY[8] = 5.102047e+06 
+MeteoStationLatitude[8] = 4.604519e+01 
+MeteoStationLongitude[8] = 1.147508e+01 
+MeteoStationElevation[8] = 4.200000e+02 
+MeteoStationSkyViewFactor[8] = 1.000000e+00 (default) 
+MeteoStationStandardTime[8] = 1.000000e+00 (default) 
+MeteoStationCoordinateX[9] = 6.463621e+05 
+MeteoStationCoordinateY[9] = 5.085824e+06 
+MeteoStationLatitude[9] = 4.591040e+01 
+MeteoStationLongitude[9] = 1.088716e+01 
+MeteoStationElevation[9] = 8.400000e+01 
+MeteoStationSkyViewFactor[9] = 1.000000e+00 (default) 
+MeteoStationStandardTime[9] = 1.000000e+00 (default) 
+MeteoStationCoordinateX[10] = 6.573116e+05 
+MeteoStationCoordinateY[10] = 5.072280e+06 
+MeteoStationLatitude[10] = 4.578615e+01 
+MeteoStationLongitude[10] = 1.102383e+01 
+MeteoStationElevation[10] = 1.720000e+02 
+MeteoStationSkyViewFactor[10] = 1.000000e+00 (default) 
+MeteoStationStandardTime[10] = 1.000000e+00 (default) 
+MeteoStationCoordinateX[11] = 6.569263e+05 
+MeteoStationCoordinateY[11] = 5.136200e+06 
+MeteoStationLatitude[11] = 4.636117e+01 
+MeteoStationLongitude[11] = 1.103996e+01 
+MeteoStationElevation[11] = 6.560000e+02 
+MeteoStationSkyViewFactor[11] = 1.000000e+00 (default) 
+MeteoStationStandardTime[11] = 1.000000e+00 (default) 
+MeteoStationCoordinateX[12] = 6.645877e+05 
+MeteoStationCoordinateY[12] = 5.098670e+06 
+MeteoStationLatitude[12] = 4.602182e+01 
+MeteoStationLongitude[12] = 1.112642e+01 
+MeteoStationElevation[12] = 1.850000e+02 
+MeteoStationSkyViewFactor[12] = 1.000000e+00 (default) 
+MeteoStationStandardTime[12] = 1.000000e+00 (default) 
+MeteoStationCoordinateX[13] = 6.916349e+05 
+MeteoStationCoordinateY[13] = 5.103481e+06 
+MeteoStationLatitude[13] = 4.605805e+01 
+MeteoStationLongitude[13] = 1.147749e+01 
+MeteoStationElevation[13] = 4.120000e+02 
+MeteoStationSkyViewFactor[13] = 1.000000e+00 (default) 
+MeteoStationStandardTime[13] = 1.000000e+00 (default) 
+MeteoStationCoordinateX[14] = 6.213166e+05 
+MeteoStationCoordinateY[14] = 5.078208e+06 
+MeteoStationLatitude[14] = 4.584676e+01 
+MeteoStationLongitude[14] = 1.056244e+01 
+MeteoStationElevation[14] = 3.850000e+02 
+MeteoStationSkyViewFactor[14] = 1.000000e+00 (default) 
+MeteoStationStandardTime[14] = 1.000000e+00 (default) 
+MeteoStationCoordinateX[15] = 6.534349e+05 
+MeteoStationCoordinateY[15] = 5.094289e+06 
+MeteoStationLatitude[15] = 4.598500e+01 
+MeteoStationLongitude[15] = 1.098101e+01 
+MeteoStationElevation[15] = 5.520000e+02 
+MeteoStationSkyViewFactor[15] = 1.000000e+00 (default) 
+MeteoStationStandardTime[15] = 1.000000e+00 (default) 
+MeteoStationCoordinateX[16] = 6.635962e+05 
+MeteoStationCoordinateY[16] = 5.144884e+06 
+MeteoStationLatitude[16] = 4.643770e+01 
+MeteoStationLongitude[16] = 1.112964e+01 
+MeteoStationElevation[16] = 9.180000e+02 
+MeteoStationSkyViewFactor[16] = 1.000000e+00 (default) 
+MeteoStationStandardTime[16] = 1.000000e+00 (default) 
+MeteoStationCoordinateX[17] = 6.338244e+05 
+MeteoStationCoordinateY[17] = 5.083901e+06 
+MeteoStationLatitude[17] = 4.589566e+01 
+MeteoStationLongitude[17] = 1.072504e+01 
+MeteoStationElevation[17] = 7.050000e+02 
+MeteoStationSkyViewFactor[17] = 1.000000e+00 (default) 
+MeteoStationStandardTime[17] = 1.000000e+00 (default) 
+MeteoStationCoordinateX[18] = 6.699405e+05 
+MeteoStationCoordinateY[18] = 5.096203e+06 
+MeteoStationLatitude[18] = 4.599832e+01 
+MeteoStationLongitude[18] = 1.119465e+01 
+MeteoStationElevation[18] = 7.060000e+02 
+MeteoStationSkyViewFactor[18] = 1.000000e+00 (default) 
+MeteoStationStandardTime[18] = 1.000000e+00 (default) 
+MeteoStationCoordinateX[19] = 7.001040e+05 
+MeteoStationCoordinateY[19] = 5.130422e+06 
+MeteoStationLatitude[19] = 4.629785e+01 
+MeteoStationLongitude[19] = 1.159826e+01 
+MeteoStationElevation[19] = 1.001000e+03 
+MeteoStationSkyViewFactor[19] = 1.000000e+00 (default) 
+MeteoStationStandardTime[19] = 1.000000e+00 (default) 
+MeteoStationCoordinateX[20] = 6.507935e+05 
+MeteoStationCoordinateY[20] = 5.137986e+06 
+MeteoStationLatitude[20] = 4.637863e+01 
+MeteoStationLongitude[20] = 1.096086e+01 
+MeteoStationElevation[20] = 7.730000e+02 
+MeteoStationSkyViewFactor[20] = 1.000000e+00 (default) 
+MeteoStationStandardTime[20] = 1.000000e+00 (default) 
+MeteoStationWindVelocitySensorHeight[1] = 1.000000e+01 
+MeteoStationTemperatureSensorHeight[1] = 2.000000e+00 
+LapseRateTemp[1] = -9.999000e+03 (default) 
+LapseRateDewTemp[1] = -9.999000e+03 (default) 
+LapseRatePrec[1] = -9.999000e+03 (default) 
+MinPrecIncreaseFactorWithElev[2] = 1.000000e-01 (default) 
+MaxPrecDecreaseFactorWithElev[2] = 4.400000e+00 (default) 
+PointAll[1] = 1.000000e+00 
+BasinAll[1] = 1.000000e+00 
+SoilPlotDepths[1] = -9.999000e+03 (default) 
+SoilPlotDepths[1] = -9.999000e+03 (default) 
+SnowPlotDepths[1] = -9.999000e+03 (default) 
+SnowPlotDepths[1] = -9.999000e+03 (default) 
+GlacPlotDepths[1] = -9.999000e+03 (default) 
+GlacPlotDepths[1] = -9.999000e+03 (default) 
+SnowAll[1] = 1.000000e+00 
+GlacAll[1] = 0.000000e+00 (default) 
+SnowAll[1] = 1.000000e+00 
+DateGlac[1] = -1.000000e+00 (default) 
+JulianDayFromYear0Glac[1] = -1.000000e+00 (default) 
+TimeFromStartGlac[1] = -1.000000e+00 (default) 
+PeriodGlac[1] = -1.000000e+00 (default) 
+RunGlac[1] = -1.000000e+00 (default) 
+SoilAll[1] = 1.000000e+00 
+RicalculateCloudiness[1] = 0.000000e+00 (default) 
+DewTemperatureAsRH[1] = 1.000000e+00 (default) 
+RHAsDewTemperature[1] = 0.000000e+00 (default) 
+NumberDayIntervalsToCalculateCloudiness[1] = 3.000000e+00 (default) 
+CalculateCastShadow[1] = 1.000000e+00 (default) 
+WindAsSpeedAndDirection[1] = 1.000000e+00 (default) 
+WindAsWindXAndWindY[1] = 0.000000e+00 (default) 
+SnowAgingCoeffVis[1] = 2.000000e-01 (default) 
+SnowAgingCoeffNIR[1] = 5.000000e-01 (default) 
+DepthFreeSurfaceAtTheBoundary[1] = 0.000000e+00 (default) 
+PrecAsIntensity[1] = 0.000000e+00 (default) 
+LinearInterpolation[1] = 0.000000e+00 (default) 
+LinearInterpolation[2] = 0.000000e+00 (default) 
+LinearInterpolation[3] = 0.000000e+00 (default) 
+LinearInterpolation[4] = 0.000000e+00 (default) 
+LinearInterpolation[5] = 0.000000e+00 (default) 
+LinearInterpolation[6] = 0.000000e+00 (default) 
+LinearInterpolation[7] = 0.000000e+00 (default) 
+LinearInterpolation[8] = 0.000000e+00 (default) 
+LinearInterpolation[9] = 0.000000e+00 (default) 
+LinearInterpolation[10] = 0.000000e+00 (default) 
+LinearInterpolation[11] = 0.000000e+00 (default) 
+LinearInterpolation[12] = 0.000000e+00 (default) 
+LinearInterpolation[13] = 0.000000e+00 (default) 
+LinearInterpolation[14] = 0.000000e+00 (default) 
+LinearInterpolation[15] = 0.000000e+00 (default) 
+LinearInterpolation[16] = 0.000000e+00 (default) 
+LinearInterpolation[17] = 0.000000e+00 (default) 
+LinearInterpolation[18] = 0.000000e+00 (default) 
+LinearInterpolation[19] = 0.000000e+00 (default) 
+LinearInterpolation[20] = 0.000000e+00 (default) 
+OutputDepthsVertical[1] = 0.000000e+00 (default) 
+UpwindBorderBlowingSnow[1] = 0.000000e+00 (default) 
+UpdateHydraulicConductivity[1] = 0.000000e+00 (default) 
+ContinuousRecovery[1] = 1.000000e+00 
+ActualOrProjectedArea[1] = 0.000000e+00 (default) 
+MinRatioKactualToKSat[1] = 1.000000e-05 
+RunIfAnOldRunIsPresent[1] = 1.000000e+00 (default) 
+MaxCourantSupFlowChannelLand[1] = 1.000000e-01 (default) 
+MinDiffSupWaterDepthChannelLand[1] = 1.000000e+00 (default) 
+SpinUpLayerBottom[1] = 1.000000e+04 (default) 
+InitInNewPeriods[1] = 0.000000e+00 (default) 
+KonzelmannA[1] = 4.840000e-01 (default) 
+KonzelmannB[1] = 8.000000e+00 (default) 
+Lozone[1] = 3.000000e-01 (default) 
+AngstromAlpha[1] = 1.300000e+00 (default) 
+AngstromBeta[1] = 1.000000e-01 (default) 
+ConsiderAlbedoInSWin[1] = 0.000000e+00 (default) 
+ConsiderMicrometeorology[1] = 1.000000e+00 (default) 
+SurfaceEnergyFlux[1] = -9.999000e+03 (default) 
+ConvectiveHeatTransferCoefficient[1] = -9.999000e+03 (default) 
+SurfaceTemperature[1] = -9.999000e+03 (default) 
+BaseAirTemperature[1] = 5.000000e+00 (default) 
+BaseRelativeHumidity[1] = 7.000000e+01 (default) 
+BaseWindSpeed[1] = 5.000000e-01 (default) 
+BaseWindDirection[1] = 0.000000e+00 (default) 
+BaseIPrec[1] = 0.000000e+00 (default) 
+DefaultSoilTypeBedrock[1] = 1.000000e+00 (default) 
+HeaderDateDDMMYYYYhhmmMeteo = Date
+HeaderJulianDayfrom0Meteo = JDfrom0
+HeaderIPrec = Iprec
+HeaderPrec = none
+HeaderWindVelocity = WindSp
+HeaderWindDirection = WindDir
+HeaderWindX = WindX
+HeaderWindY = WindY
+HeaderRH = RelHum
+HeaderAirTemp = AirT
+HeaderDewTemp = none
+HeaderSWglobal = SWglobal
+HeaderSWdirect = none
+HeaderSWdiffuse = none
+HeaderCloudSWTransmissivity = CloudTrans
+HeaderCloudFactor = none
+HeaderLWin = none
+HeaderSWnet = none
+HeaderSurfaceTemperature = none
+HeaderSoilDz = none
+HeaderSoilInitPres = none
+HeaderSoilInitTemp = none
+HeaderNormalHydrConductivity = none
+HeaderLateralHydrConductivity = none
+HeaderThetaRes = none
+HeaderWiltingPoint = none
+HeaderFieldCapacity = none
+HeaderThetaSat = none
+HeaderAlpha = none
+HeaderN = none
+HeaderV = none
+HeaderKthSoilSolids = none
+HeaderCthSoilSolids = none
+HeaderSpecificStorativity = none
+HeaderHorizonAngle = none
+HeaderHorizonHeight = none
+TimeStepsFile = none
+SoilParFile = none
+MeteoFile = meteoforcings/meteo
+MeteoStationsListFile = none
+LapseRateFile = lapserate
+HorizonMeteoStationFile = meteoforcings/horizon
+PointFile = none
+HorizonPointFile = none
+TimeDependentVegetationParameterFile = none
+TimeDependentIncomingDischargeFile = none
+DemFile = dem
+LandCoverMapFile = none
+SoilMapFile = none
+DaysDelayMapFile = none
+SkyViewFactorMapFile = none
+SlopeMapFile = slope
+RiverNetwork = none
+AspectMapFile = aspect
+CurvaturesMapFile = curvature
+BedrockDepthMapFile = none
+InitWaterTableDepthMapFile = none
+InitSnowDepthMapFile = none
+InitSWEMapFile = none
+InitSnowAgeMapFile = none
+InitGlacierDepthMapFile = none
+DischargeFile = tabs/discharge
+BasinOutputFile = tabs/basin
+BasinOutputFileWriteEnd = none
+PointOutputFile = tabs/point
+PointOutputFileWriteEnd = none
+SoilTempProfileFile = none
+SoilTempProfileFileWriteEnd = none
+SoilAveragedTempProfileFile = tabs/soilTz
+SoilAveragedTempProfileFileWriteEnd = none
+SoilLiqWaterPressProfileFile = none
+SoilLiqWaterPressProfileFileWriteEnd = none
+SoilTotWaterPressProfileFile = none
+SoilTotWaterPressProfileFileWriteEnd = none
+SoilLiqContentProfileFile = tabs/thetaliq
+SoilLiqContentProfileFileWriteEnd = none
+SoilAveragedLiqContentProfileFile = none
+SoilAveragedLiqContentProfileFileWriteEnd = none
+SoilIceContentProfileFile = tabs/thetaice
+SoilIceContentProfileFileWriteEnd = none
+SoilAveragedIceContentProfileFile = none
+SoilAveragedIceContentProfileFileWriteEnd = none
+SnowProfileFile = tabs/snow
+SnowProfileFileWriteEnd = none
+GlacierProfileFile = none
+GlacierProfileFileWriteEnd = none
+SnowCoveredAreaFile = tabs/snowcover
+RunSoilAveragedTemperatureFile = none
+RunSoilAveragedTotalSoilMoistureFile = none
+RunSoilAveragedInternalEnergyFile = none
+RunSoilAveragedSnowWaterEquivalentFile = none
+RunSoilMaximumTemperatureFile = none
+RunSoilMinimumTemperatureFile = none
+RunSoilMaximumTotalSoilMoistureFile = none
+RunSoilMinimumTotalSoilMoistureFile = none
+SoilTempTensorFile = none
+FirstSoilLayerTempMapFile = none
+SoilAveragedTempTensorFile = maps/T
+FirstSoilLayerAveragedTempMapFile = none
+SoilLiqContentTensorFile = maps/thetaliq
+FirstSoilLayerLiqContentMapFile = none
+SoilAveragedLiqContentTensorFile = none
+SoilIceContentTensorFile = none
+FirstSoilLayerIceContentMapFile = none
+SoilAveragedIceContentTensorFile = none
+LandSurfaceWaterDepthMapFile = maps/hsup
+ChannelSurfaceWaterDepthMapFile = none
+NetRadiationMapFile = none
+InLongwaveRadiationMapFile = none
+NetLongwaveRadiationMapFile = none
+NetShortwaveRadiationMapFile = none
+InShortwaveRadiationMapFile = maps/Rswin
+DirectInShortwaveRadiationMapFile = none
+ShadowFractionTimeMapFile = none
+SurfaceHeatFluxMapFile = maps/EB
+SurfaceSensibleHeatFluxMapFile = maps/H
+SurfaceLatentHeatFluxMapFile = maps/LE
+SurfaceTempMapFile = maps/Ts
+PrecipitationMapFile = maps/Prec
+CanopyInterceptedWaterMapFile = none
+SoilLiqWaterPressTensorFile = none
+SoilTotWaterPressTensorFile = none
+SnowDepthMapFile = maps/snowdepth
+GlacierDepthMapFile = maps/glacdepth
+SnowMeltedMapFile = maps/snowmelt
+SnowSublMapFile = none
+GlacierMeltedMapFile = maps/glacmelt
+GlacierSublimatedMapFile = none
+AirTempMapFile = maps/Ta
+WindSpeedMapFile = none
+WindDirMapFile = none
+RelHumMapFile = none
+SWEMapFile = maps/SWE
+GlacierWaterEqMapFile = maps/GWE
+SnowDurationMapFile = none
+ThawedSoilDepthMapFile = none
+ThawedSoilDepthFromAboveMapFile = none
+WaterTableDepthMapFile = none
+WaterTableDepthFromAboveMapFile = none
+NetPrecipitationMapFile = none
+EvapotranspirationFromSoilMapFile = none
+SpecificPlotSurfaceHeatFluxMapFile = none
+SpecificPlotTotalSensibleHeatFluxMapFile = none
+SpecificPlotTotalLatentHeatFluxMapFile = none
+SpecificPlotSurfaceSensibleHeatFluxMapFile = none
+SpecificPlotSurfaceLatentHeatFluxMapFile = none
+SpecificPlotVegSensibleHeatFluxMapFile = none
+SpecificPlotVegLatentHeatFluxMapFile = none
+SpecificPlotIncomingShortwaveRadMapFile = none
+SpecificPlotNetSurfaceShortwaveRadMapFile = none
+SpecificPlotNetVegShortwaveRadMapFile = none
+SpecificPlotIncomingLongwaveRadMapFile = none
+SpecificPlotNetSurfaceLongwaveRadMapFile = none
+SpecificPlotNetVegLongwaveRadMapFile = none
+SpecificPlotCanopyAirTempMapFile = none
+SpecificPlotSurfaceTempMapFile = none
+SpecificPlotVegTempMapFile = none
+SpecificPlotAboveVegAirTempMapFile = none
+SpecificPlotWindSpeedMapFile = none
+SpecificPlotWindDirMapFile = none
+SpecificPlotRelHumMapFile = none
+SpecificPlotSnowDepthMapFile = none
+SpecificPlotSurfaceWaterContentMapFile = none
+RecoverSoilWatPres = none
+RecoverSoilIceCont = none
+RecoverSoilTemp = none
+RecoverSnowLayerThick = none
+RecoverSnowLiqMass = none
+RecoverSnowIceMass = none
+RecoverSnowTemp = none
+RecoverGlacierLayerThick = none
+RecoverGlacierLiqMass = none
+RecoverGlacierIceMass = none
+RecoverGlacierTemp = none
+RecoverSnowLayerNumber = none
+RecoverGlacierLayerNumber = none
+RecoverNonDimensionalSnowAge = none
+RecoverLiqWaterOnCanopy = none
+RecoverSnowOnCanopy = none
+RecoverVegTemp = none
+RecoverSoilWatPresChannel = none
+RecoverSoilIceContChannel = none
+RecoverSoilTempChannel = none
+RecoverRunSoilAveragedTemperatureFile = none
+RecoverRunSoilAveragedTotalSoilMoistureFile = none
+RecoverRunSoilAveragedInternalEnergyFile = none
+RecoverRunSoilAveragedSnowWaterEquivalentFile = none
+RecoverRunSoilMaximumTemperatureFile = none
+RecoverRunSoilMinimumTemperatureFile = none
+RecoverRunSoilMaximumTotalSoilMoistureFile = none
+RecoverRunSoilMinimumTotalSoilMoistureFile = none
+RecoverTime = none
+SuccessfulRecoveryFile = none
+HeaderDatePoint = none
+HeaderJulianDayFromYear0Point = none
+HeaderTimeFromStartPoint = none
+HeaderPeriodPoint = none
+HeaderRunPoint = none
+HeaderIDPointPoint = none
+HeaderPsnowPoint = none
+HeaderPrainPoint = none
+HeaderPsnowNetPoint = none
+HeaderPrainNetPoint = none
+HeaderPrainOnSnowPoint = none
+HeaderWindSpeedPoint = none
+HeaderWindDirPoint = none
+HeaderRHPoint = none
+HeaderAirPressPoint = none
+HeaderAirTempPoint = none
+HeaderTDewPoint = none
+HeaderTsurfPoint = none
+HeaderTvegPoint = none
+HeaderTCanopyAirPoint = none
+HeaderSurfaceEBPoint = none
+HeaderSoilHeatFluxPoint = none
+HeaderSWinPoint = none
+HeaderSWbeamPoint = none
+HeaderSWdiffPoint = none
+HeaderLWinPoint = none
+HeaderLWinMinPoint = none
+HeaderLWinMaxPoint = none
+HeaderSWNetPoint = none
+HeaderLWNetPoint = none
+HeaderHPoint = none
+HeaderLEPoint = none
+HeaderCanopyFractionPoint = none
+HeaderLSAIPoint = none
+Headerz0vegPoint = none
+Headerd0vegPoint = none
+HeaderEstoredCanopyPoint = none
+HeaderSWvPoint = none
+HeaderLWvPoint = none
+HeaderHvPoint = none
+HeaderLEvPoint = none
+HeaderHgUnvegPoint = none
+HeaderLEgUnvegPoint = none
+HeaderHgVegPoint = none
+HeaderLEgVegPoint = none
+HeaderEvapSurfacePoint = none
+HeaderTraspCanopyPoint = none
+HeaderWaterOnCanopyPoint = none
+HeaderSnowOnCanopyPoint = none
+HeaderQVegPoint = none
+HeaderQSurfPoint = none
+HeaderQAirPoint = none
+HeaderQCanopyAirPoint = none
+HeaderLObukhovPoint = none
+HeaderLObukhovCanopyPoint = none
+HeaderWindSpeedTopCanopyPoint = none
+HeaderDecayKCanopyPoint = none
+HeaderSWupPoint = none
+HeaderLWupPoint = none
+HeaderHupPoint = none
+HeaderLEupPoint = none
+HeaderSnowDepthPoint = none
+HeaderSWEPoint = none
+HeaderSnowDensityPoint = none
+HeaderSnowTempPoint = none
+HeaderSnowMeltedPoint = none
+HeaderSnowSublPoint = none
+HeaderSWEBlownPoint = none
+HeaderSWESublBlownPoint = none
+HeaderGlacDepthPoint = none
+HeaderGWEPoint = none
+HeaderGlacDensityPoint = none
+HeaderGlacTempPoint = none
+HeaderGlacMeltedPoint = none
+HeaderGlacSublPoint = none
+HeaderLowestThawedSoilDepthPoint = none
+HeaderHighestThawedSoilDepthPoint = none
+HeaderLowestWaterTableDepthPoint = none
+HeaderHighestWaterTableDepthPoint = none
+HeaderDateBasin = none
+HeaderJulianDayFromYear0Basin = none
+HeaderTimeFromStartBasin = none
+HeaderPeriodBasin = none
+HeaderRunBasin = none
+HeaderPRainNetBasin = none
+HeaderPSnowNetBasin = none
+HeaderPRainBasin = none
+HeaderPSnowBasin = none
+HeaderPNetBasin = none
+HeaderAirTempBasin = none
+HeaderTSurfBasin = none
+HeaderTvegBasin = none
+HeaderEvapSurfaceBasin = none
+HeaderTraspCanopyBasin = none
+HeaderLEBasin = none
+HeaderHBasin = none
+HeaderSWNetBasin = none
+HeaderLWNetBasin = none
+HeaderLEvBasin = none
+HeaderHvBasin = none
+HeaderSWvBasin = none
+HeaderLWvBasin = none
+HeaderSWinBasin = none
+HeaderLWinBasin = none
+HeaderMeanTimeStep = none
+HeaderTimeStepAverage = none
+HeaderDateSnow = none
+HeaderJulianDayFromYear0Snow = none
+HeaderTimeFromStartSnow = none
+HeaderPeriodSnow = none
+HeaderRunSnow = none
+HeaderIDPointSnow = none
+HeaderTempSnow = none
+HeaderIceContentSnow = none
+HeaderWatContentSnow = none
+HeaderDepthSnow = none
+HeaderDateGlac = none
+HeaderJulianDayFromYear0Glac = none
+HeaderTimeFromStartGlac = none
+HeaderPeriodGlac = none
+HeaderRunGlac = none
+HeaderIDPointGlac = none
+HeaderTempGlac = none
+HeaderIceContentGlac = none
+HeaderWatContentGlac = none
+HeaderDepthGlac = none
+HeaderDateSoil = none
+HeaderJulianDayFromYear0Soil = none
+HeaderTimeFromStartSoil = none
+HeaderPeriodSoil = none
+HeaderRunSoil = none
+HeaderIDPointSoil = none
+HeaderPointID = none
+HeaderCoordinatePointX = none
+HeaderCoordinatePointY = none
+HeaderPointElevation = none
+HeaderPointLandCoverType = none
+HeaderPointSoilType = none
+HeaderPointSlope = none
+HeaderPointAspect = none
+HeaderPointSkyViewFactor = none
+HeaderPointCurvatureNorthSouthDirection = none
+HeaderPointCurvatureWestEastDirection = none
+HeaderPointCurvatureNorthwestSoutheastDirection = none
+HeaderPointCurvatureNortheastSouthwestDirection = none
+HeaderPointDepthFreeSurface = none
+HeaderPointHorizon = none
+HeaderPointMaxSWE = none
+HeaderPointLatitude = none
+HeaderPointLongitude = none
+HeaderPointBedrockDepth = none
+HeaderDateDDMMYYYYhhmmLapseRates = Date
+HeaderLapseRateTemp = LapseRateTemp
+HeaderLapseRateDewTemp = LapseRateDewTemp
+HeaderLapseRatePrec = LapseRatePrec
+HeaderIDMeteoStation = none
+HeaderMeteoStationCoordinateX = none
+HeaderMeteoStationCoordinateY = none
+HeaderMeteoStationLatitude = none
+HeaderMeteoStationLongitude = none
+HeaderMeteoStationElevation = none
+HeaderMeteoStationSkyViewFactor = none
+HeaderMeteoStationStandardTime = none
+SuccessfulRunFile = none
+FailedRunFile = none
+SubfolderRecoveryFiles = rec
+
+Soil Layers: 9
+-> Soil Type: 1
+HeaderSoilDz: 100.000000(1.00e+02), 100.000000(1.00e+02), 200.000000(2.00e+02), 500.000000(5.00e+02), 1200.000000(1.20e+03), 3000.000000(3.00e+03), 5000.000000(5.00e+03), 12000.000000(1.20e+04), 25000.000000(2.50e+04)
+HeaderSoilInitPres: -9999.000000(-1.00e+04), -9999.000000(-1.00e+04), -9999.000000(-1.00e+04), -9999.000000(-1.00e+04), -9999.000000(-1.00e+04), -9999.000000(-1.00e+04), -9999.000000(-1.00e+04), -9999.000000(-1.00e+04), -9999.000000(-1.00e+04)
+HeaderSoilInitTemp: 0.500000(5.00e-01), 0.500000(5.00e-01), 0.500000(5.00e-01), 0.500000(5.00e-01), 0.500000(5.00e-01), 0.500000(5.00e-01), 0.500000(5.00e-01), 0.500000(5.00e-01), 0.500000(5.00e-01)
+HeaderNormalHydrConductivity: 0.100000(1.00e-01), 0.100000(1.00e-01), 0.100000(1.00e-01), 0.100000(1.00e-01), 0.100000(1.00e-01), 0.100000(1.00e-01), 0.100000(1.00e-01), 0.100000(1.00e-01), 0.100000(1.00e-01)
+HeaderLateralHydrConductivity: 0.100000(1.00e-01), 0.100000(1.00e-01), 0.100000(1.00e-01), 0.100000(1.00e-01), 0.100000(1.00e-01), 0.100000(1.00e-01), 0.100000(1.00e-01), 0.100000(1.00e-01), 0.100000(1.00e-01)
+HeaderThetaRes: 0.080000(8.00e-02), 0.080000(8.00e-02), 0.080000(8.00e-02), 0.080000(8.00e-02), 0.080000(8.00e-02), 0.080000(8.00e-02), 0.080000(8.00e-02), 0.080000(8.00e-02), 0.080000(8.00e-02)
+HeaderWiltingPoint: 0.150000(1.50e-01), 0.150000(1.50e-01), 0.150000(1.50e-01), 0.150000(1.50e-01), 0.150000(1.50e-01), 0.150000(1.50e-01), 0.150000(1.50e-01), 0.150000(1.50e-01), 0.150000(1.50e-01)
+HeaderFieldCapacity: 0.300000(3.00e-01), 0.300000(3.00e-01), 0.300000(3.00e-01), 0.300000(3.00e-01), 0.300000(3.00e-01), 0.300000(3.00e-01), 0.300000(3.00e-01), 0.300000(3.00e-01), 0.300000(3.00e-01)
+HeaderThetaSat: 0.500000(5.00e-01), 0.500000(5.00e-01), 0.500000(5.00e-01), 0.500000(5.00e-01), 0.500000(5.00e-01), 0.500000(5.00e-01), 0.500000(5.00e-01), 0.500000(5.00e-01), 0.500000(5.00e-01)
+HeaderAlpha: 0.010000(1.00e-02), 0.010000(1.00e-02), 0.010000(1.00e-02), 0.010000(1.00e-02), 0.010000(1.00e-02), 0.010000(1.00e-02), 0.010000(1.00e-02), 0.010000(1.00e-02), 0.010000(1.00e-02)
+HeaderN: 1.500000(1.50e+00), 1.500000(1.50e+00), 1.500000(1.50e+00), 1.500000(1.50e+00), 1.500000(1.50e+00), 1.500000(1.50e+00), 1.500000(1.50e+00), 1.500000(1.50e+00), 1.500000(1.50e+00)
+HeaderV: 0.500000(5.00e-01), 0.500000(5.00e-01), 0.500000(5.00e-01), 0.500000(5.00e-01), 0.500000(5.00e-01), 0.500000(5.00e-01), 0.500000(5.00e-01), 0.500000(5.00e-01), 0.500000(5.00e-01)
+HeaderKthSoilSolids: 2.500000(2.50e+00), 2.500000(2.50e+00), 2.500000(2.50e+00), 2.500000(2.50e+00), 2.500000(2.50e+00), 2.500000(2.50e+00), 2.500000(2.50e+00), 2.500000(2.50e+00), 2.500000(2.50e+00)
+HeaderCthSoilSolids: 2300000.000000(2.30e+06), 2300000.000000(2.30e+06), 2300000.000000(2.30e+06), 2300000.000000(2.30e+06), 2300000.000000(2.30e+06), 2300000.000000(2.30e+06), 2300000.000000(2.30e+06), 2300000.000000(2.30e+06), 2300000.000000(2.30e+06)
+HeaderSpecificStorativity: 0.000010(1.00e-05), 0.000010(1.00e-05), 0.000010(1.00e-05), 0.000010(1.00e-05), 0.000010(1.00e-05), 0.000010(1.00e-05), 0.000010(1.00e-05), 0.000010(1.00e-05), 0.000010(1.00e-05)
+
+Soil Bedrock Layers: 9
+-> Soil Type: 1
+HeaderSoilDz: 100.000000(1.00e+02), 100.000000(1.00e+02), 200.000000(2.00e+02), 500.000000(5.00e+02), 1200.000000(1.20e+03), 3000.000000(3.00e+03), 5000.000000(5.00e+03), 12000.000000(1.20e+04), 25000.000000(2.50e+04)
+HeaderSoilInitPres: -9999.000000(-1.00e+04), -9999.000000(-1.00e+04), -9999.000000(-1.00e+04), -9999.000000(-1.00e+04), -9999.000000(-1.00e+04), -9999.000000(-1.00e+04), -9999.000000(-1.00e+04), -9999.000000(-1.00e+04), -9999.000000(-1.00e+04)
+HeaderSoilInitTemp: 0.500000(5.00e-01), 0.500000(5.00e-01), 0.500000(5.00e-01), 0.500000(5.00e-01), 0.500000(5.00e-01), 0.500000(5.00e-01), 0.500000(5.00e-01), 0.500000(5.00e-01), 0.500000(5.00e-01)
+HeaderNormalHydrConductivity: 0.100000(1.00e-01), 0.100000(1.00e-01), 0.100000(1.00e-01), 0.100000(1.00e-01), 0.100000(1.00e-01), 0.100000(1.00e-01), 0.100000(1.00e-01), 0.100000(1.00e-01), 0.100000(1.00e-01)
+HeaderLateralHydrConductivity: 0.100000(1.00e-01), 0.100000(1.00e-01), 0.100000(1.00e-01), 0.100000(1.00e-01), 0.100000(1.00e-01), 0.100000(1.00e-01), 0.100000(1.00e-01), 0.100000(1.00e-01), 0.100000(1.00e-01)
+HeaderThetaRes: 0.080000(8.00e-02), 0.080000(8.00e-02), 0.080000(8.00e-02), 0.080000(8.00e-02), 0.080000(8.00e-02), 0.080000(8.00e-02), 0.080000(8.00e-02), 0.080000(8.00e-02), 0.080000(8.00e-02)
+HeaderWiltingPoint: 0.150000(1.50e-01), 0.150000(1.50e-01), 0.150000(1.50e-01), 0.150000(1.50e-01), 0.150000(1.50e-01), 0.150000(1.50e-01), 0.150000(1.50e-01), 0.150000(1.50e-01), 0.150000(1.50e-01)
+HeaderFieldCapacity: 0.300000(3.00e-01), 0.300000(3.00e-01), 0.300000(3.00e-01), 0.300000(3.00e-01), 0.300000(3.00e-01), 0.300000(3.00e-01), 0.300000(3.00e-01), 0.300000(3.00e-01), 0.300000(3.00e-01)
+HeaderThetaSat: 0.500000(5.00e-01), 0.500000(5.00e-01), 0.500000(5.00e-01), 0.500000(5.00e-01), 0.500000(5.00e-01), 0.500000(5.00e-01), 0.500000(5.00e-01), 0.500000(5.00e-01), 0.500000(5.00e-01)
+HeaderAlpha: 0.010000(1.00e-02), 0.010000(1.00e-02), 0.010000(1.00e-02), 0.010000(1.00e-02), 0.010000(1.00e-02), 0.010000(1.00e-02), 0.010000(1.00e-02), 0.010000(1.00e-02), 0.010000(1.00e-02)
+HeaderN: 1.500000(1.50e+00), 1.500000(1.50e+00), 1.500000(1.50e+00), 1.500000(1.50e+00), 1.500000(1.50e+00), 1.500000(1.50e+00), 1.500000(1.50e+00), 1.500000(1.50e+00), 1.500000(1.50e+00)
+HeaderV: 0.500000(5.00e-01), 0.500000(5.00e-01), 0.500000(5.00e-01), 0.500000(5.00e-01), 0.500000(5.00e-01), 0.500000(5.00e-01), 0.500000(5.00e-01), 0.500000(5.00e-01), 0.500000(5.00e-01)
+HeaderKthSoilSolids: 2.500000(2.50e+00), 2.500000(2.50e+00), 2.500000(2.50e+00), 2.500000(2.50e+00), 2.500000(2.50e+00), 2.500000(2.50e+00), 2.500000(2.50e+00), 2.500000(2.50e+00), 2.500000(2.50e+00)
+HeaderCthSoilSolids: 2300000.000000(2.30e+06), 2300000.000000(2.30e+06), 2300000.000000(2.30e+06), 2300000.000000(2.30e+06), 2300000.000000(2.30e+06), 2300000.000000(2.30e+06), 2300000.000000(2.30e+06), 2300000.000000(2.30e+06), 2300000.000000(2.30e+06)
+HeaderSpecificStorativity: 0.000010(1.00e-05), 0.000010(1.00e-05), 0.000010(1.00e-05), 0.000010(1.00e-05), 0.000010(1.00e-05), 0.000010(1.00e-05), 0.000010(1.00e-05), 0.000010(1.00e-05), 0.000010(1.00e-05)
+
+Attempting to read 'DemFile' in the file '/home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/dem': EXISTING in format 3
+Attempting to read 'LandCoverMapFile' in the file 'none': not present in file list
+Attempting to read 'SkyViewFactorMapFile' in the file 'none': not present in file list
+Attempting to read 'DaysDelayMapFile' in the file 'none': not present in file list
+Attempting to read 'SoilMapFile' in the file 'none': not present in file list
+Attempting to read 'SlopeMapFile' in the file '/home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/slope': EXISTING in format 3
+Slope Min:0.000000 (0.000000 deg) Max:0.741060 (36.540665 deg) 
+Attempting to read 'AspectMapFile' in the file '/home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/aspect': EXISTING in format 3
+Curvature N-S Min:-0.000159  Max:0.000146 
+Curvature W-E Min:-0.000124  Max:0.000147 
+Curvature NW-SE Min:-0.000270  Max:0.000275 
+Curvature NE-SW Min:-0.000210  Max:0.000238 
+Attempting to read 'RiverNetwork' in the file 'none': not present in file list
+Attempting to read 'BedrockDepthMapFile' in the file 'none': not present in file list
+Valid pixels: 75503
+Number of nodes: 755030
+Novalue pixels: 9680
+Basin area: 18875.750000 km2
+
+Horizon file FOUND for meteo station #1
+Column 1 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/horizon0001.txt assigned to AngleFromNorthClockwise
+Column 2 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/horizon0001.txt assigned to HorizonHeight
+Column 1 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0001.txt assigned to Date
+Column 2 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0001.txt assigned to JDfrom0
+Column 3 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0001.txt assigned to Iprec
+Column 4 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0001.txt assigned to WindSp
+Column 5 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0001.txt assigned to WindDir
+Column 6 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0001.txt assigned to RelHum
+Column 7 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0001.txt assigned to AirT
+Column 8 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0001.txt assigned to SWglobal
+Column 9 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0001.txt assigned to CloudTrans
+
+Horizon file FOUND for meteo station #2
+Column 1 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/horizon0002.txt assigned to AngleFromNorthClockwise
+Column 2 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/horizon0002.txt assigned to HorizonHeight
+Column 1 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0002.txt assigned to Date
+Column 2 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0002.txt assigned to JDfrom0
+Column 3 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0002.txt assigned to Iprec
+Column 4 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0002.txt assigned to WindSp
+Column 5 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0002.txt assigned to WindDir
+Column 6 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0002.txt assigned to RelHum
+Column 7 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0002.txt assigned to AirT
+Column 8 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0002.txt assigned to SWglobal
+Column 9 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0002.txt assigned to CloudTrans
+
+Horizon file FOUND for meteo station #3
+Column 1 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/horizon0003.txt assigned to AngleFromNorthClockwise
+Column 2 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/horizon0003.txt assigned to HorizonHeight
+Column 1 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0003.txt assigned to Date
+Column 2 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0003.txt assigned to JDfrom0
+Column 3 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0003.txt assigned to Iprec
+Column 4 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0003.txt assigned to WindSp
+Column 5 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0003.txt assigned to WindDir
+Column 6 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0003.txt assigned to RelHum
+Column 7 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0003.txt assigned to AirT
+Column 8 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0003.txt assigned to SWglobal
+Column 9 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0003.txt assigned to CloudTrans
+
+Horizon file FOUND for meteo station #4
+Column 1 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/horizon0004.txt assigned to AngleFromNorthClockwise
+Column 2 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/horizon0004.txt assigned to HorizonHeight
+Column 1 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0004.txt assigned to Date
+Column 2 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0004.txt assigned to JDfrom0
+Column 3 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0004.txt assigned to Iprec
+Column 4 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0004.txt assigned to WindSp
+Column 5 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0004.txt assigned to WindDir
+Column 6 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0004.txt assigned to RelHum
+Column 7 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0004.txt assigned to AirT
+Column 8 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0004.txt assigned to SWglobal
+Column 9 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0004.txt assigned to CloudTrans
+
+Horizon file FOUND for meteo station #5
+Column 1 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/horizon0005.txt assigned to AngleFromNorthClockwise
+Column 2 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/horizon0005.txt assigned to HorizonHeight
+Column 1 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0005.txt assigned to Date
+Column 2 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0005.txt assigned to JDfrom0
+Column 3 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0005.txt assigned to Iprec
+Column 4 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0005.txt assigned to WindSp
+Column 5 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0005.txt assigned to WindDir
+Column 6 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0005.txt assigned to RelHum
+Column 7 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0005.txt assigned to AirT
+Column 8 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0005.txt assigned to SWglobal
+Column 9 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0005.txt assigned to CloudTrans
+
+Horizon file FOUND for meteo station #6
+Column 1 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/horizon0006.txt assigned to AngleFromNorthClockwise
+Column 2 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/horizon0006.txt assigned to HorizonHeight
+Column 1 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0006.txt assigned to Date
+Column 2 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0006.txt assigned to JDfrom0
+Column 3 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0006.txt assigned to Iprec
+Column 4 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0006.txt assigned to WindSp
+Column 5 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0006.txt assigned to WindDir
+Column 6 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0006.txt assigned to RelHum
+Column 7 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0006.txt assigned to AirT
+Column 8 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0006.txt assigned to SWglobal
+Column 9 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0006.txt assigned to CloudTrans
+
+Horizon file FOUND for meteo station #7
+Column 1 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/horizon0007.txt assigned to AngleFromNorthClockwise
+Column 2 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/horizon0007.txt assigned to HorizonHeight
+Column 1 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0007.txt assigned to Date
+Column 2 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0007.txt assigned to JDfrom0
+Column 3 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0007.txt assigned to Iprec
+Column 4 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0007.txt assigned to WindSp
+Column 5 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0007.txt assigned to WindDir
+Column 6 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0007.txt assigned to RelHum
+Column 7 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0007.txt assigned to AirT
+Column 8 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0007.txt assigned to SWglobal
+Column 9 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0007.txt assigned to CloudTrans
+
+Horizon file FOUND for meteo station #8
+Column 1 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/horizon0008.txt assigned to AngleFromNorthClockwise
+Column 2 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/horizon0008.txt assigned to HorizonHeight
+Column 1 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0008.txt assigned to Date
+Column 2 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0008.txt assigned to JDfrom0
+Column 3 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0008.txt assigned to Iprec
+Column 4 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0008.txt assigned to WindSp
+Column 5 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0008.txt assigned to WindDir
+Column 6 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0008.txt assigned to RelHum
+Column 7 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0008.txt assigned to AirT
+Column 8 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0008.txt assigned to SWglobal
+Column 9 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0008.txt assigned to CloudTrans
+
+Horizon file FOUND for meteo station #9
+Column 1 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/horizon0009.txt assigned to AngleFromNorthClockwise
+Column 2 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/horizon0009.txt assigned to HorizonHeight
+Column 1 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0009.txt assigned to Date
+Column 2 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0009.txt assigned to JDfrom0
+Column 3 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0009.txt assigned to Iprec
+Column 4 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0009.txt assigned to WindSp
+Column 5 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0009.txt assigned to WindDir
+Column 6 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0009.txt assigned to RelHum
+Column 7 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0009.txt assigned to AirT
+Column 8 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0009.txt assigned to SWglobal
+Column 9 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0009.txt assigned to CloudTrans
+
+Horizon file FOUND for meteo station #10
+Column 1 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/horizon0010.txt assigned to AngleFromNorthClockwise
+Column 2 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/horizon0010.txt assigned to HorizonHeight
+Column 1 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0010.txt assigned to Date
+Column 2 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0010.txt assigned to JDfrom0
+Column 3 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0010.txt assigned to Iprec
+Column 4 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0010.txt assigned to WindSp
+Column 5 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0010.txt assigned to WindDir
+Column 6 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0010.txt assigned to RelHum
+Column 7 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0010.txt assigned to AirT
+Column 8 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0010.txt assigned to SWglobal
+Column 9 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0010.txt assigned to CloudTrans
+
+Horizon file FOUND for meteo station #11
+Column 1 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/horizon0011.txt assigned to AngleFromNorthClockwise
+Column 2 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/horizon0011.txt assigned to HorizonHeight
+Column 1 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0011.txt assigned to Date
+Column 2 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0011.txt assigned to JDfrom0
+Column 3 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0011.txt assigned to Iprec
+Column 4 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0011.txt assigned to WindSp
+Column 5 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0011.txt assigned to WindDir
+Column 6 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0011.txt assigned to RelHum
+Column 7 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0011.txt assigned to AirT
+Column 8 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0011.txt assigned to SWglobal
+Column 9 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0011.txt assigned to CloudTrans
+
+Horizon file FOUND for meteo station #12
+Column 1 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/horizon0012.txt assigned to AngleFromNorthClockwise
+Column 2 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/horizon0012.txt assigned to HorizonHeight
+Column 1 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0012.txt assigned to Date
+Column 2 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0012.txt assigned to JDfrom0
+Column 3 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0012.txt assigned to Iprec
+Column 4 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0012.txt assigned to WindSp
+Column 5 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0012.txt assigned to WindDir
+Column 6 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0012.txt assigned to RelHum
+Column 7 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0012.txt assigned to AirT
+Column 8 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0012.txt assigned to SWglobal
+Column 9 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0012.txt assigned to CloudTrans
+
+Horizon file FOUND for meteo station #13
+Column 1 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/horizon0013.txt assigned to AngleFromNorthClockwise
+Column 2 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/horizon0013.txt assigned to HorizonHeight
+Column 1 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0013.txt assigned to Date
+Column 2 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0013.txt assigned to JDfrom0
+Column 3 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0013.txt assigned to Iprec
+Column 4 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0013.txt assigned to WindSp
+Column 5 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0013.txt assigned to WindDir
+Column 6 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0013.txt assigned to RelHum
+Column 7 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0013.txt assigned to AirT
+Column 8 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0013.txt assigned to SWglobal
+Column 9 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0013.txt assigned to CloudTrans
+
+Horizon file FOUND for meteo station #14
+Column 1 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/horizon0014.txt assigned to AngleFromNorthClockwise
+Column 2 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/horizon0014.txt assigned to HorizonHeight
+Column 1 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0014.txt assigned to Date
+Column 2 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0014.txt assigned to JDfrom0
+Column 3 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0014.txt assigned to Iprec
+Column 4 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0014.txt assigned to WindSp
+Column 5 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0014.txt assigned to WindDir
+Column 6 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0014.txt assigned to RelHum
+Column 7 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0014.txt assigned to AirT
+Column 8 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0014.txt assigned to SWglobal
+Column 9 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0014.txt assigned to CloudTrans
+
+Horizon file FOUND for meteo station #15
+Column 1 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/horizon0015.txt assigned to AngleFromNorthClockwise
+Column 2 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/horizon0015.txt assigned to HorizonHeight
+Column 1 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0015.txt assigned to Date
+Column 2 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0015.txt assigned to JDfrom0
+Column 3 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0015.txt assigned to Iprec
+Column 4 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0015.txt assigned to WindSp
+Column 5 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0015.txt assigned to WindDir
+Column 6 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0015.txt assigned to RelHum
+Column 7 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0015.txt assigned to AirT
+Column 8 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0015.txt assigned to SWglobal
+Column 9 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0015.txt assigned to CloudTrans
+
+Horizon file FOUND for meteo station #16
+Column 1 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/horizon0016.txt assigned to AngleFromNorthClockwise
+Column 2 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/horizon0016.txt assigned to HorizonHeight
+Column 1 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0016.txt assigned to Date
+Column 2 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0016.txt assigned to JDfrom0
+Column 3 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0016.txt assigned to Iprec
+Column 4 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0016.txt assigned to WindSp
+Column 5 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0016.txt assigned to WindDir
+Column 6 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0016.txt assigned to RelHum
+Column 7 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0016.txt assigned to AirT
+Column 8 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0016.txt assigned to SWglobal
+Column 9 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0016.txt assigned to CloudTrans
+
+Horizon file FOUND for meteo station #17
+Column 1 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/horizon0017.txt assigned to AngleFromNorthClockwise
+Column 2 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/horizon0017.txt assigned to HorizonHeight
+Column 1 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0017.txt assigned to Date
+Column 2 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0017.txt assigned to JDfrom0
+Column 3 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0017.txt assigned to Iprec
+Column 4 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0017.txt assigned to WindSp
+Column 5 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0017.txt assigned to WindDir
+Column 6 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0017.txt assigned to RelHum
+Column 7 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0017.txt assigned to AirT
+Column 8 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0017.txt assigned to SWglobal
+Column 9 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0017.txt assigned to CloudTrans
+
+Horizon file FOUND for meteo station #18
+Column 1 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/horizon0018.txt assigned to AngleFromNorthClockwise
+Column 2 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/horizon0018.txt assigned to HorizonHeight
+Column 1 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0018.txt assigned to Date
+Column 2 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0018.txt assigned to JDfrom0
+Column 3 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0018.txt assigned to Iprec
+Column 4 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0018.txt assigned to WindSp
+Column 5 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0018.txt assigned to WindDir
+Column 6 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0018.txt assigned to RelHum
+Column 7 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0018.txt assigned to AirT
+Column 8 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0018.txt assigned to SWglobal
+Column 9 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0018.txt assigned to CloudTrans
+
+Horizon file FOUND for meteo station #19
+Column 1 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/horizon0019.txt assigned to AngleFromNorthClockwise
+Column 2 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/horizon0019.txt assigned to HorizonHeight
+Column 1 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0019.txt assigned to Date
+Column 2 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0019.txt assigned to JDfrom0
+Column 3 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0019.txt assigned to Iprec
+Column 4 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0019.txt assigned to WindSp
+Column 5 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0019.txt assigned to WindDir
+Column 6 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0019.txt assigned to RelHum
+Column 7 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0019.txt assigned to AirT
+Column 8 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0019.txt assigned to SWglobal
+Column 9 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0019.txt assigned to CloudTrans
+
+Horizon file FOUND for meteo station #20
+Column 1 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/horizon0020.txt assigned to AngleFromNorthClockwise
+Column 2 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/horizon0020.txt assigned to HorizonHeight
+Column 1 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0020.txt assigned to Date
+Column 2 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0020.txt assigned to JDfrom0
+Column 3 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0020.txt assigned to Iprec
+Column 4 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0020.txt assigned to WindSp
+Column 5 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0020.txt assigned to WindDir
+Column 6 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0020.txt assigned to RelHum
+Column 7 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0020.txt assigned to AirT
+Column 8 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0020.txt assigned to SWglobal
+Column 9 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/meteoforcings/meteo0020.txt assigned to CloudTrans
+Column 1 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/lapserate.txt assigned to Date
+Column 3 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/lapserate.txt assigned to LapseRateTemp
+Column 4 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/lapserate.txt assigned to LapseRateDewTemp
+Column 5 in file /home/idroclima/idroclim_trentino/idroclim_trentino_run_1_tolRE1e-4/lapserate.txt assigned to LapseRatePrec
+Shortwave radiation measurements from station 1
+Cloudiness measurements from station 1
+WARNING: NO longwave radiation measurements available
+WARNING: NO Surface temperature measurements available
+Channel pixels: 0
+Soil water evaporates from the first 1 layers
+Soil water transpires from the first 7 layers
+26/3/2002 1:00 7.67% - Time elapsed (h:m:s) 210:52:12 Time remaining (h:m) 2539:07  
+26/3/2002 2:00 7.67% - Time elapsed (h:m:s) 210:58:17 Time remaining (h:m) 2538:58  
+26/3/2002 3:00 7.68% - Time elapsed (h:m:s) 211:04:48 Time remaining (h:m) 2538:55  
+26/3/2002 4:00 7.68% - Time elapsed (h:m:s) 211:12:15 Time remaining (h:m) 2539:03  
+26/3/2002 5:00 7.68% - Time elapsed (h:m:s) 211:18:01 Time remaining (h:m) 2538:50  
+26/3/2002 6:00 7.69% - Time elapsed (h:m:s) 211:22:23 Time remaining (h:m) 2538:21  
+26/3/2002 7:00 7.69% - Time elapsed (h:m:s) 211:26:09 Time remaining (h:m) 2537:45  

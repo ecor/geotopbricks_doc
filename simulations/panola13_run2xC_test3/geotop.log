@@ -1,0 +1,2128 @@
+STATEMENT:
+
+GEOtop 1.225-9 'Moab' - 24 Aug 2012
+
+GEOtop 1.225-9 'Moab' is a free software and is distributed under GNU General Public License v. 3.0 <http://www.gnu.org/licenses/>
+WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+
+WORKING DIRECTORY: /Users/ecor/LAVORI_IN_CORSO/2012/BOUSSINESQ_wrr/URGENTE_Cordano_Rigon_2012/manuscript_under_development/panola_simulation/simulation_geotop/panola13_run2xC_test3/
+
+TimeStepEnergyAndWater[1] = 3.600000e+03 
+InitDateDDMMYYYYhhmm[1] = 1.022012e+10 
+SimulationHours[1] = 1.000000e+00 (default) 
+EndDateDDMMYYYYhhmm[1] = 1.032012e+10 
+NumSimulationTimes[1] = 1.000000e+00 (default) 
+StandardTimeSimulation[1] = 1.000000e+00 
+DtPlotDischarge[1] = 1.000000e+00 
+DtPlotPoint[1] = 1.000000e+00 
+DtPlotBasin[1] = 2.400000e+01 
+NumLowPassFilterOnDemForAll[1] = 2.000000e+00 
+NumLowPassFilterOnDemForCurv[1] = 2.000000e+01 
+FlagSkyViewFactor[1] = 0.000000e+00 
+FormatOutputMaps[1] = 3.000000e+00 (default) 
+PointSim[1] = 0.000000e+00 (default) 
+RecoverSim[1] = 0.000000e+00 
+NumLandCoverTypes[1] = 9.000000e+00 
+SoilRoughness[1] = 1.000000e+02 
+ThresSnowSoilRough[1] = 1.000000e+02 
+VegHeight[1] = 0.000000e+00 
+ThresSnowVegUp[1] = 5.000000e+01 
+ThresSnowVegDown[1] = 1.000000e+01 
+LSAI[1] = 0.000000e+00 
+CanopyFraction[1] = 0.000000e+00 
+DecayCoeffCanopy[1] = 2.500000e+00 
+VegSnowBurying[1] = 1.000000e+00 
+RootDepth[1] = 0.000000e+00 
+MinStomatalRes[1] = 6.000000e+01 
+VegReflectVis[1] = 1.000000e-01 
+VegReflNIR[1] = 5.800000e-01 
+VegTransVis[1] = 5.000000e-02 
+VegTransNIR[1] = 2.500000e-01 
+LeafAngles[1] = 0.000000e+00 
+CanDensSurface[1] = 5.000000e-01 
+SoilAlbVisDry[1] = 1.500000e-01 
+SoilAlbNIRDry[1] = 2.500000e-01 
+SoilAlbVisWet[1] = 1.500000e-01 
+SoilAlbNIRWet[1] = 2.500000e-01 
+SoilEmissiv[1] = 9.600000e-01 
+SurFlowResLand[1] = 5.000000e-01 
+RoughElemXUnitArea[1] = 0.000000e+00 (default) 
+RoughElemDiam[1] = 5.000000e+01 (default) 
+SoilRoughness[2] = 1.000000e+02 (default) 
+ThresSnowSoilRough[2] = 1.000000e+02 (default) 
+VegHeight[2] = 0.000000e+00 
+ThresSnowVegUp[2] = 5.000000e+01 (default) 
+ThresSnowVegDown[2] = 1.000000e+01 (default) 
+LSAI[2] = 0.000000e+00 
+CanopyFraction[2] = 0.000000e+00 
+DecayCoeffCanopy[2] = 2.500000e+00 (default) 
+VegSnowBurying[2] = 1.000000e+00 (default) 
+RootDepth[2] = 0.000000e+00 
+MinStomatalRes[2] = 6.000000e+01 (default) 
+VegReflectVis[2] = 1.000000e-01 (default) 
+VegReflNIR[2] = 5.800000e-01 (default) 
+VegTransVis[2] = 5.000000e-02 (default) 
+VegTransNIR[2] = 2.500000e-01 (default) 
+LeafAngles[2] = 0.000000e+00 (default) 
+CanDensSurface[2] = 5.000000e-01 (default) 
+SoilAlbVisDry[2] = 1.500000e-01 (default) 
+SoilAlbNIRDry[2] = 2.500000e-01 (default) 
+SoilAlbVisWet[2] = 1.500000e-01 (default) 
+SoilAlbNIRWet[2] = 2.500000e-01 (default) 
+SoilEmissiv[2] = 9.600000e-01 (default) 
+SurFlowResLand[2] = 5.000000e-01 (default) 
+RoughElemXUnitArea[2] = 0.000000e+00 (default) 
+RoughElemDiam[2] = 5.000000e+01 (default) 
+SoilRoughness[3] = 1.000000e+02 (default) 
+ThresSnowSoilRough[3] = 1.000000e+02 (default) 
+VegHeight[3] = 0.000000e+00 
+ThresSnowVegUp[3] = 5.000000e+01 (default) 
+ThresSnowVegDown[3] = 1.000000e+01 (default) 
+LSAI[3] = 0.000000e+00 
+CanopyFraction[3] = 0.000000e+00 
+DecayCoeffCanopy[3] = 2.500000e+00 (default) 
+VegSnowBurying[3] = 1.000000e+00 (default) 
+RootDepth[3] = 0.000000e+00 
+MinStomatalRes[3] = 6.000000e+01 (default) 
+VegReflectVis[3] = 1.000000e-01 (default) 
+VegReflNIR[3] = 5.800000e-01 (default) 
+VegTransVis[3] = 5.000000e-02 (default) 
+VegTransNIR[3] = 2.500000e-01 (default) 
+LeafAngles[3] = 0.000000e+00 (default) 
+CanDensSurface[3] = 5.000000e-01 (default) 
+SoilAlbVisDry[3] = 1.500000e-01 (default) 
+SoilAlbNIRDry[3] = 2.500000e-01 (default) 
+SoilAlbVisWet[3] = 1.500000e-01 (default) 
+SoilAlbNIRWet[3] = 2.500000e-01 (default) 
+SoilEmissiv[3] = 9.600000e-01 (default) 
+SurFlowResLand[3] = 5.000000e-01 (default) 
+RoughElemXUnitArea[3] = 0.000000e+00 (default) 
+RoughElemDiam[3] = 5.000000e+01 (default) 
+SoilRoughness[4] = 1.000000e+02 (default) 
+ThresSnowSoilRough[4] = 1.000000e+02 (default) 
+VegHeight[4] = 0.000000e+00 
+ThresSnowVegUp[4] = 5.000000e+01 (default) 
+ThresSnowVegDown[4] = 1.000000e+01 (default) 
+LSAI[4] = 0.000000e+00 
+CanopyFraction[4] = 0.000000e+00 
+DecayCoeffCanopy[4] = 2.500000e+00 (default) 
+VegSnowBurying[4] = 1.000000e+00 (default) 
+RootDepth[4] = 0.000000e+00 
+MinStomatalRes[4] = 6.000000e+01 (default) 
+VegReflectVis[4] = 1.000000e-01 (default) 
+VegReflNIR[4] = 5.800000e-01 (default) 
+VegTransVis[4] = 5.000000e-02 (default) 
+VegTransNIR[4] = 2.500000e-01 (default) 
+LeafAngles[4] = 0.000000e+00 (default) 
+CanDensSurface[4] = 5.000000e-01 (default) 
+SoilAlbVisDry[4] = 1.500000e-01 (default) 
+SoilAlbNIRDry[4] = 2.500000e-01 (default) 
+SoilAlbVisWet[4] = 1.500000e-01 (default) 
+SoilAlbNIRWet[4] = 2.500000e-01 (default) 
+SoilEmissiv[4] = 9.600000e-01 (default) 
+SurFlowResLand[4] = 5.000000e-01 (default) 
+RoughElemXUnitArea[4] = 0.000000e+00 (default) 
+RoughElemDiam[4] = 5.000000e+01 (default) 
+SoilRoughness[5] = 1.000000e+02 (default) 
+ThresSnowSoilRough[5] = 1.000000e+02 (default) 
+VegHeight[5] = 0.000000e+00 
+ThresSnowVegUp[5] = 5.000000e+01 (default) 
+ThresSnowVegDown[5] = 1.000000e+01 (default) 
+LSAI[5] = 0.000000e+00 
+CanopyFraction[5] = 0.000000e+00 
+DecayCoeffCanopy[5] = 2.500000e+00 (default) 
+VegSnowBurying[5] = 1.000000e+00 (default) 
+RootDepth[5] = 0.000000e+00 
+MinStomatalRes[5] = 6.000000e+01 (default) 
+VegReflectVis[5] = 1.000000e-01 (default) 
+VegReflNIR[5] = 5.800000e-01 (default) 
+VegTransVis[5] = 5.000000e-02 (default) 
+VegTransNIR[5] = 2.500000e-01 (default) 
+LeafAngles[5] = 0.000000e+00 (default) 
+CanDensSurface[5] = 5.000000e-01 (default) 
+SoilAlbVisDry[5] = 1.500000e-01 (default) 
+SoilAlbNIRDry[5] = 2.500000e-01 (default) 
+SoilAlbVisWet[5] = 1.500000e-01 (default) 
+SoilAlbNIRWet[5] = 2.500000e-01 (default) 
+SoilEmissiv[5] = 9.600000e-01 (default) 
+SurFlowResLand[5] = 5.000000e-01 (default) 
+RoughElemXUnitArea[5] = 0.000000e+00 (default) 
+RoughElemDiam[5] = 5.000000e+01 (default) 
+SoilRoughness[6] = 1.000000e+02 (default) 
+ThresSnowSoilRough[6] = 1.000000e+02 (default) 
+VegHeight[6] = 0.000000e+00 
+ThresSnowVegUp[6] = 5.000000e+01 (default) 
+ThresSnowVegDown[6] = 1.000000e+01 (default) 
+LSAI[6] = 0.000000e+00 
+CanopyFraction[6] = 0.000000e+00 
+DecayCoeffCanopy[6] = 2.500000e+00 (default) 
+VegSnowBurying[6] = 1.000000e+00 (default) 
+RootDepth[6] = 0.000000e+00 
+MinStomatalRes[6] = 6.000000e+01 (default) 
+VegReflectVis[6] = 1.000000e-01 (default) 
+VegReflNIR[6] = 5.800000e-01 (default) 
+VegTransVis[6] = 5.000000e-02 (default) 
+VegTransNIR[6] = 2.500000e-01 (default) 
+LeafAngles[6] = 0.000000e+00 (default) 
+CanDensSurface[6] = 5.000000e-01 (default) 
+SoilAlbVisDry[6] = 1.500000e-01 (default) 
+SoilAlbNIRDry[6] = 2.500000e-01 (default) 
+SoilAlbVisWet[6] = 1.500000e-01 (default) 
+SoilAlbNIRWet[6] = 2.500000e-01 (default) 
+SoilEmissiv[6] = 9.600000e-01 (default) 
+SurFlowResLand[6] = 5.000000e-01 (default) 
+RoughElemXUnitArea[6] = 0.000000e+00 (default) 
+RoughElemDiam[6] = 5.000000e+01 (default) 
+SoilRoughness[7] = 1.000000e+02 (default) 
+ThresSnowSoilRough[7] = 1.000000e+02 (default) 
+VegHeight[7] = 0.000000e+00 
+ThresSnowVegUp[7] = 5.000000e+01 (default) 
+ThresSnowVegDown[7] = 1.000000e+01 (default) 
+LSAI[7] = 0.000000e+00 
+CanopyFraction[7] = 0.000000e+00 
+DecayCoeffCanopy[7] = 2.500000e+00 (default) 
+VegSnowBurying[7] = 1.000000e+00 (default) 
+RootDepth[7] = 0.000000e+00 
+MinStomatalRes[7] = 6.000000e+01 (default) 
+VegReflectVis[7] = 1.000000e-01 (default) 
+VegReflNIR[7] = 5.800000e-01 (default) 
+VegTransVis[7] = 5.000000e-02 (default) 
+VegTransNIR[7] = 2.500000e-01 (default) 
+LeafAngles[7] = 0.000000e+00 (default) 
+CanDensSurface[7] = 5.000000e-01 (default) 
+SoilAlbVisDry[7] = 1.500000e-01 (default) 
+SoilAlbNIRDry[7] = 2.500000e-01 (default) 
+SoilAlbVisWet[7] = 1.500000e-01 (default) 
+SoilAlbNIRWet[7] = 2.500000e-01 (default) 
+SoilEmissiv[7] = 9.600000e-01 (default) 
+SurFlowResLand[7] = 5.000000e-01 (default) 
+RoughElemXUnitArea[7] = 0.000000e+00 (default) 
+RoughElemDiam[7] = 5.000000e+01 (default) 
+SoilRoughness[8] = 1.000000e+02 (default) 
+ThresSnowSoilRough[8] = 1.000000e+02 (default) 
+VegHeight[8] = 0.000000e+00 
+ThresSnowVegUp[8] = 5.000000e+01 (default) 
+ThresSnowVegDown[8] = 1.000000e+01 (default) 
+LSAI[8] = 0.000000e+00 
+CanopyFraction[8] = 0.000000e+00 
+DecayCoeffCanopy[8] = 2.500000e+00 (default) 
+VegSnowBurying[8] = 1.000000e+00 (default) 
+RootDepth[8] = 0.000000e+00 
+MinStomatalRes[8] = 6.000000e+01 (default) 
+VegReflectVis[8] = 1.000000e-01 (default) 
+VegReflNIR[8] = 5.800000e-01 (default) 
+VegTransVis[8] = 5.000000e-02 (default) 
+VegTransNIR[8] = 2.500000e-01 (default) 
+LeafAngles[8] = 0.000000e+00 (default) 
+CanDensSurface[8] = 5.000000e-01 (default) 
+SoilAlbVisDry[8] = 1.500000e-01 (default) 
+SoilAlbNIRDry[8] = 2.500000e-01 (default) 
+SoilAlbVisWet[8] = 1.500000e-01 (default) 
+SoilAlbNIRWet[8] = 2.500000e-01 (default) 
+SoilEmissiv[8] = 9.600000e-01 (default) 
+SurFlowResLand[8] = 5.000000e-01 (default) 
+RoughElemXUnitArea[8] = 0.000000e+00 (default) 
+RoughElemDiam[8] = 5.000000e+01 (default) 
+SoilRoughness[9] = 1.000000e+02 (default) 
+ThresSnowSoilRough[9] = 1.000000e+02 (default) 
+VegHeight[9] = 0.000000e+00 
+ThresSnowVegUp[9] = 5.000000e+01 (default) 
+ThresSnowVegDown[9] = 1.000000e+01 (default) 
+LSAI[9] = 0.000000e+00 
+CanopyFraction[9] = 0.000000e+00 
+DecayCoeffCanopy[9] = 2.500000e+00 (default) 
+VegSnowBurying[9] = 1.000000e+00 (default) 
+RootDepth[9] = 0.000000e+00 
+MinStomatalRes[9] = 6.000000e+01 (default) 
+VegReflectVis[9] = 1.000000e-01 (default) 
+VegReflNIR[9] = 5.800000e-01 (default) 
+VegTransVis[9] = 5.000000e-02 (default) 
+VegTransNIR[9] = 2.500000e-01 (default) 
+LeafAngles[9] = 0.000000e+00 (default) 
+CanDensSurface[9] = 5.000000e-01 (default) 
+SoilAlbVisDry[9] = 1.500000e-01 (default) 
+SoilAlbNIRDry[9] = 2.500000e-01 (default) 
+SoilAlbVisWet[9] = 1.500000e-01 (default) 
+SoilAlbNIRWet[9] = 2.500000e-01 (default) 
+SoilEmissiv[9] = 9.600000e-01 (default) 
+SurFlowResLand[9] = 5.000000e-01 (default) 
+RoughElemXUnitArea[9] = 0.000000e+00 (default) 
+RoughElemDiam[9] = 5.000000e+01 (default) 
+FrozenSoilHydrCondReduction[1] = 0.000000e+00 
+FreeDrainageAtBottom[1] = 0.000000e+00 (default) 
+FreeDrainageAtLateralBorder[1] = 1.000000e+00 (default) 
+RichardTol[1] = 1.000000e-10 
+RichardMaxIter[1] = 1.000000e+03 
+RichardInitForc[1] = 1.000000e-02 (default) 
+MinLambdaWater[1] = 1.000000e-15 
+MaxTimesMinLambdaWater[1] = 0.000000e+00 (default) 
+ExitMinLambdaWater[1] = 1.000000e+00 
+MinTimeStep[1] = 1.000000e+01 (default) 
+SurFlowResExp[1] = 6.670000e-01 
+ThresWaterDepthLandInf[1] = 5.000000e+00 
+ThresWaterDepthLandSup[1] = 5.000000e+01 
+SurFlowResChannel[1] = 2.000000e+01 
+ThresWaterDepthChannel[1] = 5.000000e+01 
+RatioChannelWidthPixelWidth[1] = 1.000000e-02 
+ChannelDepression[1] = 2.000000e+03 
+MaxCourantSupFlowLand[1] = 1.000000e-01 
+MaxCourantSupFlowChannel[1] = 1.000000e-01 
+MinSupWaterDepthLand[1] = 1.000000e+00 
+MinSupWaterDepthChannel[1] = 1.000000e+00 (default) 
+MinDiffSupWaterDepthLandChannel[1] = 5.000000e+01 
+MinTimeStepSupFlow[1] = 1.000000e+00 
+Latitude[1] = 4.675604e+01 
+Longitude[1] = 1.070311e+01 
+Vmin[1] = 5.000000e-01 (default) 
+RHmin[1] = 1.000000e+01 (default) 
+AlphaSnow[1] = 1.000000e+05 (default) 
+HighestNodeCorrespondsToLayer[1] = 0.000000e+00 (default) 
+HeatEqTol[1] = 1.000000e-04 
+HeatEqMaxIter[1] = 2.000000e+02 
+MinLambdaEnergy[1] = 1.000000e-05 (default) 
+MaxTimesMinLambdaEnergy[1] = 0.000000e+00 (default) 
+ExitMinLambdaEnergy[1] = 0.000000e+00 (default) 
+DEMRotationAngle[1] = 0.000000e+00 (default) 
+CanopyMaxIter[1] = 3.000000e+00 
+BusingerMaxIter[1] = 3.000000e+00 
+TsMaxIter[1] = 3.000000e+00 
+LocMaxIter[1] = 3.000000e+00 
+CanopyStabCorrection[1] = 1.000000e+00 
+Iobsint[1] = 1.000000e+00 (default) 
+Dn[1] = 1.000000e+00 (default) 
+SlopeWeight[1] = 1.000000e+00 
+CurvatureWeight[1] = 1.000000e+02 
+SlopeWeightD[1] = 1.000000e+00 (default) 
+CurvatureWeightD[1] = 1.000000e+02 (default) 
+SlopeWeightI[1] = 1.000000e+00 (default) 
+CurvatureWeightI[1] = 1.000000e+02 (default) 
+ZeroTempAmplitDepth[1] = 1.000000e+20 (default) 
+ZeroTempAmplitTemp[1] = 2.000000e+01 (default) 
+BottomBoundaryHeatFlux[1] = 0.000000e+00 (default) 
+InitSWE[1] = 0.000000e+00 (default) 
+InitSnowDensity[1] = 2.000000e+02 (default) 
+InitSnowTemp[1] = -3.000000e+00 (default) 
+InitSnowAge[1] = 0.000000e+00 (default) 
+ThresTempRain[1] = 3.000000e+00 (default) 
+ThresTempSnow[1] = -1.000000e+00 (default) 
+DewTempOrNormTemp[1] = 0.000000e+00 (default) 
+AlbExtParSnow[1] = 1.000000e+01 (default) 
+FreshSnowReflVis[1] = 9.000000e-01 (default) 
+FreshSnowReflNIR[1] = 6.500000e-01 (default) 
+IrriducibleWatSatSnow[1] = 2.000000e-02 (default) 
+SnowEmissiv[1] = 9.800000e-01 (default) 
+SnowRoughness[1] = 1.000000e-01 (default) 
+SnowCorrFactor[1] = 1.000000e+00 (default) 
+RainCorrFactor[1] = 1.000000e+00 (default) 
+MaxSnowPorosity[1] = 7.000000e-01 (default) 
+DrySnowDefRate[1] = 1.000000e+00 (default) 
+SnowDensityCutoff[1] = 1.000000e+02 (default) 
+WetSnowDefRate[1] = 1.500000e+00 (default) 
+SnowViscosity[1] = 1.000000e+06 (default) 
+FetchUp[1] = 1.000000e+03 (default) 
+FetchDown[1] = 1.000000e+02 (default) 
+BlowingSnowSoftLayerIceContent[1] = 0.000000e+00 (default) 
+TimeStepBlowingSnow[1] = 3.600000e+03 (default) 
+SnowSMIN[1] = 3.000000e+01 (default) 
+SnowSMAX[1] = 8.000000e+01 (default) 
+SnowCURV[1] = -2.000000e+02 (default) 
+MaxWaterEqSnowLayerContent[1] = 1.000000e+01 
+MaxSnowLayersMiddle[1] = 5.000000e+00 
+MaxWaterEqSnowLayerContent[1] = 1.000000e+01 
+MaxSnowLayersMiddle[1] = 5.000000e+00 
+SWEbottom[1] = 2.000000e+01 
+SWEtop[1] = 4.000000e+01 
+Max snow layer number: 11, of which 2 at the bottom, 5 in the middle, and 4 at the top.
+Infinite Snow layer numbers are numbers: 3 4 5 6 7 
+InitGlacierDepth[1] = 0.000000e+00 (default) 
+InitGlacierDensity[1] = 7.000000e+02 
+InitGlacierTemp[1] = -5.000000e+00 
+IrriducibleWatSatGlacier[1] = 2.000000e-02 (default) 
+MaxWaterEqGlacLayerContent[1] = 5.000000e+00 (default) 
+MaxGlacLayersMiddle[1] = 0.000000e+00 (default) 
+GWEbottom[1] = 0.000000e+00 (default) 
+GWEtop[1] = 0.000000e+00 (default) 
+Max glac layer number: 0, of which 0 at the bottom, 0 in the middle, and 0 at the top.
+Infinite Glac layer numbers are numbers: 
+LWinParameterization[1] = 4.000000e+00 
+MoninObukhov[1] = 2.000000e+00 
+Surroundings[1] = 0.000000e+00 (default) 
+WaterBalance[1] = 1.000000e+00 
+EnergyBalance[1] = 0.000000e+00 
+BlowingSnow[1] = 0.000000e+00 (default) 
+MinIceContentForBlowingSnow[1] = 8.000000e+00 (default) 
+PointID[1] = -9.999000e+03 (default) 
+CoordinatePointX[1] = 1.500000e+01 
+CoordinatePointY[1] = 1.500000e+01 
+SavingPoints[1] = 0.000000e+00 (default) 
+OutputSoilMaps[1] = 2.400000e+01 
+OutputSnowMaps[1] = 0.000000e+00 
+OutputGlacierMaps[1] = 0.000000e+00 
+OutputSurfEBALMaps[1] = 2.400000e+01 
+OutputVegetationMaps[1] = 0.000000e+00 (default) 
+OutputMeteoMaps[1] = 0.000000e+00 
+SpecialPlotBegin[1] = 0.000000e+00 (default) 
+SpecialPlotEnd[1] = 0.000000e+00 (default) 
+SoilLayerTypes[1] = 1.000000e+00 (default) 
+InitWaterTableDepth[1] = 5.000000e+03 (default) 
+DefaultSoilTypeLand[1] = 1.000000e+00 (default) 
+DefaultSoilTypeChannel[1] = 1.000000e+00 (default) 
+SoilLayerThicknesses[1] = 2.000000e+02 
+SoilLayerThicknesses[2] = 2.000000e+02 
+SoilLayerThicknesses[3] = 2.000000e+02 
+SoilLayerThicknesses[4] = 2.000000e+02 
+SoilLayerThicknesses[5] = 2.000000e+02 
+SoilLayerThicknesses[6] = 2.000000e+02 
+SoilLayerThicknesses[7] = 2.000000e+02 
+SoilLayerThicknesses[8] = 2.000000e+02 
+SoilLayerThicknesses[9] = 2.000000e+02 
+SoilLayerThicknesses[10] = 2.000000e+02 
+SoilLayerThicknesses[11] = 2.000000e+02 
+InitSoilPressure[1] = -8.000000e+02 
+InitSoilTemp[1] = 0.000000e+00 
+NormalHydrConductivity[1] = 2.780000e-02 
+LateralHydrConductivity[1] = 2.780000e-02 
+ThetaRes[1] = 0.000000e+00 
+WiltingPoint[1] = 1.500000e-01 
+FieldCapacity[1] = 3.000000e-01 
+ThetaSat[1] = 4.000000e-01 
+AlphaVanGenuchten[1] = 1.000000e-02 
+NVanGenuchten[1] = 3.000000e+00 
+VMualem[1] = 5.000000e-01 (default) 
+ThermalConductivitySoilSolids[1] = 2.500000e+00 
+ThermalCapacitySoilSolids[1] = 2.300000e+06 
+SpecificStorativity[1] = 1.000000e-05 
+InitSoilPressure[2] = -8.000000e+02 (default) 
+InitSoilTemp[2] = 0.000000e+00 (default) 
+NormalHydrConductivity[2] = 2.780000e-02 (default) 
+LateralHydrConductivity[2] = 2.780000e-02 (default) 
+ThetaRes[2] = 0.000000e+00 (default) 
+WiltingPoint[2] = 1.500000e-01 (default) 
+FieldCapacity[2] = 3.000000e-01 (default) 
+ThetaSat[2] = 4.000000e-01 (default) 
+AlphaVanGenuchten[2] = 1.000000e-02 (default) 
+NVanGenuchten[2] = 3.000000e+00 (default) 
+VMualem[2] = 5.000000e-01 (default) 
+ThermalConductivitySoilSolids[2] = 2.500000e+00 (default) 
+ThermalCapacitySoilSolids[2] = 2.300000e+06 (default) 
+SpecificStorativity[2] = 1.000000e-05 (default) 
+InitSoilPressure[3] = -8.000000e+02 (default) 
+InitSoilTemp[3] = 0.000000e+00 (default) 
+NormalHydrConductivity[3] = 2.780000e-02 (default) 
+LateralHydrConductivity[3] = 2.780000e-02 (default) 
+ThetaRes[3] = 0.000000e+00 (default) 
+WiltingPoint[3] = 1.500000e-01 (default) 
+FieldCapacity[3] = 3.000000e-01 (default) 
+ThetaSat[3] = 4.000000e-01 (default) 
+AlphaVanGenuchten[3] = 1.000000e-02 (default) 
+NVanGenuchten[3] = 3.000000e+00 (default) 
+VMualem[3] = 5.000000e-01 (default) 
+ThermalConductivitySoilSolids[3] = 2.500000e+00 (default) 
+ThermalCapacitySoilSolids[3] = 2.300000e+06 (default) 
+SpecificStorativity[3] = 1.000000e-05 (default) 
+InitSoilPressure[4] = -8.000000e+02 (default) 
+InitSoilTemp[4] = 0.000000e+00 (default) 
+NormalHydrConductivity[4] = 2.780000e-02 (default) 
+LateralHydrConductivity[4] = 2.780000e-02 (default) 
+ThetaRes[4] = 0.000000e+00 (default) 
+WiltingPoint[4] = 1.500000e-01 (default) 
+FieldCapacity[4] = 3.000000e-01 (default) 
+ThetaSat[4] = 4.000000e-01 (default) 
+AlphaVanGenuchten[4] = 1.000000e-02 (default) 
+NVanGenuchten[4] = 3.000000e+00 (default) 
+VMualem[4] = 5.000000e-01 (default) 
+ThermalConductivitySoilSolids[4] = 2.500000e+00 (default) 
+ThermalCapacitySoilSolids[4] = 2.300000e+06 (default) 
+SpecificStorativity[4] = 1.000000e-05 (default) 
+InitSoilPressure[5] = -8.000000e+02 (default) 
+InitSoilTemp[5] = 0.000000e+00 (default) 
+NormalHydrConductivity[5] = 2.780000e-02 (default) 
+LateralHydrConductivity[5] = 2.780000e-02 (default) 
+ThetaRes[5] = 0.000000e+00 (default) 
+WiltingPoint[5] = 1.500000e-01 (default) 
+FieldCapacity[5] = 3.000000e-01 (default) 
+ThetaSat[5] = 4.000000e-01 (default) 
+AlphaVanGenuchten[5] = 1.000000e-02 (default) 
+NVanGenuchten[5] = 3.000000e+00 (default) 
+VMualem[5] = 5.000000e-01 (default) 
+ThermalConductivitySoilSolids[5] = 2.500000e+00 (default) 
+ThermalCapacitySoilSolids[5] = 2.300000e+06 (default) 
+SpecificStorativity[5] = 1.000000e-05 (default) 
+InitSoilPressure[6] = -8.000000e+02 (default) 
+InitSoilTemp[6] = 0.000000e+00 (default) 
+NormalHydrConductivity[6] = 2.780000e-02 (default) 
+LateralHydrConductivity[6] = 2.780000e-02 (default) 
+ThetaRes[6] = 0.000000e+00 (default) 
+WiltingPoint[6] = 1.500000e-01 (default) 
+FieldCapacity[6] = 3.000000e-01 (default) 
+ThetaSat[6] = 4.000000e-01 (default) 
+AlphaVanGenuchten[6] = 1.000000e-02 (default) 
+NVanGenuchten[6] = 3.000000e+00 (default) 
+VMualem[6] = 5.000000e-01 (default) 
+ThermalConductivitySoilSolids[6] = 2.500000e+00 (default) 
+ThermalCapacitySoilSolids[6] = 2.300000e+06 (default) 
+SpecificStorativity[6] = 1.000000e-05 (default) 
+InitSoilPressure[7] = -8.000000e+02 (default) 
+InitSoilTemp[7] = 0.000000e+00 (default) 
+NormalHydrConductivity[7] = 2.780000e-02 (default) 
+LateralHydrConductivity[7] = 2.780000e-02 (default) 
+ThetaRes[7] = 0.000000e+00 (default) 
+WiltingPoint[7] = 1.500000e-01 (default) 
+FieldCapacity[7] = 3.000000e-01 (default) 
+ThetaSat[7] = 4.000000e-01 (default) 
+AlphaVanGenuchten[7] = 1.000000e-02 (default) 
+NVanGenuchten[7] = 3.000000e+00 (default) 
+VMualem[7] = 5.000000e-01 (default) 
+ThermalConductivitySoilSolids[7] = 2.500000e+00 (default) 
+ThermalCapacitySoilSolids[7] = 2.300000e+06 (default) 
+SpecificStorativity[7] = 1.000000e-05 (default) 
+InitSoilPressure[8] = -8.000000e+02 (default) 
+InitSoilTemp[8] = 0.000000e+00 (default) 
+NormalHydrConductivity[8] = 2.780000e-02 (default) 
+LateralHydrConductivity[8] = 2.780000e-02 (default) 
+ThetaRes[8] = 0.000000e+00 (default) 
+WiltingPoint[8] = 1.500000e-01 (default) 
+FieldCapacity[8] = 3.000000e-01 (default) 
+ThetaSat[8] = 4.000000e-01 (default) 
+AlphaVanGenuchten[8] = 1.000000e-02 (default) 
+NVanGenuchten[8] = 3.000000e+00 (default) 
+VMualem[8] = 5.000000e-01 (default) 
+ThermalConductivitySoilSolids[8] = 2.500000e+00 (default) 
+ThermalCapacitySoilSolids[8] = 2.300000e+06 (default) 
+SpecificStorativity[8] = 1.000000e-05 (default) 
+InitSoilPressure[9] = -8.000000e+02 (default) 
+InitSoilTemp[9] = 0.000000e+00 (default) 
+NormalHydrConductivity[9] = 2.780000e-02 (default) 
+LateralHydrConductivity[9] = 2.780000e-02 (default) 
+ThetaRes[9] = 0.000000e+00 (default) 
+WiltingPoint[9] = 1.500000e-01 (default) 
+FieldCapacity[9] = 3.000000e-01 (default) 
+ThetaSat[9] = 4.000000e-01 (default) 
+AlphaVanGenuchten[9] = 1.000000e-02 (default) 
+NVanGenuchten[9] = 3.000000e+00 (default) 
+VMualem[9] = 5.000000e-01 (default) 
+ThermalConductivitySoilSolids[9] = 2.500000e+00 (default) 
+ThermalCapacitySoilSolids[9] = 2.300000e+06 (default) 
+SpecificStorativity[9] = 1.000000e-05 (default) 
+InitSoilPressure[10] = -8.000000e+02 (default) 
+InitSoilTemp[10] = 0.000000e+00 (default) 
+NormalHydrConductivity[10] = 2.780000e-02 (default) 
+LateralHydrConductivity[10] = 2.780000e-02 (default) 
+ThetaRes[10] = 0.000000e+00 (default) 
+WiltingPoint[10] = 1.500000e-01 (default) 
+FieldCapacity[10] = 3.000000e-01 (default) 
+ThetaSat[10] = 4.000000e-01 (default) 
+AlphaVanGenuchten[10] = 1.000000e-02 (default) 
+NVanGenuchten[10] = 3.000000e+00 (default) 
+VMualem[10] = 5.000000e-01 (default) 
+ThermalConductivitySoilSolids[10] = 2.500000e+00 (default) 
+ThermalCapacitySoilSolids[10] = 2.300000e+06 (default) 
+SpecificStorativity[10] = 1.000000e-05 (default) 
+InitSoilPressure[11] = -8.000000e+02 (default) 
+InitSoilTemp[11] = 0.000000e+00 (default) 
+NormalHydrConductivity[11] = 2.780000e-02 (default) 
+LateralHydrConductivity[11] = 2.780000e-02 (default) 
+ThetaRes[11] = 0.000000e+00 (default) 
+WiltingPoint[11] = 1.500000e-01 (default) 
+FieldCapacity[11] = 3.000000e-01 (default) 
+ThetaSat[11] = 4.000000e-01 (default) 
+AlphaVanGenuchten[11] = 1.000000e-02 (default) 
+NVanGenuchten[11] = 3.000000e+00 (default) 
+VMualem[11] = 5.000000e-01 (default) 
+ThermalConductivitySoilSolids[11] = 2.500000e+00 (default) 
+ThermalCapacitySoilSolids[11] = 2.300000e+06 (default) 
+SpecificStorativity[11] = 1.000000e-05 (default) 
+InitSoilPressureBedrock[1] = -8.000000e+02 
+InitSoilTempBedrock[1] = -9.999000e+03 (default) 
+NormalHydrConductivityBedrock[1] = 0.000000e+00 
+LateralHydrConductivityBedrock[1] = 0.000000e+00 
+ThetaResBedrock[1] = -9.999000e+03 (default) 
+WiltingPointBedrock[1] = -9.999000e+03 (default) 
+FieldCapacityBedrock[1] = -9.999000e+03 (default) 
+ThetaSatBedrock[1] = 1.000000e-03 
+AlphaVanGenuchtenBedrock[1] = 1.000000e-02 
+NVanGenuchtenBedrock[1] = 3.000000e+00 
+VMualemBedrock[1] = -9.999000e+03 (default) 
+ThermalConductivitySoilSolidsBedrock[1] = -9.999000e+03 (default) 
+ThermalCapacitySoilSolidsBedrock[1] = -9.999000e+03 (default) 
+SpecificStorativityBedrock[1] = -9.999000e+03 (default) 
+InitSoilPressureBedrock[2] = -8.000000e+02 (default) 
+InitSoilTempBedrock[2] = -9.999000e+03 (default) 
+NormalHydrConductivityBedrock[2] = 0.000000e+00 (default) 
+LateralHydrConductivityBedrock[2] = 0.000000e+00 (default) 
+ThetaResBedrock[2] = -9.999000e+03 (default) 
+WiltingPointBedrock[2] = -9.999000e+03 (default) 
+FieldCapacityBedrock[2] = -9.999000e+03 (default) 
+ThetaSatBedrock[2] = 1.000000e-03 (default) 
+AlphaVanGenuchtenBedrock[2] = 1.000000e-02 (default) 
+NVanGenuchtenBedrock[2] = 3.000000e+00 (default) 
+VMualemBedrock[2] = -9.999000e+03 (default) 
+ThermalConductivitySoilSolidsBedrock[2] = -9.999000e+03 (default) 
+ThermalCapacitySoilSolidsBedrock[2] = -9.999000e+03 (default) 
+SpecificStorativityBedrock[2] = -9.999000e+03 (default) 
+InitSoilPressureBedrock[3] = -8.000000e+02 (default) 
+InitSoilTempBedrock[3] = -9.999000e+03 (default) 
+NormalHydrConductivityBedrock[3] = 0.000000e+00 (default) 
+LateralHydrConductivityBedrock[3] = 0.000000e+00 (default) 
+ThetaResBedrock[3] = -9.999000e+03 (default) 
+WiltingPointBedrock[3] = -9.999000e+03 (default) 
+FieldCapacityBedrock[3] = -9.999000e+03 (default) 
+ThetaSatBedrock[3] = 1.000000e-03 (default) 
+AlphaVanGenuchtenBedrock[3] = 1.000000e-02 (default) 
+NVanGenuchtenBedrock[3] = 3.000000e+00 (default) 
+VMualemBedrock[3] = -9.999000e+03 (default) 
+ThermalConductivitySoilSolidsBedrock[3] = -9.999000e+03 (default) 
+ThermalCapacitySoilSolidsBedrock[3] = -9.999000e+03 (default) 
+SpecificStorativityBedrock[3] = -9.999000e+03 (default) 
+InitSoilPressureBedrock[4] = -8.000000e+02 (default) 
+InitSoilTempBedrock[4] = -9.999000e+03 (default) 
+NormalHydrConductivityBedrock[4] = 0.000000e+00 (default) 
+LateralHydrConductivityBedrock[4] = 0.000000e+00 (default) 
+ThetaResBedrock[4] = -9.999000e+03 (default) 
+WiltingPointBedrock[4] = -9.999000e+03 (default) 
+FieldCapacityBedrock[4] = -9.999000e+03 (default) 
+ThetaSatBedrock[4] = 1.000000e-03 (default) 
+AlphaVanGenuchtenBedrock[4] = 1.000000e-02 (default) 
+NVanGenuchtenBedrock[4] = 3.000000e+00 (default) 
+VMualemBedrock[4] = -9.999000e+03 (default) 
+ThermalConductivitySoilSolidsBedrock[4] = -9.999000e+03 (default) 
+ThermalCapacitySoilSolidsBedrock[4] = -9.999000e+03 (default) 
+SpecificStorativityBedrock[4] = -9.999000e+03 (default) 
+InitSoilPressureBedrock[5] = -8.000000e+02 (default) 
+InitSoilTempBedrock[5] = -9.999000e+03 (default) 
+NormalHydrConductivityBedrock[5] = 0.000000e+00 (default) 
+LateralHydrConductivityBedrock[5] = 0.000000e+00 (default) 
+ThetaResBedrock[5] = -9.999000e+03 (default) 
+WiltingPointBedrock[5] = -9.999000e+03 (default) 
+FieldCapacityBedrock[5] = -9.999000e+03 (default) 
+ThetaSatBedrock[5] = 1.000000e-03 (default) 
+AlphaVanGenuchtenBedrock[5] = 1.000000e-02 (default) 
+NVanGenuchtenBedrock[5] = 3.000000e+00 (default) 
+VMualemBedrock[5] = -9.999000e+03 (default) 
+ThermalConductivitySoilSolidsBedrock[5] = -9.999000e+03 (default) 
+ThermalCapacitySoilSolidsBedrock[5] = -9.999000e+03 (default) 
+SpecificStorativityBedrock[5] = -9.999000e+03 (default) 
+InitSoilPressureBedrock[6] = -8.000000e+02 (default) 
+InitSoilTempBedrock[6] = -9.999000e+03 (default) 
+NormalHydrConductivityBedrock[6] = 0.000000e+00 (default) 
+LateralHydrConductivityBedrock[6] = 0.000000e+00 (default) 
+ThetaResBedrock[6] = -9.999000e+03 (default) 
+WiltingPointBedrock[6] = -9.999000e+03 (default) 
+FieldCapacityBedrock[6] = -9.999000e+03 (default) 
+ThetaSatBedrock[6] = 1.000000e-03 (default) 
+AlphaVanGenuchtenBedrock[6] = 1.000000e-02 (default) 
+NVanGenuchtenBedrock[6] = 3.000000e+00 (default) 
+VMualemBedrock[6] = -9.999000e+03 (default) 
+ThermalConductivitySoilSolidsBedrock[6] = -9.999000e+03 (default) 
+ThermalCapacitySoilSolidsBedrock[6] = -9.999000e+03 (default) 
+SpecificStorativityBedrock[6] = -9.999000e+03 (default) 
+InitSoilPressureBedrock[7] = -8.000000e+02 (default) 
+InitSoilTempBedrock[7] = -9.999000e+03 (default) 
+NormalHydrConductivityBedrock[7] = 0.000000e+00 (default) 
+LateralHydrConductivityBedrock[7] = 0.000000e+00 (default) 
+ThetaResBedrock[7] = -9.999000e+03 (default) 
+WiltingPointBedrock[7] = -9.999000e+03 (default) 
+FieldCapacityBedrock[7] = -9.999000e+03 (default) 
+ThetaSatBedrock[7] = 1.000000e-03 (default) 
+AlphaVanGenuchtenBedrock[7] = 1.000000e-02 (default) 
+NVanGenuchtenBedrock[7] = 3.000000e+00 (default) 
+VMualemBedrock[7] = -9.999000e+03 (default) 
+ThermalConductivitySoilSolidsBedrock[7] = -9.999000e+03 (default) 
+ThermalCapacitySoilSolidsBedrock[7] = -9.999000e+03 (default) 
+SpecificStorativityBedrock[7] = -9.999000e+03 (default) 
+InitSoilPressureBedrock[8] = -8.000000e+02 (default) 
+InitSoilTempBedrock[8] = -9.999000e+03 (default) 
+NormalHydrConductivityBedrock[8] = 0.000000e+00 (default) 
+LateralHydrConductivityBedrock[8] = 0.000000e+00 (default) 
+ThetaResBedrock[8] = -9.999000e+03 (default) 
+WiltingPointBedrock[8] = -9.999000e+03 (default) 
+FieldCapacityBedrock[8] = -9.999000e+03 (default) 
+ThetaSatBedrock[8] = 1.000000e-03 (default) 
+AlphaVanGenuchtenBedrock[8] = 1.000000e-02 (default) 
+NVanGenuchtenBedrock[8] = 3.000000e+00 (default) 
+VMualemBedrock[8] = -9.999000e+03 (default) 
+ThermalConductivitySoilSolidsBedrock[8] = -9.999000e+03 (default) 
+ThermalCapacitySoilSolidsBedrock[8] = -9.999000e+03 (default) 
+SpecificStorativityBedrock[8] = -9.999000e+03 (default) 
+InitSoilPressureBedrock[9] = -8.000000e+02 (default) 
+InitSoilTempBedrock[9] = -9.999000e+03 (default) 
+NormalHydrConductivityBedrock[9] = 0.000000e+00 (default) 
+LateralHydrConductivityBedrock[9] = 0.000000e+00 (default) 
+ThetaResBedrock[9] = -9.999000e+03 (default) 
+WiltingPointBedrock[9] = -9.999000e+03 (default) 
+FieldCapacityBedrock[9] = -9.999000e+03 (default) 
+ThetaSatBedrock[9] = 1.000000e-03 (default) 
+AlphaVanGenuchtenBedrock[9] = 1.000000e-02 (default) 
+NVanGenuchtenBedrock[9] = 3.000000e+00 (default) 
+VMualemBedrock[9] = -9.999000e+03 (default) 
+ThermalConductivitySoilSolidsBedrock[9] = -9.999000e+03 (default) 
+ThermalCapacitySoilSolidsBedrock[9] = -9.999000e+03 (default) 
+SpecificStorativityBedrock[9] = -9.999000e+03 (default) 
+InitSoilPressureBedrock[10] = -8.000000e+02 (default) 
+InitSoilTempBedrock[10] = -9.999000e+03 (default) 
+NormalHydrConductivityBedrock[10] = 0.000000e+00 (default) 
+LateralHydrConductivityBedrock[10] = 0.000000e+00 (default) 
+ThetaResBedrock[10] = -9.999000e+03 (default) 
+WiltingPointBedrock[10] = -9.999000e+03 (default) 
+FieldCapacityBedrock[10] = -9.999000e+03 (default) 
+ThetaSatBedrock[10] = 1.000000e-03 (default) 
+AlphaVanGenuchtenBedrock[10] = 1.000000e-02 (default) 
+NVanGenuchtenBedrock[10] = 3.000000e+00 (default) 
+VMualemBedrock[10] = -9.999000e+03 (default) 
+ThermalConductivitySoilSolidsBedrock[10] = -9.999000e+03 (default) 
+ThermalCapacitySoilSolidsBedrock[10] = -9.999000e+03 (default) 
+SpecificStorativityBedrock[10] = -9.999000e+03 (default) 
+InitSoilPressureBedrock[11] = -8.000000e+02 (default) 
+InitSoilTempBedrock[11] = -9.999000e+03 (default) 
+NormalHydrConductivityBedrock[11] = 0.000000e+00 (default) 
+LateralHydrConductivityBedrock[11] = 0.000000e+00 (default) 
+ThetaResBedrock[11] = -9.999000e+03 (default) 
+WiltingPointBedrock[11] = -9.999000e+03 (default) 
+FieldCapacityBedrock[11] = -9.999000e+03 (default) 
+ThetaSatBedrock[11] = 1.000000e-03 (default) 
+AlphaVanGenuchtenBedrock[11] = 1.000000e-02 (default) 
+NVanGenuchtenBedrock[11] = 3.000000e+00 (default) 
+VMualemBedrock[11] = -9.999000e+03 (default) 
+ThermalConductivitySoilSolidsBedrock[11] = -9.999000e+03 (default) 
+ThermalCapacitySoilSolidsBedrock[11] = -9.999000e+03 (default) 
+SpecificStorativityBedrock[11] = -9.999000e+03 (default) 
+MeteoStationsID[1] = -9.999000e+03 (default) 
+NumberOfMeteoStations[1] = 1.000000e+00 
+MeteoStationCoordinateX[1] = 0.000000e+00 
+MeteoStationCoordinateY[1] = 0.000000e+00 
+MeteoStationLatitude[1] = 4.675604e+01 (default) 
+MeteoStationLongitude[1] = 1.070311e+01 (default) 
+MeteoStationElevation[1] = 0.000000e+00 
+MeteoStationSkyViewFactor[1] = 1.000000e+00 (default) 
+MeteoStationStandardTime[1] = 1.000000e+00 (default) 
+MeteoStationWindVelocitySensorHeight[1] = 1.000000e+01 
+MeteoStationTemperatureSensorHeight[1] = 1.000000e+01 
+LapseRateTemp[1] = -9.999000e+03 (default) 
+LapseRateDewTemp[1] = -9.999000e+03 (default) 
+LapseRatePrec[1] = -9.999000e+03 (default) 
+MinPrecIncreaseFactorWithElev[2] = 1.000000e-01 (default) 
+MaxPrecDecreaseFactorWithElev[2] = 4.400000e+00 (default) 
+PointAll[1] = 1.000000e+00 
+BasinAll[1] = 1.000000e+00 
+SoilPlotDepths[1] = -9.999000e+03 (default) 
+SoilPlotDepths[1] = -9.999000e+03 (default) 
+SnowPlotDepths[1] = -9.999000e+03 (default) 
+SnowPlotDepths[1] = -9.999000e+03 (default) 
+GlacPlotDepths[1] = -9.999000e+03 (default) 
+GlacPlotDepths[1] = -9.999000e+03 (default) 
+SnowAll[1] = 1.000000e+00 
+GlacAll[1] = 0.000000e+00 (default) 
+SnowAll[1] = 1.000000e+00 
+DateGlac[1] = -1.000000e+00 (default) 
+JulianDayFromYear0Glac[1] = -1.000000e+00 (default) 
+TimeFromStartGlac[1] = -1.000000e+00 (default) 
+PeriodGlac[1] = -1.000000e+00 (default) 
+RunGlac[1] = -1.000000e+00 (default) 
+SoilAll[1] = 1.000000e+00 
+RicalculateCloudiness[1] = 0.000000e+00 (default) 
+DewTemperatureAsRH[1] = 1.000000e+00 (default) 
+RHAsDewTemperature[1] = 0.000000e+00 (default) 
+NumberDayIntervalsToCalculateCloudiness[1] = 3.000000e+00 (default) 
+CalculateCastShadow[1] = 1.000000e+00 (default) 
+WindAsSpeedAndDirection[1] = 1.000000e+00 (default) 
+WindAsWindXAndWindY[1] = 0.000000e+00 (default) 
+SnowAgingCoeffVis[1] = 2.000000e-01 (default) 
+SnowAgingCoeffNIR[1] = 5.000000e-01 (default) 
+DepthFreeSurfaceAtTheBoundary[1] = 1.000000e+10 
+PrecAsIntensity[1] = 0.000000e+00 (default) 
+LinearInterpolation[1] = 0.000000e+00 (default) 
+OutputDepthsVertical[1] = 0.000000e+00 (default) 
+UpwindBorderBlowingSnow[1] = 0.000000e+00 (default) 
+UpdateHydraulicConductivity[1] = 0.000000e+00 (default) 
+ContinuousRecovery[1] = 0.000000e+00 (default) 
+ActualOrProjectedArea[1] = 0.000000e+00 (default) 
+MinRatioKactualToKSat[1] = 1.000000e-05 
+RunIfAnOldRunIsPresent[1] = 1.000000e+00 (default) 
+MaxCourantSupFlowChannelLand[1] = 1.000000e-01 (default) 
+MinDiffSupWaterDepthChannelLand[1] = 1.000000e+00 (default) 
+SpinUpLayerBottom[1] = 1.000000e+04 (default) 
+InitInNewPeriods[1] = 0.000000e+00 (default) 
+KonzelmannA[1] = 4.840000e-01 (default) 
+KonzelmannB[1] = 8.000000e+00 (default) 
+Lozone[1] = 3.000000e-01 (default) 
+AngstromAlpha[1] = 1.300000e+00 (default) 
+AngstromBeta[1] = 1.000000e-01 (default) 
+ConsiderAlbedoInSWin[1] = 0.000000e+00 (default) 
+ConsiderMicrometeorology[1] = 1.000000e+00 (default) 
+SurfaceEnergyFlux[1] = -9.999000e+03 (default) 
+ConvectiveHeatTransferCoefficient[1] = -9.999000e+03 (default) 
+SurfaceTemperature[1] = -9.999000e+03 (default) 
+BaseAirTemperature[1] = 5.000000e+00 (default) 
+BaseRelativeHumidity[1] = 7.000000e+01 (default) 
+BaseWindSpeed[1] = 5.000000e-01 (default) 
+BaseWindDirection[1] = 0.000000e+00 (default) 
+BaseIPrec[1] = 0.000000e+00 (default) 
+DefaultSoilTypeBedrock[1] = 1.000000e+00 (default) 
+HeaderDateDDMMYYYYhhmmMeteo = Date
+HeaderJulianDayfrom0Meteo = JDfrom0
+HeaderIPrec = Iprec
+HeaderPrec = none
+HeaderWindVelocity = WindSp
+HeaderWindDirection = WindDir
+HeaderWindX = WindX
+HeaderWindY = WindY
+HeaderRH = RelHum
+HeaderAirTemp = AirT
+HeaderDewTemp = none
+HeaderSWglobal = SWglobal
+HeaderSWdirect = none
+HeaderSWdiffuse = none
+HeaderCloudSWTransmissivity = CloudTrans
+HeaderCloudFactor = none
+HeaderLWin = none
+HeaderSWnet = none
+HeaderSurfaceTemperature = none
+HeaderSoilDz = none
+HeaderSoilInitPres = none
+HeaderSoilInitTemp = none
+HeaderNormalHydrConductivity = none
+HeaderLateralHydrConductivity = none
+HeaderThetaRes = none
+HeaderWiltingPoint = none
+HeaderFieldCapacity = none
+HeaderThetaSat = none
+HeaderAlpha = none
+HeaderN = none
+HeaderV = none
+HeaderKthSoilSolids = none
+HeaderCthSoilSolids = none
+HeaderSpecificStorativity = none
+HeaderHorizonAngle = none
+HeaderHorizonHeight = none
+TimeStepsFile = none
+SoilParFile = none
+MeteoFile = meteo
+MeteoStationsListFile = none
+LapseRateFile = lapserate
+HorizonMeteoStationFile = horizon
+PointFile = none
+HorizonPointFile = none
+TimeDependentVegetationParameterFile = none
+TimeDependentIncomingDischargeFile = none
+DemFile = dtm_map
+LandCoverMapFile = none
+SoilMapFile = none
+DaysDelayMapFile = none
+SkyViewFactorMapFile = none
+SlopeMapFile = slope
+RiverNetwork = net
+AspectMapFile = aspect
+CurvaturesMapFile = curvature
+BedrockDepthMapFile = bedrock_depth
+InitWaterTableDepthMapFile = none
+InitSnowDepthMapFile = none
+InitSWEMapFile = none
+InitSnowAgeMapFile = none
+InitGlacierDepthMapFile = none
+DischargeFile = tabs/discharge
+BasinOutputFile = tabs/basin
+BasinOutputFileWriteEnd = none
+PointOutputFile = tabs/point
+PointOutputFileWriteEnd = none
+SoilTempProfileFile = none
+SoilTempProfileFileWriteEnd = none
+SoilAveragedTempProfileFile = tabs/soilTz
+SoilAveragedTempProfileFileWriteEnd = none
+SoilLiqWaterPressProfileFile = none
+SoilLiqWaterPressProfileFileWriteEnd = none
+SoilTotWaterPressProfileFile = none
+SoilTotWaterPressProfileFileWriteEnd = none
+SoilLiqContentProfileFile = tabs/thetaliq
+SoilLiqContentProfileFileWriteEnd = none
+SoilAveragedLiqContentProfileFile = none
+SoilAveragedLiqContentProfileFileWriteEnd = none
+SoilIceContentProfileFile = tabs/thetaice
+SoilIceContentProfileFileWriteEnd = none
+SoilAveragedIceContentProfileFile = none
+SoilAveragedIceContentProfileFileWriteEnd = none
+SnowProfileFile = tabs/snow
+SnowProfileFileWriteEnd = none
+GlacierProfileFile = none
+GlacierProfileFileWriteEnd = none
+SnowCoveredAreaFile = tabs/snowcover
+RunSoilAveragedTemperatureFile = none
+RunSoilAveragedTotalSoilMoistureFile = none
+RunSoilAveragedInternalEnergyFile = none
+RunSoilAveragedSnowWaterEquivalentFile = none
+RunSoilMaximumTemperatureFile = none
+RunSoilMinimumTemperatureFile = none
+RunSoilMaximumTotalSoilMoistureFile = none
+RunSoilMinimumTotalSoilMoistureFile = none
+SoilTempTensorFile = none
+FirstSoilLayerTempMapFile = none
+SoilAveragedTempTensorFile = none
+FirstSoilLayerAveragedTempMapFile = none
+SoilLiqContentTensorFile = none
+FirstSoilLayerLiqContentMapFile = none
+SoilAveragedLiqContentTensorFile = none
+SoilIceContentTensorFile = none
+FirstSoilLayerIceContentMapFile = none
+SoilAveragedIceContentTensorFile = none
+LandSurfaceWaterDepthMapFile = none
+ChannelSurfaceWaterDepthMapFile = none
+NetRadiationMapFile = none
+InLongwaveRadiationMapFile = none
+NetLongwaveRadiationMapFile = none
+NetShortwaveRadiationMapFile = none
+InShortwaveRadiationMapFile = none
+DirectInShortwaveRadiationMapFile = none
+ShadowFractionTimeMapFile = none
+SurfaceHeatFluxMapFile = none
+SurfaceSensibleHeatFluxMapFile = none
+SurfaceLatentHeatFluxMapFile = none
+SurfaceTempMapFile = none
+PrecipitationMapFile = maps/Prec
+CanopyInterceptedWaterMapFile = none
+SoilLiqWaterPressTensorFile = maps/psiliq
+SoilTotWaterPressTensorFile = none
+SnowDepthMapFile = none
+GlacierDepthMapFile = none
+SnowMeltedMapFile = none
+SnowSublMapFile = none
+GlacierMeltedMapFile = none
+GlacierSublimatedMapFile = none
+AirTempMapFile = none
+WindSpeedMapFile = none
+WindDirMapFile = none
+RelHumMapFile = none
+SWEMapFile = none
+GlacierWaterEqMapFile = none
+SnowDurationMapFile = none
+ThawedSoilDepthMapFile = none
+ThawedSoilDepthFromAboveMapFile = none
+WaterTableDepthMapFile = none
+WaterTableDepthFromAboveMapFile = none
+NetPrecipitationMapFile = none
+EvapotranspirationFromSoilMapFile = none
+SpecificPlotSurfaceHeatFluxMapFile = none
+SpecificPlotTotalSensibleHeatFluxMapFile = none
+SpecificPlotTotalLatentHeatFluxMapFile = none
+SpecificPlotSurfaceSensibleHeatFluxMapFile = none
+SpecificPlotSurfaceLatentHeatFluxMapFile = none
+SpecificPlotVegSensibleHeatFluxMapFile = none
+SpecificPlotVegLatentHeatFluxMapFile = none
+SpecificPlotIncomingShortwaveRadMapFile = none
+SpecificPlotNetSurfaceShortwaveRadMapFile = none
+SpecificPlotNetVegShortwaveRadMapFile = none
+SpecificPlotIncomingLongwaveRadMapFile = none
+SpecificPlotNetSurfaceLongwaveRadMapFile = none
+SpecificPlotNetVegLongwaveRadMapFile = none
+SpecificPlotCanopyAirTempMapFile = none
+SpecificPlotSurfaceTempMapFile = none
+SpecificPlotVegTempMapFile = none
+SpecificPlotAboveVegAirTempMapFile = none
+SpecificPlotWindSpeedMapFile = none
+SpecificPlotWindDirMapFile = none
+SpecificPlotRelHumMapFile = none
+SpecificPlotSnowDepthMapFile = none
+SpecificPlotSurfaceWaterContentMapFile = none
+RecoverSoilWatPres = none
+RecoverSoilIceCont = none
+RecoverSoilTemp = none
+RecoverSnowLayerThick = none
+RecoverSnowLiqMass = none
+RecoverSnowIceMass = none
+RecoverSnowTemp = none
+RecoverGlacierLayerThick = none
+RecoverGlacierLiqMass = none
+RecoverGlacierIceMass = none
+RecoverGlacierTemp = none
+RecoverSnowLayerNumber = none
+RecoverGlacierLayerNumber = none
+RecoverNonDimensionalSnowAge = none
+RecoverLiqWaterOnCanopy = none
+RecoverSnowOnCanopy = none
+RecoverVegTemp = none
+RecoverSoilWatPresChannel = none
+RecoverSoilIceContChannel = none
+RecoverSoilTempChannel = none
+RecoverRunSoilAveragedTemperatureFile = none
+RecoverRunSoilAveragedTotalSoilMoistureFile = none
+RecoverRunSoilAveragedInternalEnergyFile = none
+RecoverRunSoilAveragedSnowWaterEquivalentFile = none
+RecoverRunSoilMaximumTemperatureFile = none
+RecoverRunSoilMinimumTemperatureFile = none
+RecoverRunSoilMaximumTotalSoilMoistureFile = none
+RecoverRunSoilMinimumTotalSoilMoistureFile = none
+RecoverTime = none
+SuccessfulRecoveryFile = none
+HeaderDatePoint = none
+HeaderJulianDayFromYear0Point = none
+HeaderTimeFromStartPoint = none
+HeaderPeriodPoint = none
+HeaderRunPoint = none
+HeaderIDPointPoint = none
+HeaderPsnowPoint = none
+HeaderPrainPoint = none
+HeaderPsnowNetPoint = none
+HeaderPrainNetPoint = none
+HeaderPrainOnSnowPoint = none
+HeaderWindSpeedPoint = none
+HeaderWindDirPoint = none
+HeaderRHPoint = none
+HeaderAirPressPoint = none
+HeaderAirTempPoint = none
+HeaderTDewPoint = none
+HeaderTsurfPoint = none
+HeaderTvegPoint = none
+HeaderTCanopyAirPoint = none
+HeaderSurfaceEBPoint = none
+HeaderSoilHeatFluxPoint = none
+HeaderSWinPoint = none
+HeaderSWbeamPoint = none
+HeaderSWdiffPoint = none
+HeaderLWinPoint = none
+HeaderLWinMinPoint = none
+HeaderLWinMaxPoint = none
+HeaderSWNetPoint = none
+HeaderLWNetPoint = none
+HeaderHPoint = none
+HeaderLEPoint = none
+HeaderCanopyFractionPoint = none
+HeaderLSAIPoint = none
+Headerz0vegPoint = none
+Headerd0vegPoint = none
+HeaderEstoredCanopyPoint = none
+HeaderSWvPoint = none
+HeaderLWvPoint = none
+HeaderHvPoint = none
+HeaderLEvPoint = none
+HeaderHgUnvegPoint = none
+HeaderLEgUnvegPoint = none
+HeaderHgVegPoint = none
+HeaderLEgVegPoint = none
+HeaderEvapSurfacePoint = none
+HeaderTraspCanopyPoint = none
+HeaderWaterOnCanopyPoint = none
+HeaderSnowOnCanopyPoint = none
+HeaderQVegPoint = none
+HeaderQSurfPoint = none
+HeaderQAirPoint = none
+HeaderQCanopyAirPoint = none
+HeaderLObukhovPoint = none
+HeaderLObukhovCanopyPoint = none
+HeaderWindSpeedTopCanopyPoint = none
+HeaderDecayKCanopyPoint = none
+HeaderSWupPoint = none
+HeaderLWupPoint = none
+HeaderHupPoint = none
+HeaderLEupPoint = none
+HeaderSnowDepthPoint = none
+HeaderSWEPoint = none
+HeaderSnowDensityPoint = none
+HeaderSnowTempPoint = none
+HeaderSnowMeltedPoint = none
+HeaderSnowSublPoint = none
+HeaderSWEBlownPoint = none
+HeaderSWESublBlownPoint = none
+HeaderGlacDepthPoint = none
+HeaderGWEPoint = none
+HeaderGlacDensityPoint = none
+HeaderGlacTempPoint = none
+HeaderGlacMeltedPoint = none
+HeaderGlacSublPoint = none
+HeaderLowestThawedSoilDepthPoint = none
+HeaderHighestThawedSoilDepthPoint = none
+HeaderLowestWaterTableDepthPoint = none
+HeaderHighestWaterTableDepthPoint = none
+HeaderDateBasin = none
+HeaderJulianDayFromYear0Basin = none
+HeaderTimeFromStartBasin = none
+HeaderPeriodBasin = none
+HeaderRunBasin = none
+HeaderPRainNetBasin = none
+HeaderPSnowNetBasin = none
+HeaderPRainBasin = none
+HeaderPSnowBasin = none
+HeaderPNetBasin = none
+HeaderAirTempBasin = none
+HeaderTSurfBasin = none
+HeaderTvegBasin = none
+HeaderEvapSurfaceBasin = none
+HeaderTraspCanopyBasin = none
+HeaderLEBasin = none
+HeaderHBasin = none
+HeaderSWNetBasin = none
+HeaderLWNetBasin = none
+HeaderLEvBasin = none
+HeaderHvBasin = none
+HeaderSWvBasin = none
+HeaderLWvBasin = none
+HeaderSWinBasin = none
+HeaderLWinBasin = none
+HeaderMeanTimeStep = none
+HeaderTimeStepAverage = none
+HeaderDateSnow = none
+HeaderJulianDayFromYear0Snow = none
+HeaderTimeFromStartSnow = none
+HeaderPeriodSnow = none
+HeaderRunSnow = none
+HeaderIDPointSnow = none
+HeaderTempSnow = none
+HeaderIceContentSnow = none
+HeaderWatContentSnow = none
+HeaderDepthSnow = none
+HeaderDateGlac = none
+HeaderJulianDayFromYear0Glac = none
+HeaderTimeFromStartGlac = none
+HeaderPeriodGlac = none
+HeaderRunGlac = none
+HeaderIDPointGlac = none
+HeaderTempGlac = none
+HeaderIceContentGlac = none
+HeaderWatContentGlac = none
+HeaderDepthGlac = none
+HeaderDateSoil = none
+HeaderJulianDayFromYear0Soil = none
+HeaderTimeFromStartSoil = none
+HeaderPeriodSoil = none
+HeaderRunSoil = none
+HeaderIDPointSoil = none
+HeaderPointID = none
+HeaderCoordinatePointX = none
+HeaderCoordinatePointY = none
+HeaderPointElevation = none
+HeaderPointLandCoverType = none
+HeaderPointSoilType = none
+HeaderPointSlope = none
+HeaderPointAspect = none
+HeaderPointSkyViewFactor = none
+HeaderPointCurvatureNorthSouthDirection = none
+HeaderPointCurvatureWestEastDirection = none
+HeaderPointCurvatureNorthwestSoutheastDirection = none
+HeaderPointCurvatureNortheastSouthwestDirection = none
+HeaderPointDepthFreeSurface = none
+HeaderPointHorizon = none
+HeaderPointMaxSWE = none
+HeaderPointLatitude = none
+HeaderPointLongitude = none
+HeaderPointBedrockDepth = none
+HeaderDateDDMMYYYYhhmmLapseRates = Date
+HeaderLapseRateTemp = LapseRateTemp
+HeaderLapseRateDewTemp = LapseRateDewTemp
+HeaderLapseRatePrec = LapseRatePrec
+HeaderIDMeteoStation = none
+HeaderMeteoStationCoordinateX = none
+HeaderMeteoStationCoordinateY = none
+HeaderMeteoStationLatitude = none
+HeaderMeteoStationLongitude = none
+HeaderMeteoStationElevation = none
+HeaderMeteoStationSkyViewFactor = none
+HeaderMeteoStationStandardTime = none
+SuccessfulRunFile = none
+FailedRunFile = none
+SubfolderRecoveryFiles = none
+
+Soil Layers: 11
+-> Soil Type: 1
+HeaderSoilDz: 200.000000(2.00e+02), 200.000000(2.00e+02), 200.000000(2.00e+02), 200.000000(2.00e+02), 200.000000(2.00e+02), 200.000000(2.00e+02), 200.000000(2.00e+02), 200.000000(2.00e+02), 200.000000(2.00e+02), 200.000000(2.00e+02), 200.000000(2.00e+02)
+HeaderSoilInitPres: -800.000000(-8.00e+02), -800.000000(-8.00e+02), -800.000000(-8.00e+02), -800.000000(-8.00e+02), -800.000000(-8.00e+02), -800.000000(-8.00e+02), -800.000000(-8.00e+02), -800.000000(-8.00e+02), -800.000000(-8.00e+02), -800.000000(-8.00e+02), -800.000000(-8.00e+02)
+HeaderSoilInitTemp: 0.000000(0.00e+00), 0.000000(0.00e+00), 0.000000(0.00e+00), 0.000000(0.00e+00), 0.000000(0.00e+00), 0.000000(0.00e+00), 0.000000(0.00e+00), 0.000000(0.00e+00), 0.000000(0.00e+00), 0.000000(0.00e+00), 0.000000(0.00e+00)
+HeaderNormalHydrConductivity: 0.027800(2.78e-02), 0.027800(2.78e-02), 0.027800(2.78e-02), 0.027800(2.78e-02), 0.027800(2.78e-02), 0.027800(2.78e-02), 0.027800(2.78e-02), 0.027800(2.78e-02), 0.027800(2.78e-02), 0.027800(2.78e-02), 0.027800(2.78e-02)
+HeaderLateralHydrConductivity: 0.027800(2.78e-02), 0.027800(2.78e-02), 0.027800(2.78e-02), 0.027800(2.78e-02), 0.027800(2.78e-02), 0.027800(2.78e-02), 0.027800(2.78e-02), 0.027800(2.78e-02), 0.027800(2.78e-02), 0.027800(2.78e-02), 0.027800(2.78e-02)
+HeaderThetaRes: 0.000000(0.00e+00), 0.000000(0.00e+00), 0.000000(0.00e+00), 0.000000(0.00e+00), 0.000000(0.00e+00), 0.000000(0.00e+00), 0.000000(0.00e+00), 0.000000(0.00e+00), 0.000000(0.00e+00), 0.000000(0.00e+00), 0.000000(0.00e+00)
+HeaderWiltingPoint: 0.150000(1.50e-01), 0.150000(1.50e-01), 0.150000(1.50e-01), 0.150000(1.50e-01), 0.150000(1.50e-01), 0.150000(1.50e-01), 0.150000(1.50e-01), 0.150000(1.50e-01), 0.150000(1.50e-01), 0.150000(1.50e-01), 0.150000(1.50e-01)
+HeaderFieldCapacity: 0.300000(3.00e-01), 0.300000(3.00e-01), 0.300000(3.00e-01), 0.300000(3.00e-01), 0.300000(3.00e-01), 0.300000(3.00e-01), 0.300000(3.00e-01), 0.300000(3.00e-01), 0.300000(3.00e-01), 0.300000(3.00e-01), 0.300000(3.00e-01)
+HeaderThetaSat: 0.400000(4.00e-01), 0.400000(4.00e-01), 0.400000(4.00e-01), 0.400000(4.00e-01), 0.400000(4.00e-01), 0.400000(4.00e-01), 0.400000(4.00e-01), 0.400000(4.00e-01), 0.400000(4.00e-01), 0.400000(4.00e-01), 0.400000(4.00e-01)
+HeaderAlpha: 0.010000(1.00e-02), 0.010000(1.00e-02), 0.010000(1.00e-02), 0.010000(1.00e-02), 0.010000(1.00e-02), 0.010000(1.00e-02), 0.010000(1.00e-02), 0.010000(1.00e-02), 0.010000(1.00e-02), 0.010000(1.00e-02), 0.010000(1.00e-02)
+HeaderN: 3.000000(3.00e+00), 3.000000(3.00e+00), 3.000000(3.00e+00), 3.000000(3.00e+00), 3.000000(3.00e+00), 3.000000(3.00e+00), 3.000000(3.00e+00), 3.000000(3.00e+00), 3.000000(3.00e+00), 3.000000(3.00e+00), 3.000000(3.00e+00)
+HeaderV: 0.500000(5.00e-01), 0.500000(5.00e-01), 0.500000(5.00e-01), 0.500000(5.00e-01), 0.500000(5.00e-01), 0.500000(5.00e-01), 0.500000(5.00e-01), 0.500000(5.00e-01), 0.500000(5.00e-01), 0.500000(5.00e-01), 0.500000(5.00e-01)
+HeaderKthSoilSolids: 2.500000(2.50e+00), 2.500000(2.50e+00), 2.500000(2.50e+00), 2.500000(2.50e+00), 2.500000(2.50e+00), 2.500000(2.50e+00), 2.500000(2.50e+00), 2.500000(2.50e+00), 2.500000(2.50e+00), 2.500000(2.50e+00), 2.500000(2.50e+00)
+HeaderCthSoilSolids: 2300000.000000(2.30e+06), 2300000.000000(2.30e+06), 2300000.000000(2.30e+06), 2300000.000000(2.30e+06), 2300000.000000(2.30e+06), 2300000.000000(2.30e+06), 2300000.000000(2.30e+06), 2300000.000000(2.30e+06), 2300000.000000(2.30e+06), 2300000.000000(2.30e+06), 2300000.000000(2.30e+06)
+HeaderSpecificStorativity: 0.000010(1.00e-05), 0.000010(1.00e-05), 0.000010(1.00e-05), 0.000010(1.00e-05), 0.000010(1.00e-05), 0.000010(1.00e-05), 0.000010(1.00e-05), 0.000010(1.00e-05), 0.000010(1.00e-05), 0.000010(1.00e-05), 0.000010(1.00e-05)
+
+Soil Bedrock Layers: 11
+-> Soil Type: 1
+HeaderSoilDz: 200.000000(2.00e+02), 200.000000(2.00e+02), 200.000000(2.00e+02), 200.000000(2.00e+02), 200.000000(2.00e+02), 200.000000(2.00e+02), 200.000000(2.00e+02), 200.000000(2.00e+02), 200.000000(2.00e+02), 200.000000(2.00e+02), 200.000000(2.00e+02)
+HeaderSoilInitPres: -800.000000(-8.00e+02), -800.000000(-8.00e+02), -800.000000(-8.00e+02), -800.000000(-8.00e+02), -800.000000(-8.00e+02), -800.000000(-8.00e+02), -800.000000(-8.00e+02), -800.000000(-8.00e+02), -800.000000(-8.00e+02), -800.000000(-8.00e+02), -800.000000(-8.00e+02)
+HeaderSoilInitTemp: 0.000000(0.00e+00), 0.000000(0.00e+00), 0.000000(0.00e+00), 0.000000(0.00e+00), 0.000000(0.00e+00), 0.000000(0.00e+00), 0.000000(0.00e+00), 0.000000(0.00e+00), 0.000000(0.00e+00), 0.000000(0.00e+00), 0.000000(0.00e+00)
+HeaderNormalHydrConductivity: 0.000000(0.00e+00), 0.000000(0.00e+00), 0.000000(0.00e+00), 0.000000(0.00e+00), 0.000000(0.00e+00), 0.000000(0.00e+00), 0.000000(0.00e+00), 0.000000(0.00e+00), 0.000000(0.00e+00), 0.000000(0.00e+00), 0.000000(0.00e+00)
+HeaderLateralHydrConductivity: 0.000000(0.00e+00), 0.000000(0.00e+00), 0.000000(0.00e+00), 0.000000(0.00e+00), 0.000000(0.00e+00), 0.000000(0.00e+00), 0.000000(0.00e+00), 0.000000(0.00e+00), 0.000000(0.00e+00), 0.000000(0.00e+00), 0.000000(0.00e+00)
+HeaderThetaRes: 0.000000(0.00e+00), 0.000000(0.00e+00), 0.000000(0.00e+00), 0.000000(0.00e+00), 0.000000(0.00e+00), 0.000000(0.00e+00), 0.000000(0.00e+00), 0.000000(0.00e+00), 0.000000(0.00e+00), 0.000000(0.00e+00), 0.000000(0.00e+00)
+HeaderWiltingPoint: 0.150000(1.50e-01), 0.150000(1.50e-01), 0.150000(1.50e-01), 0.150000(1.50e-01), 0.150000(1.50e-01), 0.150000(1.50e-01), 0.150000(1.50e-01), 0.150000(1.50e-01), 0.150000(1.50e-01), 0.150000(1.50e-01), 0.150000(1.50e-01)
+HeaderFieldCapacity: 0.300000(3.00e-01), 0.300000(3.00e-01), 0.300000(3.00e-01), 0.300000(3.00e-01), 0.300000(3.00e-01), 0.300000(3.00e-01), 0.300000(3.00e-01), 0.300000(3.00e-01), 0.300000(3.00e-01), 0.300000(3.00e-01), 0.300000(3.00e-01)
+HeaderThetaSat: 0.001000(1.00e-03), 0.001000(1.00e-03), 0.001000(1.00e-03), 0.001000(1.00e-03), 0.001000(1.00e-03), 0.001000(1.00e-03), 0.001000(1.00e-03), 0.001000(1.00e-03), 0.001000(1.00e-03), 0.001000(1.00e-03), 0.001000(1.00e-03)
+HeaderAlpha: 0.010000(1.00e-02), 0.010000(1.00e-02), 0.010000(1.00e-02), 0.010000(1.00e-02), 0.010000(1.00e-02), 0.010000(1.00e-02), 0.010000(1.00e-02), 0.010000(1.00e-02), 0.010000(1.00e-02), 0.010000(1.00e-02), 0.010000(1.00e-02)
+HeaderN: 3.000000(3.00e+00), 3.000000(3.00e+00), 3.000000(3.00e+00), 3.000000(3.00e+00), 3.000000(3.00e+00), 3.000000(3.00e+00), 3.000000(3.00e+00), 3.000000(3.00e+00), 3.000000(3.00e+00), 3.000000(3.00e+00), 3.000000(3.00e+00)
+HeaderV: 0.500000(5.00e-01), 0.500000(5.00e-01), 0.500000(5.00e-01), 0.500000(5.00e-01), 0.500000(5.00e-01), 0.500000(5.00e-01), 0.500000(5.00e-01), 0.500000(5.00e-01), 0.500000(5.00e-01), 0.500000(5.00e-01), 0.500000(5.00e-01)
+HeaderKthSoilSolids: 2.500000(2.50e+00), 2.500000(2.50e+00), 2.500000(2.50e+00), 2.500000(2.50e+00), 2.500000(2.50e+00), 2.500000(2.50e+00), 2.500000(2.50e+00), 2.500000(2.50e+00), 2.500000(2.50e+00), 2.500000(2.50e+00), 2.500000(2.50e+00)
+HeaderCthSoilSolids: 2300000.000000(2.30e+06), 2300000.000000(2.30e+06), 2300000.000000(2.30e+06), 2300000.000000(2.30e+06), 2300000.000000(2.30e+06), 2300000.000000(2.30e+06), 2300000.000000(2.30e+06), 2300000.000000(2.30e+06), 2300000.000000(2.30e+06), 2300000.000000(2.30e+06), 2300000.000000(2.30e+06)
+HeaderSpecificStorativity: 0.000010(1.00e-05), 0.000010(1.00e-05), 0.000010(1.00e-05), 0.000010(1.00e-05), 0.000010(1.00e-05), 0.000010(1.00e-05), 0.000010(1.00e-05), 0.000010(1.00e-05), 0.000010(1.00e-05), 0.000010(1.00e-05), 0.000010(1.00e-05)
+
+Attempting to read 'DemFile' in the file '/Users/ecor/LAVORI_IN_CORSO/2012/BOUSSINESQ_wrr/URGENTE_Cordano_Rigon_2012/manuscript_under_development/panola_simulation/simulation_geotop/panola13_run2xC_test3/dtm_map': EXISTING in format 3
+Attempting to read 'LandCoverMapFile' in the file 'none': not present in file list
+Attempting to read 'SkyViewFactorMapFile' in the file 'none': not present in file list
+Attempting to read 'DaysDelayMapFile' in the file 'none': not present in file list
+Attempting to read 'SoilMapFile' in the file 'none': not present in file list
+Attempting to read 'SlopeMapFile' in the file '/Users/ecor/LAVORI_IN_CORSO/2012/BOUSSINESQ_wrr/URGENTE_Cordano_Rigon_2012/manuscript_under_development/panola_simulation/simulation_geotop/panola13_run2xC_test3/slope': EXISTING in format 3
+Slope Min:0.105732 (6.035564 deg) Max:0.253756 (14.238626 deg) 
+Attempting to read 'AspectMapFile' in the file '/Users/ecor/LAVORI_IN_CORSO/2012/BOUSSINESQ_wrr/URGENTE_Cordano_Rigon_2012/manuscript_under_development/panola_simulation/simulation_geotop/panola13_run2xC_test3/aspect': EXISTING in format 3
+Curvature N-S Min:-0.050065  Max:0.050065 
+Curvature W-E Min:-0.000000  Max:0.000000 
+Curvature NW-SE Min:-0.050065  Max:0.050065 
+Curvature NE-SW Min:-0.050065  Max:0.050065 
+Attempting to read 'RiverNetwork' in the file '/Users/ecor/LAVORI_IN_CORSO/2012/BOUSSINESQ_wrr/URGENTE_Cordano_Rigon_2012/manuscript_under_development/panola_simulation/simulation_geotop/panola13_run2xC_test3/net': not existing
+Attempting to read 'BedrockDepthMapFile' in the file '/Users/ecor/LAVORI_IN_CORSO/2012/BOUSSINESQ_wrr/URGENTE_Cordano_Rigon_2012/manuscript_under_development/panola_simulation/simulation_geotop/panola13_run2xC_test3/bedrock_depth': EXISTING in format 3
+Valid pixels: 2059
+Number of nodes: 24708
+Novalue pixels: 416
+Basin area: 0.002059 km2
+
+Horizon file FOUND for meteo station #1
+Column 1 in file /Users/ecor/LAVORI_IN_CORSO/2012/BOUSSINESQ_wrr/URGENTE_Cordano_Rigon_2012/manuscript_under_development/panola_simulation/simulation_geotop/panola13_run2xC_test3/horizon0001.txt assigned to AngleFromNorthClockwise
+Column 2 in file /Users/ecor/LAVORI_IN_CORSO/2012/BOUSSINESQ_wrr/URGENTE_Cordano_Rigon_2012/manuscript_under_development/panola_simulation/simulation_geotop/panola13_run2xC_test3/horizon0001.txt assigned to HorizonHeight
+Column 1 in file /Users/ecor/LAVORI_IN_CORSO/2012/BOUSSINESQ_wrr/URGENTE_Cordano_Rigon_2012/manuscript_under_development/panola_simulation/simulation_geotop/panola13_run2xC_test3/meteo0001.txt assigned to Date
+Column 2 in file /Users/ecor/LAVORI_IN_CORSO/2012/BOUSSINESQ_wrr/URGENTE_Cordano_Rigon_2012/manuscript_under_development/panola_simulation/simulation_geotop/panola13_run2xC_test3/meteo0001.txt assigned to JDfrom0
+Column 3 in file /Users/ecor/LAVORI_IN_CORSO/2012/BOUSSINESQ_wrr/URGENTE_Cordano_Rigon_2012/manuscript_under_development/panola_simulation/simulation_geotop/panola13_run2xC_test3/meteo0001.txt assigned to Iprec
+Column 4 in file /Users/ecor/LAVORI_IN_CORSO/2012/BOUSSINESQ_wrr/URGENTE_Cordano_Rigon_2012/manuscript_under_development/panola_simulation/simulation_geotop/panola13_run2xC_test3/meteo0001.txt assigned to WindSp
+Column 5 in file /Users/ecor/LAVORI_IN_CORSO/2012/BOUSSINESQ_wrr/URGENTE_Cordano_Rigon_2012/manuscript_under_development/panola_simulation/simulation_geotop/panola13_run2xC_test3/meteo0001.txt assigned to WindDir
+Column 6 in file /Users/ecor/LAVORI_IN_CORSO/2012/BOUSSINESQ_wrr/URGENTE_Cordano_Rigon_2012/manuscript_under_development/panola_simulation/simulation_geotop/panola13_run2xC_test3/meteo0001.txt assigned to RelHum
+Column 7 in file /Users/ecor/LAVORI_IN_CORSO/2012/BOUSSINESQ_wrr/URGENTE_Cordano_Rigon_2012/manuscript_under_development/panola_simulation/simulation_geotop/panola13_run2xC_test3/meteo0001.txt assigned to AirT
+Column 8 in file /Users/ecor/LAVORI_IN_CORSO/2012/BOUSSINESQ_wrr/URGENTE_Cordano_Rigon_2012/manuscript_under_development/panola_simulation/simulation_geotop/panola13_run2xC_test3/meteo0001.txt assigned to SWglobal
+Column 9 in file /Users/ecor/LAVORI_IN_CORSO/2012/BOUSSINESQ_wrr/URGENTE_Cordano_Rigon_2012/manuscript_under_development/panola_simulation/simulation_geotop/panola13_run2xC_test3/meteo0001.txt assigned to CloudTrans
+Column 1 in file /Users/ecor/LAVORI_IN_CORSO/2012/BOUSSINESQ_wrr/URGENTE_Cordano_Rigon_2012/manuscript_under_development/panola_simulation/simulation_geotop/panola13_run2xC_test3/lapserate.txt assigned to Date
+Column 3 in file /Users/ecor/LAVORI_IN_CORSO/2012/BOUSSINESQ_wrr/URGENTE_Cordano_Rigon_2012/manuscript_under_development/panola_simulation/simulation_geotop/panola13_run2xC_test3/lapserate.txt assigned to LapseRateTemp
+Column 4 in file /Users/ecor/LAVORI_IN_CORSO/2012/BOUSSINESQ_wrr/URGENTE_Cordano_Rigon_2012/manuscript_under_development/panola_simulation/simulation_geotop/panola13_run2xC_test3/lapserate.txt assigned to LapseRateDewTemp
+Column 5 in file /Users/ecor/LAVORI_IN_CORSO/2012/BOUSSINESQ_wrr/URGENTE_Cordano_Rigon_2012/manuscript_under_development/panola_simulation/simulation_geotop/panola13_run2xC_test3/lapserate.txt assigned to LapseRatePrec
+Shortwave radiation measurements from station 1
+Cloudiness measurements from station 1
+WARNING: NO longwave radiation measurements available
+WARNING: NO Surface temperature measurements available
+Channel pixels: 0
+Soil water evaporates from the first 1 layers
+Soil water transpires from the first 11 layers
+1/2/2012 1:00 0.14% - Time elapsed (h:m:s)  0:00:01 Time remaining (h:m)  0:11  
+1/2/2012 2:00 0.29% - Time elapsed (h:m:s)  0:00:01 Time remaining (h:m)  0:05  
+1/2/2012 3:00 0.43% - Time elapsed (h:m:s)  0:00:02 Time remaining (h:m)  0:07  
+1/2/2012 4:00 0.57% - Time elapsed (h:m:s)  0:00:03 Time remaining (h:m)  0:08  
+1/2/2012 5:00 0.72% - Time elapsed (h:m:s)  0:00:05 Time remaining (h:m)  0:11  
+1/2/2012 6:00 0.86% - Time elapsed (h:m:s)  0:00:06 Time remaining (h:m)  0:11  
+1/2/2012 7:00 1.01% - Time elapsed (h:m:s)  0:00:09 Time remaining (h:m)  0:14  
+1/2/2012 8:00 1.15% - Time elapsed (h:m:s)  0:00:12 Time remaining (h:m)  0:18  
+1/2/2012 9:00 1.29% - Time elapsed (h:m:s)  0:00:17 Time remaining (h:m)  0:21  
+1/2/2012 10:00 1.44% - Time elapsed (h:m:s)  0:00:22 Time remaining (h:m)  0:25  
+1/2/2012 11:00 1.58% - Time elapsed (h:m:s)  0:00:26 Time remaining (h:m)  0:28  
+1/2/2012 12:00 1.72% - Time elapsed (h:m:s)  0:00:32 Time remaining (h:m)  0:30  
+1/2/2012 13:00 1.87% - Time elapsed (h:m:s)  0:00:37 Time remaining (h:m)  0:32  
+1/2/2012 14:00 2.01% - Time elapsed (h:m:s)  0:00:41 Time remaining (h:m)  0:33  
+1/2/2012 15:00 2.16% - Time elapsed (h:m:s)  0:00:47 Time remaining (h:m)  0:35  
+1/2/2012 16:00 2.30% - Time elapsed (h:m:s)  0:00:53 Time remaining (h:m)  0:37  
+1/2/2012 17:00 2.44% - Time elapsed (h:m:s)  0:00:58 Time remaining (h:m)  0:38  
+1/2/2012 18:00 2.59% - Time elapsed (h:m:s)  0:01:03 Time remaining (h:m)  0:39  
+1/2/2012 19:00 2.73% - Time elapsed (h:m:s)  0:01:08 Time remaining (h:m)  0:40  
+1/2/2012 20:00 2.87% - Time elapsed (h:m:s)  0:01:14 Time remaining (h:m)  0:41  
+1/2/2012 21:00 3.02% - Time elapsed (h:m:s)  0:01:20 Time remaining (h:m)  0:42  
+1/2/2012 22:00 3.16% - Time elapsed (h:m:s)  0:01:26 Time remaining (h:m)  0:43  
+1/2/2012 23:00 3.30% - Time elapsed (h:m:s)  0:01:32 Time remaining (h:m)  0:44  
+2/2/2012 0:00 3.45% - Time elapsed (h:m:s)  0:01:38 Time remaining (h:m)  0:45  
+
+2/2/2012 0:00 JD:32.000000 (1^ simulation day)  3.45% completed! 
+ t_meteo:  0.17 s, t_energy:  0.00 s, t_blowingsnow:  0.00 s, t_water: 93.66 s, t_sub: 13.60 s, t_sup: 80.06 s, t_out:  0.02 s
+ SW=  0.00 W/m2  LW:  0.00 W/m2  H=  0.00 W/m2  LE=  0.00 W/m2 
+ Pvert=240.00 mm Prain=  0.00 mm  Psnow=  0.00 mm  
+ Max Error Richards=1.686789e-09 mm/h 
+ Tot Error Richards=4.048293e-08 mm Mean Time Step=3600.000000 s
+
+2/2/2012 1:00 3.59% - Time elapsed (h:m:s)  0:01:43 Time remaining (h:m)  0:46  
+2/2/2012 2:00 3.74% - Time elapsed (h:m:s)  0:01:49 Time remaining (h:m)  0:47  
+2/2/2012 3:00 3.88% - Time elapsed (h:m:s)  0:01:57 Time remaining (h:m)  0:48  
+2/2/2012 4:00 4.02% - Time elapsed (h:m:s)  0:02:03 Time remaining (h:m)  0:49  
+2/2/2012 5:00 4.17% - Time elapsed (h:m:s)  0:02:09 Time remaining (h:m)  0:49  
+2/2/2012 6:00 4.31% - Time elapsed (h:m:s)  0:02:17 Time remaining (h:m)  0:50  
+2/2/2012 7:00 4.45% - Time elapsed (h:m:s)  0:02:23 Time remaining (h:m)  0:51  
+2/2/2012 8:00 4.60% - Time elapsed (h:m:s)  0:02:30 Time remaining (h:m)  0:52  
+2/2/2012 9:00 4.74% - Time elapsed (h:m:s)  0:02:38 Time remaining (h:m)  0:52  
+2/2/2012 10:00 4.89% - Time elapsed (h:m:s)  0:02:45 Time remaining (h:m)  0:53  
+2/2/2012 11:00 5.03% - Time elapsed (h:m:s)  0:02:52 Time remaining (h:m)  0:54  
+2/2/2012 12:00 5.17% - Time elapsed (h:m:s)  0:02:59 Time remaining (h:m)  0:54  
+2/2/2012 13:00 5.32% - Time elapsed (h:m:s)  0:03:07 Time remaining (h:m)  0:55  
+2/2/2012 14:00 5.46% - Time elapsed (h:m:s)  0:03:14 Time remaining (h:m)  0:55  
+2/2/2012 15:00 5.60% - Time elapsed (h:m:s)  0:03:21 Time remaining (h:m)  0:56  
+2/2/2012 16:00 5.75% - Time elapsed (h:m:s)  0:03:29 Time remaining (h:m)  0:57  
+2/2/2012 17:00 5.89% - Time elapsed (h:m:s)  0:03:37 Time remaining (h:m)  0:57  
+2/2/2012 18:00 6.03% - Time elapsed (h:m:s)  0:03:45 Time remaining (h:m)  0:58  
+2/2/2012 19:00 6.18% - Time elapsed (h:m:s)  0:03:53 Time remaining (h:m)  0:58  
+2/2/2012 20:00 6.32% - Time elapsed (h:m:s)  0:04:00 Time remaining (h:m)  0:59  
+2/2/2012 21:00 6.47% - Time elapsed (h:m:s)  0:04:07 Time remaining (h:m)  0:59  
+2/2/2012 22:00 6.61% - Time elapsed (h:m:s)  0:04:15 Time remaining (h:m)  1:00  
+2/2/2012 23:00 6.75% - Time elapsed (h:m:s)  0:04:24 Time remaining (h:m)  1:00  
+3/2/2012 0:00 6.90% - Time elapsed (h:m:s)  0:04:32 Time remaining (h:m)  1:01  
+
+3/2/2012 0:00 JD:33.000000 (2^ simulation day)  6.90% completed! 
+ t_meteo:  0.35 s, t_energy:  0.00 s, t_blowingsnow:  0.00 s, t_water:262.25 s, t_sub: 34.82 s, t_sup:227.43 s, t_out:  0.05 s
+ SW=  0.00 W/m2  LW:  0.00 W/m2  H=  0.00 W/m2  LE=  0.00 W/m2 
+ Pvert=230.00 mm Prain=  0.00 mm  Psnow=  0.00 mm  
+ Max Error Richards=3.153202e-08 mm/h 
+ Tot Error Richards=7.972514e-07 mm Mean Time Step=3600.000000 s
+
+3/2/2012 1:00 7.04% - Time elapsed (h:m:s)  0:04:41 Time remaining (h:m)  1:01  
+3/2/2012 2:00 7.18% - Time elapsed (h:m:s)  0:04:47 Time remaining (h:m)  1:02  
+3/2/2012 3:00 7.33% - Time elapsed (h:m:s)  0:04:56 Time remaining (h:m)  1:02  
+3/2/2012 4:00 7.47% - Time elapsed (h:m:s)  0:05:02 Time remaining (h:m)  1:02  
+3/2/2012 5:00 7.61% - Time elapsed (h:m:s)  0:05:10 Time remaining (h:m)  1:02  
+3/2/2012 6:00 7.76% - Time elapsed (h:m:s)  0:05:17 Time remaining (h:m)  1:03  
+3/2/2012 7:00 7.90% - Time elapsed (h:m:s)  0:05:25 Time remaining (h:m)  1:03  
+3/2/2012 8:00 8.05% - Time elapsed (h:m:s)  0:05:32 Time remaining (h:m)  1:03  
+3/2/2012 9:00 8.19% - Time elapsed (h:m:s)  0:05:39 Time remaining (h:m)  1:03  
+3/2/2012 10:00 8.33% - Time elapsed (h:m:s)  0:05:46 Time remaining (h:m)  1:03  
+3/2/2012 11:00 8.48% - Time elapsed (h:m:s)  0:05:54 Time remaining (h:m)  1:03  
+3/2/2012 12:00 8.62% - Time elapsed (h:m:s)  0:06:04 Time remaining (h:m)  1:04  
+3/2/2012 13:00 8.76% - Time elapsed (h:m:s)  0:06:13 Time remaining (h:m)  1:04  
+3/2/2012 14:00 8.91% - Time elapsed (h:m:s)  0:06:19 Time remaining (h:m)  1:04  
+3/2/2012 15:00 9.05% - Time elapsed (h:m:s)  0:06:27 Time remaining (h:m)  1:04  
+3/2/2012 16:00 9.20% - Time elapsed (h:m:s)  0:06:33 Time remaining (h:m)  1:04  
+3/2/2012 17:00 9.34% - Time elapsed (h:m:s)  0:06:42 Time remaining (h:m)  1:05  
+3/2/2012 18:00 9.48% - Time elapsed (h:m:s)  0:06:48 Time remaining (h:m)  1:05  
+3/2/2012 19:00 9.63% - Time elapsed (h:m:s)  0:06:55 Time remaining (h:m)  1:05  
+3/2/2012 20:00 9.77% - Time elapsed (h:m:s)  0:07:03 Time remaining (h:m)  1:05  
+3/2/2012 21:00 9.91% - Time elapsed (h:m:s)  0:07:10 Time remaining (h:m)  1:05  
+3/2/2012 22:00 10.06% - Time elapsed (h:m:s)  0:07:18 Time remaining (h:m)  1:05  
+3/2/2012 23:00 10.20% - Time elapsed (h:m:s)  0:07:28 Time remaining (h:m)  1:05  
+4/2/2012 0:00 10.34% - Time elapsed (h:m:s)  0:07:36 Time remaining (h:m)  1:05  
+
+4/2/2012 0:00 JD:34.000000 (3^ simulation day) 10.34% completed! 
+ t_meteo:  0.52 s, t_energy:  0.00 s, t_blowingsnow:  0.00 s, t_water:437.57 s, t_sub: 67.26 s, t_sup:370.30 s, t_out:  0.08 s
+ SW=  0.00 W/m2  LW:  0.00 W/m2  H=  0.00 W/m2  LE=  0.00 W/m2 
+ Pvert=  0.00 mm Prain=  0.00 mm  Psnow=  0.00 mm  
+ Max Error Richards=4.050632e-08 mm/h 
+ Tot Error Richards=1.769403e-06 mm Mean Time Step=3600.000000 s
+
+4/2/2012 1:00 10.49% - Time elapsed (h:m:s)  0:07:44 Time remaining (h:m)  1:05  
+4/2/2012 2:00 10.63% - Time elapsed (h:m:s)  0:07:50 Time remaining (h:m)  1:05  
+4/2/2012 3:00 10.78% - Time elapsed (h:m:s)  0:07:59 Time remaining (h:m)  1:06  
+4/2/2012 4:00 10.92% - Time elapsed (h:m:s)  0:08:06 Time remaining (h:m)  1:06  
+4/2/2012 5:00 11.06% - Time elapsed (h:m:s)  0:08:13 Time remaining (h:m)  1:06  
+4/2/2012 6:00 11.21% - Time elapsed (h:m:s)  0:08:24 Time remaining (h:m)  1:06  
+4/2/2012 7:00 11.35% - Time elapsed (h:m:s)  0:08:32 Time remaining (h:m)  1:06  
+4/2/2012 8:00 11.49% - Time elapsed (h:m:s)  0:08:41 Time remaining (h:m)  1:06  
+4/2/2012 9:00 11.64% - Time elapsed (h:m:s)  0:08:50 Time remaining (h:m)  1:07  
+4/2/2012 10:00 11.78% - Time elapsed (h:m:s)  0:08:58 Time remaining (h:m)  1:07  
+4/2/2012 11:00 11.93% - Time elapsed (h:m:s)  0:09:05 Time remaining (h:m)  1:07  
+4/2/2012 12:00 12.07% - Time elapsed (h:m:s)  0:09:15 Time remaining (h:m)  1:07  
+4/2/2012 13:00 12.21% - Time elapsed (h:m:s)  0:09:22 Time remaining (h:m)  1:07  
+4/2/2012 14:00 12.36% - Time elapsed (h:m:s)  0:09:31 Time remaining (h:m)  1:07  
+4/2/2012 15:00 12.50% - Time elapsed (h:m:s)  0:09:39 Time remaining (h:m)  1:07  
+4/2/2012 16:00 12.64% - Time elapsed (h:m:s)  0:09:46 Time remaining (h:m)  1:07  
+4/2/2012 17:00 12.79% - Time elapsed (h:m:s)  0:09:54 Time remaining (h:m)  1:07  
+4/2/2012 18:00 12.93% - Time elapsed (h:m:s)  0:10:03 Time remaining (h:m)  1:07  
+4/2/2012 19:00 13.07% - Time elapsed (h:m:s)  0:10:11 Time remaining (h:m)  1:07  
+4/2/2012 20:00 13.22% - Time elapsed (h:m:s)  0:10:20 Time remaining (h:m)  1:07  
+4/2/2012 21:00 13.36% - Time elapsed (h:m:s)  0:10:28 Time remaining (h:m)  1:07  
+4/2/2012 22:00 13.51% - Time elapsed (h:m:s)  0:10:36 Time remaining (h:m)  1:07  
+4/2/2012 23:00 13.65% - Time elapsed (h:m:s)  0:10:45 Time remaining (h:m)  1:08  
+5/2/2012 0:00 13.79% - Time elapsed (h:m:s)  0:10:52 Time remaining (h:m)  1:08  
+
+5/2/2012 0:00 JD:35.000000 (4^ simulation day) 13.79% completed! 
+ t_meteo:  0.70 s, t_energy:  0.00 s, t_blowingsnow:  0.00 s, t_water:626.52 s, t_sub:124.30 s, t_sup:502.21 s, t_out:  0.11 s
+ SW=  0.00 W/m2  LW:  0.00 W/m2  H=  0.00 W/m2  LE=  0.00 W/m2 
+ Pvert=  0.00 mm Prain=  0.00 mm  Psnow=  0.00 mm  
+ Max Error Richards=2.677191e-08 mm/h 
+ Tot Error Richards=2.411929e-06 mm Mean Time Step=3600.000000 s
+
+5/2/2012 1:00 13.94% - Time elapsed (h:m:s)  0:11:01 Time remaining (h:m)  1:08  
+5/2/2012 2:00 14.08% - Time elapsed (h:m:s)  0:11:10 Time remaining (h:m)  1:08  
+5/2/2012 3:00 14.22% - Time elapsed (h:m:s)  0:11:16 Time remaining (h:m)  1:08  
+5/2/2012 4:00 14.37% - Time elapsed (h:m:s)  0:11:26 Time remaining (h:m)  1:08  
+5/2/2012 5:00 14.51% - Time elapsed (h:m:s)  0:11:33 Time remaining (h:m)  1:08  
+5/2/2012 6:00 14.66% - Time elapsed (h:m:s)  0:11:42 Time remaining (h:m)  1:08  
+5/2/2012 7:00 14.80% - Time elapsed (h:m:s)  0:11:49 Time remaining (h:m)  1:08  
+5/2/2012 8:00 14.94% - Time elapsed (h:m:s)  0:11:58 Time remaining (h:m)  1:08  
+5/2/2012 9:00 15.09% - Time elapsed (h:m:s)  0:12:05 Time remaining (h:m)  1:08  
+5/2/2012 10:00 15.23% - Time elapsed (h:m:s)  0:12:14 Time remaining (h:m)  1:08  
+5/2/2012 11:00 15.37% - Time elapsed (h:m:s)  0:12:22 Time remaining (h:m)  1:08  
+5/2/2012 12:00 15.52% - Time elapsed (h:m:s)  0:12:30 Time remaining (h:m)  1:08  
+5/2/2012 13:00 15.66% - Time elapsed (h:m:s)  0:12:37 Time remaining (h:m)  1:08  
+5/2/2012 14:00 15.80% - Time elapsed (h:m:s)  0:12:46 Time remaining (h:m)  1:08  
+5/2/2012 15:00 15.95% - Time elapsed (h:m:s)  0:12:55 Time remaining (h:m)  1:08  
+5/2/2012 16:00 16.09% - Time elapsed (h:m:s)  0:13:01 Time remaining (h:m)  1:07  
+5/2/2012 17:00 16.24% - Time elapsed (h:m:s)  0:13:09 Time remaining (h:m)  1:07  
+5/2/2012 18:00 16.38% - Time elapsed (h:m:s)  0:13:18 Time remaining (h:m)  1:07  
+5/2/2012 19:00 16.52% - Time elapsed (h:m:s)  0:13:26 Time remaining (h:m)  1:07  
+5/2/2012 20:00 16.67% - Time elapsed (h:m:s)  0:13:34 Time remaining (h:m)  1:07  
+5/2/2012 21:00 16.81% - Time elapsed (h:m:s)  0:13:41 Time remaining (h:m)  1:07  
+5/2/2012 22:00 16.95% - Time elapsed (h:m:s)  0:13:50 Time remaining (h:m)  1:07  
+5/2/2012 23:00 17.10% - Time elapsed (h:m:s)  0:13:58 Time remaining (h:m)  1:07  
+6/2/2012 0:00 17.24% - Time elapsed (h:m:s)  0:14:05 Time remaining (h:m)  1:07  
+
+6/2/2012 0:00 JD:36.000000 (5^ simulation day) 17.24% completed! 
+ t_meteo:  0.87 s, t_energy:  0.00 s, t_blowingsnow:  0.00 s, t_water:814.51 s, t_sub:183.96 s, t_sup:630.54 s, t_out:  0.15 s
+ SW=  0.00 W/m2  LW:  0.00 W/m2  H=  0.00 W/m2  LE=  0.00 W/m2 
+ Pvert=  0.00 mm Prain=  0.00 mm  Psnow=  0.00 mm  
+ Max Error Richards=2.056868e-08 mm/h 
+ Tot Error Richards=2.905577e-06 mm Mean Time Step=3600.000000 s
+
+6/2/2012 1:00 17.39% - Time elapsed (h:m:s)  0:14:14 Time remaining (h:m)  1:07  
+6/2/2012 2:00 17.53% - Time elapsed (h:m:s)  0:14:21 Time remaining (h:m)  1:07  
+6/2/2012 3:00 17.67% - Time elapsed (h:m:s)  0:14:28 Time remaining (h:m)  1:07  
+6/2/2012 4:00 17.82% - Time elapsed (h:m:s)  0:14:37 Time remaining (h:m)  1:07  
+6/2/2012 5:00 17.96% - Time elapsed (h:m:s)  0:14:46 Time remaining (h:m)  1:07  
+6/2/2012 6:00 18.10% - Time elapsed (h:m:s)  0:14:55 Time remaining (h:m)  1:07  
+6/2/2012 7:00 18.25% - Time elapsed (h:m:s)  0:15:03 Time remaining (h:m)  1:07  
+6/2/2012 8:00 18.39% - Time elapsed (h:m:s)  0:15:09 Time remaining (h:m)  1:07  
+6/2/2012 9:00 18.53% - Time elapsed (h:m:s)  0:15:18 Time remaining (h:m)  1:07  
+6/2/2012 10:00 18.68% - Time elapsed (h:m:s)  0:15:27 Time remaining (h:m)  1:07  
+6/2/2012 11:00 18.82% - Time elapsed (h:m:s)  0:15:37 Time remaining (h:m)  1:07  
+6/2/2012 12:00 18.97% - Time elapsed (h:m:s)  0:15:45 Time remaining (h:m)  1:07  
+6/2/2012 13:00 19.11% - Time elapsed (h:m:s)  0:15:54 Time remaining (h:m)  1:07  
+6/2/2012 14:00 19.25% - Time elapsed (h:m:s)  0:16:02 Time remaining (h:m)  1:07  
+6/2/2012 15:00 19.40% - Time elapsed (h:m:s)  0:16:09 Time remaining (h:m)  1:07  
+6/2/2012 16:00 19.54% - Time elapsed (h:m:s)  0:16:17 Time remaining (h:m)  1:07  
+6/2/2012 17:00 19.68% - Time elapsed (h:m:s)  0:16:23 Time remaining (h:m)  1:06  
+6/2/2012 18:00 19.83% - Time elapsed (h:m:s)  0:16:31 Time remaining (h:m)  1:06  
+6/2/2012 19:00 19.97% - Time elapsed (h:m:s)  0:16:40 Time remaining (h:m)  1:06  
+6/2/2012 20:00 20.11% - Time elapsed (h:m:s)  0:16:46 Time remaining (h:m)  1:06  
+6/2/2012 21:00 20.26% - Time elapsed (h:m:s)  0:16:55 Time remaining (h:m)  1:06  
+6/2/2012 22:00 20.40% - Time elapsed (h:m:s)  0:17:02 Time remaining (h:m)  1:06  
+6/2/2012 23:00 20.55% - Time elapsed (h:m:s)  0:17:08 Time remaining (h:m)  1:06  
+7/2/2012 0:00 20.69% - Time elapsed (h:m:s)  0:17:17 Time remaining (h:m)  1:06  
+
+7/2/2012 0:00 JD:37.000000 (6^ simulation day) 20.69% completed! 
+ t_meteo:  1.04 s, t_energy:  0.00 s, t_blowingsnow:  0.00 s, t_water:996.05 s, t_sub:239.81 s, t_sup:756.24 s, t_out:  0.18 s
+ SW=  0.00 W/m2  LW:  0.00 W/m2  H=  0.00 W/m2  LE=  0.00 W/m2 
+ Pvert=  0.00 mm Prain=  0.00 mm  Psnow=  0.00 mm  
+ Max Error Richards=3.401635e-08 mm/h 
+ Tot Error Richards=3.721970e-06 mm Mean Time Step=3600.000000 s
+
+7/2/2012 1:00 20.83% - Time elapsed (h:m:s)  0:17:23 Time remaining (h:m)  1:06  
+7/2/2012 2:00 20.98% - Time elapsed (h:m:s)  0:17:30 Time remaining (h:m)  1:05  
+7/2/2012 3:00 21.12% - Time elapsed (h:m:s)  0:17:39 Time remaining (h:m)  1:05  
+7/2/2012 4:00 21.26% - Time elapsed (h:m:s)  0:17:45 Time remaining (h:m)  1:05  
+7/2/2012 5:00 21.41% - Time elapsed (h:m:s)  0:17:53 Time remaining (h:m)  1:05  
+7/2/2012 6:00 21.55% - Time elapsed (h:m:s)  0:18:00 Time remaining (h:m)  1:05  
+7/2/2012 7:00 21.70% - Time elapsed (h:m:s)  0:18:07 Time remaining (h:m)  1:05  
+7/2/2012 8:00 21.84% - Time elapsed (h:m:s)  0:18:16 Time remaining (h:m)  1:05  
+7/2/2012 9:00 21.98% - Time elapsed (h:m:s)  0:18:22 Time remaining (h:m)  1:05  
+7/2/2012 10:00 22.13% - Time elapsed (h:m:s)  0:18:30 Time remaining (h:m)  1:05  
+7/2/2012 11:00 22.27% - Time elapsed (h:m:s)  0:18:37 Time remaining (h:m)  1:04  
+7/2/2012 12:00 22.41% - Time elapsed (h:m:s)  0:18:44 Time remaining (h:m)  1:04  
+7/2/2012 13:00 22.56% - Time elapsed (h:m:s)  0:18:52 Time remaining (h:m)  1:04  
+7/2/2012 14:00 22.70% - Time elapsed (h:m:s)  0:18:59 Time remaining (h:m)  1:04  
+7/2/2012 15:00 22.84% - Time elapsed (h:m:s)  0:19:06 Time remaining (h:m)  1:04  
+7/2/2012 16:00 22.99% - Time elapsed (h:m:s)  0:19:12 Time remaining (h:m)  1:04  
+7/2/2012 17:00 23.13% - Time elapsed (h:m:s)  0:19:20 Time remaining (h:m)  1:04  
+7/2/2012 18:00 23.28% - Time elapsed (h:m:s)  0:19:26 Time remaining (h:m)  1:04  
+7/2/2012 19:00 23.42% - Time elapsed (h:m:s)  0:19:33 Time remaining (h:m)  1:03  
+7/2/2012 20:00 23.56% - Time elapsed (h:m:s)  0:19:41 Time remaining (h:m)  1:03  
+7/2/2012 21:00 23.71% - Time elapsed (h:m:s)  0:19:48 Time remaining (h:m)  1:03  
+7/2/2012 22:00 23.85% - Time elapsed (h:m:s)  0:19:57 Time remaining (h:m)  1:03  
+7/2/2012 23:00 23.99% - Time elapsed (h:m:s)  0:20:03 Time remaining (h:m)  1:03  
+8/2/2012 0:00 24.14% - Time elapsed (h:m:s)  0:20:11 Time remaining (h:m)  1:03  
+
+8/2/2012 0:00 JD:38.000000 (7^ simulation day) 24.14% completed! 
+ t_meteo:  1.21 s, t_energy:  0.00 s, t_blowingsnow:  0.00 s, t_water:1169.03 s, t_sub:289.66 s, t_sup:879.36 s, t_out:  0.21 s
+ SW=  0.00 W/m2  LW:  0.00 W/m2  H=  0.00 W/m2  LE=  0.00 W/m2 
+ Pvert=  0.00 mm Prain=  0.00 mm  Psnow=  0.00 mm  
+ Max Error Richards=3.725195e-08 mm/h 
+ Tot Error Richards=4.616016e-06 mm Mean Time Step=3600.000000 s
+
+8/2/2012 1:00 24.28% - Time elapsed (h:m:s)  0:20:18 Time remaining (h:m)  1:03  
+8/2/2012 2:00 24.43% - Time elapsed (h:m:s)  0:20:26 Time remaining (h:m)  1:03  
+8/2/2012 3:00 24.57% - Time elapsed (h:m:s)  0:20:33 Time remaining (h:m)  1:03  
+8/2/2012 4:00 24.71% - Time elapsed (h:m:s)  0:20:41 Time remaining (h:m)  1:03  
+8/2/2012 5:00 24.86% - Time elapsed (h:m:s)  0:20:48 Time remaining (h:m)  1:02  
+8/2/2012 6:00 25.00% - Time elapsed (h:m:s)  0:20:56 Time remaining (h:m)  1:02  
+8/2/2012 7:00 25.14% - Time elapsed (h:m:s)  0:21:04 Time remaining (h:m)  1:02  
+8/2/2012 8:00 25.29% - Time elapsed (h:m:s)  0:21:12 Time remaining (h:m)  1:02  
+8/2/2012 9:00 25.43% - Time elapsed (h:m:s)  0:21:21 Time remaining (h:m)  1:02  
+8/2/2012 10:00 25.57% - Time elapsed (h:m:s)  0:21:27 Time remaining (h:m)  1:02  
+8/2/2012 11:00 25.72% - Time elapsed (h:m:s)  0:21:35 Time remaining (h:m)  1:02  
+8/2/2012 12:00 25.86% - Time elapsed (h:m:s)  0:21:44 Time remaining (h:m)  1:02  
+8/2/2012 13:00 26.01% - Time elapsed (h:m:s)  0:21:51 Time remaining (h:m)  1:02  
+8/2/2012 14:00 26.15% - Time elapsed (h:m:s)  0:21:59 Time remaining (h:m)  1:02  
+8/2/2012 15:00 26.29% - Time elapsed (h:m:s)  0:22:06 Time remaining (h:m)  1:01  
+8/2/2012 16:00 26.44% - Time elapsed (h:m:s)  0:22:12 Time remaining (h:m)  1:01  
+8/2/2012 17:00 26.58% - Time elapsed (h:m:s)  0:22:20 Time remaining (h:m)  1:01  
+8/2/2012 18:00 26.72% - Time elapsed (h:m:s)  0:22:28 Time remaining (h:m)  1:01  
+8/2/2012 19:00 26.87% - Time elapsed (h:m:s)  0:22:34 Time remaining (h:m)  1:01  
+8/2/2012 20:00 27.01% - Time elapsed (h:m:s)  0:22:42 Time remaining (h:m)  1:01  
+8/2/2012 21:00 27.16% - Time elapsed (h:m:s)  0:22:49 Time remaining (h:m)  1:01  
+8/2/2012 22:00 27.30% - Time elapsed (h:m:s)  0:22:57 Time remaining (h:m)  1:01  
+8/2/2012 23:00 27.44% - Time elapsed (h:m:s)  0:23:05 Time remaining (h:m)  1:01  
+9/2/2012 0:00 27.59% - Time elapsed (h:m:s)  0:23:12 Time remaining (h:m)  1:00  
+
+9/2/2012 0:00 JD:39.000000 (8^ simulation day) 27.59% completed! 
+ t_meteo:  1.39 s, t_energy:  0.00 s, t_blowingsnow:  0.00 s, t_water:1349.36 s, t_sub:348.61 s, t_sup:1000.74 s, t_out:  0.24 s
+ SW=  0.00 W/m2  LW:  0.00 W/m2  H=  0.00 W/m2  LE=  0.00 W/m2 
+ Pvert=  0.00 mm Prain=  0.00 mm  Psnow=  0.00 mm  
+ Max Error Richards=4.036638e-08 mm/h 
+ Tot Error Richards=5.584810e-06 mm Mean Time Step=3600.000000 s
+
+9/2/2012 1:00 27.73% - Time elapsed (h:m:s)  0:23:21 Time remaining (h:m)  1:00  
+9/2/2012 2:00 27.87% - Time elapsed (h:m:s)  0:23:28 Time remaining (h:m)  1:00  
+9/2/2012 3:00 28.02% - Time elapsed (h:m:s)  0:23:35 Time remaining (h:m)  1:00  
+9/2/2012 4:00 28.16% - Time elapsed (h:m:s)  0:23:44 Time remaining (h:m)  1:00  
+9/2/2012 5:00 28.30% - Time elapsed (h:m:s)  0:23:51 Time remaining (h:m)  1:00  
+9/2/2012 6:00 28.45% - Time elapsed (h:m:s)  0:23:58 Time remaining (h:m)  1:00  
+9/2/2012 7:00 28.59% - Time elapsed (h:m:s)  0:24:07 Time remaining (h:m)  1:00  
+9/2/2012 8:00 28.74% - Time elapsed (h:m:s)  0:24:14 Time remaining (h:m)  1:00  
+9/2/2012 9:00 28.88% - Time elapsed (h:m:s)  0:24:22 Time remaining (h:m)  1:00  
+9/2/2012 10:00 29.02% - Time elapsed (h:m:s)  0:24:29 Time remaining (h:m)  0:59  
+9/2/2012 11:00 29.17% - Time elapsed (h:m:s)  0:24:37 Time remaining (h:m)  0:59  
+9/2/2012 12:00 29.31% - Time elapsed (h:m:s)  0:24:44 Time remaining (h:m)  0:59  
+9/2/2012 13:00 29.45% - Time elapsed (h:m:s)  0:24:52 Time remaining (h:m)  0:59  
+9/2/2012 14:00 29.60% - Time elapsed (h:m:s)  0:25:00 Time remaining (h:m)  0:59  
+9/2/2012 15:00 29.74% - Time elapsed (h:m:s)  0:25:07 Time remaining (h:m)  0:59  
+9/2/2012 16:00 29.89% - Time elapsed (h:m:s)  0:25:15 Time remaining (h:m)  0:59  
+9/2/2012 17:00 30.03% - Time elapsed (h:m:s)  0:25:23 Time remaining (h:m)  0:59  
+9/2/2012 18:00 30.17% - Time elapsed (h:m:s)  0:25:32 Time remaining (h:m)  0:59  
+9/2/2012 19:00 30.32% - Time elapsed (h:m:s)  0:25:39 Time remaining (h:m)  0:58  
+9/2/2012 20:00 30.46% - Time elapsed (h:m:s)  0:25:47 Time remaining (h:m)  0:58  
+9/2/2012 21:00 30.60% - Time elapsed (h:m:s)  0:25:55 Time remaining (h:m)  0:58  
+9/2/2012 22:00 30.75% - Time elapsed (h:m:s)  0:26:01 Time remaining (h:m)  0:58  
+9/2/2012 23:00 30.89% - Time elapsed (h:m:s)  0:26:11 Time remaining (h:m)  0:58  
+10/2/2012 0:00 31.03% - Time elapsed (h:m:s)  0:26:18 Time remaining (h:m)  0:58  
+
+10/2/2012 0:00 JD:40.000000 (9^ simulation day) 31.03% completed! 
+ t_meteo:  1.56 s, t_energy:  0.00 s, t_blowingsnow:  0.00 s, t_water:1529.23 s, t_sub:408.05 s, t_sup:1121.17 s, t_out:  0.27 s
+ SW=  0.00 W/m2  LW:  0.00 W/m2  H=  0.00 W/m2  LE=  0.00 W/m2 
+ Pvert=  0.00 mm Prain=  0.00 mm  Psnow=  0.00 mm  
+ Max Error Richards=3.406687e-08 mm/h 
+ Tot Error Richards=6.402415e-06 mm Mean Time Step=3600.000000 s
+
+10/2/2012 1:00 31.18% - Time elapsed (h:m:s)  0:26:28 Time remaining (h:m)  0:58  
+10/2/2012 2:00 31.32% - Time elapsed (h:m:s)  0:26:36 Time remaining (h:m)  0:58  
+10/2/2012 3:00 31.47% - Time elapsed (h:m:s)  0:26:43 Time remaining (h:m)  0:58  
+10/2/2012 4:00 31.61% - Time elapsed (h:m:s)  0:26:52 Time remaining (h:m)  0:58  
+10/2/2012 5:00 31.75% - Time elapsed (h:m:s)  0:27:00 Time remaining (h:m)  0:58  
+10/2/2012 6:00 31.90% - Time elapsed (h:m:s)  0:27:08 Time remaining (h:m)  0:57  
+10/2/2012 7:00 32.04% - Time elapsed (h:m:s)  0:27:15 Time remaining (h:m)  0:57  
+10/2/2012 8:00 32.18% - Time elapsed (h:m:s)  0:27:22 Time remaining (h:m)  0:57  
+10/2/2012 9:00 32.33% - Time elapsed (h:m:s)  0:27:30 Time remaining (h:m)  0:57  
+10/2/2012 10:00 32.47% - Time elapsed (h:m:s)  0:27:37 Time remaining (h:m)  0:57  
+10/2/2012 11:00 32.61% - Time elapsed (h:m:s)  0:27:45 Time remaining (h:m)  0:57  
+10/2/2012 12:00 32.76% - Time elapsed (h:m:s)  0:27:52 Time remaining (h:m)  0:57  
+10/2/2012 13:00 32.90% - Time elapsed (h:m:s)  0:28:00 Time remaining (h:m)  0:57  
+10/2/2012 14:00 33.05% - Time elapsed (h:m:s)  0:28:07 Time remaining (h:m)  0:57  
+10/2/2012 15:00 33.19% - Time elapsed (h:m:s)  0:28:15 Time remaining (h:m)  0:56  
+10/2/2012 16:00 33.33% - Time elapsed (h:m:s)  0:28:24 Time remaining (h:m)  0:56  
+10/2/2012 17:00 33.48% - Time elapsed (h:m:s)  0:28:33 Time remaining (h:m)  0:56  
+10/2/2012 18:00 33.62% - Time elapsed (h:m:s)  0:28:41 Time remaining (h:m)  0:56  
+10/2/2012 19:00 33.76% - Time elapsed (h:m:s)  0:28:49 Time remaining (h:m)  0:56  
+10/2/2012 20:00 33.91% - Time elapsed (h:m:s)  0:28:56 Time remaining (h:m)  0:56  
+10/2/2012 21:00 34.05% - Time elapsed (h:m:s)  0:29:04 Time remaining (h:m)  0:56  
+10/2/2012 22:00 34.20% - Time elapsed (h:m:s)  0:29:12 Time remaining (h:m)  0:56  
+10/2/2012 23:00 34.34% - Time elapsed (h:m:s)  0:29:19 Time remaining (h:m)  0:56  
+11/2/2012 0:00 34.48% - Time elapsed (h:m:s)  0:29:27 Time remaining (h:m)  0:55  
+
+11/2/2012 0:00 JD:41.000000 (10^ simulation day) 34.48% completed! 
+ t_meteo:  1.73 s, t_energy:  0.00 s, t_blowingsnow:  0.00 s, t_water:1711.39 s, t_sub:471.00 s, t_sup:1240.39 s, t_out:  0.30 s
+ SW=  0.00 W/m2  LW:  0.00 W/m2  H=  0.00 W/m2  LE=  0.00 W/m2 
+ Pvert=  0.00 mm Prain=  0.00 mm  Psnow=  0.00 mm  
+ Max Error Richards=3.200002e-08 mm/h 
+ Tot Error Richards=7.170415e-06 mm Mean Time Step=3600.000000 s
+
+11/2/2012 1:00 34.63% - Time elapsed (h:m:s)  0:29:35 Time remaining (h:m)  0:55  
+11/2/2012 2:00 34.77% - Time elapsed (h:m:s)  0:29:42 Time remaining (h:m)  0:55  
+11/2/2012 3:00 34.91% - Time elapsed (h:m:s)  0:29:51 Time remaining (h:m)  0:55  
+11/2/2012 4:00 35.06% - Time elapsed (h:m:s)  0:29:59 Time remaining (h:m)  0:55  
+11/2/2012 5:00 35.20% - Time elapsed (h:m:s)  0:30:06 Time remaining (h:m)  0:55  
+11/2/2012 6:00 35.34% - Time elapsed (h:m:s)  0:30:14 Time remaining (h:m)  0:55  
+11/2/2012 7:00 35.49% - Time elapsed (h:m:s)  0:30:21 Time remaining (h:m)  0:55  
+11/2/2012 8:00 35.63% - Time elapsed (h:m:s)  0:30:30 Time remaining (h:m)  0:55  
+11/2/2012 9:00 35.78% - Time elapsed (h:m:s)  0:30:37 Time remaining (h:m)  0:54  
+11/2/2012 10:00 35.92% - Time elapsed (h:m:s)  0:30:44 Time remaining (h:m)  0:54  
+11/2/2012 11:00 36.06% - Time elapsed (h:m:s)  0:30:52 Time remaining (h:m)  0:54  
+11/2/2012 12:00 36.21% - Time elapsed (h:m:s)  0:31:00 Time remaining (h:m)  0:54  
+11/2/2012 13:00 36.35% - Time elapsed (h:m:s)  0:31:08 Time remaining (h:m)  0:54  
+11/2/2012 14:00 36.49% - Time elapsed (h:m:s)  0:31:17 Time remaining (h:m)  0:54  
+11/2/2012 15:00 36.64% - Time elapsed (h:m:s)  0:31:25 Time remaining (h:m)  0:54  
+11/2/2012 16:00 36.78% - Time elapsed (h:m:s)  0:31:33 Time remaining (h:m)  0:54  
+11/2/2012 17:00 36.93% - Time elapsed (h:m:s)  0:31:43 Time remaining (h:m)  0:54  
+11/2/2012 18:00 37.07% - Time elapsed (h:m:s)  0:31:51 Time remaining (h:m)  0:54  
+11/2/2012 19:00 37.21% - Time elapsed (h:m:s)  0:31:58 Time remaining (h:m)  0:53  
+11/2/2012 20:00 37.36% - Time elapsed (h:m:s)  0:32:06 Time remaining (h:m)  0:53  
+11/2/2012 21:00 37.50% - Time elapsed (h:m:s)  0:32:14 Time remaining (h:m)  0:53  
+11/2/2012 22:00 37.64% - Time elapsed (h:m:s)  0:32:21 Time remaining (h:m)  0:53  
+11/2/2012 23:00 37.79% - Time elapsed (h:m:s)  0:32:30 Time remaining (h:m)  0:53  
+12/2/2012 0:00 37.93% - Time elapsed (h:m:s)  0:32:37 Time remaining (h:m)  0:53  
+
+12/2/2012 0:00 JD:42.000000 (11^ simulation day) 37.93% completed! 
+ t_meteo:  1.90 s, t_energy:  0.00 s, t_blowingsnow:  0.00 s, t_water:1896.18 s, t_sub:538.43 s, t_sup:1357.73 s, t_out:  0.33 s
+ SW=  0.00 W/m2  LW:  0.00 W/m2  H=  0.00 W/m2  LE=  0.00 W/m2 
+ Pvert=  0.00 mm Prain=  0.00 mm  Psnow=  0.00 mm  
+ Max Error Richards=2.926905e-08 mm/h 
+ Tot Error Richards=7.872872e-06 mm Mean Time Step=3600.000000 s
+
+12/2/2012 1:00 38.07% - Time elapsed (h:m:s)  0:32:45 Time remaining (h:m)  0:53  
+12/2/2012 2:00 38.22% - Time elapsed (h:m:s)  0:32:53 Time remaining (h:m)  0:53  
+12/2/2012 3:00 38.36% - Time elapsed (h:m:s)  0:33:01 Time remaining (h:m)  0:53  
+12/2/2012 4:00 38.51% - Time elapsed (h:m:s)  0:33:10 Time remaining (h:m)  0:52  
+12/2/2012 5:00 38.65% - Time elapsed (h:m:s)  0:33:16 Time remaining (h:m)  0:52  
+12/2/2012 6:00 38.79% - Time elapsed (h:m:s)  0:33:25 Time remaining (h:m)  0:52  
+12/2/2012 7:00 38.94% - Time elapsed (h:m:s)  0:33:31 Time remaining (h:m)  0:52  
+12/2/2012 8:00 39.08% - Time elapsed (h:m:s)  0:33:38 Time remaining (h:m)  0:52  
+12/2/2012 9:00 39.22% - Time elapsed (h:m:s)  0:33:46 Time remaining (h:m)  0:52  
+12/2/2012 10:00 39.37% - Time elapsed (h:m:s)  0:33:53 Time remaining (h:m)  0:52  
+12/2/2012 11:00 39.51% - Time elapsed (h:m:s)  0:34:01 Time remaining (h:m)  0:52  
+12/2/2012 12:00 39.66% - Time elapsed (h:m:s)  0:34:07 Time remaining (h:m)  0:51  
+12/2/2012 13:00 39.80% - Time elapsed (h:m:s)  0:34:15 Time remaining (h:m)  0:51  
+12/2/2012 14:00 39.94% - Time elapsed (h:m:s)  0:34:22 Time remaining (h:m)  0:51  
+12/2/2012 15:00 40.09% - Time elapsed (h:m:s)  0:34:30 Time remaining (h:m)  0:51  
+12/2/2012 16:00 40.23% - Time elapsed (h:m:s)  0:34:37 Time remaining (h:m)  0:51  
+12/2/2012 17:00 40.37% - Time elapsed (h:m:s)  0:34:45 Time remaining (h:m)  0:51  
+12/2/2012 18:00 40.52% - Time elapsed (h:m:s)  0:34:52 Time remaining (h:m)  0:51  
+12/2/2012 19:00 40.66% - Time elapsed (h:m:s)  0:35:00 Time remaining (h:m)  0:51  
+12/2/2012 20:00 40.80% - Time elapsed (h:m:s)  0:35:08 Time remaining (h:m)  0:50  
+12/2/2012 21:00 40.95% - Time elapsed (h:m:s)  0:35:15 Time remaining (h:m)  0:50  
+12/2/2012 22:00 41.09% - Time elapsed (h:m:s)  0:35:23 Time remaining (h:m)  0:50  
+12/2/2012 23:00 41.24% - Time elapsed (h:m:s)  0:35:31 Time remaining (h:m)  0:50  
+13/2/2012 0:00 41.38% - Time elapsed (h:m:s)  0:35:39 Time remaining (h:m)  0:50  
+
+13/2/2012 0:00 JD:43.000000 (12^ simulation day) 41.38% completed! 
+ t_meteo:  2.07 s, t_energy:  0.00 s, t_blowingsnow:  0.00 s, t_water:2076.49 s, t_sub:603.07 s, t_sup:1473.40 s, t_out:  0.36 s
+ SW=  0.00 W/m2  LW:  0.00 W/m2  H=  0.00 W/m2  LE=  0.00 W/m2 
+ Pvert=  0.00 mm Prain=  0.00 mm  Psnow=  0.00 mm  
+ Max Error Richards=2.609457e-08 mm/h 
+ Tot Error Richards=8.499142e-06 mm Mean Time Step=3600.000000 s
+
+13/2/2012 1:00 41.52% - Time elapsed (h:m:s)  0:35:47 Time remaining (h:m)  0:50  
+13/2/2012 2:00 41.67% - Time elapsed (h:m:s)  0:35:56 Time remaining (h:m)  0:50  
+13/2/2012 3:00 41.81% - Time elapsed (h:m:s)  0:36:04 Time remaining (h:m)  0:50  
+13/2/2012 4:00 41.95% - Time elapsed (h:m:s)  0:36:14 Time remaining (h:m)  0:50  
+13/2/2012 5:00 42.10% - Time elapsed (h:m:s)  0:36:22 Time remaining (h:m)  0:50  
+13/2/2012 6:00 42.24% - Time elapsed (h:m:s)  0:36:30 Time remaining (h:m)  0:49  
+13/2/2012 7:00 42.39% - Time elapsed (h:m:s)  0:36:40 Time remaining (h:m)  0:49  
+13/2/2012 8:00 42.53% - Time elapsed (h:m:s)  0:36:47 Time remaining (h:m)  0:49  
+13/2/2012 9:00 42.67% - Time elapsed (h:m:s)  0:36:55 Time remaining (h:m)  0:49  
+13/2/2012 10:00 42.82% - Time elapsed (h:m:s)  0:37:05 Time remaining (h:m)  0:49  
+13/2/2012 11:00 42.96% - Time elapsed (h:m:s)  0:37:13 Time remaining (h:m)  0:49  
+13/2/2012 12:00 43.10% - Time elapsed (h:m:s)  0:37:22 Time remaining (h:m)  0:49  
+13/2/2012 13:00 43.25% - Time elapsed (h:m:s)  0:37:30 Time remaining (h:m)  0:49  
+13/2/2012 14:00 43.39% - Time elapsed (h:m:s)  0:37:38 Time remaining (h:m)  0:49  
+13/2/2012 15:00 43.53% - Time elapsed (h:m:s)  0:37:47 Time remaining (h:m)  0:49  
+13/2/2012 16:00 43.68% - Time elapsed (h:m:s)  0:37:54 Time remaining (h:m)  0:48  
+13/2/2012 17:00 43.82% - Time elapsed (h:m:s)  0:38:02 Time remaining (h:m)  0:48  
+13/2/2012 18:00 43.97% - Time elapsed (h:m:s)  0:38:11 Time remaining (h:m)  0:48  
+13/2/2012 19:00 44.11% - Time elapsed (h:m:s)  0:38:19 Time remaining (h:m)  0:48  
+13/2/2012 20:00 44.25% - Time elapsed (h:m:s)  0:38:27 Time remaining (h:m)  0:48  
+13/2/2012 21:00 44.40% - Time elapsed (h:m:s)  0:38:35 Time remaining (h:m)  0:48  
+13/2/2012 22:00 44.54% - Time elapsed (h:m:s)  0:38:42 Time remaining (h:m)  0:48  
+13/2/2012 23:00 44.68% - Time elapsed (h:m:s)  0:38:50 Time remaining (h:m)  0:48  
+14/2/2012 0:00 44.83% - Time elapsed (h:m:s)  0:38:57 Time remaining (h:m)  0:47  
+
+14/2/2012 0:00 JD:44.000000 (13^ simulation day) 44.83% completed! 
+ t_meteo:  2.25 s, t_energy:  0.00 s, t_blowingsnow:  0.00 s, t_water:2266.52 s, t_sub:678.21 s, t_sup:1588.30 s, t_out:  0.39 s
+ SW=  0.00 W/m2  LW:  0.00 W/m2  H=  0.00 W/m2  LE=  0.00 W/m2 
+ Pvert=  0.00 mm Prain=  0.00 mm  Psnow=  0.00 mm  
+ Max Error Richards=2.841395e-08 mm/h 
+ Tot Error Richards=9.181077e-06 mm Mean Time Step=3600.000000 s
+
+14/2/2012 1:00 44.97% - Time elapsed (h:m:s)  0:39:05 Time remaining (h:m)  0:47  
+14/2/2012 2:00 45.11% - Time elapsed (h:m:s)  0:39:14 Time remaining (h:m)  0:47  
+14/2/2012 3:00 45.26% - Time elapsed (h:m:s)  0:39:22 Time remaining (h:m)  0:47  
+14/2/2012 4:00 45.40% - Time elapsed (h:m:s)  0:39:30 Time remaining (h:m)  0:47  
+14/2/2012 5:00 45.55% - Time elapsed (h:m:s)  0:39:39 Time remaining (h:m)  0:47  
+14/2/2012 6:00 45.69% - Time elapsed (h:m:s)  0:39:46 Time remaining (h:m)  0:47  
+14/2/2012 7:00 45.83% - Time elapsed (h:m:s)  0:39:56 Time remaining (h:m)  0:47  
+14/2/2012 8:00 45.98% - Time elapsed (h:m:s)  0:40:04 Time remaining (h:m)  0:47  
+14/2/2012 9:00 46.12% - Time elapsed (h:m:s)  0:40:10 Time remaining (h:m)  0:46  
+14/2/2012 10:00 46.26% - Time elapsed (h:m:s)  0:40:20 Time remaining (h:m)  0:46  
+14/2/2012 11:00 46.41% - Time elapsed (h:m:s)  0:40:27 Time remaining (h:m)  0:46  
+14/2/2012 12:00 46.55% - Time elapsed (h:m:s)  0:40:36 Time remaining (h:m)  0:46  
+14/2/2012 13:00 46.70% - Time elapsed (h:m:s)  0:40:45 Time remaining (h:m)  0:46  
+14/2/2012 14:00 46.84% - Time elapsed (h:m:s)  0:40:52 Time remaining (h:m)  0:46  
+14/2/2012 15:00 46.98% - Time elapsed (h:m:s)  0:41:01 Time remaining (h:m)  0:46  
+14/2/2012 16:00 47.13% - Time elapsed (h:m:s)  0:41:09 Time remaining (h:m)  0:46  
+14/2/2012 17:00 47.27% - Time elapsed (h:m:s)  0:41:18 Time remaining (h:m)  0:46  
+14/2/2012 18:00 47.41% - Time elapsed (h:m:s)  0:41:26 Time remaining (h:m)  0:45  
+14/2/2012 19:00 47.56% - Time elapsed (h:m:s)  0:41:34 Time remaining (h:m)  0:45  
+14/2/2012 20:00 47.70% - Time elapsed (h:m:s)  0:41:43 Time remaining (h:m)  0:45  
+14/2/2012 21:00 47.84% - Time elapsed (h:m:s)  0:41:51 Time remaining (h:m)  0:45  
+14/2/2012 22:00 47.99% - Time elapsed (h:m:s)  0:42:00 Time remaining (h:m)  0:45  
+14/2/2012 23:00 48.13% - Time elapsed (h:m:s)  0:42:09 Time remaining (h:m)  0:45  
+15/2/2012 0:00 48.28% - Time elapsed (h:m:s)  0:42:17 Time remaining (h:m)  0:45  
+
+15/2/2012 0:00 JD:45.000000 (14^ simulation day) 48.28% completed! 
+ t_meteo:  2.42 s, t_energy:  0.00 s, t_blowingsnow:  0.00 s, t_water:2459.27 s, t_sub:757.45 s, t_sup:1701.81 s, t_out:  0.43 s
+ SW=  0.00 W/m2  LW:  0.00 W/m2  H=  0.00 W/m2  LE=  0.00 W/m2 
+ Pvert=  0.00 mm Prain=  0.00 mm  Psnow=  0.00 mm  
+ Max Error Richards=1.563783e-08 mm/h 
+ Tot Error Richards=9.556385e-06 mm Mean Time Step=3600.000000 s
+
+15/2/2012 1:00 48.42% - Time elapsed (h:m:s)  0:42:27 Time remaining (h:m)  0:45  
+15/2/2012 2:00 48.56% - Time elapsed (h:m:s)  0:42:35 Time remaining (h:m)  0:45  
+15/2/2012 3:00 48.71% - Time elapsed (h:m:s)  0:42:45 Time remaining (h:m)  0:45  
+15/2/2012 4:00 48.85% - Time elapsed (h:m:s)  0:42:53 Time remaining (h:m)  0:44  
+15/2/2012 5:00 48.99% - Time elapsed (h:m:s)  0:43:01 Time remaining (h:m)  0:44  
+15/2/2012 6:00 49.14% - Time elapsed (h:m:s)  0:43:11 Time remaining (h:m)  0:44  
+15/2/2012 7:00 49.28% - Time elapsed (h:m:s)  0:43:20 Time remaining (h:m)  0:44  
+15/2/2012 8:00 49.43% - Time elapsed (h:m:s)  0:43:29 Time remaining (h:m)  0:44  
+15/2/2012 9:00 49.57% - Time elapsed (h:m:s)  0:43:37 Time remaining (h:m)  0:44  
+15/2/2012 10:00 49.71% - Time elapsed (h:m:s)  0:43:47 Time remaining (h:m)  0:44  
+15/2/2012 11:00 49.86% - Time elapsed (h:m:s)  0:43:58 Time remaining (h:m)  0:44  
+15/2/2012 12:00 50.00% - Time elapsed (h:m:s)  0:44:07 Time remaining (h:m)  0:44  
+15/2/2012 13:00 50.14% - Time elapsed (h:m:s)  0:44:17 Time remaining (h:m)  0:44  
+15/2/2012 14:00 50.29% - Time elapsed (h:m:s)  0:44:25 Time remaining (h:m)  0:43  
+15/2/2012 15:00 50.43% - Time elapsed (h:m:s)  0:44:35 Time remaining (h:m)  0:43  
+15/2/2012 16:00 50.57% - Time elapsed (h:m:s)  0:44:43 Time remaining (h:m)  0:43  
+15/2/2012 17:00 50.72% - Time elapsed (h:m:s)  0:44:52 Time remaining (h:m)  0:43  
+15/2/2012 18:00 50.86% - Time elapsed (h:m:s)  0:45:00 Time remaining (h:m)  0:43  
+15/2/2012 19:00 51.01% - Time elapsed (h:m:s)  0:45:09 Time remaining (h:m)  0:43  
+15/2/2012 20:00 51.15% - Time elapsed (h:m:s)  0:45:21 Time remaining (h:m)  0:43  
+15/2/2012 21:00 51.29% - Time elapsed (h:m:s)  0:45:31 Time remaining (h:m)  0:43  
+15/2/2012 22:00 51.44% - Time elapsed (h:m:s)  0:45:42 Time remaining (h:m)  0:43  
+15/2/2012 23:00 51.58% - Time elapsed (h:m:s)  0:45:52 Time remaining (h:m)  0:43  
+16/2/2012 0:00 51.72% - Time elapsed (h:m:s)  0:46:01 Time remaining (h:m)  0:42  
+
+16/2/2012 0:00 JD:46.000000 (15^ simulation day) 51.72% completed! 
+ t_meteo:  2.60 s, t_energy:  0.00 s, t_blowingsnow:  0.00 s, t_water:2666.26 s, t_sub:852.29 s, t_sup:1813.95 s, t_out:  0.46 s
+ SW=  0.00 W/m2  LW:  0.00 W/m2  H=  0.00 W/m2  LE=  0.00 W/m2 
+ Pvert=  0.00 mm Prain=  0.00 mm  Psnow=  0.00 mm  
+ Max Error Richards=1.746615e-08 mm/h 
+ Tot Error Richards=9.975572e-06 mm Mean Time Step=3600.000000 s
+
+16/2/2012 1:00 51.87% - Time elapsed (h:m:s)  0:46:12 Time remaining (h:m)  0:42  
+16/2/2012 2:00 52.01% - Time elapsed (h:m:s)  0:46:20 Time remaining (h:m)  0:42  
+16/2/2012 3:00 52.16% - Time elapsed (h:m:s)  0:46:31 Time remaining (h:m)  0:42  
+16/2/2012 4:00 52.30% - Time elapsed (h:m:s)  0:46:40 Time remaining (h:m)  0:42  
+16/2/2012 5:00 52.44% - Time elapsed (h:m:s)  0:46:50 Time remaining (h:m)  0:42  
+16/2/2012 6:00 52.59% - Time elapsed (h:m:s)  0:46:58 Time remaining (h:m)  0:42  
+16/2/2012 7:00 52.73% - Time elapsed (h:m:s)  0:47:07 Time remaining (h:m)  0:42  
+16/2/2012 8:00 52.87% - Time elapsed (h:m:s)  0:47:15 Time remaining (h:m)  0:42  
+16/2/2012 9:00 53.02% - Time elapsed (h:m:s)  0:47:24 Time remaining (h:m)  0:42  
+16/2/2012 10:00 53.16% - Time elapsed (h:m:s)  0:47:32 Time remaining (h:m)  0:41  
+16/2/2012 11:00 53.30% - Time elapsed (h:m:s)  0:47:42 Time remaining (h:m)  0:41  
+16/2/2012 12:00 53.45% - Time elapsed (h:m:s)  0:47:51 Time remaining (h:m)  0:41  
+16/2/2012 13:00 53.59% - Time elapsed (h:m:s)  0:48:00 Time remaining (h:m)  0:41  
+16/2/2012 14:00 53.74% - Time elapsed (h:m:s)  0:48:10 Time remaining (h:m)  0:41  
+16/2/2012 15:00 53.88% - Time elapsed (h:m:s)  0:48:20 Time remaining (h:m)  0:41  
+16/2/2012 16:00 54.02% - Time elapsed (h:m:s)  0:48:28 Time remaining (h:m)  0:41  
+16/2/2012 17:00 54.17% - Time elapsed (h:m:s)  0:48:37 Time remaining (h:m)  0:41  
+16/2/2012 18:00 54.31% - Time elapsed (h:m:s)  0:48:45 Time remaining (h:m)  0:41  
+16/2/2012 19:00 54.45% - Time elapsed (h:m:s)  0:48:53 Time remaining (h:m)  0:40  
+16/2/2012 20:00 54.60% - Time elapsed (h:m:s)  0:49:02 Time remaining (h:m)  0:40  
+16/2/2012 21:00 54.74% - Time elapsed (h:m:s)  0:49:11 Time remaining (h:m)  0:40  
+16/2/2012 22:00 54.89% - Time elapsed (h:m:s)  0:49:19 Time remaining (h:m)  0:40  
+16/2/2012 23:00 55.03% - Time elapsed (h:m:s)  0:49:28 Time remaining (h:m)  0:40  
+17/2/2012 0:00 55.17% - Time elapsed (h:m:s)  0:49:37 Time remaining (h:m)  0:40  
+
+17/2/2012 0:00 JD:47.000000 (16^ simulation day) 55.17% completed! 
+ t_meteo:  2.77 s, t_energy:  0.00 s, t_blowingsnow:  0.00 s, t_water:2871.84 s, t_sub:948.58 s, t_sup:1923.24 s, t_out:  0.49 s
+ SW=  0.00 W/m2  LW:  0.00 W/m2  H=  0.00 W/m2  LE=  0.00 W/m2 
+ Pvert=  0.00 mm Prain=  0.00 mm  Psnow=  0.00 mm  
+ Max Error Richards=3.096453e-08 mm/h 
+ Tot Error Richards=1.071872e-05 mm Mean Time Step=3600.000000 s
+
+17/2/2012 1:00 55.32% - Time elapsed (h:m:s)  0:49:45 Time remaining (h:m)  0:40  
+17/2/2012 2:00 55.46% - Time elapsed (h:m:s)  0:49:55 Time remaining (h:m)  0:40  
+17/2/2012 3:00 55.60% - Time elapsed (h:m:s)  0:50:03 Time remaining (h:m)  0:39  
+17/2/2012 4:00 55.75% - Time elapsed (h:m:s)  0:50:12 Time remaining (h:m)  0:39  
+17/2/2012 5:00 55.89% - Time elapsed (h:m:s)  0:50:22 Time remaining (h:m)  0:39  
+17/2/2012 6:00 56.03% - Time elapsed (h:m:s)  0:50:30 Time remaining (h:m)  0:39  
+17/2/2012 7:00 56.18% - Time elapsed (h:m:s)  0:50:38 Time remaining (h:m)  0:39  
+17/2/2012 8:00 56.32% - Time elapsed (h:m:s)  0:50:47 Time remaining (h:m)  0:39  
+17/2/2012 9:00 56.47% - Time elapsed (h:m:s)  0:50:58 Time remaining (h:m)  0:39  
+17/2/2012 10:00 56.61% - Time elapsed (h:m:s)  0:51:06 Time remaining (h:m)  0:39  
+17/2/2012 11:00 56.75% - Time elapsed (h:m:s)  0:51:15 Time remaining (h:m)  0:39  
+17/2/2012 12:00 56.90% - Time elapsed (h:m:s)  0:51:23 Time remaining (h:m)  0:38  
+17/2/2012 13:00 57.04% - Time elapsed (h:m:s)  0:51:34 Time remaining (h:m)  0:38  
+17/2/2012 14:00 57.18% - Time elapsed (h:m:s)  0:51:42 Time remaining (h:m)  0:38  
+17/2/2012 15:00 57.33% - Time elapsed (h:m:s)  0:51:52 Time remaining (h:m)  0:38  
+17/2/2012 16:00 57.47% - Time elapsed (h:m:s)  0:52:00 Time remaining (h:m)  0:38  
+17/2/2012 17:00 57.61% - Time elapsed (h:m:s)  0:52:10 Time remaining (h:m)  0:38  
+17/2/2012 18:00 57.76% - Time elapsed (h:m:s)  0:52:20 Time remaining (h:m)  0:38  
+17/2/2012 19:00 57.90% - Time elapsed (h:m:s)  0:52:28 Time remaining (h:m)  0:38  
+17/2/2012 20:00 58.05% - Time elapsed (h:m:s)  0:52:37 Time remaining (h:m)  0:38  
+17/2/2012 21:00 58.19% - Time elapsed (h:m:s)  0:52:46 Time remaining (h:m)  0:37  
+17/2/2012 22:00 58.33% - Time elapsed (h:m:s)  0:52:56 Time remaining (h:m)  0:37  
+17/2/2012 23:00 58.48% - Time elapsed (h:m:s)  0:53:04 Time remaining (h:m)  0:37  
+18/2/2012 0:00 58.62% - Time elapsed (h:m:s)  0:53:12 Time remaining (h:m)  0:37  
+
+18/2/2012 0:00 JD:48.000000 (17^ simulation day) 58.62% completed! 
+ t_meteo:  2.94 s, t_energy:  0.00 s, t_blowingsnow:  0.00 s, t_water:3080.68 s, t_sub:1050.56 s, t_sup:2030.11 s, t_out:  0.52 s
+ SW=  0.00 W/m2  LW:  0.00 W/m2  H=  0.00 W/m2  LE=  0.00 W/m2 
+ Pvert=  0.00 mm Prain=  0.00 mm  Psnow=  0.00 mm  
+ Max Error Richards=4.179554e-08 mm/h 
+ Tot Error Richards=1.172181e-05 mm Mean Time Step=3600.000000 s
+
+18/2/2012 1:00 58.76% - Time elapsed (h:m:s)  0:53:21 Time remaining (h:m)  0:37  
+18/2/2012 2:00 58.91% - Time elapsed (h:m:s)  0:53:30 Time remaining (h:m)  0:37  
+18/2/2012 3:00 59.05% - Time elapsed (h:m:s)  0:53:38 Time remaining (h:m)  0:37  
+18/2/2012 4:00 59.20% - Time elapsed (h:m:s)  0:53:48 Time remaining (h:m)  0:37  
+18/2/2012 5:00 59.34% - Time elapsed (h:m:s)  0:53:58 Time remaining (h:m)  0:36  
+18/2/2012 6:00 59.48% - Time elapsed (h:m:s)  0:54:07 Time remaining (h:m)  0:36  
+18/2/2012 7:00 59.63% - Time elapsed (h:m:s)  0:54:16 Time remaining (h:m)  0:36  
+18/2/2012 8:00 59.77% - Time elapsed (h:m:s)  0:54:24 Time remaining (h:m)  0:36  
+18/2/2012 9:00 59.91% - Time elapsed (h:m:s)  0:54:32 Time remaining (h:m)  0:36  
+18/2/2012 10:00 60.06% - Time elapsed (h:m:s)  0:54:41 Time remaining (h:m)  0:36  
+18/2/2012 11:00 60.20% - Time elapsed (h:m:s)  0:54:51 Time remaining (h:m)  0:36  
+18/2/2012 12:00 60.34% - Time elapsed (h:m:s)  0:54:59 Time remaining (h:m)  0:36  
+18/2/2012 13:00 60.49% - Time elapsed (h:m:s)  0:55:07 Time remaining (h:m)  0:36  
+18/2/2012 14:00 60.63% - Time elapsed (h:m:s)  0:55:15 Time remaining (h:m)  0:35  
+18/2/2012 15:00 60.78% - Time elapsed (h:m:s)  0:55:23 Time remaining (h:m)  0:35  
+18/2/2012 16:00 60.92% - Time elapsed (h:m:s)  0:55:32 Time remaining (h:m)  0:35  
+18/2/2012 17:00 61.06% - Time elapsed (h:m:s)  0:55:40 Time remaining (h:m)  0:35  
+18/2/2012 18:00 61.21% - Time elapsed (h:m:s)  0:55:50 Time remaining (h:m)  0:35  
+18/2/2012 19:00 61.35% - Time elapsed (h:m:s)  0:55:59 Time remaining (h:m)  0:35  
+18/2/2012 20:00 61.49% - Time elapsed (h:m:s)  0:56:07 Time remaining (h:m)  0:35  
+18/2/2012 21:00 61.64% - Time elapsed (h:m:s)  0:56:15 Time remaining (h:m)  0:35  
+18/2/2012 22:00 61.78% - Time elapsed (h:m:s)  0:56:23 Time remaining (h:m)  0:34  
+18/2/2012 23:00 61.93% - Time elapsed (h:m:s)  0:56:32 Time remaining (h:m)  0:34  
+19/2/2012 0:00 62.07% - Time elapsed (h:m:s)  0:56:41 Time remaining (h:m)  0:34  
+
+19/2/2012 0:00 JD:49.000000 (18^ simulation day) 62.07% completed! 
+ t_meteo:  3.11 s, t_energy:  0.00 s, t_blowingsnow:  0.00 s, t_water:3285.91 s, t_sub:1151.12 s, t_sup:2134.77 s, t_out:  0.55 s
+ SW=  0.00 W/m2  LW:  0.00 W/m2  H=  0.00 W/m2  LE=  0.00 W/m2 
+ Pvert=  0.00 mm Prain=  0.00 mm  Psnow=  0.00 mm  
+ Max Error Richards=3.932984e-08 mm/h 
+ Tot Error Richards=1.266573e-05 mm Mean Time Step=3600.000000 s
+
+19/2/2012 1:00 62.21% - Time elapsed (h:m:s)  0:56:51 Time remaining (h:m)  0:34  
+19/2/2012 2:00 62.36% - Time elapsed (h:m:s)  0:57:00 Time remaining (h:m)  0:34  
+19/2/2012 3:00 62.50% - Time elapsed (h:m:s)  0:57:08 Time remaining (h:m)  0:34  
+19/2/2012 4:00 62.64% - Time elapsed (h:m:s)  0:57:17 Time remaining (h:m)  0:34  
+19/2/2012 5:00 62.79% - Time elapsed (h:m:s)  0:57:27 Time remaining (h:m)  0:34  
+19/2/2012 6:00 62.93% - Time elapsed (h:m:s)  0:57:35 Time remaining (h:m)  0:33  
+19/2/2012 7:00 63.07% - Time elapsed (h:m:s)  0:57:44 Time remaining (h:m)  0:33  
+19/2/2012 8:00 63.22% - Time elapsed (h:m:s)  0:57:52 Time remaining (h:m)  0:33  
+19/2/2012 9:00 63.36% - Time elapsed (h:m:s)  0:58:00 Time remaining (h:m)  0:33  
+19/2/2012 10:00 63.51% - Time elapsed (h:m:s)  0:58:07 Time remaining (h:m)  0:33  
+19/2/2012 11:00 63.65% - Time elapsed (h:m:s)  0:58:16 Time remaining (h:m)  0:33  
+19/2/2012 12:00 63.79% - Time elapsed (h:m:s)  0:58:24 Time remaining (h:m)  0:33  
+19/2/2012 13:00 63.94% - Time elapsed (h:m:s)  0:58:32 Time remaining (h:m)  0:33  
+19/2/2012 14:00 64.08% - Time elapsed (h:m:s)  0:58:41 Time remaining (h:m)  0:32  
+19/2/2012 15:00 64.22% - Time elapsed (h:m:s)  0:58:49 Time remaining (h:m)  0:32  
+19/2/2012 16:00 64.37% - Time elapsed (h:m:s)  0:58:59 Time remaining (h:m)  0:32  
+19/2/2012 17:00 64.51% - Time elapsed (h:m:s)  0:59:07 Time remaining (h:m)  0:32  
+19/2/2012 18:00 64.66% - Time elapsed (h:m:s)  0:59:16 Time remaining (h:m)  0:32  
+19/2/2012 19:00 64.80% - Time elapsed (h:m:s)  0:59:25 Time remaining (h:m)  0:32  
+19/2/2012 20:00 64.94% - Time elapsed (h:m:s)  0:59:35 Time remaining (h:m)  0:32  
+19/2/2012 21:00 65.09% - Time elapsed (h:m:s)  0:59:43 Time remaining (h:m)  0:32  
+19/2/2012 22:00 65.23% - Time elapsed (h:m:s)  0:59:52 Time remaining (h:m)  0:31  
+19/2/2012 23:00 65.37% - Time elapsed (h:m:s)  1:00:00 Time remaining (h:m)  0:31  
+20/2/2012 0:00 65.52% - Time elapsed (h:m:s)  1:00:08 Time remaining (h:m)  0:31  
+
+20/2/2012 0:00 JD:50.000000 (19^ simulation day) 65.52% completed! 
+ t_meteo:  3.29 s, t_energy:  0.00 s, t_blowingsnow:  0.00 s, t_water:3490.46 s, t_sub:1252.39 s, t_sup:2238.04 s, t_out:  0.58 s
+ SW=  0.00 W/m2  LW:  0.00 W/m2  H=  0.00 W/m2  LE=  0.00 W/m2 
+ Pvert=  0.00 mm Prain=  0.00 mm  Psnow=  0.00 mm  
+ Max Error Richards=2.809812e-08 mm/h 
+ Tot Error Richards=1.334008e-05 mm Mean Time Step=3600.000000 s
+
+20/2/2012 1:00 65.66% - Time elapsed (h:m:s)  1:00:17 Time remaining (h:m)  0:31  
+20/2/2012 2:00 65.80% - Time elapsed (h:m:s)  1:00:24 Time remaining (h:m)  0:31  
+20/2/2012 3:00 65.95% - Time elapsed (h:m:s)  1:00:34 Time remaining (h:m)  0:31  
+20/2/2012 4:00 66.09% - Time elapsed (h:m:s)  1:00:43 Time remaining (h:m)  0:31  
+20/2/2012 5:00 66.24% - Time elapsed (h:m:s)  1:00:53 Time remaining (h:m)  0:31  
+20/2/2012 6:00 66.38% - Time elapsed (h:m:s)  1:01:00 Time remaining (h:m)  0:30  
+20/2/2012 7:00 66.52% - Time elapsed (h:m:s)  1:01:09 Time remaining (h:m)  0:30  
+20/2/2012 8:00 66.67% - Time elapsed (h:m:s)  1:01:19 Time remaining (h:m)  0:30  
+20/2/2012 9:00 66.81% - Time elapsed (h:m:s)  1:01:28 Time remaining (h:m)  0:30  
+20/2/2012 10:00 66.95% - Time elapsed (h:m:s)  1:01:38 Time remaining (h:m)  0:30  
+20/2/2012 11:00 67.10% - Time elapsed (h:m:s)  1:01:46 Time remaining (h:m)  0:30  
+20/2/2012 12:00 67.24% - Time elapsed (h:m:s)  1:01:55 Time remaining (h:m)  0:30  
+20/2/2012 13:00 67.39% - Time elapsed (h:m:s)  1:02:04 Time remaining (h:m)  0:30  
+20/2/2012 14:00 67.53% - Time elapsed (h:m:s)  1:02:11 Time remaining (h:m)  0:29  
+20/2/2012 15:00 67.67% - Time elapsed (h:m:s)  1:02:20 Time remaining (h:m)  0:29  
+20/2/2012 16:00 67.82% - Time elapsed (h:m:s)  1:02:30 Time remaining (h:m)  0:29  
+20/2/2012 17:00 67.96% - Time elapsed (h:m:s)  1:02:39 Time remaining (h:m)  0:29  
+20/2/2012 18:00 68.10% - Time elapsed (h:m:s)  1:02:46 Time remaining (h:m)  0:29  
+20/2/2012 19:00 68.25% - Time elapsed (h:m:s)  1:02:55 Time remaining (h:m)  0:29  
+20/2/2012 20:00 68.39% - Time elapsed (h:m:s)  1:03:02 Time remaining (h:m)  0:29  
+20/2/2012 21:00 68.53% - Time elapsed (h:m:s)  1:03:11 Time remaining (h:m)  0:29  
+20/2/2012 22:00 68.68% - Time elapsed (h:m:s)  1:03:18 Time remaining (h:m)  0:28  
+20/2/2012 23:00 68.82% - Time elapsed (h:m:s)  1:03:25 Time remaining (h:m)  0:28  
+21/2/2012 0:00 68.97% - Time elapsed (h:m:s)  1:03:32 Time remaining (h:m)  0:28  
+
+21/2/2012 0:00 JD:51.000000 (20^ simulation day) 68.97% completed! 
+ t_meteo:  3.46 s, t_energy:  0.00 s, t_blowingsnow:  0.00 s, t_water:3690.26 s, t_sub:1350.46 s, t_sup:2339.77 s, t_out:  0.62 s
+ SW=  0.00 W/m2  LW:  0.00 W/m2  H=  0.00 W/m2  LE=  0.00 W/m2 
+ Pvert=  0.00 mm Prain=  0.00 mm  Psnow=  0.00 mm  
+ Max Error Richards=3.162937e-08 mm/h 
+ Tot Error Richards=1.409919e-05 mm Mean Time Step=3600.000000 s
+
+21/2/2012 1:00 69.11% - Time elapsed (h:m:s)  1:03:40 Time remaining (h:m)  0:28  
+21/2/2012 2:00 69.25% - Time elapsed (h:m:s)  1:03:47 Time remaining (h:m)  0:28  
+21/2/2012 3:00 69.40% - Time elapsed (h:m:s)  1:03:56 Time remaining (h:m)  0:28  
+21/2/2012 4:00 69.54% - Time elapsed (h:m:s)  1:04:02 Time remaining (h:m)  0:28  
+21/2/2012 5:00 69.68% - Time elapsed (h:m:s)  1:04:11 Time remaining (h:m)  0:27  
+21/2/2012 6:00 69.83% - Time elapsed (h:m:s)  1:04:19 Time remaining (h:m)  0:27  
+21/2/2012 7:00 69.97% - Time elapsed (h:m:s)  1:04:28 Time remaining (h:m)  0:27  
+21/2/2012 8:00 70.11% - Time elapsed (h:m:s)  1:04:35 Time remaining (h:m)  0:27  
+21/2/2012 9:00 70.26% - Time elapsed (h:m:s)  1:04:43 Time remaining (h:m)  0:27  
+21/2/2012 10:00 70.40% - Time elapsed (h:m:s)  1:04:50 Time remaining (h:m)  0:27  
+21/2/2012 11:00 70.55% - Time elapsed (h:m:s)  1:04:58 Time remaining (h:m)  0:27  
+21/2/2012 12:00 70.69% - Time elapsed (h:m:s)  1:05:04 Time remaining (h:m)  0:26  
+21/2/2012 13:00 70.83% - Time elapsed (h:m:s)  1:05:09 Time remaining (h:m)  0:26  
+21/2/2012 14:00 70.98% - Time elapsed (h:m:s)  1:05:18 Time remaining (h:m)  0:26  
+21/2/2012 15:00 71.12% - Time elapsed (h:m:s)  1:05:24 Time remaining (h:m)  0:26  
+21/2/2012 16:00 71.26% - Time elapsed (h:m:s)  1:05:31 Time remaining (h:m)  0:26  
+21/2/2012 17:00 71.41% - Time elapsed (h:m:s)  1:05:40 Time remaining (h:m)  0:26  
+21/2/2012 18:00 71.55% - Time elapsed (h:m:s)  1:05:46 Time remaining (h:m)  0:26  
+21/2/2012 19:00 71.70% - Time elapsed (h:m:s)  1:05:55 Time remaining (h:m)  0:26  
+21/2/2012 20:00 71.84% - Time elapsed (h:m:s)  1:06:04 Time remaining (h:m)  0:25  
+21/2/2012 21:00 71.98% - Time elapsed (h:m:s)  1:06:11 Time remaining (h:m)  0:25  
+21/2/2012 22:00 72.13% - Time elapsed (h:m:s)  1:06:21 Time remaining (h:m)  0:25  
+21/2/2012 23:00 72.27% - Time elapsed (h:m:s)  1:06:31 Time remaining (h:m)  0:25  
+22/2/2012 0:00 72.41% - Time elapsed (h:m:s)  1:06:42 Time remaining (h:m)  0:25  
+
+22/2/2012 0:00 JD:52.000000 (21^ simulation day) 72.41% completed! 
+ t_meteo:  3.63 s, t_energy:  0.00 s, t_blowingsnow:  0.00 s, t_water:3873.47 s, t_sub:1433.15 s, t_sup:2440.29 s, t_out:  0.65 s
+ SW=  0.00 W/m2  LW:  0.00 W/m2  H=  0.00 W/m2  LE=  0.00 W/m2 
+ Pvert=  0.00 mm Prain=  0.00 mm  Psnow=  0.00 mm  
+ Max Error Richards=3.469118e-08 mm/h 
+ Tot Error Richards=1.493178e-05 mm Mean Time Step=3600.000000 s
+
+22/2/2012 1:00 72.56% - Time elapsed (h:m:s)  1:06:52 Time remaining (h:m)  0:25  
+22/2/2012 2:00 72.70% - Time elapsed (h:m:s)  1:07:02 Time remaining (h:m)  0:25  
+22/2/2012 3:00 72.84% - Time elapsed (h:m:s)  1:07:12 Time remaining (h:m)  0:25  
+22/2/2012 4:00 72.99% - Time elapsed (h:m:s)  1:07:22 Time remaining (h:m)  0:24  
+22/2/2012 5:00 73.13% - Time elapsed (h:m:s)  1:07:31 Time remaining (h:m)  0:24  
+22/2/2012 6:00 73.28% - Time elapsed (h:m:s)  1:07:39 Time remaining (h:m)  0:24  
+22/2/2012 7:00 73.42% - Time elapsed (h:m:s)  1:07:47 Time remaining (h:m)  0:24  
+22/2/2012 8:00 73.56% - Time elapsed (h:m:s)  1:07:57 Time remaining (h:m)  0:24  
+22/2/2012 9:00 73.71% - Time elapsed (h:m:s)  1:08:06 Time remaining (h:m)  0:24  
+22/2/2012 10:00 73.85% - Time elapsed (h:m:s)  1:08:17 Time remaining (h:m)  0:24  
+22/2/2012 11:00 73.99% - Time elapsed (h:m:s)  1:08:27 Time remaining (h:m)  0:24  
+22/2/2012 12:00 74.14% - Time elapsed (h:m:s)  1:08:34 Time remaining (h:m)  0:23  
+22/2/2012 13:00 74.28% - Time elapsed (h:m:s)  1:08:43 Time remaining (h:m)  0:23  
+22/2/2012 14:00 74.43% - Time elapsed (h:m:s)  1:08:50 Time remaining (h:m)  0:23  
+22/2/2012 15:00 74.57% - Time elapsed (h:m:s)  1:08:59 Time remaining (h:m)  0:23  
+22/2/2012 16:00 74.71% - Time elapsed (h:m:s)  1:09:08 Time remaining (h:m)  0:23  
+22/2/2012 17:00 74.86% - Time elapsed (h:m:s)  1:09:15 Time remaining (h:m)  0:23  
+22/2/2012 18:00 75.00% - Time elapsed (h:m:s)  1:09:24 Time remaining (h:m)  0:23  
+22/2/2012 19:00 75.14% - Time elapsed (h:m:s)  1:09:31 Time remaining (h:m)  0:23  
+22/2/2012 20:00 75.29% - Time elapsed (h:m:s)  1:09:40 Time remaining (h:m)  0:22  
+22/2/2012 21:00 75.43% - Time elapsed (h:m:s)  1:09:49 Time remaining (h:m)  0:22  
+22/2/2012 22:00 75.57% - Time elapsed (h:m:s)  1:09:56 Time remaining (h:m)  0:22  
+22/2/2012 23:00 75.72% - Time elapsed (h:m:s)  1:10:05 Time remaining (h:m)  0:22  
+23/2/2012 0:00 75.86% - Time elapsed (h:m:s)  1:10:12 Time remaining (h:m)  0:22  
+
+23/2/2012 0:00 JD:53.000000 (22^ simulation day) 75.86% completed! 
+ t_meteo:  3.80 s, t_energy:  0.00 s, t_blowingsnow:  0.00 s, t_water:4078.67 s, t_sub:1538.91 s, t_sup:2539.73 s, t_out:  0.68 s
+ SW=  0.00 W/m2  LW:  0.00 W/m2  H=  0.00 W/m2  LE=  0.00 W/m2 
+ Pvert=  0.00 mm Prain=  0.00 mm  Psnow=  0.00 mm  
+ Max Error Richards=3.595339e-08 mm/h 
+ Tot Error Richards=1.579466e-05 mm Mean Time Step=3600.000000 s
+
+23/2/2012 1:00 76.01% - Time elapsed (h:m:s)  1:10:21 Time remaining (h:m)  0:22  
+23/2/2012 2:00 76.15% - Time elapsed (h:m:s)  1:10:30 Time remaining (h:m)  0:22  
+23/2/2012 3:00 76.29% - Time elapsed (h:m:s)  1:10:36 Time remaining (h:m)  0:21  
+23/2/2012 4:00 76.44% - Time elapsed (h:m:s)  1:10:45 Time remaining (h:m)  0:21  
+23/2/2012 5:00 76.58% - Time elapsed (h:m:s)  1:10:52 Time remaining (h:m)  0:21  
+23/2/2012 6:00 76.72% - Time elapsed (h:m:s)  1:11:02 Time remaining (h:m)  0:21  
+23/2/2012 7:00 76.87% - Time elapsed (h:m:s)  1:11:11 Time remaining (h:m)  0:21  
+23/2/2012 8:00 77.01% - Time elapsed (h:m:s)  1:11:21 Time remaining (h:m)  0:21  
+23/2/2012 9:00 77.16% - Time elapsed (h:m:s)  1:11:30 Time remaining (h:m)  0:21  
+23/2/2012 10:00 77.30% - Time elapsed (h:m:s)  1:11:34 Time remaining (h:m)  0:21  
+23/2/2012 11:00 77.44% - Time elapsed (h:m:s)  1:11:44 Time remaining (h:m)  0:20  
+23/2/2012 12:00 77.59% - Time elapsed (h:m:s)  1:11:51 Time remaining (h:m)  0:20  
+23/2/2012 13:00 77.73% - Time elapsed (h:m:s)  1:11:59 Time remaining (h:m)  0:20  
+23/2/2012 14:00 77.87% - Time elapsed (h:m:s)  1:12:09 Time remaining (h:m)  0:20  
+23/2/2012 15:00 78.02% - Time elapsed (h:m:s)  1:12:19 Time remaining (h:m)  0:20  
+23/2/2012 16:00 78.16% - Time elapsed (h:m:s)  1:12:29 Time remaining (h:m)  0:20  
+23/2/2012 17:00 78.30% - Time elapsed (h:m:s)  1:12:39 Time remaining (h:m)  0:20  
+23/2/2012 18:00 78.45% - Time elapsed (h:m:s)  1:12:49 Time remaining (h:m)  0:20  
+23/2/2012 19:00 78.59% - Time elapsed (h:m:s)  1:12:58 Time remaining (h:m)  0:19  
+23/2/2012 20:00 78.74% - Time elapsed (h:m:s)  1:13:04 Time remaining (h:m)  0:19  
+23/2/2012 21:00 78.88% - Time elapsed (h:m:s)  1:13:14 Time remaining (h:m)  0:19  
+23/2/2012 22:00 79.02% - Time elapsed (h:m:s)  1:13:22 Time remaining (h:m)  0:19  
+23/2/2012 23:00 79.17% - Time elapsed (h:m:s)  1:13:30 Time remaining (h:m)  0:19  
+24/2/2012 0:00 79.31% - Time elapsed (h:m:s)  1:13:36 Time remaining (h:m)  0:19  
+
+24/2/2012 0:00 JD:54.000000 (23^ simulation day) 79.31% completed! 
+ t_meteo:  3.98 s, t_energy:  0.00 s, t_blowingsnow:  0.00 s, t_water:4277.83 s, t_sub:1639.15 s, t_sup:2638.65 s, t_out:  0.71 s
+ SW=  0.00 W/m2  LW:  0.00 W/m2  H=  0.00 W/m2  LE=  0.00 W/m2 
+ Pvert=  0.00 mm Prain=  0.00 mm  Psnow=  0.00 mm  
+ Max Error Richards=2.670140e-08 mm/h 
+ Tot Error Richards=1.643549e-05 mm Mean Time Step=3600.000000 s
+
+24/2/2012 1:00 79.45% - Time elapsed (h:m:s)  1:13:45 Time remaining (h:m)  0:19  
+24/2/2012 2:00 79.60% - Time elapsed (h:m:s)  1:13:51 Time remaining (h:m)  0:18  
+24/2/2012 3:00 79.74% - Time elapsed (h:m:s)  1:14:01 Time remaining (h:m)  0:18  
+24/2/2012 4:00 79.89% - Time elapsed (h:m:s)  1:14:06 Time remaining (h:m)  0:18  
+24/2/2012 5:00 80.03% - Time elapsed (h:m:s)  1:14:15 Time remaining (h:m)  0:18  
+24/2/2012 6:00 80.17% - Time elapsed (h:m:s)  1:14:21 Time remaining (h:m)  0:18  
+24/2/2012 7:00 80.32% - Time elapsed (h:m:s)  1:14:27 Time remaining (h:m)  0:18  
+24/2/2012 8:00 80.46% - Time elapsed (h:m:s)  1:14:36 Time remaining (h:m)  0:18  
+24/2/2012 9:00 80.60% - Time elapsed (h:m:s)  1:14:42 Time remaining (h:m)  0:17  
+24/2/2012 10:00 80.75% - Time elapsed (h:m:s)  1:14:48 Time remaining (h:m)  0:17  
+24/2/2012 11:00 80.89% - Time elapsed (h:m:s)  1:14:57 Time remaining (h:m)  0:17  
+24/2/2012 12:00 81.03% - Time elapsed (h:m:s)  1:15:04 Time remaining (h:m)  0:17  
+24/2/2012 13:00 81.18% - Time elapsed (h:m:s)  1:15:11 Time remaining (h:m)  0:17  
+24/2/2012 14:00 81.32% - Time elapsed (h:m:s)  1:15:18 Time remaining (h:m)  0:17  
+24/2/2012 15:00 81.47% - Time elapsed (h:m:s)  1:15:27 Time remaining (h:m)  0:17  
+24/2/2012 16:00 81.61% - Time elapsed (h:m:s)  1:15:33 Time remaining (h:m)  0:17  
+24/2/2012 17:00 81.75% - Time elapsed (h:m:s)  1:15:41 Time remaining (h:m)  0:16  
+24/2/2012 18:00 81.90% - Time elapsed (h:m:s)  1:15:48 Time remaining (h:m)  0:16  
+24/2/2012 19:00 82.04% - Time elapsed (h:m:s)  1:15:56 Time remaining (h:m)  0:16  
+24/2/2012 20:00 82.18% - Time elapsed (h:m:s)  1:16:03 Time remaining (h:m)  0:16  
+24/2/2012 21:00 82.33% - Time elapsed (h:m:s)  1:16:12 Time remaining (h:m)  0:16  
+24/2/2012 22:00 82.47% - Time elapsed (h:m:s)  1:16:19 Time remaining (h:m)  0:16  
+24/2/2012 23:00 82.61% - Time elapsed (h:m:s)  1:16:28 Time remaining (h:m)  0:16  
+25/2/2012 0:00 82.76% - Time elapsed (h:m:s)  1:16:34 Time remaining (h:m)  0:15  
+
+25/2/2012 0:00 JD:55.000000 (24^ simulation day) 82.76% completed! 
+ t_meteo:  4.15 s, t_energy:  0.00 s, t_blowingsnow:  0.00 s, t_water:4452.18 s, t_sub:1715.65 s, t_sup:2736.50 s, t_out:  0.74 s
+ SW=  0.00 W/m2  LW:  0.00 W/m2  H=  0.00 W/m2  LE=  0.00 W/m2 
+ Pvert=  0.00 mm Prain=  0.00 mm  Psnow=  0.00 mm  
+ Max Error Richards=2.502414e-08 mm/h 
+ Tot Error Richards=1.703607e-05 mm Mean Time Step=3600.000000 s
+
+25/2/2012 1:00 82.90% - Time elapsed (h:m:s)  1:16:40 Time remaining (h:m)  0:15  
+25/2/2012 2:00 83.05% - Time elapsed (h:m:s)  1:16:49 Time remaining (h:m)  0:15  
+25/2/2012 3:00 83.19% - Time elapsed (h:m:s)  1:16:55 Time remaining (h:m)  0:15  
+25/2/2012 4:00 83.33% - Time elapsed (h:m:s)  1:17:03 Time remaining (h:m)  0:15  
+25/2/2012 5:00 83.48% - Time elapsed (h:m:s)  1:17:09 Time remaining (h:m)  0:15  
+25/2/2012 6:00 83.62% - Time elapsed (h:m:s)  1:17:16 Time remaining (h:m)  0:15  
+25/2/2012 7:00 83.76% - Time elapsed (h:m:s)  1:17:25 Time remaining (h:m)  0:15  
+25/2/2012 8:00 83.91% - Time elapsed (h:m:s)  1:17:30 Time remaining (h:m)  0:14  
+25/2/2012 9:00 84.05% - Time elapsed (h:m:s)  1:17:37 Time remaining (h:m)  0:14  
+25/2/2012 10:00 84.20% - Time elapsed (h:m:s)  1:17:44 Time remaining (h:m)  0:14  
+25/2/2012 11:00 84.34% - Time elapsed (h:m:s)  1:17:51 Time remaining (h:m)  0:14  
+25/2/2012 12:00 84.48% - Time elapsed (h:m:s)  1:18:01 Time remaining (h:m)  0:14  
+25/2/2012 13:00 84.63% - Time elapsed (h:m:s)  1:18:08 Time remaining (h:m)  0:14  
+25/2/2012 14:00 84.77% - Time elapsed (h:m:s)  1:18:17 Time remaining (h:m)  0:14  
+25/2/2012 15:00 84.91% - Time elapsed (h:m:s)  1:18:22 Time remaining (h:m)  0:13  
+25/2/2012 16:00 85.06% - Time elapsed (h:m:s)  1:18:31 Time remaining (h:m)  0:13  
+25/2/2012 17:00 85.20% - Time elapsed (h:m:s)  1:18:36 Time remaining (h:m)  0:13  
+25/2/2012 18:00 85.34% - Time elapsed (h:m:s)  1:18:42 Time remaining (h:m)  0:13  
+25/2/2012 19:00 85.49% - Time elapsed (h:m:s)  1:18:48 Time remaining (h:m)  0:13  
+25/2/2012 20:00 85.63% - Time elapsed (h:m:s)  1:18:57 Time remaining (h:m)  0:13  
+25/2/2012 21:00 85.78% - Time elapsed (h:m:s)  1:19:02 Time remaining (h:m)  0:13  
+25/2/2012 22:00 85.92% - Time elapsed (h:m:s)  1:19:11 Time remaining (h:m)  0:12  
+25/2/2012 23:00 86.06% - Time elapsed (h:m:s)  1:19:15 Time remaining (h:m)  0:12  
+26/2/2012 0:00 86.21% - Time elapsed (h:m:s)  1:19:23 Time remaining (h:m)  0:12  
+
+26/2/2012 0:00 JD:56.000000 (25^ simulation day) 86.21% completed! 
+ t_meteo:  4.32 s, t_energy:  0.00 s, t_blowingsnow:  0.00 s, t_water:4621.81 s, t_sub:1787.91 s, t_sup:2833.88 s, t_out:  0.77 s
+ SW=  0.00 W/m2  LW:  0.00 W/m2  H=  0.00 W/m2  LE=  0.00 W/m2 
+ Pvert=  0.00 mm Prain=  0.00 mm  Psnow=  0.00 mm  
+ Max Error Richards=2.882869e-08 mm/h 
+ Tot Error Richards=1.772796e-05 mm Mean Time Step=3600.000000 s
+
+26/2/2012 1:00 86.35% - Time elapsed (h:m:s)  1:19:32 Time remaining (h:m)  0:12  
+26/2/2012 2:00 86.49% - Time elapsed (h:m:s)  1:19:39 Time remaining (h:m)  0:12  
+26/2/2012 3:00 86.64% - Time elapsed (h:m:s)  1:19:44 Time remaining (h:m)  0:12  
+26/2/2012 4:00 86.78% - Time elapsed (h:m:s)  1:19:52 Time remaining (h:m)  0:12  
+26/2/2012 5:00 86.93% - Time elapsed (h:m:s)  1:19:58 Time remaining (h:m)  0:12  
+26/2/2012 6:00 87.07% - Time elapsed (h:m:s)  1:20:04 Time remaining (h:m)  0:11  
+26/2/2012 7:00 87.21% - Time elapsed (h:m:s)  1:20:09 Time remaining (h:m)  0:11  
+26/2/2012 8:00 87.36% - Time elapsed (h:m:s)  1:20:18 Time remaining (h:m)  0:11  
+26/2/2012 9:00 87.50% - Time elapsed (h:m:s)  1:20:23 Time remaining (h:m)  0:11  
+26/2/2012 10:00 87.64% - Time elapsed (h:m:s)  1:20:30 Time remaining (h:m)  0:11  
+26/2/2012 11:00 87.79% - Time elapsed (h:m:s)  1:20:37 Time remaining (h:m)  0:11  
+26/2/2012 12:00 87.93% - Time elapsed (h:m:s)  1:20:44 Time remaining (h:m)  0:11  
+26/2/2012 13:00 88.07% - Time elapsed (h:m:s)  1:20:50 Time remaining (h:m)  0:10  
+26/2/2012 14:00 88.22% - Time elapsed (h:m:s)  1:20:56 Time remaining (h:m)  0:10  
+26/2/2012 15:00 88.36% - Time elapsed (h:m:s)  1:21:03 Time remaining (h:m)  0:10  
+26/2/2012 16:00 88.51% - Time elapsed (h:m:s)  1:21:11 Time remaining (h:m)  0:10  
+26/2/2012 17:00 88.65% - Time elapsed (h:m:s)  1:21:20 Time remaining (h:m)  0:10  
+26/2/2012 18:00 88.79% - Time elapsed (h:m:s)  1:21:25 Time remaining (h:m)  0:10  
+26/2/2012 19:00 88.94% - Time elapsed (h:m:s)  1:21:32 Time remaining (h:m)  0:10  
+26/2/2012 20:00 89.08% - Time elapsed (h:m:s)  1:21:38 Time remaining (h:m)  0:10  
+26/2/2012 21:00 89.22% - Time elapsed (h:m:s)  1:21:46 Time remaining (h:m)  0:09  
+26/2/2012 22:00 89.37% - Time elapsed (h:m:s)  1:21:51 Time remaining (h:m)  0:09  
+26/2/2012 23:00 89.51% - Time elapsed (h:m:s)  1:22:00 Time remaining (h:m)  0:09  
+27/2/2012 0:00 89.66% - Time elapsed (h:m:s)  1:22:06 Time remaining (h:m)  0:09  
+
+27/2/2012 0:00 JD:57.000000 (26^ simulation day) 89.66% completed! 
+ t_meteo:  4.49 s, t_energy:  0.00 s, t_blowingsnow:  0.00 s, t_water:4782.98 s, t_sub:1852.01 s, t_sup:2930.94 s, t_out:  0.80 s
+ SW=  0.00 W/m2  LW:  0.00 W/m2  H=  0.00 W/m2  LE=  0.00 W/m2 
+ Pvert=  0.00 mm Prain=  0.00 mm  Psnow=  0.00 mm  
+ Max Error Richards=2.908624e-08 mm/h 
+ Tot Error Richards=1.842603e-05 mm Mean Time Step=3600.000000 s
+
+27/2/2012 1:00 89.80% - Time elapsed (h:m:s)  1:22:11 Time remaining (h:m)  0:09  
+27/2/2012 2:00 89.94% - Time elapsed (h:m:s)  1:22:20 Time remaining (h:m)  0:09  
+27/2/2012 3:00 90.09% - Time elapsed (h:m:s)  1:22:26 Time remaining (h:m)  0:09  
+27/2/2012 4:00 90.23% - Time elapsed (h:m:s)  1:22:34 Time remaining (h:m)  0:08  
+27/2/2012 5:00 90.37% - Time elapsed (h:m:s)  1:22:41 Time remaining (h:m)  0:08  
+27/2/2012 6:00 90.52% - Time elapsed (h:m:s)  1:22:47 Time remaining (h:m)  0:08  
+27/2/2012 7:00 90.66% - Time elapsed (h:m:s)  1:22:53 Time remaining (h:m)  0:08  
+27/2/2012 8:00 90.80% - Time elapsed (h:m:s)  1:23:03 Time remaining (h:m)  0:08  
+27/2/2012 9:00 90.95% - Time elapsed (h:m:s)  1:23:11 Time remaining (h:m)  0:08  
+27/2/2012 10:00 91.09% - Time elapsed (h:m:s)  1:23:17 Time remaining (h:m)  0:08  
+27/2/2012 11:00 91.24% - Time elapsed (h:m:s)  1:23:26 Time remaining (h:m)  0:08  
+27/2/2012 12:00 91.38% - Time elapsed (h:m:s)  1:23:32 Time remaining (h:m)  0:07  
+27/2/2012 13:00 91.52% - Time elapsed (h:m:s)  1:23:37 Time remaining (h:m)  0:07  
+27/2/2012 14:00 91.67% - Time elapsed (h:m:s)  1:23:45 Time remaining (h:m)  0:07  
+27/2/2012 15:00 91.81% - Time elapsed (h:m:s)  1:23:52 Time remaining (h:m)  0:07  
+27/2/2012 16:00 91.95% - Time elapsed (h:m:s)  1:23:58 Time remaining (h:m)  0:07  
+27/2/2012 17:00 92.10% - Time elapsed (h:m:s)  1:24:08 Time remaining (h:m)  0:07  
+27/2/2012 18:00 92.24% - Time elapsed (h:m:s)  1:24:13 Time remaining (h:m)  0:07  
+27/2/2012 19:00 92.39% - Time elapsed (h:m:s)  1:24:22 Time remaining (h:m)  0:06  
+27/2/2012 20:00 92.53% - Time elapsed (h:m:s)  1:24:28 Time remaining (h:m)  0:06  
+27/2/2012 21:00 92.67% - Time elapsed (h:m:s)  1:24:34 Time remaining (h:m)  0:06  
+27/2/2012 22:00 92.82% - Time elapsed (h:m:s)  1:24:41 Time remaining (h:m)  0:06  
+27/2/2012 23:00 92.96% - Time elapsed (h:m:s)  1:24:48 Time remaining (h:m)  0:06  
+28/2/2012 0:00 93.10% - Time elapsed (h:m:s)  1:24:57 Time remaining (h:m)  0:06  
+
+28/2/2012 0:00 JD:58.000000 (27^ simulation day) 93.10% completed! 
+ t_meteo:  4.66 s, t_energy:  0.00 s, t_blowingsnow:  0.00 s, t_water:4954.68 s, t_sub:1926.95 s, t_sup:3027.70 s, t_out:  0.84 s
+ SW=  0.00 W/m2  LW:  0.00 W/m2  H=  0.00 W/m2  LE=  0.00 W/m2 
+ Pvert=  0.00 mm Prain=  0.00 mm  Psnow=  0.00 mm  
+ Max Error Richards=2.739613e-08 mm/h 
+ Tot Error Richards=1.908354e-05 mm Mean Time Step=3600.000000 s
+
+28/2/2012 1:00 93.25% - Time elapsed (h:m:s)  1:25:04 Time remaining (h:m)  0:06  
+28/2/2012 2:00 93.39% - Time elapsed (h:m:s)  1:25:12 Time remaining (h:m)  0:06  
+28/2/2012 3:00 93.53% - Time elapsed (h:m:s)  1:25:17 Time remaining (h:m)  0:05  
+28/2/2012 4:00 93.68% - Time elapsed (h:m:s)  1:25:27 Time remaining (h:m)  0:05  
+28/2/2012 5:00 93.82% - Time elapsed (h:m:s)  1:25:32 Time remaining (h:m)  0:05  
+28/2/2012 6:00 93.97% - Time elapsed (h:m:s)  1:25:41 Time remaining (h:m)  0:05  
+28/2/2012 7:00 94.11% - Time elapsed (h:m:s)  1:25:47 Time remaining (h:m)  0:05  
+28/2/2012 8:00 94.25% - Time elapsed (h:m:s)  1:25:52 Time remaining (h:m)  0:05  
+28/2/2012 9:00 94.40% - Time elapsed (h:m:s)  1:26:02 Time remaining (h:m)  0:05  
+28/2/2012 10:00 94.54% - Time elapsed (h:m:s)  1:26:08 Time remaining (h:m)  0:04  
+28/2/2012 11:00 94.68% - Time elapsed (h:m:s)  1:26:17 Time remaining (h:m)  0:04  
+28/2/2012 12:00 94.83% - Time elapsed (h:m:s)  1:26:27 Time remaining (h:m)  0:04  
+28/2/2012 13:00 94.97% - Time elapsed (h:m:s)  1:26:32 Time remaining (h:m)  0:04  
+28/2/2012 14:00 95.11% - Time elapsed (h:m:s)  1:26:38 Time remaining (h:m)  0:04  
+28/2/2012 15:00 95.26% - Time elapsed (h:m:s)  1:26:48 Time remaining (h:m)  0:04  
+28/2/2012 16:00 95.40% - Time elapsed (h:m:s)  1:26:53 Time remaining (h:m)  0:04  
+28/2/2012 17:00 95.55% - Time elapsed (h:m:s)  1:26:58 Time remaining (h:m)  0:04  
+28/2/2012 18:00 95.69% - Time elapsed (h:m:s)  1:27:08 Time remaining (h:m)  0:03  
+28/2/2012 19:00 95.83% - Time elapsed (h:m:s)  1:27:14 Time remaining (h:m)  0:03  
+28/2/2012 20:00 95.98% - Time elapsed (h:m:s)  1:27:19 Time remaining (h:m)  0:03  
+28/2/2012 21:00 96.12% - Time elapsed (h:m:s)  1:27:30 Time remaining (h:m)  0:03  
+28/2/2012 22:00 96.26% - Time elapsed (h:m:s)  1:27:35 Time remaining (h:m)  0:03  
+28/2/2012 23:00 96.41% - Time elapsed (h:m:s)  1:27:46 Time remaining (h:m)  0:03  
+29/2/2012 0:00 96.55% - Time elapsed (h:m:s)  1:27:56 Time remaining (h:m)  0:03  
+
+29/2/2012 0:00 JD:59.000000 (28^ simulation day) 96.55% completed! 
+ t_meteo:  4.84 s, t_energy:  0.00 s, t_blowingsnow:  0.00 s, t_water:5133.06 s, t_sub:2008.95 s, t_sup:3124.08 s, t_out:  0.87 s
+ SW=  0.00 W/m2  LW:  0.00 W/m2  H=  0.00 W/m2  LE=  0.00 W/m2 
+ Pvert=  0.00 mm Prain=  0.00 mm  Psnow=  0.00 mm  
+ Max Error Richards=3.497858e-08 mm/h 
+ Tot Error Richards=1.992302e-05 mm Mean Time Step=3600.000000 s
+
+29/2/2012 1:00 96.70% - Time elapsed (h:m:s)  1:28:01 Time remaining (h:m)  0:03  
+29/2/2012 2:00 96.84% - Time elapsed (h:m:s)  1:28:07 Time remaining (h:m)  0:02  
+29/2/2012 3:00 96.98% - Time elapsed (h:m:s)  1:28:15 Time remaining (h:m)  0:02  
+29/2/2012 4:00 97.13% - Time elapsed (h:m:s)  1:28:20 Time remaining (h:m)  0:02  
+29/2/2012 5:00 97.27% - Time elapsed (h:m:s)  1:28:26 Time remaining (h:m)  0:02  
+29/2/2012 6:00 97.41% - Time elapsed (h:m:s)  1:28:35 Time remaining (h:m)  0:02  
+29/2/2012 7:00 97.56% - Time elapsed (h:m:s)  1:28:40 Time remaining (h:m)  0:02  
+29/2/2012 8:00 97.70% - Time elapsed (h:m:s)  1:28:46 Time remaining (h:m)  0:02  
+29/2/2012 9:00 97.84% - Time elapsed (h:m:s)  1:28:54 Time remaining (h:m)  0:01  
+29/2/2012 10:00 97.99% - Time elapsed (h:m:s)  1:29:01 Time remaining (h:m)  0:01  
+29/2/2012 11:00 98.13% - Time elapsed (h:m:s)  1:29:07 Time remaining (h:m)  0:01  
+29/2/2012 12:00 98.28% - Time elapsed (h:m:s)  1:29:15 Time remaining (h:m)  0:01  
+29/2/2012 13:00 98.42% - Time elapsed (h:m:s)  1:29:20 Time remaining (h:m)  0:01  
+29/2/2012 14:00 98.56% - Time elapsed (h:m:s)  1:29:26 Time remaining (h:m)  0:01  
+29/2/2012 15:00 98.71% - Time elapsed (h:m:s)  1:29:32 Time remaining (h:m)  0:01  
+29/2/2012 16:00 98.85% - Time elapsed (h:m:s)  1:29:38 Time remaining (h:m)  0:01  
+29/2/2012 17:00 98.99% - Time elapsed (h:m:s)  1:29:47 Time remaining (h:m)  0:00  
+29/2/2012 18:00 99.14% - Time elapsed (h:m:s)  1:29:53 Time remaining (h:m)  0:00  
+29/2/2012 19:00 99.28% - Time elapsed (h:m:s)  1:29:58 Time remaining (h:m)  0:00  
+29/2/2012 20:00 99.43% - Time elapsed (h:m:s)  1:30:07 Time remaining (h:m)  0:00  
+29/2/2012 21:00 99.57% - Time elapsed (h:m:s)  1:30:17 Time remaining (h:m)  0:00  
+29/2/2012 22:00 99.71% - Time elapsed (h:m:s)  1:30:23 Time remaining (h:m)  0:00  
+29/2/2012 23:00 99.86% - Time elapsed (h:m:s)  1:30:28 Time remaining (h:m)  0:00  
+1/3/2012 0:00 100.00% - Time elapsed (h:m:s)  1:30:37 Time remaining (h:m)  0:00  
+
+1/3/2012 0:00 JD:60.000000 (29^ simulation day) 100.00% completed! 
+ t_meteo:  5.01 s, t_energy:  0.00 s, t_blowingsnow:  0.00 s, t_water:5293.00 s, t_sub:2072.91 s, t_sup:3220.05 s, t_out:  0.90 s
+ SW=  0.00 W/m2  LW:  0.00 W/m2  H=  0.00 W/m2  LE=  0.00 W/m2 
+ Pvert=  0.00 mm Prain=  0.00 mm  Psnow=  0.00 mm  
+ Max Error Richards=3.684281e-08 mm/h 
+ Tot Error Richards=2.080725e-05 mm Mean Time Step=3600.000000 s
+
+Number of times the simulation #1 has been run: 1
