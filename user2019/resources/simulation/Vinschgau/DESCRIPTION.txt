@@ -11,7 +11,7 @@ Description: Coarse spatial scale simulatio for the Vinschgau/Vanosta Valley (Ad
 Provided by Giacomo Bertoldi: giacomo.bertoldi@eurac.edu
 
 Input:
-Dem with patial resolution 1000 m, area about 70 km2.
+Dem with patial resolution 1000 m, area about 1679 km2.
 37 different meteo stations
 11 different land cover types
 
