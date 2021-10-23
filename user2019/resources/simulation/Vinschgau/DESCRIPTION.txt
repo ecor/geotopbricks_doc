@@ -4,9 +4,9 @@ Processor: Intel(R) Core(TM) i7-6700HQ CPU @ 2.60GHz
 Author:  Elisa Bortoli (elisa.bortoli3@gmail.com)
 Date: 28-06-2018
 
-Name: Borden05m
+Name: Vinschgau
 
-Description: Coarse spatial scale simulatio for the Mazia Catchment LTER (South Tyrol, Italy) http://lter.eurac.edu/en 
+Description: Coarse spatial scale simulatio for the Vinschgau/Vanosta Valley (Adige River Basin)  (South Tyrol, Italy). See Also Mazia Catchment LTER http://lter.eurac.edu/en 
 
 Provided by Giacomo Bertoldi: giacomo.bertoldi@eurac.edu
 
