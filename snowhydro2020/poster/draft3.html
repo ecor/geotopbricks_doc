@@ -21,8 +21,7 @@ Google fonts api stuff
 
 <title>Modelling spatio-temporal dynamics of snow depth and large herbivore’s winter habitat selection</title>
 
-<script src="draft3_files/jquery-1.11.3/jquery.min.js"></script>
-<script src="draft3_files/elevate-section-attrs-2.0/elevate-section-attrs.js"></script>
+
 
 
 
@@ -48,11 +47,11 @@ height: 46in;
 padding: 0cm;
 }
 .title_container {
-width: calc(100% - 1mm - 1mm);
-height: calc(15% - 1mm - 1mm);
+width: 38in;
+height: calc(46in * 0.15);
 overflow: hidden;
 background-color: #edf8b1;
-border: 1mm solid #016c59;
+border: 1mm solid black;
 }
 .logo_left {
 float: left;
@@ -89,7 +88,6 @@ font-family: Palatino;
 /* unvisited link */
 a:link {
 color: #33a02c;
-text-decoration: none;
 }
 .mybreak {
   break-before: column;
@@ -97,19 +95,16 @@ text-decoration: none;
 /* visited link */
 a:visited {
 color: #33a02c;
-text-decoration: none;
 }
 
 /* mouse over link */
 a:hover {
 color: #33a02c;
-text-decoration: none;
 }
 
 /* selected link */
 a:active {
 color: #33a02c;
-text-decoration: none;
 }
 .poster_body {
 -webkit-column-count: 3; /* Chrome, Safari, Opera */
@@ -127,9 +122,9 @@ column-rule-style: dashed;
 -webkit-column-rule-color: #016c59;
 -moz-column-rule-color: #016c59;
 column-rule-color: #016c59;
-column-gap: 1em;
-padding-left: 0.5em;
-padding-right: 0.5em;
+column-gap: 1mm;
+padding-left: calc(1mm / 2);
+padding-right: calc(1mm / 2);
 height: 100%;
 color: #000000
 background-color: white;
@@ -141,9 +136,9 @@ border: 0;
 font-weight: normal;
 }
 .poster_body_wrap{
-width: 38in;
-height: calc(100% - 17%);
-padding-top: calc(46in * 0.01);
+width: calc(38in + 1mm + 1mm);
+height: calc(46in * 0.83);
+padding-top: calc(46in * 0.005);
 padding-bottom: calc(46in * 0.01);
 background-color: white;
 }
@@ -166,7 +161,7 @@ border: 0;
 font-weight: normal;
 }
 img {
-margin-top: 0;
+margin-top: 2cm;
 margin-bottom: 0;
 }
 .section {
@@ -204,30 +199,25 @@ margin-bottom: 2cm;
 position: sticky;
 width: 100%;
 }
-div.sourceCode {
-font-size: 20pt;
-width: 85%;
-margin-left: auto;
-margin-right: auto;
-padding: 1em;
-border: 1mm solid;
-border-color: #008080;
-border-radius: 1em;
-}
 pre.sourceCode.r {
-width: 100%;
+background-color: #dddddd40;
+border-radius: 4mm;
+padding: 4mm;
+width: 75%;
 /* align-items: center; */
 margin: auto;
+padding-left: 2cm;
 }
 code.sourceCode.r{
 background-color: transparent;
-color: #000000
+font-size: 20pt;
+border-radius: 2mm;
 }
 .caption {
-font-size: 20pt;
+font-size: 25pt;
 }
 .table caption {
-font-size: 20pt;
+font-size: 25pt;
 padding-bottom: 3mm;
 
 }
@@ -265,7 +255,6 @@ margin-right: 4mm;
 margin-left: 4mm;
 margin-top: 6mm;
 margin-bottom: 10mm;
-color: #000000
 }
 .poster_body ol {
 margin-right: 4mm;
@@ -295,8 +284,8 @@ font-size: 20pt;
 <!-- Poster Title -->
 <div class= "poster_title">
 <h1 id="title">Modelling spatio-temporal dynamics of snow depth and large herbivore’s winter habitat selection</h1>
-<h3 id="author">Emanuele Cordano<sup>1</sup>, Emanuele Eccel<sup>2</sup>, Federico Ossi<sup>2</sup>, Julius Bright Ross<sup>3,4</sup>, Wibke Peters<sup>5</sup>, Francesca Cagnacci<sup>2,3</sup></h3>
-<h5 id="affiliation"><sup>1</sup> Rendena100 Sole Propriertoship (<a href="https://www.rendena100.eu">www.rendena100.eu</a>), Tione di Trento,TN, Italy; <sup>2</sup> Research and Innovation Centre, Fondazione Edmund Mach, San Michele all’Adige,TN, Italy; <sup>3</sup> Department of Organismic and Evolutionary Biology, Harvard University, Cambridge, MA, USA; <sup>4</sup> Wildlife Conservation Research Unit, Department of Zoology, University of Oxford, Oxford, United Kingdom; <sup>5</sup> Department of Biodiversity, Conservation and Wildlife Management, Bavarian State Institute of Forestry, Freising, Germany</h5>
+<h3 id="author">Emanuele Cordano<sup>1</sup>, Emanuele Eccel<sup>2</sup>, Federico Ossi<sup>2</sup>, Julius Bright Ross<sup>3,4</sup>, Wibke Peters<sup>5</sup>, Francesca Cagnacci<sup>2,3</sup></h3><br>
+<h5 id="affiliation"><sup>1</sup> Rendena100 Sole Propriertoship (<a href="https://www.rendena100.eu">www.rendena100.eu</a>), Tione di Trento,TN, Italy<br> <sup>2</sup> Research and Innovation Centre, Fondazione Edmund Mach, San Michele all’Adige,TN, Italy<br> <sup>3</sup> Department of Organismic and Evolutionary Biology, Harvard University, Cambridge, MA, USA<br> <sup>4</sup> Wildlife Conservation Research Unit, Department of Zoology, University of Oxford, Oxford, United Kingdom<br> <sup>5</sup> Department of Biodiversity, Conservation and Wildlife Management, Bavarian State Institute of Forestry, Freising, Germany</h5>
 </div>
 <!-- Right Logo  -->
 <div class="logo_right">
@@ -311,20 +300,20 @@ font-size: 20pt;
 <p>Winter snowy conditions and the wildlife management strategies play a
 critical role in governing the spatial distribution of ungulates in temperate ecosystems.
 Snow depth severely restricts roe deer distribution due to the limitations resulting from
-their small body mass (18-49 kg: <span class="citation">Lister and Sumner (<a href="#ref-Lister1998" role="doc-biblioref">1998</a>)</span>) and short legs (50-60 cm: <span class="citation">Holand and Linnell (<a href="#ref-Holand1998" role="doc-biblioref">1998</a>)</span>). Large roe deers living in snowy areas, employ a partial migration strategy, with all
+their small body mass (18-49 kg: <span class="citation">Lister and Sumner (<a href="#ref-Lister1998">1998</a>)</span>) and short legs (50-60 cm: <span class="citation">Holand and Linnell (<a href="#ref-Holand1998">1998</a>)</span>). Large roe deers living in snowy areas, employ a partial migration strategy, with all
 individuals overwintering in ranges characterized by less extreme snow conditions. Consequently, snow occurrence constitutes a proxy for animal location and movements. Due to the recently observed strong variability of climate and snow conditions in alpine areas, <strong>a high-resolution topography-accounting spatio-temporal modelling of snow cover is required. </strong>
 <img src="resources/images/rendena_roe_deer_meteo_v2.jpg" style="width:100.0%" /></p>
 </div>
 <div id="hydrological-modelling" class="section level1">
 <h1>Hydrological modelling</h1>
-<p>GEOtop 2.0 Hydrological Model (<span class="citation">Endrizzi et al. (<a href="#ref-Endrizzi2014" role="doc-biblioref">2014</a>)</span>, <a href="http://www.geotop.org">www.geotop.org</a>) is a physically-based <em>spatially distributed</em> model solving water and energy balance differential equation, <strong>producing snow depth area maps from meteorological data by taking into account snow melting process</strong>.</p>
+<p>GEOtop 2.0 Hydrological Model (<span class="citation">Endrizzi et al. (<a href="#ref-Endrizzi2014">2014</a>)</span>, <a href="http://www.geotop.org">www.geotop.org</a>) is a physically-based <em>spatially distributed</em> model solving water and energy balance differential equation, <strong>producing snow depth area maps from meteorological data by taking into account snow melting process</strong>.</p>
 <p><img src="resources/images/geotop_revised.png" style="width:100.0%" /></p>
 <p>Input weather forcings (25-year long):</p>
 <ul>
 <li><p>Observed time series in the weather stations (<a href="https://www.meteotrentino.it">wwww.meteotrentino.it</a>) (1 scenario);</p></li>
-<li><p>Downscaled data by regional climate model projections (<span class="citation">Rockel, Will, and Hense (<a href="#ref-Rockel2008" role="doc-biblioref">2008</a>)</span>, <em>courtesy of Emanuel Eccel and CMCC</em>) (IPCC scenarios RCP4.5 and RCP 8.5) (2 scenarios).</p></li>
+<li><p>Downscaled data by regional climate model projections (<span class="citation">Rockel, Will, and Hense (<a href="#ref-Rockel2008">2008</a>)</span>, <em>courtesy of Emanuel Eccel and CMCC</em>) (IPCC scenarios RCP4.5 and RCP 8.5) (2 scenarios).</p></li>
 </ul>
-<p>Snow mean depth and snow cover are aggregated from daily to seasonal scale (NDJFMA)(<span class="citation">Cordano (<a href="#ref-geotopbricks" role="doc-biblioref">2019</a>)</span>). RCP4.5 ns RCP8.5 illustrated scenarios are created with weather forcings having patterns similar to both 2013-2014 and 2014-2015 observed seasons, but modified accordingly to the projections.</p>
+<p>Snow mean depth and snow cover are aggregated from daily to seasonal scale (NDJFMA)(<span class="citation">Cordano (<a href="#ref-geotopbricks">2019</a>)</span>). RCP4.5 ns RCP8.5 illustrated scenarios are created with weather forcings having patterns similar to both 2013-2014 and 2014-2015 observed seasons, but modified accordingly to the projections.</p>
 <table>
 <thead>
 <tr class="header">
@@ -416,21 +405,21 @@ individuals overwintering in ranges characterized by less extreme snow condition
 <!-- read.bibtex(file = "bibliography.bib") -->
 <!-- knitr::write_bib(file = "bibliography.bib") -->
 <!-- ``` -->
-<div id="refs" class="references hanging-indent">
-<div id="ref-geotopbricks">
-<p>Cordano, Emanuele. 2019. <em>Geotopbricks: An R Plug-in for the Distributed Hydrological Model Geotop</em>. <a href="https://CRAN.R-project.org/package=geotopbricks">https://CRAN.R-project.org/package=geotopbricks</a>.</p>
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-geotopbricks" class="csl-entry">
+Cordano, Emanuele. 2019. <em>Geotopbricks: An r Plug-in for the Distributed Hydrological Model GEOtop</em>. <a href="https://CRAN.R-project.org/package=geotopbricks">https://CRAN.R-project.org/package=geotopbricks</a>.
 </div>
-<div id="ref-Endrizzi2014">
-<p>Endrizzi, S., S. Gruber, M. Dall’Amico, and R. Rigon. 2014. “GEOtop 2.0: Simulating the Combined Energy and Water Balance at and Below the Land Surface Accounting for Soil Freezing, Snow Cover and Terrain Effects.” <em>Geoscientific Model Development</em> 7 (6): 2831–57. <a href="https://doi.org/10.5194/gmd-7-2831-2014">https://doi.org/10.5194/gmd-7-2831-2014</a>.</p>
+<div id="ref-Endrizzi2014" class="csl-entry">
+Endrizzi, S., S. Gruber, M. Dall’Amico, and R. Rigon. 2014. <span>“GEOtop 2.0: Simulating the Combined Energy and Water Balance at and Below the Land Surface Accounting for Soil Freezing, Snow Cover and Terrain Effects.”</span> <em>Geoscientific Model Development</em> 7 (6): 2831–57. <a href="https://doi.org/10.5194/gmd-7-2831-2014">https://doi.org/10.5194/gmd-7-2831-2014</a>.
 </div>
-<div id="ref-Holand1998">
-<p>Holand, A. Mysterud, Ø., and J. D. C. Linnell. 1998. “Roe Deer in Northern Environments: Physiology and Behaviour.” Edited by R. Andersen, P. Duncan, and J. D. C. Linnell. Oslo, Norway: Scandinavian University Press.</p>
+<div id="ref-Holand1998" class="csl-entry">
+Holand, A. Mysterud, Ø., and J. D. C. Linnell. 1998. <span>“Roe Deer in Northern Environments: Physiology and Behaviour.”</span> Edited by R. Andersen, P. Duncan, and J. D. C. Linnell. Oslo, Norway: Scandinavian University Press.
 </div>
-<div id="ref-Lister1998">
-<p>Lister, P. Grubb, A. M., and S. R. M. Sumner. 1998. “Taxonomy, Morphology and Evolution of European Roe Deer.” Edited by R. Andersen, P. Duncan, and J. D. C. Linnell. Oslo, Norway: Scandinavian University Press.</p>
+<div id="ref-Lister1998" class="csl-entry">
+Lister, P. Grubb, A. M., and S. R. M. Sumner. 1998. <span>“Taxonomy, Morphology and Evolution of European Roe Deer.”</span> Edited by R. Andersen, P. Duncan, and J. D. C. Linnell. Oslo, Norway: Scandinavian University Press.
 </div>
-<div id="ref-Rockel2008">
-<p>Rockel, Burkhard, Andreas Will, and Andreas Hense. 2008. “The Regional Climate Model Cosmo-Clm (Cclm).” <em>Meteorologische Zeitschrift</em> 17 (4): 347–48. <a href="https://doi.org/10.1127/0941-2948/2008/0309">https://doi.org/10.1127/0941-2948/2008/0309</a>.</p>
+<div id="ref-Rockel2008" class="csl-entry">
+Rockel, Burkhard, Andreas Will, and Andreas Hense. 2008. <span>“The Regional Climate Model COSMO-CLM (CCLM).”</span> <em>Meteorologische Zeitschrift</em> 17 (4): 347–48. <a href="https://doi.org/10.1127/0941-2948/2008/0309">https://doi.org/10.1127/0941-2948/2008/0309</a>.
 </div>
 </div>
 </div>
